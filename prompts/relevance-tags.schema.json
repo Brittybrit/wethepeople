@@ -1,0 +1,7 @@
+{ "type": "object", "required": ["tags", "stated_impact", "industries", "place"], "additionalProperties": false,
+  "properties": {
+    "tags": { "type": "array", "items": { "type": "string", "enum": ["fiscal", "location", "industry", "household", "lifestyle", "procurement"] } },
+    "stated_impact": { "type": "boolean" },
+    "industries": { "type": "array", "items": { "type": "string", "maxLength": 40 } },
+    "place": { "type": "string", "maxLength": 120 }
+  } }

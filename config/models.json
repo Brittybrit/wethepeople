@@ -1,0 +1,22 @@
+{
+  "note": "Routing table: task type to candidate models in order of preference (cheapest adequate first). Prices are USD per million tokens, input/output; update when vendors change them. Provider names map to adapters in lib/model.mjs.",
+  "providers": {
+    "anthropic": { "url": "https://api.anthropic.com/v1/messages", "keyEnv": "ANTHROPIC_API_KEY" },
+    "openai": { "url": "https://api.openai.com/v1/chat/completions", "keyEnv": "OPENAI_API_KEY" },
+    "local": { "url": "http://localhost:11434/v1/chat/completions", "keyEnv": "" }
+  },
+  "models": {
+    "claude-haiku-4-5": { "provider": "anthropic", "price": [1, 5] },
+    "claude-sonnet-4-6": { "provider": "anthropic", "price": [3, 15] },
+    "gpt-4o-mini": { "provider": "openai", "price": [0.15, 0.6] },
+    "local-small": { "provider": "local", "price": [0, 0], "id": "qwen2.5:7b" }
+  },
+  "tasks": {
+    "test-gen": { "tier": 3, "models": ["claude-haiku-4-5", "gpt-4o-mini"], "max_tokens": 8000 },
+    "extract": { "tier": 3, "models": ["claude-haiku-4-5", "gpt-4o-mini", "local-small"], "max_tokens": 2000 },
+    "classify": { "tier": 3, "models": ["claude-haiku-4-5", "local-small"], "max_tokens": 400 },
+    "grade": { "tier": 3, "models": ["claude-haiku-4-5"], "max_tokens": 300 },
+    "synthesize": { "tier": 4, "models": ["claude-sonnet-4-6"], "max_tokens": 4000 },
+    "plan": { "tier": 4, "models": ["claude-sonnet-4-6"], "max_tokens": 4000 }
+  }
+}

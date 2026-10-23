@@ -1,0 +1,17 @@
+{
+  "floor": 0.8,
+  "ceiling_usd": 0.05,
+  "note": "Cases are real agenda-item shapes. Add a case every time production gets one wrong (section 7 of architecture.md).",
+  "cases": [
+    { "id": "stormwater-fee", "input": "Ordinance amending Chapter 24 of the County Code to adjust the stormwater utility fee from $4.00 to $7.10 per month per equivalent residential unit, effective October 1.",
+      "expect": { "includes": { "tags": ["fiscal", "household"] }, "excludes": { "tags": ["procurement"] }, "equals": { "stated_impact": true } } },
+    { "id": "calusa-rezoning", "input": "Application by Kendall Associates for a zoning change on the former Calusa golf course property at SW 88 Street and SW 130 Avenue to permit 550 single-family homes.",
+      "expect": { "includes": { "tags": ["location"] }, "equals": { "stated_impact": false }, "excludes": { "tags": ["fiscal"] } } },
+    { "id": "towing-contract", "input": "Resolution awarding a contract to Tremont Towing for non-consensual towing services on the Miami Beach rotation list, in an amount not to exceed $1,200,000 over five years.",
+      "expect": { "includes": { "tags": ["procurement", "industry", "fiscal"], "industries": ["towing"] }, "equals": { "stated_impact": true } } },
+    { "id": "proclamation", "input": "Proclamation declaring October as Arts and Humanities Month in Miami-Dade County.",
+      "expect": { "equals": { "tags": [], "stated_impact": false, "industries": [] } } },
+    { "id": "noise-hours", "input": "Ordinance amending Section 46-152 to extend permitted amplified sound hours on Ocean Drive sidewalk cafes to 2 a.m. on Fridays and Saturdays.",
+      "expect": { "includes": { "tags": ["lifestyle", "location", "industry"] }, "equals": { "stated_impact": true } } }
+  ]
+}
