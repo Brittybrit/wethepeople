@@ -56,27 +56,38 @@ Durability rule (unchanged): no card exists unless a committed script can rebuil
 
 ## 6. AI-first conventions
 - Prompts are versioned files in the repo with the schema they must return; a prompt change is a pull request with an eval run.
-- Evals in CI: a labeled set drawn from the ledger (known ties, known roll calls, known relevance tags). Every tier 3 and 4 prompt has a pass rate that must not fall. Plain unit tests cover tiers 0 to 2.
+- Evals in CI: see section 7. Every tier 3 and 4 prompt has a pass rate that must not fall; generated unit tests cover tiers 0 to 2.
 - Tools, not pages: the MCP server exposes read tools (now, upcoming, ties, people, cycles, procurement, payments, connections), the planner, and for keyed users watchlists. An assistant that connects to it can do everything the UI can.
 - The model never sees a source it cannot cite. Inputs to tier 3 and 4 are records with URLs; outputs must reference them; an output that cites nothing is dropped.
 - No model output is stored as fact. It is stored as a candidate with its tier and content hash until a rule or a person confirms it.
 
-## 7. Caching, concretely
+## 7. Testing: generated suites and prompt evals in one workflow (Brit, Oct 23)
+Goal: reduce manual testing overhead by having LLMs write the test suites, and treat prompt engineering like software: versioned, tested in CI, merged on a passing run.
+- Test runner: Jest-style tests (describe, it, expect). The runner is Vitest with the Cloudflare Workers pool, because it runs the same syntax inside the Workers runtime and on Node, which keeps the portability promise testable. Existing node:test files migrate as they are touched.
+- Generated unit tests: for every module, a generation step reads the source and its JSON schemas and writes the suite (happy path, each branch, each error, boundary values, property-style cases for parsers and matchers). Generated tests are committed, reviewed like code, and regenerated when the module changes; a human adds the cases the generator missed and those are kept as hand-written files that never get overwritten. Coverage is reported per module and the generator is pointed at the gaps.
+- Generated fixtures from real records: the generator draws inputs from stored source snapshots (an agenda PDF, a roll call, a lobbyist filing) so tests exercise real shapes, not invented ones.
+- Prompt evals as tests: every prompt file has an eval file beside it in the same runner. Cases are labeled examples drawn from the ledger (known ties, known roll calls, known relevance tags, known "no stated impact"). Assertions are schema validity, exact fields where the answer is a fact, and a grader (a cheap model with a rubric) only where the answer is prose. Each eval reports pass rate, cost and latency; CI fails if pass rate drops below the file's floor or cost rises above its ceiling. A prompt change, a model swap and a routing change all run the same evals.
+- The eval set grows from production: every tier 3 or 4 output a person confirms or corrects becomes a labeled case. Corrections are the most valuable rows.
+- CI order on every push: lint, unit (tiers 0 to 2, fast, no network), contract (OpenAPI and MCP manifest match the schema), evals (tiers 3 and 4, with cached model outputs keyed by prompt version plus input hash so unchanged prompts cost nothing), then deploy.
+- The generator itself is a tier 3 task with a schema (test file as structured output), logged in the usage ledger like everything else.
+
+## 8. Caching, concretely
 - GET responses: ETag from the content hash of the data release; Cache-Control public with a short max-age and long stale-while-revalidate; the edge Cache API in front of the Worker.
 - Computed cards (relevance, budget map, base rates): KV, key = task type + content hash of inputs, no TTL, invalidated by release.
 - Model outputs: KV, key = prompt version + model + content hash of input. A repeated question on the same packet costs nothing.
 - Source snapshots: R2, immutable, key = content hash. Re-fetch compares hashes before doing anything else.
 
-## 8. Where Ballot305 fits
+## 9. Where Ballot305 fits
 Ballot305 is a client. It calls ledger over HTTPS (or a service binding once both live in the same account) and never reads the platform's storage. The Nov 3 site stays as it is until after the election; then its research path moves behind the same router.
 
-## 9. Build order
-1. The adapter interfaces (Store, Blobs, Cache, Queue, Model, Auth) with the local and Cloudflare implementations and a test that runs the suite against both.
-2. Move src/api.js into the ledger service here on Hono; generate OpenAPI and the MCP manifest from one schema; MCP server over it.
-3. records service with R2 snapshots and the content-hash contract; move the existing pipelines (cycles, contacts, upcoming, leads) behind it.
-4. The router library and the usage ledger extension (tier, cost, task type, content hash), used by every tier 3+ call.
-5. D1 schema for the ledger; migrate the committed JSON; releases as migrations.
-6. relevance and resolve as services; evals in CI.
-7. identity (OAuth keys) and notify (watchlists, alerts) for the org tier.
-8. planner.
-9. UI: the citizen front door and the organizer workspace, both pure clients of the API.
+## 10. Build order
+1. The test workflow: Vitest with the Workers pool, the test generator (source plus schema in, suite out), the eval harness (prompt file plus labeled cases in, pass rate and cost out), wired into CI. Everything after this is built with it.
+2. The adapter interfaces (Store, Blobs, Cache, Queue, Model, Auth) with the local and Cloudflare implementations and generated suites that run against both.
+3. Move src/api.js into the ledger service here on Hono; generate OpenAPI and the MCP manifest from one schema; MCP server over it.
+4. records service with R2 snapshots and the content-hash contract; move the existing pipelines (cycles, contacts, upcoming, leads) behind it.
+5. The router library and the usage ledger extension (tier, cost, task type, content hash), used by every tier 3+ call.
+6. D1 schema for the ledger; migrate the committed JSON; releases as migrations.
+7. relevance and resolve as services; evals in CI.
+8. identity (OAuth keys) and notify (watchlists, alerts) for the org tier.
+9. planner.
+10. UI: the citizen front door and the organizer workspace, both pure clients of the API.
