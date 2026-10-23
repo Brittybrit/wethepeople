@@ -71,17 +71,34 @@ Goal: reduce manual testing overhead by having LLMs write the test suites, and t
 - CI order on every push: lint, unit (tiers 0 to 2, fast, no network), contract (OpenAPI and MCP manifest match the schema), evals (tiers 3 and 4, with cached model outputs keyed by prompt version plus input hash so unchanged prompts cost nothing), then deploy.
 - The generator itself is a tier 3 task with a schema (test file as structured output), logged in the usage ledger like everything else.
 
-## 8. Caching, concretely
+## 8. Instrumentation, tracing and decision records (Brit, Oct 23)
+Everything is instrumented for granular reporting so the numbers answer product, operations, sales and marketing questions without a research project, and every decision the system makes is traceable to its inputs and joinable to its outcome so decision quality is measured, not guessed.
+- One event shape everywhere: `{ts, event, service, tier, task, cost, latency_ms, ok, precinct, body, item, key_tier, client, props}`. Services emit through an Events adapter (console and SQLite locally; Cloudflare Analytics Engine in production; any OpenTelemetry sink elsewhere). Same portability rule as the rest.
+- Privacy by construction: events carry a precinct, a body and an item id, never an address, a name, a ballot pick, an email or an IP. Keys are hashed. Demographic eligibility answers are never emitted; the layers share a screen, not a table. Anything that would identify a resident does not have a field to land in.
+- What is emitted, by question it answers:
+  - Product: which cards are opened, which levers get tapped, which plans get made and which steps get logged done, where onboarding stops, "no stated impact" rate per body (the data gap list writes itself), search terms with no result.
+  - Operations: cost and latency per task per tier per model, cache hit rate by key type, escalation rate (how often tier 1 handed off to tier 3), source freshness per body (days since last successful fetch), portal failures by system (Legistar, Granicus, Municode), records-request turnaround.
+  - Sales (the org tier): API calls per key, endpoints used, watchlists set, alerts delivered and opened, bulk pulls, which organizations hit their limits, time from admission to first alert.
+  - Marketing: traffic by referrer and client (site, MCP, a named integration), ballot uploads per day, share and send taps, digest opens and clicks, which bodies and items draw the most attention by week, press-page views.
+- Reporting: a nightly job rolls events into a small reporting store (SQLite file in R2 or a D1 table) with one row per day per dimension; the dashboards read that, never the raw stream. Each audience gets one page: product funnel and gaps, ops cost and freshness, org-tier usage and limits, acquisition and engagement. The cost ledger (section 2) is the same stream filtered to tier 3 and above, so cost per feature is a query, not an estimate.
+- Actionable means a threshold: each dashboard line has an owner and a rule (escalation rate above 20% on a task type, a body with no successful fetch in 35 days, an org key at 90% of its limit, a card type with under 5% open rate) that opens a card on the founder board through its API.
+- Traces: every request gets a trace id; every tier attempt, cache lookup, model call, source fetch and rule evaluation is a span with parent, start, duration, tier, cost and a result code. Spans carry the content hashes of their inputs and outputs, so any card can be walked back to the exact source snapshot and prompt version that produced it. Trace ids ride on API responses (a header) and on MCP tool results, so a client's complaint comes with the trace.
+- Decision records (Brit, Oct 23: measure decision quality): every point where the system chose is logged as a decision, not just an event: `{decision_id, trace_id, kind, inputs_hash, candidates, chosen, tier, model, prompt_version, confidence, rationale_hash, ts}`. Kinds: a routing choice (which tier), an extraction (what the packet says), a match (this vendor is that donor), a relevance tag, a planner step, an alert fired, a lead escalated for review. The rationale is stored (model text or rule name) and hashed so it can be audited without being re-run.
+- Outcomes join to decisions: a person's confirmation or correction on a card, a plan step logged done or skipped, an item's vote result, a records request answered, an alert acted on, a source later contradicting an extraction. Each is an outcome row `{decision_id, outcome, source, ts}`. Decision quality is the join: precision and recall per decision kind per tier per prompt version, calibration (did 80% confidence hold 80% of the time), time to correction, cost per correct decision. The eval set (section 7) is seeded from the same join, so what production gets wrong becomes what CI tests next.
+- Lineage on the data side: every row in the ledger carries the decision id that produced it and the snapshot hash it came from. A release note is a query: which decisions changed, by which prompt version, at what cost, with what measured quality.
+- Tests cover events: generated suites assert that each handler emits its event with the right fields, and the eval harness emits the same shape, so eval cost sits beside production cost.
+
+## 9. Caching, concretely
 - GET responses: ETag from the content hash of the data release; Cache-Control public with a short max-age and long stale-while-revalidate; the edge Cache API in front of the Worker.
 - Computed cards (relevance, budget map, base rates): KV, key = task type + content hash of inputs, no TTL, invalidated by release.
 - Model outputs: KV, key = prompt version + model + content hash of input. A repeated question on the same packet costs nothing.
 - Source snapshots: R2, immutable, key = content hash. Re-fetch compares hashes before doing anything else.
 
-## 9. Where Ballot305 fits
+## 10. Where Ballot305 fits
 Ballot305 is a client. It calls ledger over HTTPS (or a service binding once both live in the same account) and never reads the platform's storage. The Nov 3 site stays as it is until after the election; then its research path moves behind the same router.
 
-## 10. Build order
-1. The test workflow: Vitest with the Workers pool, the test generator (source plus schema in, suite out), the eval harness (prompt file plus labeled cases in, pass rate and cost out), wired into CI. Everything after this is built with it.
+## 11. Build order
+1. The test workflow and the Events adapter: Vitest with the Workers pool, the test generator (source plus schema in, suite out), the eval harness (prompt file plus labeled cases in, pass rate and cost out), the event shape with local and Cloudflare sinks, wired into CI. Everything after this is built with them.
 2. The adapter interfaces (Store, Blobs, Cache, Queue, Model, Auth) with the local and Cloudflare implementations and generated suites that run against both.
 3. Move src/api.js into the ledger service here on Hono; generate OpenAPI and the MCP manifest from one schema; MCP server over it.
 4. records service with R2 snapshots and the content-hash contract; move the existing pipelines (cycles, contacts, upcoming, leads) behind it.
