@@ -9,3 +9,6 @@
 
 /docs/*
   Cache-Control: no-cache
+
+/brand/*
+  Cache-Control: no-cache

@@ -1,0 +1,14 @@
+/* We the People brand tokens as CSS variables. Source of truth: /brand/tokens.json */
+:root{--paper:#FAFAF7;--ink:#131F3C;--ink-soft:#4A5273;--hair:#D6D6CE;--card:#FFFFFF;--area:#2F6B3C;--area-light:#8FD19E;--area-tint:#E6F0E8;
+  --sans:'Libre Franklin','Franklin Gothic Medium',Arial,sans-serif;--mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;--touch:44px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#12151F;--ink:#F1F0EA;--ink-soft:#B7BBCB;--hair:#2E3346;--card:#1A1E2B;--area-tint:#17301E}}
+:root[data-theme="dark"]{--paper:#12151F;--ink:#F1F0EA;--ink-soft:#B7BBCB;--hair:#2E3346;--card:#1A1E2B;--area-tint:#17301E}
+.wtp-label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.wtp-h1{font-family:var(--sans);font-weight:900;font-size:24px;line-height:1.05;text-transform:uppercase}
+.wtp-mark{font-family:var(--sans);font-weight:900;font-size:64px;line-height:.85;letter-spacing:-.04em}
+.wtp-data{font-family:var(--mono);font-size:13px;font-weight:600}
+.wtp-btn{display:inline-flex;align-items:center;justify-content:center;min-height:var(--touch);padding:0 18px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.02em}
+.wtp-btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.wtp-card{border:1.5px solid var(--ink);background:var(--card)}
+.wtp-area{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--area);color:#FAFAF7;padding:5px 8px}
+.wtp-area::before{content:"";width:8px;height:8px;background:var(--area-light);display:inline-block}
