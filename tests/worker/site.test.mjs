@@ -10,7 +10,8 @@ describe('public site', () => {
   });
   it('serves the open docs and the index lists only public files', async () => {
     const idx = await (await SELF.fetch('https://wethepeople305.org/docs/index.json')).json();
-    expect(idx.files.length).toBeGreaterThanOrEqual(3);
+    expect(idx.files.length).toBeGreaterThanOrEqual(2);
+    expect(idx.files).not.toContain('product.md');
     expect(idx.files).not.toContain('founder-board.md');
     for (const f of idx.files) expect((await SELF.fetch('https://wethepeople305.org/docs/' + f)).status).toBe(200);
   });
