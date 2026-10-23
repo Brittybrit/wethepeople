@@ -1,0 +1,7 @@
+{
+  "note": "Files the founder board's assistant loads as context, in this order. Keep the total under about 150,000 characters.",
+  "files": [
+    "product.md",
+    "cycles-coverage.md"
+  ]
+}

@@ -1,0 +1,15 @@
+name = "wethepeople"
+main = "src/worker.js"
+compatibility_date = "2026-01-01"
+workers_dev = false
+
+routes = [
+  { pattern = "wethepeople305.org", custom_domain = true },
+  { pattern = "www.wethepeople305.org", custom_domain = true }
+]
+# admin.wethepeople305.org is a separate private Worker (the founder board), in its own repo.
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/admin/*", "/api/*"]
