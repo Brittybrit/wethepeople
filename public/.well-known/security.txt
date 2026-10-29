@@ -1,0 +1,6 @@
+# Confirm security@wethepeople305.org is routed in Cloudflare Email Routing before relying on it.
+Contact: mailto:security@wethepeople305.org
+Expires: 2027-10-29T00:00:00.000Z
+Preferred-Languages: en, es
+Canonical: https://wethepeople305.org/.well-known/security.txt
+Policy: https://github.com/Brittybrit/wethepeople/blob/main/SECURITY.md

@@ -3,6 +3,8 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+    # Job-level so the eval step's `if` can see whether the secret exists (step-level env is not visible to `if`).
+    env: { ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}" }
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -17,5 +19,4 @@ jobs:
       - uses: actions/cache@v4
         with: { path: .cache, key: "evals-${{ hashFiles('prompts/**', 'config/models.json') }}", restore-keys: evals- }
       - if: ${{ env.ANTHROPIC_API_KEY != '' }}
-        env: { ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}" }
         run: pnpm eval

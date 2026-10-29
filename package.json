@@ -8,7 +8,8 @@
     "test:worker": "vitest run --project worker",
     "test:gen": "node scripts/gen-tests.mjs",
     "eval": "node scripts/eval.mjs",
-    "lint": "node --check src/worker.js && node --check lib/model.mjs && node --check lib/events.mjs"
+    "lint": "node --check src/worker.js && for f in lib/*.mjs lib/sources/*.mjs scripts/*.mjs; do node --check $f || exit 1; done",
+    "build:llms": "node scripts/build-llms.mjs"
   },
   "devDependencies": {
     "@cloudflare/vitest-plugin": "^1.4.7",

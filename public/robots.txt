@@ -1,0 +1,11 @@
+# We the People 305: public civic information, meant to be found and reused (code MIT, data CC BY 4.0).
+# Search, AI answers and AI training are all welcome. Content-Signal follows https://contentsignals.org
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Allow: /api/v1/openapi.json
+Disallow: /api/v1/precinct
+Disallow: /api/v1/your-area
+Disallow: /admin
+
+Sitemap: https://wethepeople305.org/sitemap.xml
