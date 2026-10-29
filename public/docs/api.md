@@ -2,8 +2,11 @@
 
 Base: `https://wethepeople305.org/api/v1`. Read-only, no key, CORS open, JSON.
 
+## GET /address-suggest?text=
+Autocomplete for a web form: what someone has typed (3 to 120 characters) to up to 6 Miami-Dade street addresses, each with a `magicKey`. Esri World Geocoder suggestions fenced to Miami-Dade. Nothing is logged, stored or cached. Limited to 120 requests a minute per client. HTTP only, not an MCP tool.
+
 ## GET /precinct?address=
-Street address to Miami-Dade precinct code(s).
+Street address to Miami-Dade precinct code(s). Pass `&magicKey=` from a chosen suggestion for an exact match.
 
 - Geocoding: Esri World Geocoder first (rooftop or street-address match, score 90+, Florida only), then the U.S. Census geocoder.
 - Precinct: the county's precinct polygons (Miami-Dade GIS, Precinct layer), point in polygon.

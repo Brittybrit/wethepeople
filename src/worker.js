@@ -8,7 +8,7 @@
 //                                   who serves this precinct, what is about to be decided, and what to do now
 //   POST /mcp                       MCP (Streamable HTTP, stateless): the same operations as tools
 // Every API and MCP response carries X-Trace-Id. The founder board is a separate private Worker and is not in this repo.
-import { geocode, precinctAt, precinctCodes, SOURCES } from '../lib/geo.mjs';
+import { geocode, suggest, precinctAt, precinctCodes, SOURCES } from '../lib/geo.mjs';
 import { ballot305Source, BALLOT305 } from '../lib/sources/ballot305.mjs';
 import { yourArea, todayIn } from '../lib/your-area.mjs';
 import { tracer, sinks } from '../lib/events.mjs';
@@ -23,8 +23,11 @@ const cachedFetch = (u, init = {}) => fetch(u, { ...init, cf: { cacheTtl: 900, c
 
 // Handlers return { status, body, cache } so the HTTP route and the MCP tool share them.
 const HANDLERS = {
-  async find_precinct({ address }) {
-    const hit = await geocode(address, { fetch });
+  async suggest_address({ text }) {
+    return { status: 200, body: { suggestions: await suggest(text, { fetch }) }, cache: 'no-store' };
+  },
+  async find_precinct({ address, magicKey }) {
+    const hit = await geocode(address, { fetch, magicKey });
     if (!hit) return { status: 404, body: { error: 'Address not found. Try the house number, street and city in Miami-Dade.' } };
     const whole = await precinctAt(hit.lat, hit.lng, { fetch });
     if (!whole) return { status: 404, body: { error: 'That address is not in a Miami-Dade precinct.' } };
@@ -53,7 +56,7 @@ async function run(id, args, trace, limit) {
   const op = OPERATIONS.find(o => o.id === id);
   const bad = checkParams(op, args);
   if (bad) return { status: 400, body: { error: bad } };
-  if (op.sendsPersonalData && limit && !(await limit())) return { status: 429, body: { error: 'Too many address lookups. Try again in a minute.' } };
+  if (op.rateLimit && limit && !(await limit(op.rateLimit))) return { status: 429, body: { error: 'Too many address requests. Try again in a minute.' } };
   try {
     return await HANDLERS[id](args, trace);
   } catch (e) {
@@ -78,8 +81,8 @@ export default {
     if (!path.startsWith('/api/') && path !== '/api' && path !== '/mcp') return env.ASSETS.fetch(request);
 
     // Events carry a route and at most a precinct; never an address (lib/events.mjs refuses address-like fields).
-    // Rate limit for address lookups (wrangler.toml RATE_LIMIT_ADDRESS_LOOKUP). The IP is the key only; it is not logged.
-    const limit = env.RATE_LIMIT_ADDRESS_LOOKUP ? async () => (await env.RATE_LIMIT_ADDRESS_LOOKUP.limit({ key: request.headers.get('CF-Connecting-IP') || 'unknown' })).success : null;
+    // Per-operation rate limits (op.rateLimit names a wrangler.toml binding). The IP is the key only; it is not logged.
+    const limit = async binding => !env[binding] || (await env[binding].limit({ key: request.headers.get('CF-Connecting-IP') || 'unknown' })).success;
     const trace = tracer({ service: 'wethepeople-public', sink: sinks.console(), client: path === '/mcp' ? 'mcp' : 'http' });
     const traced = r => { r.headers.set('X-Trace-Id', trace.trace_id); return r; };
     try {

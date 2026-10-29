@@ -36,3 +36,22 @@ describe('geo', () => {
     expect(calls.length).toBe(2);
   });
 });
+
+import { parseSuggest, suggest } from '../../lib/geo.mjs';
+describe('address suggestions', () => {
+  it('drops collections, trims USA, caps at 6', () => {
+    const s = Array.from({ length: 8 }, (_, i) => ({ text: i + ' Main St, Miami, FL, 33130, USA', magicKey: 'k' + i }));
+    s.push({ text: 'Coffee shops', magicKey: 'c', isCollection: true });
+    const out = parseSuggest({ suggestions: s });
+    expect(out).toHaveLength(6);
+    expect(out[0]).toEqual({ text: '0 Main St, Miami, FL, 33130', magicKey: 'k0' });
+  });
+  it('asks nothing for under 3 characters and fences the search to Miami-Dade', async () => {
+    const calls = [];
+    const fetch = async u => { calls.push(u); return new Response('{"suggestions":[]}'); };
+    expect(await suggest('17', { fetch })).toEqual([]);
+    expect(calls).toHaveLength(0);
+    await suggest('1700 conv', { fetch });
+    expect(calls[0]).toContain('searchExtent=-80.9,25.1,-80.0,26.0');
+  });
+});

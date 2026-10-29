@@ -34,6 +34,11 @@
   .status{margin:10px 0;font-size:14px}
   .err{color:#A3262A}
   .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+  .combo{position:relative;flex:1 1 260px;display:flex}
+  .combo input{flex:1}
+  .sugg{position:absolute;top:100%;left:0;right:0;z-index:5;list-style:none;background:var(--card);border:1.5px solid var(--ink);border-top:0;max-height:300px;overflow:auto}
+  .sugg li{padding:11px 12px;cursor:pointer;font-size:15px;border-top:1px solid var(--hair)}
+  .sugg li[aria-selected="true"],.sugg li:hover{background:var(--area-tint)}
   .chip{border:1.5px solid var(--ink);background:var(--card);padding:6px 12px;font-family:var(--mono);font-size:13px;cursor:pointer;color:var(--ink)}
   .card{border:1.5px solid var(--ink);background:var(--card);padding:12px 14px;margin:10px 0}
   .card .t{font-weight:800;line-height:1.25}
@@ -67,10 +72,10 @@
   <h1>Who works for you, and what is about to be decided</h1>
   <p class="sub">Put in your home address. You get every seat that represents it, from your city to Washington, the next meetings and decision points, and the most effective thing you can do now.</p>
   <form id="f">
-    <input id="addr" name="address" autocomplete="street-address" placeholder="1700 Convention Center Dr, Miami Beach" aria-label="Home address" required>
+    <div class="combo"><input id="addr" name="address" autocomplete="off" placeholder="Start typing your address" aria-label="Home address" required role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="sugg"><ul id="sugg" class="sugg" role="listbox" aria-label="Matching addresses" hidden></ul></div>
     <button class="wtp-btn" type="submit">Find my area</button>
   </form>
-  <p class="fine">Your address goes to our server and on to the Esri and U.S. Census geocoders and the county's precinct map to find your precinct. We do not log or keep it. Only the precinct number stays in the page link.</p>
+  <p class="fine">As you type, the text goes to our server and on to the Esri geocoder to suggest addresses; your chosen address goes on to the Esri and U.S. Census geocoders and the county's precinct map to find your precinct. We do not log or keep it. Only the precinct number stays in the page link.</p>
   <div id="status" class="status" role="status" aria-live="polite"></div>
   <div id="pick" hidden><p class="status">The county splits your precinct. Your ballot or voter card says which half you are in:</p><div class="chips" id="chips"></div></div>
 
@@ -114,11 +119,45 @@
 
   function status(msg, err){ $('status').innerHTML = msg ? '<span class="' + (err ? 'err' : '') + '">' + esc(msg) + '</span>' : ''; }
 
+  // Autocomplete: after a short pause in typing, ask for matching Miami-Dade addresses. Picking one looks it up exactly.
+  var picked = null, timer = null, active = -1, items = [], seq = 0;
+  var addr = $('addr'), list = $('sugg');
+  function closeList(){ list.hidden = true; addr.setAttribute('aria-expanded', 'false'); addr.removeAttribute('aria-activedescendant'); active = -1; }
+  function showList(){
+    if(!items.length){ closeList(); return; }
+    list.innerHTML = items.map(function(s, i){ return '<li role="option" id="sg' + i + '" aria-selected="' + (i === active) + '" data-i="' + i + '">' + esc(s.text) + '</li>'; }).join('');
+    list.hidden = false; addr.setAttribute('aria-expanded', 'true');
+    if(active >= 0) addr.setAttribute('aria-activedescendant', 'sg' + active); else addr.removeAttribute('aria-activedescendant');
+  }
+  function choose(i){ var s = items[i]; if(!s) return; addr.value = s.text; picked = s; closeList(); $('f').requestSubmit ? $('f').requestSubmit() : $('f').dispatchEvent(new Event('submit', { cancelable: true })); }
+  addr.addEventListener('input', function(){
+    picked = null; clearTimeout(timer);
+    var t = addr.value.trim();
+    if(t.length < 3){ items = []; closeList(); return; }
+    timer = setTimeout(function(){
+      var mine = ++seq;
+      fetch('/api/v1/address-suggest?text=' + encodeURIComponent(t)).then(function(r){ return r.ok ? r.json() : { suggestions: [] }; }).then(function(j){
+        if(mine !== seq) return;   // a newer keystroke already asked
+        items = j.suggestions || []; active = -1; showList();
+      }).catch(function(){});
+    }, 220);
+  });
+  addr.addEventListener('keydown', function(ev){
+    if(list.hidden) return;
+    if(ev.key === 'ArrowDown'){ ev.preventDefault(); active = (active + 1) % items.length; showList(); }
+    else if(ev.key === 'ArrowUp'){ ev.preventDefault(); active = (active - 1 + items.length) % items.length; showList(); }
+    else if(ev.key === 'Enter' && active >= 0){ ev.preventDefault(); choose(active); }
+    else if(ev.key === 'Escape'){ closeList(); }
+  });
+  list.addEventListener('mousedown', function(ev){ var li = ev.target.closest('[data-i]'); if(li){ ev.preventDefault(); choose(+li.getAttribute('data-i')); } });
+  addr.addEventListener('blur', function(){ setTimeout(closeList, 150); });
+
   $('f').addEventListener('submit', function(ev){
     ev.preventDefault();
     var a = $('addr').value.trim(); if(!a) return;
     status('Finding your precinct…'); $('pick').hidden = true;
-    fetch('/api/v1/precinct?address=' + encodeURIComponent(a)).then(function(r){ return r.json().then(function(j){ return { ok: r.ok, j: j }; }); }).then(function(x){
+    closeList();
+    fetch('/api/v1/precinct?address=' + encodeURIComponent(a) + (picked && picked.text === a ? '&magicKey=' + encodeURIComponent(picked.magicKey) : '')).then(function(r){ return r.json().then(function(j){ return { ok: r.ok, j: j }; }); }).then(function(x){
       if(!x.ok){ status(x.j.error || 'Could not find that address.', true); return; }
       var p = x.j.precincts || [];
       if(!p.length){ status('That address is not in a Miami-Dade precinct.', true); return; }

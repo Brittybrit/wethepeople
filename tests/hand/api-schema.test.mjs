@@ -13,6 +13,7 @@ describe('one schema, two outputs', () => {
       const http = spec.paths[op.path][op.method.toLowerCase()];
       expect(http.operationId).toBe(op.id);
       const tool = tools.find(t => t.name === op.id);
+      if (op.mcp === false) { expect(tool).toBeUndefined(); continue; }   // web-form helpers are HTTP only
       expect(tool).toBeTruthy();
       expect(http.parameters.map(p => p.name).sort()).toEqual(Object.keys(tool.inputSchema.properties).sort());
       expect(tool.outputSchema).toEqual(http.responses[200].content['application/json'].schema);
@@ -65,7 +66,7 @@ describe('MCP', () => {
   });
   it('lists tools and calls them through the shared handler', async () => {
     const list = await handleMcp({ jsonrpc: '2.0', id: 3, method: 'tools/list' }, run);
-    expect(list.body.result.tools.map(t => t.name)).toEqual(OPERATIONS.map(o => o.id));
+    expect(list.body.result.tools.map(t => t.name)).toEqual(OPERATIONS.filter(o => o.mcp !== false).map(o => o.id));
     const ok = await handleMcp({ jsonrpc: '2.0', id: 4, method: 'tools/call', params: { name: 'your_area', arguments: { precinct: '033.0' } } }, run);
     expect(ok.body.result.isError).toBe(false);
     expect(ok.body.result.structuredContent).toEqual({ precinct: '033.0' });
