@@ -6,14 +6,18 @@
 //   GET  /api/v1/precinct?address=  street address -> Miami-Dade precinct code(s); the address is never logged or stored
 //   GET  /api/v1/your-area?precinct=033.0
 //                                   who serves this precinct, what is about to be decided, and what to do now
+//   GET  /api/v1/{ledger,bodies,actions,ties,people,transparency,cycles,now,upcoming,contacts,procurement,payments,connections,bulk}[/...]
+//                                   the ledger: Ballot305's read API over public/ledger-data/ (lib/ledger/, decisions/0008)
 //   POST /mcp                       MCP (Streamable HTTP, stateless): the same operations as tools
 // Every API and MCP response carries X-Trace-Id. The founder board is a separate private Worker and is not in this repo.
 import { geocode, suggest, precinctAt, precinctCodes, SOURCES } from '../lib/geo.mjs';
 import { ballot305Source, BALLOT305 } from '../lib/sources/ballot305.mjs';
 import { yourArea, todayIn } from '../lib/your-area.mjs';
 import { tracer, sinks } from '../lib/events.mjs';
-import { OPERATIONS, checkParams, openApi, API_VERSION } from '../lib/api-schema.mjs';
+import { OPERATIONS, checkParams, openApi, API_VERSION, matchOperation } from '../lib/api-schema.mjs';
 import { handleMcp } from '../lib/mcp.mjs';
+import { LEDGER_OPERATIONS, runLedger, ledgerEtag } from '../lib/ledger/ledger.mjs';
+import { createLedgerLoader } from '../lib/ledger/load.mjs';
 
 const BASE_HEADERS = { 'Content-Type': 'application/json; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'X-Trace-Id' };
 const json = (body, status, extra = {}) => new Response(JSON.stringify(body), { status, headers: { ...BASE_HEADERS, ...extra } });
@@ -51,16 +55,37 @@ const HANDLERS = {
   }
 };
 
+// --- ledger: Ballot305's read API over the platform's copy of its data (public/ledger-data/, decisions/0008) ---
+// The data is static assets of this Worker version, read through the ASSETS binding and indexed once per isolate.
+const LEDGER_DATA_PATH = '/ledger-data';
+const LEDGER_EXPOSED = 'X-Trace-Id, ETag, X-Data-Updated, X-Total-Count';
+const loadLedger = createLedgerLoader({ dataPath: LEDGER_DATA_PATH });
+const ledgerReader = env => async rel => {
+  const r = await env.ASSETS.fetch(new Request('https://assets.local' + LEDGER_DATA_PATH + '/' + rel));
+  return r.ok ? r.json() : null;
+};
+for (const id of Object.keys(LEDGER_OPERATIONS)) {
+  HANDLERS[id] = async (args, trace, ctx) => {
+    const data = await trace.span('ledger.load', { task: 'ledger.load' }, () => loadLedger(ledgerReader(ctx.env)));
+    const out = runLedger(id, data, args, { origin: ctx.origin });
+    const headers = { ETag: ledgerEtag(data, ctx.pathname, ctx.search), 'X-Data-Updated': data.updated || '' };
+    if (out.total != null) headers['X-Total-Count'] = String(out.total);
+    return { status: out.status, body: out.body, cache: 'public, max-age=300', headers };
+  };
+}
+// --- end ledger ---
+
 // Run one operation by id with validated input. Address-bearing calls never reach the event stream except as a route name.
-async function run(id, args, trace, limit) {
+async function run(id, args, trace, limit, ctx = {}) {
   const op = OPERATIONS.find(o => o.id === id);
   const bad = checkParams(op, args);
   if (bad) return { status: 400, body: { error: bad } };
   if (op.rateLimit && limit && !(await limit(op.rateLimit))) return { status: 429, body: { error: 'Too many address requests. Try again in a minute.' } };
   try {
-    return await HANDLERS[id](args, trace);
+    return await HANDLERS[id](args, trace, ctx);
   } catch (e) {
     trace.emit({ event: 'operation.error', task: id, ok: false });
+    if (op.ledger) return { status: 500, body: { error: 'Ledger data unavailable.' } };
     return { status: 502, body: { error: 'Upstream source unavailable. Try again in a minute.' } };
   }
 }
@@ -92,18 +117,22 @@ export default {
         if (request.method !== 'POST') return traced(json({ error: 'POST JSON-RPC messages to /mcp' }, 405, { Allow: 'POST' }));
         let payload;
         try { payload = await request.json(); } catch { return traced(json({ jsonrpc: '2.0', id: null, error: { code: -32700, message: 'Parse error' } }, 400)); }
-        const { status, body } = await handleMcp(payload, (id, args) => run(id, args, trace, limit));
+        const { status, body } = await handleMcp(payload, (id, args) => run(id, args, trace, limit, { env, origin: url.origin, pathname: '/mcp/' + id, search: JSON.stringify(args) }));
         return traced(body === null ? new Response(null, { status: 202, headers: BASE_HEADERS }) : json(body, status, { 'Cache-Control': 'no-store' }));
       }
 
       if (request.method !== 'GET') return traced(json({ error: 'Method not allowed' }, 405, { Allow: 'GET' }));
       if (path === '/api' || path === '/api/v1') return traced(json(apiIndex(url.origin), 200, { 'Cache-Control': 'public, max-age=300' }));
       if (path === '/api/v1/openapi.json') return traced(json(openApi(url.origin), 200, { 'Cache-Control': 'public, max-age=300' }));
-      const op = OPERATIONS.find(o => o.path === path && o.method === 'GET');
-      if (!op) return traced(json({ error: 'Not found' }, 404));
-      const args = Object.fromEntries(Object.keys(op.params).map(k => [k, url.searchParams.get(k) ?? undefined]));
-      const { status, body, cache } = await run(op.id, args, trace, limit);
-      return traced(json(body, status, { 'Cache-Control': cache && status === 200 ? cache : 'no-store' }));
+      const hit = matchOperation(path, 'GET');
+      if (!hit) return traced(json({ error: 'Not found' }, 404));
+      const { op, pathArgs } = hit;
+      const args = { ...Object.fromEntries(Object.entries(op.params).filter(([, p]) => p.in === 'query').map(([k]) => [k, url.searchParams.get(k) ?? undefined])), ...pathArgs };
+      const { status, body, cache, headers = {} } = await run(op.id, args, trace, limit, { env, origin: url.origin, pathname: url.pathname, search: url.search });
+      // Ledger responses carry Ballot305's ETag; a matching If-None-Match gets 304 with no body.
+      if (headers.ETag && status === 200 && request.headers.get('If-None-Match') === headers.ETag) return traced(new Response(null, { status: 304, headers: { ...BASE_HEADERS, ETag: headers.ETag, 'Access-Control-Expose-Headers': LEDGER_EXPOSED } }));
+      const extra = headers.ETag ? { ...headers, 'Access-Control-Expose-Headers': LEDGER_EXPOSED } : headers;
+      return traced(json(body, status, { ...extra, 'Cache-Control': cache && status === 200 ? cache : 'no-store' }));
     } finally {
       if (ctx && ctx.waitUntil) ctx.waitUntil(trace.flush()); else await trace.flush();
     }

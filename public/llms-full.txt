@@ -194,6 +194,30 @@ One precinct's view, closest to home first.
 
 Money behind officials is not in this response. It lives on Ballot305 with its full context and methodology, so a figure is never shown without its denominator.
 
+## Ledger
+Ballot305's read API, served here from this platform's own copy of its data (`public/ledger-data/`, synced hourly from the Ballot305 repo; `/ledger-data/SOURCE.json` has the Ballot305 commit and copy time). Paths, parameters, paging and response bodies are the same as `https://ballot305.org/api/v1`, so a client can switch hosts without changes. The one difference: Ballot305's index at `/api/v1` is at `/api/v1/ledger` here, and bulk file links point at `/ledger-data/`. Each operation is also an MCP tool with the id shown, except `bulk`.
+
+Lists are paged with `limit` (default 100, max 500) and `offset`; the total is in the body and in `X-Total-Count`. Responses carry `ETag` (an `If-None-Match` match returns 304) and `X-Data-Updated`. Every action carries `source` (data file and date). Every tie carries `match`, `basis`, `timing`, `days` and `actionSplit`: repeat them with any amount.
+
+| Path | What it returns |
+|---|---|
+| `/ledger` (`ledger_index`) | Version, data dates, license, counts, endpoints, and what the tie and action fields mean |
+| `/bodies`, `/bodies/{key}` (`ledger_bodies`, `ledger_body`) | Bodies covered, with members, campaign accounts, who is on the ballot, coverage note |
+| `/actions`, `/actions/{body}/{id}` (`ledger_actions`, `ledger_action`) | Official actions with roll calls and tied gifts. Filters: `body`, `person`, `kind`, `since`, `until`, `split=1`, `tied=1`, `party`, `q` |
+| `/ties` (`ledger_ties`) | One row per gift tied to an action. Filters: `person`, `body`, `donor`, `timing`, `match`, `since`, `until`, `minAmount` |
+| `/people`, `/people/{id}` (`ledger_people`, `ledger_person`) | Roster people (`q`, `onBallot=1`); one person with terms, races, actions, ties, connections, contact |
+| `/transparency` (`ledger_transparency`) | City records scorecard |
+| `/cycles`, `/cycles/{key}` (`ledger_cycles`, `ledger_cycle`) | Meetings, budget and election phases, and levers per body |
+| `/now?precinct=` (`ledger_now`) | The raw precinct view behind `your-area`; `date` optional |
+| `/upcoming` (`ledger_upcoming`) | Items on posted agendas with matches and tags. Filters: `body`, `precinct` (adds relevance), `since`, `until`, `tagged` |
+| `/contacts`, `/contacts/{office}` (`ledger_contacts`, `ledger_contact`) | Official contacts per office |
+| `/procurement`, `/procurement/{body}` (`ledger_procurement`, `ledger_procurement_for_body`) | Open solicitations, expiring contracts, capital plan, levers |
+| `/payments`, `/payments/{body}` (`ledger_payments`, `ledger_payments_for_body`) | Staffing, top vendors with matches, union contracts, levers |
+| `/connections`, `/connections/{person}` (`ledger_connections`, `ledger_connections_for_person`) | Confirmed connections with the record that states each; counts under review |
+| `/bulk` (`ledger_bulk`, HTTP only) | Links to the raw data files |
+
+Ballot305's `/api/v1/openapi.json` (OpenAPI 3.0) is not copied: this platform's `/api/v1/openapi.json` (OpenAPI 3.1) describes these paths. See `decisions/0008-ledger-moves-to-platform.md`.
+
 ## Source and license
 Data comes from the Ballot305 public API (`https://ballot305.org/api`, CC BY 4.0) through one adapter, `lib/sources/ballot305.mjs`. Upstream reads are edge-cached for 15 minutes. The code is MIT.
 
@@ -552,6 +576,7 @@ Short records of choices that shape the platform. Each has a status, a date, the
 - 0005-address-never-stored.md: an address is passed through and never stored
 - 0006-money-figures-stay-on-ballot305.md: money is shown only with full context, on Ballot305
 - 0007-mcp-and-openapi-from-one-schema.md: OpenAPI and MCP tools are generated from one schema
+- 0008-ledger-moves-to-platform.md: the ledger API is served here from a copy of Ballot305's data; after Nov 3 Ballot305 reads it
 
 ---
 File: https://wethepeople305.org/docs/decisions/0001-headless-first.md
@@ -695,6 +720,33 @@ The Worker runs one handler per operation id for both.
 - HTTP and MCP return the same data with the same validation.
 - Contract tests check the generated outputs against the schema.
 - The UI's types are not generated yet (planned).
+
+---
+File: https://wethepeople305.org/docs/decisions/0008-ledger-moves-to-platform.md
+
+# 0008. The ledger moves to the platform
+
+- Status: Accepted
+- Date: 2026-10-29
+
+## Context
+The ledger (officials, official actions, roll calls, gifts tied to actions, calendars, posted agendas, procurement, payments, connections, contacts) is built and served by Ballot305 today, at `ballot305.org/api/v1`, from JSON committed in its repo. Architecture section 4 makes the ledger a platform service and section 11 step 3 moves Ballot305's `src/api.js` here. The founder wants the platform to own the data now. The election is Nov 3, 2026, so Ballot305 must not change before then.
+
+## Decision
+Phase 1 (now): copy and serve.
+- `scripts/sync-ballot305-data.mjs` copies the files the API reads from a Ballot305 checkout into `public/ledger-data/` and records the Ballot305 commit and copy time in `SOURCE.json`. It is idempotent and refuses a file over the 25 MiB static asset limit. The workflow `sync-ledger-data.yml` runs it hourly and on demand, and commits only when data changed. It does not deploy.
+- The data is served as static assets because the Worker reads it through the ASSETS binding, the same way Ballot305 does, and so the raw files that `/bulk` lists resolve here. `decisions.json` (28 MB) is not copied; its split (one index plus one file per body) is, as on Ballot305.
+- `lib/ledger/` is `src/api.js` ported as plain JavaScript with the data passed in. HTTP is split out: the Worker routes, sets headers and loads the data once per isolate.
+- The operations are in `lib/api-schema.mjs`, so they appear in OpenAPI and as MCP tools (`ledger_*`; bulk is HTTP only). Paths and bodies match Ballot305's. A parity test runs Ballot305's own `api.js` and the ledger over the same files and requires identical bodies.
+
+Phase 2 (after Nov 3): Ballot305 becomes a client (section 10). It reads the ledger from this platform's API, with no shape changes. Then either the copy job reverses direction (Ballot305's pipelines write, the platform is the source of truth) or the pipelines move here behind the records service (section 11 step 4).
+
+## Consequences
+- The platform serves ledger data without calling Ballot305 at request time. `your_area` still reads Ballot305 through its adapter (0004) until phase 2.
+- The copy lags Ballot305 by up to an hour plus the next deploy. Brit deploys; the sync job never does.
+- The ledger API returns tie amounts and money summaries, as Ballot305's API does. Decision 0006 still governs screens and `your_area`: no bare figure. The API keeps every caveat field (`match`, `basis`, `timing`, `days`, `actionSplit`, summary denominators), and the docs ask clients to repeat them with any amount.
+- The isolate holds the whole index in memory (about 60 MB built in Node, under the 128 MB isolate limit). A cold isolate spends a few hundred milliseconds building it. When the data outgrows that, it moves to D1 (section 11 step 6).
+- Data stays CC BY 4.0 with attribution to Ballot305.
 
 ---
 File: https://wethepeople305.org/docs/privacy.md

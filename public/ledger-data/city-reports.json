@@ -1,0 +1,7330 @@
+{
+ "note": "Hand-transcribed from scanned treasurer's reports. Each report's itemized rows were checked against the totals on its summary page. Row: [date, contributor, type (I individual, B business, F political committee, S the candidate), amount, optional kind (loan, in-kind)]. A candidate with \"summary\" instead of \"reports\" has only the money-to-date total read from the summary page of their latest report. A candidate with \"none\" has no report posted; the text says so.",
+ "updated": "2026-10-23",
+ "cities": [
+  {
+   "city": "Pinecrest",
+   "match": "^\\s*pinecrest\\b",
+   "label": "Village of Pinecrest",
+   "portal": "https://www.pinecrest-fl.gov/Government/Clerk/Elections/2026-Municipal-Election",
+   "pending": "G2 and G3 are listed for every contested candidate but not yet linked as of Oct 23; the village files its Jul 1 to Oct 2 report as G1.",
+   "candidates": [
+    {
+     "name": "Ken Fairman",
+     "office": "Seat 4",
+     "reports": [
+      {
+       "report": "2026 Q1",
+       "period": "2026-01-01/2026-03-31",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/fairman-2026-q1.pdf",
+       "rows": [
+        [
+         "2026-03-25",
+         "Ken Fairman",
+         "S",
+         5000,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/fairman-ken-2026q2.pdf",
+       "rows": [
+        [
+         "2026-04-10",
+         "MVG Property Holdings III, LLC",
+         "B",
+         500
+        ],
+        [
+         "2026-04-10",
+         "Pinecrest Plaza LLC",
+         "B",
+         500
+        ],
+        [
+         "2026-04-10",
+         "KAT Properties Corp",
+         "B",
+         500
+        ],
+        [
+         "2026-05-26",
+         "Kim Fairman",
+         "I",
+         18.9
+        ],
+        [
+         "2026-05-28",
+         "Brenda Bassett",
+         "I",
+         200
+        ],
+        [
+         "2026-06-01",
+         "Lori Welbon",
+         "I",
+         95.7
+        ],
+        [
+         "2026-06-02",
+         "Gustavo Oliver",
+         "I",
+         95.7
+        ],
+        [
+         "2026-06-05",
+         "Sarah Noppen",
+         "I",
+         239.7
+        ],
+        [
+         "2026-06-10",
+         "So Dixie Belle, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-06-10",
+         "Steve Pearson",
+         "I",
+         500
+        ],
+        [
+         "2026-06-29",
+         "Karyn Cunningham",
+         "I",
+         71.7
+        ],
+        [
+         "2026-06-30",
+         "Joseph Corradino",
+         "I",
+         479.7
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-07-01/2026-10-02",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/fairman-ken-2026-g1-rem.pdf",
+       "rows": [
+        [
+         "2026-07-20",
+         "Tyler Schwartz",
+         "I",
+         250
+        ],
+        [
+         "2026-07-28",
+         "Michael Peredo",
+         "I",
+         100
+        ],
+        [
+         "2026-07-30",
+         "Peter DiFilippi",
+         "I",
+         44
+        ],
+        [
+         "2026-07-30",
+         "Nan Fairman",
+         "I",
+         244
+        ],
+        [
+         "2026-08-01",
+         "Gary Lubel",
+         "I",
+         44
+        ],
+        [
+         "2026-08-02",
+         "Fernan Rodriguez",
+         "I",
+         200
+        ],
+        [
+         "2026-08-04",
+         "Ygrene Energy Fund Florida",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-04",
+         "Rodolfo Pages",
+         "I",
+         250
+        ],
+        [
+         "2026-08-02",
+         "Michael Bileca",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-05",
+         "Lee Mesnekoff",
+         "I",
+         100
+        ],
+        [
+         "2026-08-07",
+         "Michael Bileca",
+         "I",
+         -1000
+        ],
+        [
+         "2026-08-23",
+         "David Gershman",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-04",
+         "Melanie Krakower Levine",
+         "I",
+         100
+        ],
+        [
+         "2026-09-09",
+         "Peter Rabbino",
+         "I",
+         20
+        ],
+        [
+         "2026-09-09",
+         "Michael Guilford",
+         "I",
+         100
+        ],
+        [
+         "2026-09-27",
+         "David Williams",
+         "I",
+         250
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Ramon Gonzalez Diez",
+     "office": "Seat 4",
+     "reports": [
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/gonzalez-ramon-2026q2.pdf",
+       "rows": [
+        [
+         "2026-06-10",
+         "Ramon Gonzalez Diez",
+         "S",
+         2500,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-07-01/2026-10-02",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/gonzalezdiez-ramon-rem.pdf",
+       "rows": [
+        [
+         "2026-09-16",
+         "Ramon Gonzalez-Diez",
+         "S",
+         2000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Jill Lerner",
+     "office": "Seat 4",
+     "reports": [
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/lerner-jill-2026q2.pdf",
+       "rows": [
+        [
+         "2026-05-22",
+         "Cindy Lerner",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-22",
+         "Irving Lerner",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-27",
+         "Robin Lerner",
+         "I",
+         500
+        ],
+        [
+         "2026-05-28",
+         "Mari Viso Novo",
+         "I",
+         10
+        ],
+        [
+         "2026-05-29",
+         "Peter Hockman",
+         "I",
+         100
+        ],
+        [
+         "2026-05-29",
+         "Evelyn Ferro",
+         "I",
+         25
+        ],
+        [
+         "2026-05-29",
+         "Melissa Rodriguez",
+         "I",
+         25
+        ],
+        [
+         "2026-05-31",
+         "Jenny Friedman",
+         "I",
+         200
+        ],
+        [
+         "2026-05-31",
+         "Paul Silverstein",
+         "I",
+         250
+        ],
+        [
+         "2026-05-31",
+         "Bradley Richter",
+         "I",
+         500
+        ],
+        [
+         "2026-06-01",
+         "Judith Sockloff",
+         "I",
+         100
+        ],
+        [
+         "2026-06-01",
+         "Andy Varat",
+         "I",
+         100
+        ],
+        [
+         "2026-06-15",
+         "William Lester",
+         "I",
+         250
+        ],
+        [
+         "2026-06-15",
+         "Nina Lindsay",
+         "I",
+         50
+        ],
+        [
+         "2026-06-15",
+         "Maritza Alvarez-Shapiro",
+         "I",
+         500
+        ],
+        [
+         "2026-06-16",
+         "Vinson Richter",
+         "I",
+         250
+        ],
+        [
+         "2026-06-16",
+         "Alix Desulme",
+         "I",
+         100
+        ],
+        [
+         "2026-06-18",
+         "Ashley Serrott",
+         "I",
+         250
+        ],
+        [
+         "2026-06-19",
+         "Jill Lerner",
+         "S",
+         7000,
+         "loan"
+        ],
+        [
+         "2026-06-25",
+         "Susan Randall",
+         "I",
+         100
+        ],
+        [
+         "2026-06-27",
+         "Esther Lerner",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-07-01/2026-10-02",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/lerner-jill-2026-g1-rem.pdf",
+       "rows": [
+        [
+         "2026-07-07",
+         "Valencia, Adele",
+         "I",
+         100
+        ],
+        [
+         "2026-07-08",
+         "Pollara, Ben",
+         "I",
+         100
+        ],
+        [
+         "2026-07-10",
+         "Lawther, Nancy",
+         "I",
+         250
+        ],
+        [
+         "2026-07-13",
+         "Miller, Francis",
+         "I",
+         50
+        ],
+        [
+         "2026-07-13",
+         "Miller, Debbie",
+         "I",
+         100
+        ],
+        [
+         "2026-07-13",
+         "Winston, Gary",
+         "I",
+         100
+        ],
+        [
+         "2026-07-15",
+         "Randall, Susan",
+         "I",
+         200
+        ],
+        [
+         "2026-07-20",
+         "Burns, Amanda",
+         "I",
+         25
+        ],
+        [
+         "2026-07-20",
+         "Gomar-Salzverg, Gisela",
+         "I",
+         150
+        ],
+        [
+         "2026-07-20",
+         "Salazar, Amelia",
+         "I",
+         25
+        ],
+        [
+         "2026-07-24",
+         "Fisher, Randy",
+         "I",
+         200
+        ],
+        [
+         "2026-07-24",
+         "Rubin, Michael",
+         "I",
+         200
+        ],
+        [
+         "2026-07-29",
+         "Epstein, Benjamin",
+         "I",
+         100
+        ],
+        [
+         "2026-07-30",
+         "Sockloff, Judith",
+         "I",
+         50
+        ],
+        [
+         "2026-07-30",
+         "Buchbinder, Marjorie",
+         "I",
+         100
+        ],
+        [
+         "2026-07-30",
+         "Potter, Debra",
+         "I",
+         100
+        ],
+        [
+         "2026-07-30",
+         "Mander, Ines",
+         "I",
+         100
+        ],
+        [
+         "2026-07-30",
+         "Silverstein, Paul",
+         "I",
+         250
+        ],
+        [
+         "2026-07-30",
+         "Kemper, Elena",
+         "I",
+         500
+        ],
+        [
+         "2026-07-30",
+         "Varat, Andrew",
+         "I",
+         250
+        ],
+        [
+         "2026-07-30",
+         "Pareira, Barbara",
+         "I",
+         200
+        ],
+        [
+         "2026-07-30",
+         "Barrow Travieso, Stefani",
+         "I",
+         36
+        ],
+        [
+         "2026-07-31",
+         "Otto, Phillip",
+         "I",
+         500
+        ],
+        [
+         "2026-07-31",
+         "Hockman, Peter",
+         "I",
+         100
+        ],
+        [
+         "2026-07-31",
+         "Cosner, George",
+         "I",
+         250
+        ],
+        [
+         "2026-07-31",
+         "Rubin, Bruce",
+         "I",
+         100
+        ],
+        [
+         "2026-08-03",
+         "Interian, Monica",
+         "I",
+         50
+        ],
+        [
+         "2026-08-04",
+         "Sorenson, Kathryn",
+         "I",
+         100
+        ],
+        [
+         "2026-08-07",
+         "Romero Roses, Gloria",
+         "I",
+         100
+        ],
+        [
+         "2026-08-08",
+         "Levenson, Barbara",
+         "I",
+         100
+        ],
+        [
+         "2026-08-09",
+         "Patel, Angeli",
+         "I",
+         25
+        ],
+        [
+         "2026-08-10",
+         "Winston, Gary",
+         "I",
+         100
+        ],
+        [
+         "2026-08-11",
+         "DiFilippi, Peter",
+         "I",
+         100
+        ],
+        [
+         "2026-08-14",
+         "Prager, Stanley",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-22",
+         "Winston, Gary",
+         "I",
+         150
+        ],
+        [
+         "2026-08-24",
+         "Stein, Helen",
+         "I",
+         250
+        ],
+        [
+         "2026-08-30",
+         "Richter, Laurie",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-08",
+         "Flinn, Eugene",
+         "I",
+         100
+        ],
+        [
+         "2026-09-15",
+         "Glickman, Susan",
+         "I",
+         100
+        ],
+        [
+         "2026-09-15",
+         "Bodner, Elizabeth",
+         "I",
+         100
+        ],
+        [
+         "2026-09-16",
+         "Pareira, Barbara",
+         "I",
+         100
+        ],
+        [
+         "2026-09-29",
+         "Loring, Andrea",
+         "I",
+         100
+        ],
+        [
+         "2026-09-12",
+         "Weyhe, Harriet",
+         "I",
+         25
+        ]
+       ],
+       "unreconciled": true
+      }
+     ]
+    },
+    {
+     "name": "Ralph Sanchez",
+     "office": "Seat 3",
+     "reports": [
+      {
+       "report": "2026 Q1",
+       "period": "2026-01-01/2026-03-31",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/sanchez-raphael-2026q1.pdf",
+       "rows": [
+        [
+         "2026-03-19",
+         "Raphael Sanchez",
+         "S",
+         25000,
+         "loan"
+        ],
+        [
+         "2026-03-20",
+         "Pedro Blanco",
+         "I",
+         100
+        ],
+        [
+         "2026-03-20",
+         "Israel Pineiro",
+         "I",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/sanchez-ralph-2026q2.pdf",
+       "rows": [
+        [
+         "2026-04-02",
+         "Swamy Yatham",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-12",
+         "Gady Abramson",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-15",
+         "Eric Sanchez",
+         "I",
+         25
+        ],
+        [
+         "2026-04-16",
+         "Ramon Reyes",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-22",
+         "Isa Gonzalez",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-22",
+         "Bryan Burgos",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-14",
+         "Daniel Delaparra",
+         "I",
+         25
+        ],
+        [
+         "2026-05-14",
+         "Leslie Lopez",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-14",
+         "Vanessa Diaz",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-14",
+         "Ruth Salas",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-14",
+         "Donovan Cluff",
+         "I",
+         25
+        ],
+        [
+         "2026-05-14",
+         "Felix Ramirez",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-15",
+         "Gamalis Quinones",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-18",
+         "Gabriel Roffe",
+         "I",
+         500
+        ],
+        [
+         "2026-05-20",
+         "7340 SW 131 Street LLC",
+         "B",
+         250
+        ],
+        [
+         "2026-05-20",
+         "Rodolfo Pages",
+         "I",
+         500
+        ],
+        [
+         "2026-05-20",
+         "Zeri Zapata",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-20",
+         "Marcela Varela",
+         "I",
+         200
+        ],
+        [
+         "2026-05-20",
+         "Mark Levine",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-20",
+         "Leslie Vega",
+         "I",
+         150
+        ],
+        [
+         "2026-05-20",
+         "Marc Pacin",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-20",
+         "Daniel Caine",
+         "I",
+         100
+        ],
+        [
+         "2026-05-20",
+         "Roberto Lopez",
+         "I",
+         25
+        ],
+        [
+         "2026-05-20",
+         "Pacin Levine",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-20",
+         "The Sorensen Law Firm LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-21",
+         "Osmany Barrinat",
+         "I",
+         500
+        ],
+        [
+         "2026-05-21",
+         "Jose Enrique Blanco",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-21",
+         "Nathalia Lozano",
+         "I",
+         300
+        ],
+        [
+         "2026-05-29",
+         "Sabrina Visram",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-20",
+         "Law Office of Raphael A. Sanchez",
+         "B",
+         95.9,
+         "in-kind"
+        ],
+        [
+         "2026-05-01",
+         "Law Office of Raphael A. Sanchez",
+         "B",
+         71.88,
+         "in-kind"
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-07-01/2026-10-02",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/sanchez-raphael-2026-g1-rem.pdf",
+       "rows": [
+        [
+         "2026-07-09",
+         "Stephanie Doppelt",
+         "I",
+         118
+        ],
+        [
+         "2026-07-29",
+         "Joaquin Barcelo",
+         "I",
+         500
+        ],
+        [
+         "2026-08-05",
+         "Gio Diez",
+         "I",
+         100
+        ],
+        [
+         "2026-08-17",
+         "Galaxy Orthopedic and Spine Institute",
+         "B",
+         500
+        ],
+        [
+         "2026-08-19",
+         "Jinelle Andujar",
+         "I",
+         100
+        ],
+        [
+         "2026-08-20",
+         "Keren Marti",
+         "I",
+         50
+        ],
+        [
+         "2026-08-28",
+         "Nany Yepez",
+         "I",
+         25
+        ],
+        [
+         "2026-08-28",
+         "Nery Castro",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-28",
+         "Salvador Villegas",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-01",
+         "Sam Rehman",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-03",
+         "Janet Field",
+         "I",
+         100
+        ],
+        [
+         "2026-09-08",
+         "Covington Stanwick",
+         "I",
+         200
+        ],
+        [
+         "2026-09-10",
+         "Romy Hourani",
+         "I",
+         300
+        ],
+        [
+         "2026-09-16",
+         "Elina Pacios",
+         "I",
+         100
+        ],
+        [
+         "2026-09-17",
+         "Cesar Buia",
+         "I",
+         100
+        ],
+        [
+         "2026-09-23",
+         "Michael Cantens",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-28",
+         "Phil Rodriguez",
+         "I",
+         200
+        ],
+        [
+         "2026-09-29",
+         "Thomas Packert",
+         "I",
+         100
+        ],
+        [
+         "2026-09-30",
+         "Mercedes Rengel",
+         "I",
+         50
+        ],
+        [
+         "2026-10-01",
+         "Dennis Gonzalez, Jr",
+         "I",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "James Suarez",
+     "office": "Seat 3",
+     "reports": [
+      {
+       "report": "2026 Q1",
+       "period": "2026-01-01/2026-03-31",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/2/government/village-clerk/documents/elections/2026-candidates/suarez-james-2026q1.pdf",
+       "rows": []
+      },
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/suarez-james-2026q2.pdf",
+       "rows": [
+        [
+         "2026-04-17",
+         "Katie Abbott",
+         "I",
+         50
+        ],
+        [
+         "2026-04-17",
+         "Katie Abbott",
+         "I",
+         250
+        ],
+        [
+         "2026-04-17",
+         "Elena Kemper",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-25",
+         "Adam Foslid",
+         "I",
+         500
+        ],
+        [
+         "2026-04-28",
+         "Karyn Cunningham",
+         "I",
+         50
+        ],
+        [
+         "2026-04-28",
+         "Dagmar Llaudy",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-28",
+         "Joseph Garcia",
+         "I",
+         500
+        ],
+        [
+         "2026-04-28",
+         "Haley Karl",
+         "I",
+         100
+        ],
+        [
+         "2026-04-28",
+         "Annamaria Steward",
+         "I",
+         500
+        ],
+        [
+         "2026-04-30",
+         "Roger Stoudt",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-30",
+         "Deborah Wong",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-30",
+         "Paul Wong",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-30",
+         "Flavia Mendes",
+         "I",
+         250
+        ],
+        [
+         "2026-04-30",
+         "Robert Finlay",
+         "I",
+         100
+        ],
+        [
+         "2026-04-30",
+         "Kirk Weiss",
+         "I",
+         250
+        ],
+        [
+         "2026-04-30",
+         "Mildred Morgado",
+         "I",
+         250
+        ],
+        [
+         "2026-05-01",
+         "George Cosner",
+         "I",
+         250
+        ],
+        [
+         "2026-05-01",
+         "Marika Lynch",
+         "I",
+         100
+        ],
+        [
+         "2026-05-01",
+         "Cheryl Ferrer",
+         "I",
+         100
+        ],
+        [
+         "2026-05-02",
+         "Evan Goldman",
+         "I",
+         200
+        ],
+        [
+         "2026-05-08",
+         "Manny Reyes",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-09",
+         "Michael Pujol",
+         "I",
+         100
+        ],
+        [
+         "2026-05-09",
+         "Eliot Pedrosa",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-09",
+         "Adriana Reyes",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-09",
+         "Guillermo J Miranda",
+         "I",
+         100
+        ],
+        [
+         "2026-05-12",
+         "Stephen Merenes",
+         "I",
+         100
+        ],
+        [
+         "2026-05-16",
+         "Victoria Mendez",
+         "I",
+         250
+        ],
+        [
+         "2026-05-18",
+         "S. Antonio Jimenez",
+         "I",
+         250
+        ],
+        [
+         "2026-05-19",
+         "Gus Vega",
+         "I",
+         500
+        ],
+        [
+         "2026-05-20",
+         "Lourdes Roche",
+         "I",
+         50
+        ],
+        [
+         "2026-05-21",
+         "Cynthia Blanck",
+         "I",
+         250
+        ],
+        [
+         "2026-05-21",
+         "Edward Glab",
+         "I",
+         100
+        ],
+        [
+         "2026-05-21",
+         "Rebecca McBurney",
+         "I",
+         100
+        ],
+        [
+         "2026-05-30",
+         "Franco Battistini",
+         "I",
+         75
+        ],
+        [
+         "2026-05-30",
+         "Rainier Gonzalez",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-30",
+         "Andrew Vargas",
+         "I",
+         50
+        ],
+        [
+         "2026-05-31",
+         "Antonio Rios",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-31",
+         "Meily Reyes",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-31",
+         "Jordan Keusch",
+         "I",
+         250
+        ],
+        [
+         "2026-05-31",
+         "Julio Llanes",
+         "I",
+         100
+        ],
+        [
+         "2026-06-01",
+         "Andres Mora",
+         "I",
+         100
+        ],
+        [
+         "2026-06-01",
+         "New Leadership for Miami",
+         "F",
+         250
+        ],
+        [
+         "2026-06-02",
+         "Alicia Morgado",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-02",
+         "Lizette Vale",
+         "I",
+         50
+        ],
+        [
+         "2026-06-05",
+         "Ben Alvarez",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-08",
+         "Leo Da Silva",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-12",
+         "Joseph Corradino",
+         "I",
+         500
+        ],
+        [
+         "2026-06-13",
+         "Ileana Christianson",
+         "I",
+         100
+        ],
+        [
+         "2026-06-21",
+         "Rebecca McBurney",
+         "I",
+         100
+        ],
+        [
+         "2026-06-25",
+         "Robin Peguero",
+         "I",
+         250
+        ],
+        [
+         "2026-06-29",
+         "Carmen Tomas",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-29",
+         "Zach Messinger",
+         "I",
+         25
+        ],
+        [
+         "2026-06-30",
+         "Max Losner",
+         "I",
+         500
+        ],
+        [
+         "2026-06-30",
+         "Gery Rodriguez",
+         "I",
+         250
+        ],
+        [
+         "2026-06-30",
+         "Spencer Morgan",
+         "I",
+         250
+        ],
+        [
+         "2026-06-30",
+         "Bruce Greer",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-30",
+         "Evelyn Greer",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-30",
+         "Skip Pita",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-30",
+         "Spencer Morgan",
+         "I",
+         250
+        ],
+        [
+         "2026-05-01",
+         "Jose Escobar",
+         "I",
+         100
+        ],
+        [
+         "2026-05-12",
+         "Stanley Prager",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-12",
+         "Floridians for Strong Leadership Political Committee",
+         "F",
+         1000
+        ],
+        [
+         "2026-05-26",
+         "Michelle Difilippi",
+         "I",
+         100
+        ],
+        [
+         "2026-06-09",
+         "Becker & Poliakoff",
+         "B",
+         1000
+        ],
+        [
+         "2026-06-23",
+         "Paul R. Sasso, Esq.",
+         "B",
+         500
+        ],
+        [
+         "2026-06-29",
+         "Marisa Suarez",
+         "I",
+         500
+        ],
+        [
+         "2026-04-01",
+         "Rodes Printing",
+         "B",
+         1000,
+         "in-kind"
+        ],
+        [
+         "2026-04-01",
+         "Rebeca Suarez",
+         "I",
+         500
+        ],
+        [
+         "2026-04-29",
+         "James Suarez",
+         "S",
+         550.65,
+         "in-kind"
+        ],
+        [
+         "2026-04-23",
+         "James Suarez",
+         "S",
+         125.07,
+         "in-kind"
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-07-01/2026-10-02",
+       "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/suarez-james-2026-g1-rem.pdf",
+       "rows": [
+        [
+         "2026-07-21",
+         "Rebecca McBurney",
+         "I",
+         100
+        ],
+        [
+         "2026-07-22",
+         "Daniel Enekes",
+         "I",
+         250
+        ],
+        [
+         "2026-07-23",
+         "Thomas Abbott",
+         "I",
+         50
+        ],
+        [
+         "2026-07-11",
+         "George Williamson",
+         "I",
+         1000
+        ],
+        [
+         "2026-10-02",
+         "Joe Meyer",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-13",
+         "Mark Crofton",
+         "I",
+         250
+        ],
+        [
+         "2026-08-19",
+         "Nancy Lawther",
+         "I",
+         100
+        ],
+        [
+         "2026-08-21",
+         "Ryan Dorris",
+         "I",
+         250
+        ],
+        [
+         "2026-08-21",
+         "Rebecca McBurney",
+         "I",
+         100
+        ],
+        [
+         "2026-08-23",
+         "Bernard Probst",
+         "I",
+         100
+        ],
+        [
+         "2026-08-29",
+         "Teresa B Albert",
+         "I",
+         250
+        ],
+        [
+         "2026-08-30",
+         "Faith Levine",
+         "I",
+         100
+        ],
+        [
+         "2026-08-30",
+         "Thomas Carole Abbott",
+         "I",
+         250
+        ],
+        [
+         "2026-08-31",
+         "Kathryn Sorenson",
+         "I",
+         100
+        ],
+        [
+         "2026-09-13",
+         "Veronica Matzner",
+         "I",
+         200
+        ],
+        [
+         "2026-09-13",
+         "Frank Sioli",
+         "I",
+         1000
+        ],
+        [
+         "2026-10-02",
+         "Karma Garcia",
+         "I",
+         1000
+        ],
+        [
+         "2026-10-02",
+         "Robert Reynolds",
+         "I",
+         500
+        ],
+        [
+         "2026-09-21",
+         "Rebekka Haggard",
+         "I",
+         500
+        ],
+        [
+         "2026-09-21",
+         "Rebecca McBurney",
+         "I",
+         100
+        ],
+        [
+         "2026-09-22",
+         "Antony Page",
+         "I",
+         100
+        ],
+        [
+         "2026-09-22",
+         "Juan Carlos Rivera",
+         "I",
+         100
+        ],
+        [
+         "2026-09-30",
+         "John McWhirter",
+         "I",
+         100
+        ],
+        [
+         "2026-09-30",
+         "Michael Diamond",
+         "I",
+         25
+        ],
+        [
+         "2026-09-30",
+         "Leanne Tellam",
+         "I",
+         50
+        ],
+        [
+         "2026-10-02",
+         "South Florida Vision",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-12",
+         "Florida Political Action Committee (Gray Robinson PA)",
+         "F",
+         250
+        ],
+        [
+         "2026-10-02",
+         "James E. Courtney Investments LLC",
+         "B",
+         250
+        ],
+        [
+         "2026-10-01",
+         "John W. McLuskey and Lori N. McLuskey",
+         "I",
+         500
+        ]
+       ],
+       "unreconciled": true
+      }
+     ]
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "city": "North Miami Beach",
+   "match": "^\\s*north miami beach\\b",
+   "label": "City of North Miami Beach",
+   "portal": "https://www.citynmb.com/DocumentCenter/",
+   "candidates": [
+    {
+     "name": "Jay R. Chernoff",
+     "office": "Group 2",
+     "note": "His 2026 G2 report itemizes $4,230 against a $4,250 total, and his 2026 P6 report counts a $1,000 in-kind gift it does not itemize.",
+     "reports": [
+      {
+       "report": "2025 Q1",
+       "period": "2025-01-01/2025-03-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14253",
+       "rows": [
+        [
+         "2025-01-21",
+         "Jay R. Chernoff",
+         "S",
+         100,
+         "loan"
+        ],
+        [
+         "2025-01-30",
+         "New Directions Florida",
+         "B",
+         1000
+        ],
+        [
+         "2025-03-20",
+         "Wrenly Mesidor",
+         "I",
+         150
+        ]
+       ]
+      },
+      {
+       "report": "2025 Q2",
+       "period": "2025-04-01/2025-06-30",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14254",
+       "rows": [
+        [
+         "2025-06-29",
+         "Miami Marketing Strategies Inc",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 Q1",
+       "period": "2026-01-01/2026-03-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14503",
+       "rows": [
+        [
+         "2026-03-13",
+         "William Dean",
+         "I",
+         500
+        ],
+        [
+         "2026-03-13",
+         "Ford, Dean & Rotundo, P.A.",
+         "B",
+         1000
+        ],
+        [
+         "2026-03-28",
+         "Jeff Lozman",
+         "I",
+         500
+        ],
+        [
+         "2026-03-28",
+         "Andrew Plotkin",
+         "I",
+         500
+        ],
+        [
+         "2026-03-28",
+         "IAJ Law PA",
+         "B",
+         500
+        ],
+        [
+         "2026-03-28",
+         "W Amps Construction Inc",
+         "B",
+         300
+        ],
+        [
+         "2026-03-28",
+         "Francois Amp Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-03-28",
+         "Marckenson Jeanty",
+         "I",
+         1000
+        ],
+        [
+         "2026-03-28",
+         "Wrenly Mesidor",
+         "I",
+         300
+        ],
+        [
+         "2026-03-28",
+         "The Best Financial Advisor LLC",
+         "B",
+         200
+        ],
+        [
+         "2026-03-28",
+         "Eugenise Mompremier",
+         "I",
+         100
+        ],
+        [
+         "2026-03-28",
+         "Pierre F. Charles",
+         "I",
+         250
+        ],
+        [
+         "2026-03-28",
+         "Jerusalem Electrical Inc",
+         "B",
+         500
+        ],
+        [
+         "2026-03-26",
+         "We Strategize LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-03-28",
+         "Promed Management LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-03-28",
+         "Pro Reference Consulting LLC dba 360 Degree Media",
+         "B",
+         1000
+        ],
+        [
+         "2026-03-31",
+         "Prokel Mobility",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-05-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14653",
+       "rows": [
+        [
+         "2026-04-01",
+         "KelAmerica",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-01",
+         "Renters Paradise",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-01",
+         "Kelly Gonzalez",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Mike McDermott",
+         "I",
+         500
+        ],
+        [
+         "2026-04-20",
+         "South Florida Vision",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-02",
+         "Ronald Book",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-02",
+         "Pat Book",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-02",
+         "Ronald Book P.A.",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-05",
+         "Evan Marbin & Associates",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 P4",
+       "period": "2026-07-11/2026-07-17",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14783",
+       "rows": [
+        [
+         "2026-07-15",
+         "G5ive",
+         "B",
+         1000
+        ],
+        [
+         "2026-07-16",
+         "BH 1025 Ltd",
+         "B",
+         1000
+        ],
+        [
+         "2026-07-16",
+         "Corner Ventures LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-07-16",
+         "Oasis 183 Ltd",
+         "B",
+         750
+        ]
+       ]
+      },
+      {
+       "report": "2026 P5",
+       "period": "2026-07-18/2026-07-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14851",
+       "rows": [
+        [
+         "2026-07-25",
+         "Lowe's (store credit)",
+         "B",
+         30.17
+        ],
+        [
+         "2026-07-26",
+         "Faith Wilson",
+         "I",
+         50
+        ],
+        [
+         "2026-07-27",
+         "Michael J. Snyder P.A.",
+         "B",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 P6",
+       "period": "2026-08-01/2026-08-13",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14868",
+       "rows": [
+        [
+         "2026-08-07",
+         "Becker & Poliakoff P.A.",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14916",
+       "rows": [
+        [
+         "2026-08-17",
+         "Templer & Hirsch",
+         "B",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14957",
+       "rows": [
+        [
+         "2026-08-24",
+         "Solomon Odenz",
+         "I",
+         100
+        ],
+        [
+         "2026-08-24",
+         "Paul Kruss",
+         "I",
+         100
+        ],
+        [
+         "2026-08-28",
+         "Jod Gold",
+         "I",
+         180
+        ],
+        [
+         "2026-08-28",
+         "Terrabella Realty",
+         "B",
+         500
+        ],
+        [
+         "2026-09-02",
+         "Aviva David",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-03",
+         "Coastal Waste",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-02",
+         "Chaim David",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-03",
+         "Ken Friedman",
+         "I",
+         100
+        ],
+        [
+         "2026-09-04",
+         "Bruce Kusens",
+         "I",
+         250
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15000",
+       "rows": [
+        [
+         "2026-09-10",
+         "Ellen Wacher",
+         "I",
+         100
+        ],
+        [
+         "2026-09-10",
+         "Echad Holding LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-10",
+         "Global Assurance Group Inc",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15032",
+       "rows": [
+        [
+         "2026-09-28",
+         "Enterprise (vehicle leasing)",
+         "B",
+         301.05
+        ],
+        [
+         "2026-10-02",
+         "Miami Association of Realtors",
+         "B",
+         1000
+        ],
+        [
+         "2026-10-02",
+         "Cap Engineering",
+         "B",
+         500
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Whitney Padote",
+     "office": "Group 2",
+     "note": "Her itemized gifts add up to $13,288 against the $13,553 she reports to date. Most of the gap is $225 on amended 2026 P3 and P4 reports with no page naming the givers.",
+     "reports": [
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-05-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14658",
+       "rows": [
+        [
+         "2026-05-10",
+         "Akira Byas",
+         "I",
+         5
+        ],
+        [
+         "2026-05-15",
+         "Bill Quigley",
+         "I",
+         200
+        ],
+        [
+         "2026-05-15",
+         "Julia Walker",
+         "I",
+         25
+        ],
+        [
+         "2026-05-15",
+         "Presley Louis",
+         "I",
+         25
+        ],
+        [
+         "2026-05-15",
+         "Debaro Huyler",
+         "I",
+         25
+        ],
+        [
+         "2026-05-15",
+         "Lysandra Wu",
+         "I",
+         15
+        ],
+        [
+         "2026-05-15",
+         "Tainisel Rodriguez",
+         "I",
+         100
+        ],
+        [
+         "2026-05-15",
+         "Priscille Duvalsaint",
+         "I",
+         50
+        ],
+        [
+         "2026-05-16",
+         "Michael J. Hoy",
+         "I",
+         100
+        ],
+        [
+         "2026-05-17",
+         "Krista Schmidt",
+         "I",
+         25
+        ],
+        [
+         "2026-05-18",
+         "Francois Menard",
+         "I",
+         100
+        ],
+        [
+         "2026-05-20",
+         "Trina Harris",
+         "I",
+         250
+        ],
+        [
+         "2026-05-26",
+         "Kadie Black",
+         "I",
+         50
+        ],
+        [
+         "2026-05-28",
+         "Raul Alfaro",
+         "I",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 P1",
+       "period": "2026-06-01/2026-06-12",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14683",
+       "rows": [
+        [
+         "2026-06-03",
+         "Jimmy Joseph",
+         "I",
+         50
+        ],
+        [
+         "2026-06-05",
+         "Alberto Lazaro",
+         "I",
+         100
+        ],
+        [
+         "2026-06-12",
+         "Roland Elek",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 P2",
+       "period": "2026-06-13/2026-06-26",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14750",
+       "rows": [
+        [
+         "2026-06-13",
+         "Nelson Rubio",
+         "I",
+         25
+        ],
+        [
+         "2026-06-13",
+         "Edwin S. Vasco Gonzalez",
+         "I",
+         100
+        ],
+        [
+         "2026-06-13",
+         "Fang Su",
+         "I",
+         25
+        ],
+        [
+         "2026-06-13",
+         "Garcin Milord",
+         "I",
+         25
+        ],
+        [
+         "2026-06-13",
+         "Berdith Lebrun",
+         "I",
+         100
+        ],
+        [
+         "2026-06-13",
+         "Kevin Garrick",
+         "I",
+         100
+        ],
+        [
+         "2026-06-13",
+         "David Archange",
+         "I",
+         100
+        ],
+        [
+         "2026-06-14",
+         "Rose Carolle Hardy",
+         "I",
+         500
+        ],
+        [
+         "2026-06-19",
+         "Victor Cozart",
+         "I",
+         100
+        ],
+        [
+         "2026-06-20",
+         "Funke Majekodunmi",
+         "I",
+         250
+        ],
+        [
+         "2026-06-20",
+         "Heather Tetlow",
+         "I",
+         25
+        ],
+        [
+         "2026-06-20",
+         "Jillian Miller",
+         "I",
+         30
+        ],
+        [
+         "2026-06-20",
+         "Conor Barry",
+         "I",
+         100
+        ],
+        [
+         "2026-06-24",
+         "KF",
+         "I",
+         100
+        ],
+        [
+         "2026-06-25",
+         "Monica Howard",
+         "I",
+         50
+        ],
+        [
+         "2026-06-20",
+         "Rodney Laurent",
+         "I",
+         25
+        ]
+       ]
+      },
+      {
+       "report": "2026 P5",
+       "period": "2026-07-18/2026-07-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14846",
+       "rows": [
+        [
+         "2026-07-20",
+         "Leonie Hermantin",
+         "I",
+         100
+        ],
+        [
+         "2026-07-23",
+         "Jessyka Castillo",
+         "I",
+         50
+        ],
+        [
+         "2026-07-23",
+         "Janett Cordoves",
+         "I",
+         100
+        ],
+        [
+         "2026-07-24",
+         "Raymond Duenas",
+         "I",
+         25
+        ],
+        [
+         "2026-07-26",
+         "Jameson Burroughs",
+         "I",
+         25
+        ],
+        [
+         "2026-07-31",
+         "Garcin Milord",
+         "I",
+         15
+        ],
+        [
+         "2026-07-31",
+         "Stephan Bruno",
+         "I",
+         50
+        ],
+        [
+         "2026-07-31",
+         "Quincy Harvey",
+         "I",
+         50
+        ],
+        [
+         "2026-07-31",
+         "Dieumene Estimable",
+         "I",
+         25
+        ],
+        [
+         "2026-07-31",
+         "Myriam Melendez",
+         "I",
+         25
+        ],
+        [
+         "2026-07-31",
+         "Chana Budgazad",
+         "I",
+         100
+        ],
+        [
+         "2026-07-31",
+         "Carlos Figueroa",
+         "I",
+         25
+        ],
+        [
+         "2026-07-31",
+         "Genesis Cuevas",
+         "I",
+         50
+        ],
+        [
+         "2026-07-31",
+         "Shyann Thompson",
+         "I",
+         50
+        ],
+        [
+         "2026-07-29",
+         "Military Vehicles & Militaria (Bruce G. Lamberto)",
+         "B",
+         200
+        ],
+        [
+         "2026-07-31",
+         "Jayson Forbes",
+         "I",
+         25
+        ]
+       ]
+      },
+      {
+       "report": "2026 P6",
+       "period": "2026-08-01/2026-08-13",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14879",
+       "rows": [
+        [
+         "2026-08-04",
+         "Carven Louisdhon",
+         "I",
+         50
+        ],
+        [
+         "2026-08-12",
+         "Eulois Cleckley",
+         "I",
+         50
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14917",
+       "rows": [
+        [
+         "2026-08-14",
+         "HDR, Inc. Employee Owned PAC",
+         "F",
+         1000
+        ],
+        [
+         "2026-08-18",
+         "Myriam Melendez",
+         "I",
+         50
+        ],
+        [
+         "2026-08-19",
+         "Eric Zambrano",
+         "I",
+         30
+        ],
+        [
+         "2026-08-21",
+         "Fidel Goldson",
+         "I",
+         500
+        ],
+        [
+         "2026-08-21",
+         "Jamaul Covington",
+         "I",
+         25
+        ],
+        [
+         "2026-08-21",
+         "Johnny Burns",
+         "I",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14958",
+       "rows": [
+        [
+         "2026-08-25",
+         "Gerri Lazarre",
+         "I",
+         100
+        ],
+        [
+         "2026-09-01",
+         "Yadly St Fort",
+         "I",
+         50
+        ],
+        [
+         "2026-09-03",
+         "Nicole Mesri",
+         "I",
+         500
+        ],
+        [
+         "2026-09-04",
+         "Bruce Kusens",
+         "I",
+         250
+        ],
+        [
+         "2026-09-04",
+         "William Quigley",
+         "I",
+         25
+        ],
+        [
+         "2026-09-04",
+         "Anteneh T. Beyene",
+         "I",
+         25
+        ],
+        [
+         "2026-09-04",
+         "Jasmine Glover",
+         "I",
+         25
+        ],
+        [
+         "2026-09-04",
+         "Johans Jules",
+         "I",
+         20
+        ],
+        [
+         "2026-09-04",
+         "Nicole Harris",
+         "I",
+         15
+        ],
+        [
+         "2026-09-04",
+         "Kevin Garrick",
+         "I",
+         10
+        ],
+        [
+         "2026-09-04",
+         "Akira Byas",
+         "I",
+         25
+        ],
+        [
+         "2026-09-04",
+         "Neala Ameerali",
+         "I",
+         25
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14998",
+       "rows": [
+        [
+         "2026-09-05",
+         "James Diaz",
+         "I",
+         100
+        ],
+        [
+         "2026-09-06",
+         "Derek Auguste",
+         "I",
+         100
+        ],
+        [
+         "2026-09-10",
+         "Raymond Duenas",
+         "I",
+         25
+        ],
+        [
+         "2026-09-12",
+         "Jaret Davis",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-14",
+         "Mubarak I. Kazan",
+         "I",
+         98
+        ],
+        [
+         "2026-09-15",
+         "Templer and Hirsch",
+         "B",
+         500
+        ],
+        [
+         "2026-09-16",
+         "Juan-Carlos Del Valle",
+         "I",
+         250
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15033",
+       "rows": [
+        [
+         "2026-09-19",
+         "United As One PAC",
+         "F",
+         500
+        ],
+        [
+         "2026-09-21",
+         "Mischael Cetoute",
+         "I",
+         100
+        ],
+        [
+         "2026-09-21",
+         "Yinka Kajek",
+         "I",
+         250
+        ],
+        [
+         "2026-09-27",
+         "Fabio Nick",
+         "I",
+         300
+        ],
+        [
+         "2026-09-30",
+         "Accountability First",
+         "F",
+         1000
+        ],
+        [
+         "2026-10-02",
+         "Alan Macken",
+         "I",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Jasmine Rivera",
+     "office": "Group 2",
+     "note": "Her loans to the campaign in 2026 P5 ($100) and G1 ($400) appear only on the summary pages. One 2026 G3 gift of $200 lists no name, only the occupation \"MTA Operator\". Her running totals do not match the sum of her reports, so the itemized gifts here (including $1,000 in loans and $385 in-kind) add up to more than her latest to-date figure.",
+     "reports": [
+      {
+       "report": "2026 P5",
+       "period": "2026-07-18/2026-07-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14856",
+       "rows": [
+        [
+         "2026-07-31",
+         "Jasmine Rivera",
+         "S",
+         100,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 P6",
+       "period": "2026-08-01/2026-08-13",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14870",
+       "rows": [
+        [
+         "2026-08-03",
+         "Lois Thompson",
+         "I",
+         191.7
+        ],
+        [
+         "2026-08-03",
+         "Jennifer Torna",
+         "I",
+         208.65
+        ],
+        [
+         "2026-08-04",
+         "Green Toad Printing",
+         "B",
+         385,
+         "in-kind"
+        ],
+        [
+         "2026-08-09",
+         "Marc Farron",
+         "I",
+         52.4
+        ],
+        [
+         "2026-08-10",
+         "Ronald Thompson",
+         "I",
+         1041.96
+        ],
+        [
+         "2026-08-12",
+         "Nateefah Jackson",
+         "I",
+         104.48
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14915",
+       "rows": [
+        [
+         "2026-08-18",
+         "Jannette Nunez",
+         "I",
+         26.35
+        ],
+        [
+         "2026-08-18",
+         "Rose Harding",
+         "I",
+         625.31
+        ],
+        [
+         "2026-08-19",
+         "Czchasity Stittiams",
+         "I",
+         26.35
+        ],
+        [
+         "2026-08-20",
+         "Christina Johnson",
+         "I",
+         104.48
+        ],
+        [
+         "2026-08-21",
+         "Jasmine Rivera",
+         "S",
+         400,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14956",
+       "rows": [
+        [
+         "2026-08-24",
+         "Valentina Botero",
+         "I",
+         26.35
+        ],
+        [
+         "2026-08-26",
+         "Jasmine Alise Joseph",
+         "S",
+         500,
+         "loan"
+        ],
+        [
+         "2026-09-02",
+         "Dezer Museum Holdings, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-02",
+         "DP Colonial LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-02",
+         "Dezer Family Holdings, Inc.",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-02",
+         "Dezer Intracoastal Mall LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-02",
+         "Gilco 1 Sub Parcel 2 LLC",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14999",
+       "rows": [
+        [
+         "2026-09-09",
+         "Kerlyne McHenry",
+         "I",
+         50
+        ],
+        [
+         "2026-09-09",
+         "Ricardo Castillo",
+         "I",
+         75
+        ],
+        [
+         "2026-09-11",
+         "Tsung Shing Ng",
+         "I",
+         100
+        ],
+        [
+         "2026-09-12",
+         "Lois Thompson",
+         "I",
+         800
+        ],
+        [
+         "2026-09-16",
+         "Unnamed giver (listed as MTA Operator)",
+         "I",
+         200
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15031",
+       "rows": []
+      }
+     ]
+    },
+    {
+     "name": "Eunice Diona Flowers",
+     "office": "Group 4",
+     "note": "Her reports before 2026 G3 were waivers, yet her to-date total ($1,764.39) is about $1,063 more than the itemized gifts.",
+     "reports": [
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14997",
+       "rows": [
+        [
+         "2026-09-07",
+         "Shari Wright Richard",
+         "I",
+         100
+        ],
+        [
+         "2026-09-07",
+         "Debrah McIntosh",
+         "I",
+         20
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15035",
+       "rows": [
+        [
+         "2026-09-22",
+         "Eunice D. Flowers",
+         "S",
+         257.78
+        ],
+        [
+         "2026-09-26",
+         "Claudia McLean",
+         "I",
+         74
+        ],
+        [
+         "2026-09-27",
+         "Eunice D. Flowers",
+         "S",
+         250
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Linda Joseph",
+     "office": "Group 4",
+     "note": "Her own review pages call her running totals provisional and say earlier reports had errors. Her 2026 Q2 report itemizes $1,600 against a $1,650 total. Her 2026 G4 gifts have no dates on the report, so they are listed on the last day of the period.",
+     "reports": [
+      {
+       "report": "2026 Q1",
+       "period": "2026-01-01/2026-03-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14505",
+       "rows": [
+        [
+         "2026-02-19",
+         "Chinyere Russell",
+         "I",
+         50
+        ],
+        [
+         "2026-02-19",
+         "Camerin Noel",
+         "I",
+         25
+        ],
+        [
+         "2026-02-19",
+         "James Henry",
+         "I",
+         25
+        ],
+        [
+         "2026-02-19",
+         "Margarette Francis",
+         "I",
+         25
+        ],
+        [
+         "2026-02-19",
+         "Fedlin Appolon",
+         "I",
+         25
+        ],
+        [
+         "2026-02-19",
+         "Zanobiah Dawson",
+         "I",
+         50
+        ],
+        [
+         "2026-02-19",
+         "Petersen Emile",
+         "I",
+         25
+        ],
+        [
+         "2026-02-19",
+         "Roger Cerenord",
+         "I",
+         100
+        ],
+        [
+         "2026-02-19",
+         "Shavaun A",
+         "I",
+         25
+        ],
+        [
+         "2026-02-19",
+         "Claire Noel",
+         "I",
+         50
+        ],
+        [
+         "2026-02-19",
+         "Ada Charles",
+         "I",
+         200
+        ],
+        [
+         "2026-02-19",
+         "Costau Bastien",
+         "I",
+         100
+        ],
+        [
+         "2026-02-19",
+         "Show Tech, Inc.",
+         "B",
+         1000
+        ],
+        [
+         "2026-02-20",
+         "Yolanda David",
+         "I",
+         25
+        ],
+        [
+         "2026-02-20",
+         "Carmele Cesar",
+         "I",
+         50
+        ],
+        [
+         "2026-02-20",
+         "Aaron Bos-Lun",
+         "I",
+         50
+        ],
+        [
+         "2026-02-20",
+         "Carolina Ampudia",
+         "I",
+         25
+        ],
+        [
+         "2026-02-20",
+         "Shelna Thelon",
+         "I",
+         250
+        ],
+        [
+         "2026-02-20",
+         "Marieline Steril",
+         "I",
+         20
+        ],
+        [
+         "2026-02-20",
+         "Matthew Saenz",
+         "I",
+         25
+        ],
+        [
+         "2026-02-20",
+         "Herve Bastien",
+         "I",
+         50
+        ],
+        [
+         "2026-02-20",
+         "Nancy Pierre-Louis",
+         "I",
+         50
+        ],
+        [
+         "2026-02-21",
+         "Carol Munroe",
+         "I",
+         100
+        ],
+        [
+         "2026-02-22",
+         "Legrand Simeon",
+         "I",
+         25
+        ],
+        [
+         "2026-02-22",
+         "Hermane Etienne",
+         "I",
+         200
+        ],
+        [
+         "2026-02-23",
+         "Naiyenah Aaron",
+         "I",
+         250
+        ],
+        [
+         "2026-02-27",
+         "Mike Lucien",
+         "I",
+         25
+        ],
+        [
+         "2026-03-02",
+         "Annelle Bissainthe",
+         "I",
+         50
+        ],
+        [
+         "2026-03-06",
+         "Andrew Gonzales",
+         "I",
+         5
+        ],
+        [
+         "2026-03-06",
+         "Magdalena Mejillano",
+         "I",
+         50
+        ],
+        [
+         "2026-03-06",
+         "Charline Dorelien",
+         "I",
+         200
+        ],
+        [
+         "2026-03-07",
+         "Lafayette Jefferson",
+         "I",
+         25
+        ],
+        [
+         "2026-03-11",
+         "Barbara Seraphin",
+         "I",
+         100
+        ],
+        [
+         "2026-03-31",
+         "Suzelle Deshommes",
+         "I",
+         100
+        ],
+        [
+         "2026-03-31",
+         "Linda Joseph Noel",
+         "S",
+         27000,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-05-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14657",
+       "rows": [
+        [
+         "2026-04-09",
+         "Margarette Francis",
+         "I",
+         150
+        ],
+        [
+         "2026-04-11",
+         "Barbara Seraphin",
+         "I",
+         100
+        ],
+        [
+         "2026-05-11",
+         "Barbara Seraphin",
+         "I",
+         100
+        ],
+        [
+         "2026-05-24",
+         "Betty Thomas",
+         "I",
+         50
+        ],
+        [
+         "2026-05-30",
+         "Marie Flore Lindor Latortue",
+         "I",
+         250
+        ],
+        [
+         "2026-05-31",
+         "Marie Laplante",
+         "I",
+         50
+        ],
+        [
+         "2026-05-31",
+         "Cassandra Esperant",
+         "I",
+         50
+        ],
+        [
+         "2026-05-31",
+         "Kember I. Ouagrasoga",
+         "I",
+         100
+        ],
+        [
+         "2026-05-31",
+         "Madline Noel",
+         "I",
+         100
+        ],
+        [
+         "2026-05-31",
+         "Ronald Surin",
+         "I",
+         250
+        ],
+        [
+         "2026-05-31",
+         "Frantz Hogu",
+         "I",
+         100
+        ],
+        [
+         "2026-05-31",
+         "Joseph Labrousse",
+         "I",
+         200
+        ],
+        [
+         "2026-05-31",
+         "Liliane Dure",
+         "I",
+         50
+        ],
+        [
+         "2026-05-31",
+         "Zeek Mathias",
+         "I",
+         50
+        ]
+       ]
+      },
+      {
+       "report": "2026 P1",
+       "period": "2026-06-01/2026-06-12",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14682",
+       "rows": [
+        [
+         "2026-06-11",
+         "Barbara Seraphin",
+         "I",
+         100
+        ],
+        [
+         "2026-06-12",
+         "Kamara Douglas",
+         "I",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 P5",
+       "period": "2026-07-18/2026-07-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14838",
+       "rows": [
+        [
+         "2026-07-31",
+         "Linda Joseph Noel",
+         "S",
+         2700,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14961",
+       "rows": [
+        [
+         "2026-08-10",
+         "AFSCME Florida Council 79",
+         "F",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15020",
+       "rows": [
+        [
+         "2026-09-17",
+         "DP Colonial LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-17",
+         "Dezer Museum Holdings",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-17",
+         "Gilco 1 Sub Parcel 2 LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-17",
+         "Dezer Family Holdings, Inc.",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-17",
+         "Dezer Intracoastal Mall LLC",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15036",
+       "rows": [
+        [
+         "2026-10-02",
+         "Guilnete Ruiz",
+         "I",
+         250
+        ],
+        [
+         "2026-10-02",
+         "Terrance Thomas",
+         "I",
+         25
+        ],
+        [
+         "2026-10-02",
+         "Fosie Norton",
+         "I",
+         500
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Margaret Mary Love",
+     "office": "Group 4",
+     "note": "She filed waivers (no activity) for 2026 G3 and G4.",
+     "reports": [
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14921",
+       "rows": [
+        [
+         "2026-08-14",
+         "Margaret Mary Love",
+         "S",
+         3150,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14962",
+       "rows": [
+        [
+         "2026-08-26",
+         "Margaret Mary Love",
+         "S",
+         50000,
+         "loan"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Dayanara Torres",
+     "office": "Group 4",
+     "note": "Some report totals differ from the gifts itemized: 2026 P5 lists $553.80 against $577.50, P6 $8,468.50 against $8,444.80, and G3 $4,850 against $3,950. One $1,000 gift dated Oct 6 appears on her G4 report.",
+     "reports": [
+      {
+       "report": "2026 P5",
+       "period": "2026-07-18/2026-07-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14841",
+       "rows": [
+        [
+         "2026-07-21",
+         "Samarys Nunez",
+         "I",
+         9.3
+        ],
+        [
+         "2026-07-21",
+         "Carmen Salcedo",
+         "I",
+         95.7
+        ],
+        [
+         "2026-07-24",
+         "Ana Ramirez",
+         "I",
+         95.7
+        ],
+        [
+         "2026-07-24",
+         "Lisset Jimenez",
+         "I",
+         9.3
+        ],
+        [
+         "2026-07-24",
+         "Ismael Martinez",
+         "I",
+         9.3
+        ],
+        [
+         "2026-07-26",
+         "Jelenny Martinez",
+         "I",
+         23.7
+        ],
+        [
+         "2026-07-26",
+         "Katherine Kostopoulos",
+         "I",
+         95.7
+        ],
+        [
+         "2026-07-27",
+         "Christine Snelgrove",
+         "I",
+         95.7
+        ],
+        [
+         "2026-07-31",
+         "Keith I. Myers",
+         "I",
+         95.7
+        ],
+        [
+         "2026-07-31",
+         "Isamar Nunez",
+         "I",
+         23.7
+        ]
+       ]
+      },
+      {
+       "report": "2026 P6",
+       "period": "2026-08-01/2026-08-13",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14883",
+       "rows": [
+        [
+         "2026-08-01",
+         "Candice Jenkins",
+         "I",
+         23.7
+        ],
+        [
+         "2026-08-03",
+         "Stacy Roskin",
+         "I",
+         479.7
+        ],
+        [
+         "2026-08-03",
+         "Patricia Miller",
+         "I",
+         239.7
+        ],
+        [
+         "2026-08-03",
+         "Maria Hauck",
+         "I",
+         95.7
+        ],
+        [
+         "2026-08-03",
+         "Sea Grill",
+         "B",
+         4260.36,
+         "in-kind"
+        ],
+        [
+         "2026-08-03",
+         "Diane Serna",
+         "I",
+         50
+        ],
+        [
+         "2026-08-03",
+         "J.C. Global Investment Corp",
+         "B",
+         500
+        ],
+        [
+         "2026-08-03",
+         "Orvietos Awards & More",
+         "B",
+         100
+        ],
+        [
+         "2026-08-04",
+         "Beyond Revealed Media",
+         "B",
+         150,
+         "in-kind"
+        ],
+        [
+         "2026-08-04",
+         "Ture Brooks",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-04",
+         "Solomon Bankole",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-04",
+         "Michelle C. Powell",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-04",
+         "Powell Health Solutions",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-04",
+         "Lathosha Alexander",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-06",
+         "Manassa Petithomme",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-11",
+         "Juan Del Hierro",
+         "I",
+         479.7
+        ],
+        [
+         "2026-08-12",
+         "Susan Taylor Ramirez",
+         "I",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14918",
+       "rows": [
+        [
+         "2026-08-17",
+         "Templer and Hirsch",
+         "B",
+         500
+        ],
+        [
+         "2026-08-21",
+         "Yajaira Alvarez",
+         "I",
+         25
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14959",
+       "rows": [
+        [
+         "2026-08-31",
+         "Alan Macken",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-04",
+         "Kelly Gonzalez Jr.",
+         "I",
+         500
+        ],
+        [
+         "2026-09-04",
+         "Bruce Kusens",
+         "I",
+         250
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15001",
+       "rows": [
+        [
+         "2026-09-05",
+         "Kellyanne Pinzon",
+         "I",
+         50
+        ],
+        [
+         "2026-09-05",
+         "Military Vehicles & Militaria (Bruce G. Lamberto)",
+         "B",
+         100
+        ],
+        [
+         "2026-09-06",
+         "Michelle C. Powell",
+         "I",
+         900
+        ],
+        [
+         "2026-09-06",
+         "Powell Health Solutions",
+         "B",
+         900
+        ],
+        [
+         "2026-09-08",
+         "Solomon Bankole",
+         "I",
+         900
+        ],
+        [
+         "2026-09-12",
+         "Bruce G. Lamberto",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-14",
+         "Ardurra Group Inc",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15034",
+       "rows": [
+        [
+         "2026-09-27",
+         "Fabio Nick",
+         "I",
+         300
+        ],
+        [
+         "2026-09-28",
+         "Angelique Le Rouzic",
+         "I",
+         50
+        ],
+        [
+         "2026-09-30",
+         "Steven Ubiera",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-30",
+         "Maria Carrera Defillipo",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-30",
+         "Anthony F. Defillipo",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-30",
+         "TD Managing Enterprise LLC",
+         "B",
+         1000,
+         "in-kind"
+        ],
+        [
+         "2026-10-01",
+         "We Strategize LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-10-01",
+         "Cristina Malarralde",
+         "I",
+         1000
+        ],
+        [
+         "2026-10-02",
+         "Gary Parkinson",
+         "I",
+         100
+        ],
+        [
+         "2026-10-06",
+         "Alan Macken",
+         "I",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Phyllis Smith",
+     "office": "Group 6",
+     "note": "Her to-date total jumps by $4,500 on the amended 2026 P6 report with no matching gifts, so the itemized gifts add up to $50,165 against the $54,665 she reports.",
+     "reports": [
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-05-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14659",
+       "rows": [
+        [
+         "2026-05-22",
+         "Phyllis Smith",
+         "S",
+         25000,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 P1",
+       "period": "2026-06-01/2026-06-12",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14685",
+       "rows": [
+        [
+         "2026-06-03",
+         "Sally Heyman",
+         "I",
+         180
+        ],
+        [
+         "2026-06-12",
+         "Stacy Roskin, MD",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 P3",
+       "period": "2026-06-27/2026-07-10",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14810",
+       "rows": [
+        [
+         "2026-07-09",
+         "Karen Harrold",
+         "I",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 P5",
+       "period": "2026-07-18/2026-07-31",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14850",
+       "rows": [
+        [
+         "2026-07-23",
+         "Ford and Dean and Rotundo",
+         "B",
+         1000
+        ],
+        [
+         "2026-07-23",
+         "William Dean",
+         "I",
+         1000
+        ],
+        [
+         "2026-07-23",
+         "Fabio Nick",
+         "I",
+         1000
+        ],
+        [
+         "2026-07-24",
+         "Templer and Hirsch",
+         "B",
+         1000
+        ],
+        [
+         "2026-07-24",
+         "Viktor B. Goldenberg",
+         "I",
+         1000
+        ],
+        [
+         "2026-07-25",
+         "Book Warehouse, Inc.",
+         "B",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 P6",
+       "period": "2026-08-01/2026-08-13",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14924",
+       "rows": [
+        [
+         "2026-08-13",
+         "Eric Isicoff",
+         "I",
+         500
+        ],
+        [
+         "2026-08-13",
+         "Eric Isicoff",
+         "I",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14923",
+       "rows": [
+        [
+         "2026-08-17",
+         "Silvia Kusens",
+         "I",
+         5
+        ],
+        [
+         "2026-08-20",
+         "Ronald L. Book",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-20",
+         "Ronald L. Book, P.A.",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14964",
+       "rows": [
+        [
+         "2026-08-28",
+         "Bruce Kusens",
+         "I",
+         5
+        ],
+        [
+         "2026-08-28",
+         "Silvia Kusens",
+         "I",
+         10
+        ],
+        [
+         "2026-08-28",
+         "Bank of America",
+         "B",
+         700
+        ],
+        [
+         "2026-09-04",
+         "Bruce Kusens",
+         "I",
+         500
+        ],
+        [
+         "2026-09-04",
+         "Silvia Kusens",
+         "I",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14995",
+       "rows": [
+        [
+         "2026-09-08",
+         "Russel Lazega",
+         "I",
+         250
+        ],
+        [
+         "2026-09-08",
+         "Samantha Suaya",
+         "I",
+         100
+        ],
+        [
+         "2026-09-08",
+         "North Miami Beach Commerce Center LLC",
+         "B",
+         200
+        ],
+        [
+         "2026-09-08",
+         "Wrendly Mesidor",
+         "I",
+         100
+        ],
+        [
+         "2026-09-09",
+         "Monette Touati",
+         "I",
+         100
+        ],
+        [
+         "2026-09-11",
+         "Bruce Kusens",
+         "I",
+         15
+        ],
+        [
+         "2026-09-11",
+         "Tzemach David Klar",
+         "I",
+         250
+        ],
+        [
+         "2026-09-14",
+         "Shimon Mana",
+         "I",
+         500
+        ],
+        [
+         "2026-09-16",
+         "Sally Heyman",
+         "I",
+         298.53,
+         "in-kind"
+        ],
+        [
+         "2026-09-18",
+         "Jenetta Tellian",
+         "I",
+         50
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15039",
+       "rows": [
+        [
+         "2026-09-22",
+         "Anthony Riccardi",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-24",
+         "Parcel Cove, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-24",
+         "Park Colo Group LP",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-24",
+         "Parcel Flower, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-24",
+         "ProTransportation, Inc.",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-24",
+         "ProMed Management LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-24",
+         "Kelly Louis Gonzalez",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-25",
+         "Danielle Feuer",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-26",
+         "Bonnie Michaels",
+         "I",
+         50
+        ],
+        [
+         "2026-09-27",
+         "Steve Yaskin",
+         "I",
+         40,
+         "in-kind"
+        ],
+        [
+         "2026-09-27",
+         "Stacey Levy",
+         "I",
+         50
+        ],
+        [
+         "2026-09-29",
+         "Aura Commercial Properties, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-29",
+         "Corner Ventures, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-29",
+         "Group Force Northlake, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-29",
+         "BH 1025 Ltd",
+         "B",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Ariel E. Vasquez",
+     "office": "Group 6",
+     "note": "His handwritten to-date totals don't add up across reports, and his 2026 G3 report counts $3,000 in in-kind gifts it does not itemize.",
+     "reports": [
+      {
+       "report": "2026 P6",
+       "period": "2026-08-01/2026-08-13",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14876",
+       "rows": [
+        [
+         "2026-08-06",
+         "David Black",
+         "I",
+         150
+        ],
+        [
+         "2026-08-10",
+         "Madalon Law",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14963",
+       "rows": [
+        [
+         "2026-08-26",
+         "CMS East LLC",
+         "B",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://www.citynmb.com/DocumentCenter/View/14996",
+       "rows": [
+        [
+         "2026-09-10",
+         "Dezer Intracoastal Mall (filed as \"Intercoastal Mall\")",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-10",
+         "Dezer Family Holdings (filed as \"Family Holding\")",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-10",
+         "DP Colonial (filed as \"Colonial\")",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-10",
+         "Dezer Museum Holdings (filed as \"Museum\")",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-10",
+         "Gilco 1 Sub Parcel 2 (filed as \"Parcel\")",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://www.citynmb.com/DocumentCenter/View/15038",
+       "rows": []
+      }
+     ]
+    }
+   ],
+   "checked": "2026-10-23",
+   "pending": "G5 (Oct 3 to Oct 16) was due Oct 23 at 5 PM; none were posted when checked that day. Reports are scanned images in each candidate's Document Center folder."
+  },
+  {
+   "city": "South Miami",
+   "match": "^\\s*south miami\\b",
+   "label": "City of South Miami",
+   "portal": "https://www.somifl.gov/846/2026-Election-Candidates-Campaign-Treasu",
+   "pending": "No report after 2026 Q2 could be found as of Oct 23; the city's election page blocks automated reads, so a later report may be posted without a readable link. Check in a browser.",
+   "candidates": [
+    {
+     "name": "Javier E. Fern\u00e1ndez",
+     "office": "Mayor",
+     "reports": [
+      {
+       "report": "2026 Q1 (waiver, no activity)",
+       "period": "2026-01-01/2026-03-31",
+       "url": "https://www.somifl.gov/DocumentCenter/View/8859",
+       "rows": []
+      },
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://www.somifl.gov/DocumentCenter/View/8962",
+       "rows": [
+        [
+         "2026-04-15",
+         "Gustavo Cabrera",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-21",
+         "Wesley Hevia",
+         "I",
+         250
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Steve Calle",
+     "office": "Group I",
+     "reports": [
+      {
+       "report": "2026 Q1 (waiver, no activity)",
+       "period": "2026-01-01/2026-03-31",
+       "url": "https://www.somifl.gov/DocumentCenter/View/8858",
+       "rows": []
+      },
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://www.somifl.gov/DocumentCenter/View/8961",
+       "rows": [
+        [
+         "2026-04-06",
+         "Andrew Velo",
+         "I",
+         250
+        ],
+        [
+         "2026-04-06",
+         "Janet Gonzalez",
+         "I",
+         100
+        ],
+        [
+         "2026-04-06",
+         "Alberto Milo Jr",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Alberto Cordoves",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Sandy Calle",
+         "I",
+         50
+        ],
+        [
+         "2026-04-06",
+         "13th Floor Fund V, LP",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Arnaud Karsenti",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Civic Construction Management LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Christopher Korge",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Gil Development Inc",
+         "B",
+         500
+        ],
+        [
+         "2026-04-06",
+         "Sunset Inn of Miami LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "REM Development & Consulting Inc",
+         "B",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Lisa Bonich",
+     "office": "Group IV",
+     "reports": [
+      {
+       "report": "2026 Q1",
+       "period": "2026-01-01/2026-03-31",
+       "url": "https://www.somifl.gov/DocumentCenter/View/8857",
+       "rows": [
+        [
+         "2026-03-29",
+         "Jonathan Alfonso",
+         "I",
+         1000
+        ],
+        [
+         "2026-03-29",
+         "Rob Penafiel",
+         "I",
+         1000
+        ],
+        [
+         "2026-03-31",
+         "Manny Alonso",
+         "I",
+         1000
+        ],
+        [
+         "2026-03-31",
+         "Lisa Bonich",
+         "S",
+         1000
+        ],
+        [
+         "2026-03-31",
+         "The 401K Lab, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-03-31",
+         "AAS Trust",
+         "B",
+         1000
+        ],
+        [
+         "2026-03-31",
+         "Ewe & Me, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-03-31",
+         "Christine Quinones",
+         "I",
+         1000
+        ],
+        [
+         "2026-03-31",
+         "Ana Mendoza",
+         "I",
+         500
+        ],
+        [
+         "2026-03-31",
+         "Andres Fernandez",
+         "I",
+         250
+        ]
+       ]
+      },
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://www.somifl.gov/DocumentCenter/View/8960",
+       "rows": [
+        [
+         "2026-04-04",
+         "Laura Bonich",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Manuel Ramos",
+         "I",
+         100
+        ],
+        [
+         "2026-04-06",
+         "Alberto Cordoves",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Alberto Milo Jr",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-06",
+         "Tatiana Velo",
+         "I",
+         250
+        ],
+        [
+         "2026-04-08",
+         "New Leadership Network PC",
+         "F",
+         500
+        ],
+        [
+         "2026-04-08",
+         "Gil Development, Inc.",
+         "B",
+         500
+        ],
+        [
+         "2026-04-08",
+         "Sunset Inn of Miami LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-08",
+         "REM Development and Consulting Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-08",
+         "13th Floor Fund V, LP",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-08",
+         "Arnaud Karsenti",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-08",
+         "Civic Construction Management LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-08",
+         "Christopher G. Korge",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-30",
+         "Dick Ortega",
+         "I",
+         500
+        ],
+        [
+         "2026-04-30",
+         "Betsy Guerra",
+         "I",
+         250
+        ],
+        [
+         "2026-04-30",
+         "Jeffrey Bass",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-30",
+         "Ricardo Celorio",
+         "I",
+         250
+        ],
+        [
+         "2026-04-30",
+         "Silvia Celorio",
+         "I",
+         100
+        ],
+        [
+         "2026-04-30",
+         "Maritza Rodriguez",
+         "I",
+         150
+        ],
+        [
+         "2026-04-30",
+         "Javier A. Fernandez",
+         "I",
+         500
+        ],
+        [
+         "2026-04-30",
+         "Vince Vazquez",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-30",
+         "Yamilet Rodriguez",
+         "I",
+         500
+        ],
+        [
+         "2026-05-01",
+         "Citizens for Progress",
+         "F",
+         1000
+        ],
+        [
+         "2026-05-03",
+         "Beatriz Mendoza",
+         "I",
+         100
+        ],
+        [
+         "2026-05-06",
+         "Julio Robaina",
+         "I",
+         100
+        ],
+        [
+         "2026-05-06",
+         "Andrew Korge",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-06",
+         "Evergreen Venture Group Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-06",
+         "Ariel Millan",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-06",
+         "Firezone Sprinklers, Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-06",
+         "David R Custin & Associates, Inc",
+         "B",
+         500
+        ],
+        [
+         "2026-05-06",
+         "Gil Development, Inc.",
+         "B",
+         500
+        ],
+        [
+         "2026-05-06",
+         "FXD Construction, LLC",
+         "B",
+         500
+        ],
+        [
+         "2026-05-07",
+         "Estate General Contractors, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-07",
+         "Delta Electrical Contractors, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-07",
+         "FL Concrete Structures, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-07",
+         "Palma Rentals LLC",
+         "B",
+         1000
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "city": "Aventura",
+   "match": "^\\s*aventura\\b",
+   "label": "City of Aventura",
+   "portal": "https://www.cityofaventura.com/428/2026-Municipal-Election-Candidate-Inform",
+   "pending": "Reports after G1 (G2 through G5) sit in each candidate's Laserfiche records folder, which refuses automated reads; not yet transcribed as of Oct 23.",
+   "candidates": [
+    {
+     "name": "Howard S. Weinberg",
+     "office": "Mayor",
+     "reports": [
+      {
+       "report": "2026 Q1",
+       "period": "2026-01-01/2026-03-31",
+       "url": "https://egov2.cityofaventura.com/Imaging/DocView.aspx?id=398138&dbid=0&repo=CityHall",
+       "rows": [
+        [
+         "2026-02-19",
+         "Howard Weinberg",
+         "S",
+         5000,
+         "loan"
+        ],
+        [
+         "2026-02-24",
+         "Jon Fels",
+         "I",
+         500
+        ],
+        [
+         "2026-02-28",
+         "Howard Weinberg",
+         "S",
+         18,
+         "loan"
+        ],
+        [
+         "2026-03-02",
+         "Jay Goldman",
+         "I",
+         36
+        ],
+        [
+         "2026-03-17",
+         "Michael Worley",
+         "I",
+         18
+        ],
+        [
+         "2026-03-20",
+         "YCM Acquisition",
+         "B",
+         1000
+        ],
+        [
+         "2026-03-20",
+         "Brian Adler",
+         "I",
+         500
+        ],
+        [
+         "2026-03-20",
+         "Bilzin Sumberg",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://egov2.cityofaventura.com/Imaging/DocView.aspx?id=405146&dbid=0&repo=CityHall",
+       "rows": [
+        [
+         "2026-04-03",
+         "Brian Weston",
+         "I",
+         500
+        ],
+        [
+         "2026-04-09",
+         "Vision LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-14",
+         "Davis Opportunity Fund",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-14",
+         "4D Family Dev Fund",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-14",
+         "Bear Dev Holdings",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-17",
+         "Bill Bieler",
+         "I",
+         500
+        ],
+        [
+         "2026-04-17",
+         "Ben Solomon",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-17",
+         "Bear Dev Group",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-21",
+         "Jeff Bercow",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-22",
+         "Melissa Castaneda",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-23",
+         "Miami Off. Center Associates",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-25",
+         "Demo SLS Lux LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-25",
+         "San Blas 19 LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-25",
+         "255 NW 39 LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-25",
+         "Miss Mochila LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-04-25",
+         "Arie Abadi",
+         "I",
+         1000
+        ],
+        [
+         "2026-04-21",
+         "Anatomy Aventura",
+         "B",
+         500
+        ],
+        [
+         "2026-04-22",
+         "John Pittarelli",
+         "I",
+         200
+        ],
+        [
+         "2026-04-29",
+         "Alan Rosenthal",
+         "I",
+         1000
+        ],
+        [
+         "2026-05-07",
+         "BH Worldwide Real Estate Holdings",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-13",
+         "Edward Steinberg",
+         "I",
+         500
+        ],
+        [
+         "2026-05-25",
+         "Marc Yassky",
+         "I",
+         250
+        ],
+        [
+         "2026-05-26",
+         "Billy Joel",
+         "I",
+         500
+        ],
+        [
+         "2026-05-15",
+         "Jon Fels",
+         "I",
+         500
+        ],
+        [
+         "2026-05-21",
+         "Bercow Radell",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-07",
+         "Jeff Levinson",
+         "I",
+         100
+        ],
+        [
+         "2026-05-12",
+         "Turnberry Retail Holding",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-12",
+         "Turnberry Sam Company LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-12",
+         "Aventura Mall Venture",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-12",
+         "Aventura Fashion Island LP",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-12",
+         "Mall Parcels Adelsk-1 Trust LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-12",
+         "Boulevard Stop Ventures LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-11",
+         "Making Democracy Work",
+         "F",
+         1000
+        ],
+        [
+         "2026-05-20",
+         "Terry Petterson",
+         "I",
+         250
+        ],
+        [
+         "2026-05-23",
+         "Joel Matus",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-02",
+         "Jacob Ohayon",
+         "I",
+         500
+        ],
+        [
+         "2026-06-10",
+         "James Tate",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-10",
+         "Ken Spitzberg",
+         "I",
+         150
+        ],
+        [
+         "2026-06-12",
+         "Marissa Amuial",
+         "I",
+         500
+        ],
+        [
+         "2026-06-12",
+         "Barry Silverman",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-12",
+         "Neisen Kasdin",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-15",
+         "Marc Schonwetter",
+         "I",
+         500
+        ],
+        [
+         "2026-06-18",
+         "Victor Matalo",
+         "I",
+         100
+        ],
+        [
+         "2026-06-19",
+         "Denise Rubin",
+         "I",
+         250
+        ],
+        [
+         "2026-06-21",
+         "David Hatz",
+         "I",
+         1000
+        ],
+        [
+         "2026-06-12",
+         "Ronni Bianco",
+         "I",
+         500
+        ],
+        [
+         "2026-05-28",
+         "Anna Udkova",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 Q3",
+       "period": "2026-07-01/2026-09-30",
+       "url": "https://egov2.cityofaventura.com/Imaging/DocView.aspx?id=407148&dbid=0&repo=CityHall",
+       "rows": [
+        [
+         "2026-07-03",
+         "Woolpert Inc PAC",
+         "F",
+         1000
+        ],
+        [
+         "2026-07-03",
+         "William Hucks",
+         "I",
+         1000
+        ],
+        [
+         "2026-07-03",
+         "Michael Peters",
+         "I",
+         1000
+        ],
+        [
+         "2026-07-14",
+         "Yhonatan Benimetzky",
+         "I",
+         1000
+        ],
+        [
+         "2026-07-15",
+         "Pat Book",
+         "I",
+         500
+        ],
+        [
+         "2026-07-16",
+         "Tripp Scott",
+         "B",
+         1000
+        ],
+        [
+         "2026-07-16",
+         "Jacob Ohayon",
+         "I",
+         500
+        ],
+        [
+         "2026-07-20",
+         "Carolyn Erikson",
+         "I",
+         500
+        ],
+        [
+         "2026-07-30",
+         "Robert Chen",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-03",
+         "LSCRB Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-03",
+         "Capital Advocacy Group Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-04",
+         "Lucas Erikson",
+         "I",
+         250
+        ],
+        [
+         "2026-08-05",
+         "Jodi Tartell",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-06",
+         "Kristin Johnson",
+         "I",
+         1000
+        ],
+        [
+         "2026-08-18",
+         "Mike Jacobs",
+         "I",
+         500
+        ],
+        [
+         "2026-08-19",
+         "Renee Lurie",
+         "I",
+         100
+        ],
+        [
+         "2026-08-19",
+         "Steven Smith",
+         "I",
+         250
+        ],
+        [
+         "2026-08-20",
+         "Rachel Friedland",
+         "I",
+         250
+        ],
+        [
+         "2026-08-21",
+         "Dixie Tracks 2 LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-21",
+         "Dixie Tracks LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-21",
+         "Tyler Gold",
+         "I",
+         100
+        ],
+        [
+         "2026-08-22",
+         "Carl Lendor",
+         "I",
+         500
+        ],
+        [
+         "2026-08-23",
+         "WE Strategize LLC",
+         "B",
+         500
+        ],
+        [
+         "2026-08-27",
+         "Perlow Kornik",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-27",
+         "JJS Real Estate Consulting",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-25",
+         "Medical Offices at Uptown Aventura",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-27",
+         "J&G Condo III",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-28",
+         "MG3 210 Office",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-03",
+         "Thays Alvarez",
+         "I",
+         36
+        ],
+        [
+         "2026-09-03",
+         "Mark Gordon",
+         "I",
+         100
+        ],
+        [
+         "2026-09-04",
+         "Kay Jacobsen",
+         "I",
+         36
+        ],
+        [
+         "2026-09-04",
+         "Robert Konigsberg",
+         "I",
+         100
+        ],
+        [
+         "2026-09-04",
+         "Marcus Gottlieb",
+         "I",
+         36
+        ],
+        [
+         "2026-09-04",
+         "Hanna Perlberger",
+         "I",
+         36
+        ],
+        [
+         "2026-09-04",
+         "Diane Matz",
+         "I",
+         180
+        ],
+        [
+         "2026-09-06",
+         "Phillip Shapiro",
+         "I",
+         500
+        ],
+        [
+         "2026-09-06",
+         "Elon Zanis",
+         "I",
+         500
+        ],
+        [
+         "2026-09-14",
+         "Gabe Groisman",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-15",
+         "13-PRH AA Venture",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-16",
+         "Chris McFarlane",
+         "I",
+         100
+        ],
+        [
+         "2026-09-16",
+         "Judith Bernstein",
+         "I",
+         100
+        ],
+        [
+         "2026-09-17",
+         "Hillel Shohet",
+         "I",
+         500
+        ],
+        [
+         "2026-09-18",
+         "Noah Breakstone",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-22",
+         "Eric Shimon",
+         "I",
+         100
+        ],
+        [
+         "2026-09-23",
+         "Aventura Hospitality LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-23",
+         "Faith Family",
+         "I",
+         720
+        ],
+        [
+         "2026-09-24",
+         "Rafael Ilishayev",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-28",
+         "Steven Hurwitz",
+         "I",
+         500
+        ],
+        [
+         "2026-09-29",
+         "Jacob Harel",
+         "I",
+         180
+        ],
+        [
+         "2026-09-29",
+         "Joe Geller",
+         "I",
+         250
+        ],
+        [
+         "2026-09-30",
+         "Miri Bitzah",
+         "I",
+         36
+        ],
+        [
+         "2026-09-30",
+         "Blue Green Capital",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-30",
+         "Edwin Scheel",
+         "I",
+         250
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-10-01/2026-10-02",
+       "url": "https://egov2.cityofaventura.com/Imaging/DocView.aspx?id=407149&dbid=0&repo=CityHall",
+       "rows": [
+        [
+         "2026-10-01",
+         "Maria Sullivan",
+         "I",
+         350
+        ],
+        [
+         "2026-10-01",
+         "Alan Hager",
+         "I",
+         1000
+        ],
+        [
+         "2026-10-02",
+         "Gulfstream Park",
+         "B",
+         1000
+        ],
+        [
+         "2026-10-02",
+         "Turnberry Plaza",
+         "B",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Alberto Zaltzberg",
+     "office": "Mayor",
+     "reports": [
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-06-30",
+       "url": "https://egov2.cityofaventura.com/Imaging/DocView.aspx?id=405133&dbid=0&repo=CityHall",
+       "rows": [
+        [
+         "2026-05-12",
+         "Alberto Zaltzberg",
+         "S",
+         200,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 Q3",
+       "period": "2026-07-01/2026-09-30",
+       "url": "https://egov2.cityofaventura.com/Imaging/DocView.aspx?id=407129&dbid=0&repo=CityHall",
+       "rows": [
+        [
+         "2026-07-09",
+         "Alberto Zaltzberg",
+         "S",
+         20,
+         "in-kind"
+        ],
+        [
+         "2026-07-29",
+         "Alberto Zaltzberg",
+         "S",
+         200,
+         "loan"
+        ],
+        [
+         "2026-09-30",
+         "Adonait Business LLC",
+         "B",
+         163,
+         "in-kind"
+        ],
+        [
+         "2026-09-30",
+         "Adonait Business LLC",
+         "B",
+         336,
+         "in-kind"
+        ],
+        [
+         "2026-09-30",
+         "Adonait Business LLC",
+         "B",
+         74,
+         "in-kind"
+        ],
+        [
+         "2026-09-30",
+         "Adonait Business LLC",
+         "B",
+         62,
+         "in-kind"
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-10-01/2026-10-02",
+       "url": "https://egov2.cityofaventura.com/Imaging/DocView.aspx?id=407130&dbid=0&repo=CityHall",
+       "rows": [
+        [
+         "2026-10-02",
+         "Adonait Business LLC",
+         "B",
+         6,
+         "in-kind"
+        ],
+        [
+         "2026-10-02",
+         "Adonait Business LLC",
+         "B",
+         1,
+         "in-kind"
+        ],
+        [
+         "2026-10-02",
+         "Adonait Business LLC",
+         "B",
+         5,
+         "in-kind"
+        ],
+        [
+         "2026-10-02",
+         "Adonait Business LLC",
+         "B",
+         2,
+         "in-kind"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "city": "El Portal",
+   "match": "^\\s*el portal\\b",
+   "label": "Village of El Portal",
+   "portal": "https://elportalvillage.com/election-information/",
+   "pending": "G1 reports (Sept 29 to Oct 2) for all 13 candidates were posted in October as scanned images and are transcribed here; six were waivers. Nothing later is posted.",
+   "candidates": [
+    {
+     "name": "George Alvarez",
+     "office": "Mayor",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Alvarez-George-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-06",
+         "George Alvarez",
+         "S",
+         100
+        ],
+        [
+         "2026-08-28",
+         "George Alvarez",
+         "S",
+         200
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09",
+       "period": "2026-09-01/2026-09-29",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Alvarez-George-Campaign-Candidate-Report-26M09.pdf",
+       "rows": [
+        [
+         "2026-09-01",
+         "George Alvarez",
+         "S",
+         450
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Alvarez-George-Campaign-Candidate-Report-26G1.pdf",
+       "rows": []
+      }
+     ]
+    },
+    {
+     "name": "Omarr C. Nickerson",
+     "office": "Mayor",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Nickerson-Omarr-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-06",
+         "Omarr C. Nickerson",
+         "S",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09 (waiver, no activity)",
+       "period": "2026-09-01/2026-09-28",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Nickerson-Omarr-Campaign-Candidate-Report-26M09-Waiver.pdf",
+       "rows": []
+      },
+      {
+       "report": "2026 G1 (waiver, no activity)",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Nickerson-Omarr-Campaign-Candidate-Report-26G1-Waiver.pdf",
+       "rows": []
+      }
+     ],
+     "note": "The August itemized page leaves the amount blank; $100 is the total on its summary page."
+    },
+    {
+     "name": "Kerby J. Altidor",
+     "office": "Seat 1",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-08-01/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Altidor-Kerby-J-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-07",
+         "Kerby J. Altidor",
+         "S",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09",
+       "period": "2026-09-01/2026-09-28",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Altidor-Kerby-J-Campaign-Candidate-Report-26M09.pdf",
+       "rows": [
+        [
+         "2026-09-02",
+         "Kareem Edouard",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Charles Howard",
+         "I",
+         25
+        ],
+        [
+         "2026-09-02",
+         "Lamar Myers",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Michael Maroone",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Greg Stier",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Leonie Hermantin",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Zainep Mahmoud",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Rueben Stokes",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Hugue Zenon",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Fritz Charles",
+         "I",
+         200
+        ],
+        [
+         "2026-09-02",
+         "Christopher Eldridge",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Kalefe Wright",
+         "I",
+         25
+        ],
+        [
+         "2026-09-02",
+         "Steven Raymond",
+         "I",
+         200
+        ],
+        [
+         "2026-09-02",
+         "Alaric Craig",
+         "I",
+         25
+        ],
+        [
+         "2026-09-02",
+         "Anthony Holmes",
+         "I",
+         200
+        ],
+        [
+         "2026-09-02",
+         "David Ward",
+         "I",
+         50
+        ],
+        [
+         "2026-09-02",
+         "Alex Carter",
+         "I",
+         25
+        ],
+        [
+         "2026-09-03",
+         "Alexander Hancock",
+         "I",
+         100
+        ],
+        [
+         "2026-09-03",
+         "John Daly",
+         "I",
+         100
+        ],
+        [
+         "2026-09-03",
+         "Samantha Weisz",
+         "I",
+         25
+        ],
+        [
+         "2026-09-03",
+         "Morgan Miles",
+         "I",
+         100
+        ],
+        [
+         "2026-09-03",
+         "Greg Stier",
+         "I",
+         250
+        ],
+        [
+         "2026-09-04",
+         "Garrie Harris",
+         "I",
+         100
+        ],
+        [
+         "2026-09-04",
+         "Nathaniel Johnson",
+         "I",
+         250
+        ],
+        [
+         "2026-09-05",
+         "Marie Altidor",
+         "I",
+         100
+        ],
+        [
+         "2026-09-05",
+         "Cale Williams",
+         "I",
+         100
+        ],
+        [
+         "2026-09-05",
+         "Anthony Willis",
+         "I",
+         100
+        ],
+        [
+         "2026-09-06",
+         "Stefanie Williams",
+         "I",
+         50
+        ],
+        [
+         "2026-09-07",
+         "Makeda Murray",
+         "I",
+         100
+        ],
+        [
+         "2026-09-07",
+         "Uro Osikhena",
+         "I",
+         100
+        ],
+        [
+         "2026-09-08",
+         "Sandy Dorsanvil",
+         "I",
+         50
+        ],
+        [
+         "2026-09-08",
+         "Jennifer Gauthier",
+         "I",
+         100
+        ],
+        [
+         "2026-09-12",
+         "Abimbola Okeowo",
+         "I",
+         50
+        ],
+        [
+         "2026-09-13",
+         "David Mills",
+         "I",
+         25
+        ],
+        [
+         "2026-09-16",
+         "Michelle Gittens",
+         "I",
+         150
+        ],
+        [
+         "2026-09-06",
+         "Laura Humber",
+         "I",
+         300
+        ],
+        [
+         "2026-09-17",
+         "Yassin Knocks",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Rolaindjy Desire",
+         "I",
+         25
+        ],
+        [
+         "2026-09-02",
+         "Sobrina Cherlus",
+         "I",
+         50
+        ],
+        [
+         "2026-09-02",
+         "Don Barial",
+         "I",
+         100
+        ],
+        [
+         "2026-09-02",
+         "Jorge Agustin",
+         "I",
+         50
+        ],
+        [
+         "2026-09-02",
+         "Victory Row",
+         "B",
+         150
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Altidor-Kerby-J-Campaign-Candidate-Report-26G1.pdf",
+       "rows": [
+        [
+         "2026-10-01",
+         "Anya Ruvinskaya",
+         "I",
+         100
+        ],
+        [
+         "2026-09-30",
+         "Kwame Webb",
+         "I",
+         150
+        ],
+        [
+         "2026-09-30",
+         "Michael Ashade",
+         "I",
+         100
+        ],
+        [
+         "2026-09-30",
+         "Diana Florez",
+         "I",
+         100
+        ],
+        [
+         "2026-09-30",
+         "Ezra Merritt",
+         "I",
+         50
+        ],
+        [
+         "2026-09-30",
+         "Loubens Jean-Louis",
+         "I",
+         50
+        ],
+        [
+         "2026-09-29",
+         "Gordon Williams",
+         "I",
+         100
+        ],
+        [
+         "2026-09-30",
+         "Nicole Lamb",
+         "I",
+         100
+        ],
+        [
+         "2026-10-02",
+         "Markeze Byrant",
+         "I",
+         200
+        ]
+       ]
+      }
+     ],
+     "note": "The September report's itemized gifts add to $4,275; its summary page says $4,225."
+    },
+    {
+     "name": "Edna Edelman",
+     "office": "Seat 1",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Edelman-Edna-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-03",
+         "Edna Edelman",
+         "S",
+         100
+        ],
+        [
+         "2026-08-24",
+         "Marc Edelman",
+         "I",
+         1
+        ],
+        [
+         "2026-08-24",
+         "Marc Edelman",
+         "I",
+         999
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1 (waiver, no activity)",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Edelman-Edna-Campaign-Candidate-Report-26G1-Waiver.pdf",
+       "rows": []
+      }
+     ],
+     "note": "Her September report (Sept. 1 to 30) shows $300 more raised, but its contribution page was not posted, so those givers are not listed."
+    },
+    {
+     "name": "Thomas Pulliam",
+     "office": "Seat 1",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Pulliam-Thomas-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-06",
+         "Thomas Pulliam",
+         "S",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09",
+       "period": "2026-09-01/2026-09-28",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Pulliam-Thomas-Campaign-Candidate-Report-26M09.pdf",
+       "rows": [
+        [
+         "2026-09-14",
+         "Thomas Pulliam",
+         "S",
+         222
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Pulliam-Thomas-Campaign-Candidate-Report-26G1.pdf",
+       "rows": []
+      }
+     ]
+    },
+    {
+     "name": "Anders Urbom",
+     "office": "Seat 1",
+     "summary": {
+      "report": "2026 M08",
+      "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Urbom-Anders-Campaign-Candidate-Report-26M08.pdf",
+      "through": "2026-08-31",
+      "total": 200,
+      "note": "That report lists no individual givers (no contribution page was filed), and his September report is a no-activity waiver."
+     },
+     "reports": [
+      {
+       "report": "2026 G1 (waiver, no activity)",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Urbom-Anders-Campaign-Candidate-Report-26G1-Waiver.pdf",
+       "rows": []
+      }
+     ]
+    },
+    {
+     "name": "Ashley Lucio",
+     "office": "Seat 2",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Lucio-Ashley-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-04",
+         "Ashley Lucio",
+         "S",
+         250
+        ],
+        [
+         "2026-08-27",
+         "Ashley Lucio",
+         "S",
+         350
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09",
+       "period": "2026-09-01/2026-09-28",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Lucio-Ashley-Campaign-Candidate-Report-26M09.pdf",
+       "rows": [
+        [
+         "2026-09-02",
+         "Greg Stier",
+         "I",
+         150
+        ],
+        [
+         "2026-09-02",
+         "Kerby Altidor",
+         "I",
+         20
+        ],
+        [
+         "2026-09-03",
+         "Ian C McKenzie",
+         "I",
+         5
+        ],
+        [
+         "2026-09-04",
+         "Ian C McKenzie",
+         "I",
+         95
+        ],
+        [
+         "2026-09-13",
+         "Greg Stier",
+         "I",
+         150
+        ],
+        [
+         "2026-09-14",
+         "Calixto Navarro",
+         "I",
+         50
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1 (waiver, no activity)",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Lucio-Ashley-Campaign-Candidate-Report-26G1-Waiver.pdf",
+       "rows": []
+      }
+     ]
+    },
+    {
+     "name": "Edward Odabachian",
+     "office": "Seat 2",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Odabachian-Edward-Nicklas-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-05",
+         "Edward Odabachian",
+         "S",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09",
+       "period": "2026-09-01/2026-09-29",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Odabachian-Edward-Nicklas-Campaign-Candidate-Report-26M09.pdf",
+       "rows": [
+        [
+         "2026-09-09",
+         "Stacia Braun",
+         "I",
+         300
+        ],
+        [
+         "2026-09-17",
+         "Odabachian Imports",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1 (waiver, no activity)",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Odabachian-Edward-Nicklas-Campaign-Candidate-Report-26G1-Waiver.pdf",
+       "rows": []
+      }
+     ],
+     "note": "His August summary page was corrected by hand and does not match its one itemized gift ($100)."
+    },
+    {
+     "name": "Charles Winters",
+     "office": "Seat 2",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Winters-Charles-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-04",
+         "Charles Winters",
+         "S",
+         1000,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09",
+       "period": "2026-09-01/2026-09-28",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Winters-Charles-Campaign-Candidate-Report-26M09.pdf",
+       "rows": []
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Winters-Charles-Campaign-Candidate-Report-26G1.pdf",
+       "rows": []
+      }
+     ]
+    },
+    {
+     "name": "Velvet S. Connally",
+     "office": "Seat 3",
+     "reports": [
+      {
+       "report": "2026 M08 (waiver, no activity)",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Connally-Velvet-Campaign-Candidate-Report-26M08-Waiver.pdf",
+       "rows": []
+      },
+      {
+       "report": "2026 M09 (waiver, no activity)",
+       "period": "2026-09-01/2026-09-28",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Connally-Velvet-Campaign-Candidate-Report-26M09-Waiver.pdf",
+       "rows": []
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Connally-Velvet-Campaign-Candidate-Report-26G1.pdf",
+       "rows": [
+        [
+         "2026-09-30",
+         "Velvet S. Connally",
+         "S",
+         57,
+         "in-kind"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Denise White",
+     "office": "Seat 3",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/White-Denise-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-04",
+         "Denise White",
+         "S",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09",
+       "period": "2026-09-01/2026-09-28",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/White-Denise-Campaign-Candidate-Report-26M09.pdf",
+       "rows": [
+        [
+         "2026-09-15",
+         "Gia Jones",
+         "I",
+         25
+        ],
+        [
+         "2026-09-16",
+         "Veronica St. Albin",
+         "I",
+         700,
+         "loan"
+        ],
+        [
+         "2026-09-16",
+         "Veronica St. Albin",
+         "I",
+         300
+        ],
+        [
+         "2026-09-16",
+         "Kerly Perard",
+         "I",
+         25
+        ],
+        [
+         "2026-09-16",
+         "Vastya Pettigny",
+         "I",
+         50
+        ],
+        [
+         "2026-09-16",
+         "Beatrice Winder",
+         "I",
+         50
+        ],
+        [
+         "2026-09-16",
+         "Greg Stier",
+         "I",
+         250
+        ],
+        [
+         "2026-09-16",
+         "Marie Gourdet",
+         "I",
+         50
+        ],
+        [
+         "2026-09-16",
+         "Raynalda Milord",
+         "I",
+         25
+        ],
+        [
+         "2026-09-16",
+         "Irrington Roberts-Isaacs",
+         "I",
+         100
+        ],
+        [
+         "2026-09-16",
+         "Marie-Alice Armand",
+         "I",
+         25
+        ],
+        [
+         "2026-09-16",
+         "Jacqueline Gourdet Dorvil",
+         "I",
+         250
+        ],
+        [
+         "2026-09-16",
+         "Florence Saint-Albin",
+         "I",
+         100
+        ],
+        [
+         "2026-09-16",
+         "Shawnyell Tumbling",
+         "I",
+         50
+        ],
+        [
+         "2026-09-16",
+         "Jerrett Winder",
+         "I",
+         50
+        ],
+        [
+         "2026-09-16",
+         "Kathy Webb",
+         "I",
+         100
+        ],
+        [
+         "2026-09-16",
+         "Juliet Nwahiri",
+         "I",
+         150
+        ],
+        [
+         "2026-09-16",
+         "Jadus Wesley",
+         "I",
+         50
+        ],
+        [
+         "2026-09-16",
+         "Darline Jean-Pierre",
+         "I",
+         150
+        ],
+        [
+         "2026-09-16",
+         "James Curry",
+         "I",
+         150
+        ],
+        [
+         "2026-09-16",
+         "Daniel Rojas",
+         "I",
+         50
+        ],
+        [
+         "2026-09-17",
+         "Sabine Saint Albin",
+         "I",
+         100
+        ],
+        [
+         "2026-09-19",
+         "Jay Rodriguez",
+         "I",
+         20
+        ],
+        [
+         "2026-09-20",
+         "Leon Beckford",
+         "I",
+         10
+        ],
+        [
+         "2026-09-21",
+         "Alix Armand",
+         "I",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/White-Denise-Campaign-Candidate-Report-26G1.pdf",
+       "rows": [
+        [
+         "2026-10-01",
+         "Anthony Johnson",
+         "I",
+         100
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Danny Rojas",
+     "office": "Seat 4",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Rojas-Duenas-Daniel-Felipe-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-03",
+         "Danny Rojas",
+         "S",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09",
+       "period": "2026-09-01/2026-09-28",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Rojas-Duenas-Daniel-Felipe-Campaign-Candidate-Report-26M09.pdf",
+       "rows": [
+        [
+         "2026-09-03",
+         "Danny Rojas",
+         "S",
+         250
+        ],
+        [
+         "2026-09-07",
+         "Danny Rojas",
+         "S",
+         50
+        ],
+        [
+         "2026-09-11",
+         "Greg Stier",
+         "I",
+         400
+        ],
+        [
+         "2026-09-14",
+         "Teresa Sanchez",
+         "I",
+         400
+        ],
+        [
+         "2026-09-20",
+         "Adam Old",
+         "I",
+         230
+        ],
+        [
+         "2026-09-25",
+         "Chantal Rodriguez",
+         "I",
+         50
+        ],
+        [
+         "2026-09-25",
+         "Micaela Rozas",
+         "I",
+         25
+        ],
+        [
+         "2026-09-28",
+         "Luis Pacheco",
+         "I",
+         600
+        ],
+        [
+         "2026-09-28",
+         "Madeleine Pacheco",
+         "I",
+         100
+        ],
+        [
+         "2026-09-25",
+         "Chantal Rodriguez",
+         "I",
+         25
+        ],
+        [
+         "2026-09-27",
+         "Chanel Mesa",
+         "I",
+         25
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Rojas-Duenas-Daniel-Felipe-Campaign-Candidate-Report-26G1.pdf",
+       "rows": [
+        [
+         "2026-09-29",
+         "Madeleine Pacheco",
+         "I",
+         110
+        ]
+       ]
+      }
+     ],
+     "note": "Two September gifts (Luis and Madeleine Pacheco) have no date on the report and are shown at the report's end date."
+    },
+    {
+     "name": "Nick Schmidt",
+     "office": "Seat 4",
+     "reports": [
+      {
+       "report": "2026 M08",
+       "period": "2026-07-31/2026-08-31",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Schmidt-Marc-Nicklas-Campaign-Candidate-Report-26M08.pdf",
+       "rows": [
+        [
+         "2026-08-06",
+         "Nick Schmidt",
+         "S",
+         250,
+         "loan"
+        ],
+        [
+         "2026-08-24",
+         "Irina Krasnopolskaya",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 M09",
+       "period": "2026-09-01/2026-09-28",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Schmidt-Marc-Nicklas-Campaign-Candidate-Report-26M09.pdf",
+       "rows": [
+        [
+         "2026-09-28",
+         "Nick Schmidt",
+         "S",
+         400,
+         "loan"
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1 (waiver, no activity)",
+       "period": "2026-09-29/2026-10-02",
+       "url": "https://elportalvillage.com/wp-content/uploads/2026/10/Schmidt-Marc-Nicklas-Campaign-Candidate-Report-26G1.pdf",
+       "rows": []
+      }
+     ]
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "city": "Medley",
+   "match": "^\\s*medley\\b",
+   "label": "Town of Medley",
+   "portal": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+   "candidates": [
+    {
+     "name": "Edgar Ayala",
+     "office": "Council",
+     "reports": [
+      {
+       "report": "2026 P3",
+       "period": "2026-06-27/2026-07-10",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-08",
+         "Edgar I. Ayala",
+         "S",
+         50
+        ],
+        [
+         "2026-07-08",
+         "Lidia Ayala",
+         "I",
+         50
+        ]
+       ]
+      },
+      {
+       "report": "2026 P6",
+       "period": "2026-07-25/2026-07-31",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-28",
+         "Florida Wood Recycling Inc",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-08-14",
+         "Lazaro Rodriguez",
+         "I",
+         10
+        ],
+        [
+         "2026-08-14",
+         "Ricardo Estrada",
+         "I",
+         53.04
+        ],
+        [
+         "2026-08-17",
+         "Nelson Diaz",
+         "I",
+         500
+        ],
+        [
+         "2026-08-17",
+         "Jose Munoz",
+         "I",
+         530
+        ],
+        [
+         "2026-08-17",
+         "Angel Parra",
+         "I",
+         500
+        ],
+        [
+         "2026-08-17",
+         "Orlando Torres",
+         "I",
+         105.75
+        ],
+        [
+         "2026-08-17",
+         "Rony Fiazer",
+         "I",
+         103.9
+        ],
+        [
+         "2026-08-18",
+         "Gissel Stein",
+         "I",
+         105.75
+        ],
+        [
+         "2026-08-19",
+         "Walter Fajet",
+         "I",
+         105.75
+        ],
+        [
+         "2026-08-20",
+         "Irma Honda",
+         "I",
+         105.75
+        ],
+        [
+         "2026-08-20",
+         "Jaime Petralanda",
+         "I",
+         500
+        ],
+        [
+         "2026-08-20",
+         "Crystal Clear Holdings LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-21",
+         "Perco Industries Inc",
+         "B",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-08-24",
+         "Tomas Alfonso",
+         "I",
+         970
+        ],
+        [
+         "2026-08-24",
+         "Heriberto Cabrera",
+         "I",
+         53.04
+        ],
+        [
+         "2026-08-25",
+         "Jack Young",
+         "I",
+         105.75
+        ],
+        [
+         "2026-08-28",
+         "SFM Services",
+         "B",
+         500
+        ],
+        [
+         "2026-09-01",
+         "Waste Management Inc of Florida",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-01",
+         "Mike Rodriguez",
+         "I",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-09-05",
+         "Gissela Alonso",
+         "I",
+         97.76
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-10-02",
+         "Miami Realtors Political Action Committee",
+         "F",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Lizelh Rodriguez",
+     "office": "Council",
+     "note": "Her first general-election report was amended; the amended figures are used.",
+     "reports": [
+      {
+       "report": "2026 P4",
+       "period": "2026-07-11/2026-07-17",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-16",
+         "Lazaro Rodriguez",
+         "I",
+         50
+        ],
+        [
+         "2026-07-16",
+         "Lizelh Rodriguez",
+         "S",
+         50
+        ]
+       ]
+      },
+      {
+       "report": "2026 P6",
+       "period": "2026-07-25/2026-07-31",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-28",
+         "Florida Wood Recycling",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-08-14",
+         "Lazaro Rodriguez",
+         "I",
+         10.86
+        ],
+        [
+         "2026-08-14",
+         "Gyssel Stein",
+         "I",
+         105.75
+        ],
+        [
+         "2026-08-14",
+         "Roberto & Amelia Rodriguez",
+         "I",
+         105.75
+        ],
+        [
+         "2026-08-18",
+         "Perco Industries",
+         "B",
+         500
+        ],
+        [
+         "2026-08-20",
+         "Camila & Milena Rodriguez",
+         "I",
+         53.04
+        ],
+        [
+         "2026-08-20",
+         "Orlando Torres",
+         "I",
+         105.75
+        ],
+        [
+         "2026-08-20",
+         "Christina Ogando",
+         "I",
+         100
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-08-30",
+         "Tomas Alfonso R.",
+         "I",
+         970
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": []
+      }
+     ]
+    },
+    {
+     "name": "Gloria Hernandez",
+     "office": "Council",
+     "reports": [
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-05-31",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-05-07",
+         "Ovas & Co, LLC",
+         "B",
+         700
+        ]
+       ]
+      },
+      {
+       "report": "2026 P3",
+       "period": "2026-06-27/2026-07-10",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-03",
+         "Teresa L. Perez & Miguel Perez",
+         "I",
+         1000
+        ],
+        [
+         "2026-07-03",
+         "Myriam Hebe Garcia",
+         "I",
+         1000
+        ],
+        [
+         "2026-07-03",
+         "Quality Container Transport Inc",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 P6",
+       "period": "2026-07-25/2026-07-31",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-28",
+         "AFE Medley Plaza",
+         "B",
+         1000
+        ],
+        [
+         "2026-07-28",
+         "Picapiedra Construction LLC",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-08-14",
+         "Janette Perez & Ruben Hernandez",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-08-31",
+         "GCR Automotive Service Corp",
+         "B",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-09-11",
+         "Okeechobee Landfill Inc",
+         "B",
+         500
+        ],
+        [
+         "2026-09-11",
+         "Waste Management Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-11",
+         "Florida Wood",
+         "B",
+         250
+        ],
+        [
+         "2026-09-18",
+         "Children's Christian School",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-09-29",
+         "FML Consulting Group LLC",
+         "B",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Ivan A. Pacheco",
+     "office": "Council",
+     "note": "The town had not posted his 2026 G4 report as of 2026-10-13.",
+     "reports": [
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-05-31",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-05-13",
+         "Ivan Pacheco",
+         "S",
+         200
+        ]
+       ]
+      },
+      {
+       "report": "2026 P7",
+       "period": "2026-08-01/2026-08-13",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-08-10",
+         "Ivan Pacheco",
+         "S",
+         400
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": []
+      }
+     ]
+    },
+    {
+     "name": "Juan Stefano",
+     "office": "Council",
+     "reports": [
+      {
+       "report": "2026 Q2",
+       "period": "2026-04-01/2026-05-31",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-05-07",
+         "Juan J. Stefano",
+         "S",
+         100,
+         "loan"
+        ],
+        [
+         "2026-05-14",
+         "Rava Group Container Serv Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-21",
+         "Quality Container Transport Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-05-21",
+         "Louis Perez",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 P3",
+       "period": "2026-06-27/2026-07-10",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-03",
+         "Micheal Perez",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 P4",
+       "period": "2026-07-11/2026-07-17",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-17",
+         "Aero Tires",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 P5",
+       "period": "2026-07-18/2026-07-24",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-24",
+         "Nancy R. Stefano",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 P6",
+       "period": "2026-07-25/2026-07-31",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-07-29",
+         "AFE Medley Business Center",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G1",
+       "period": "2026-08-14/2026-08-21",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-08-17",
+         "Timon Trucking Corp",
+         "B",
+         1000
+        ],
+        [
+         "2026-08-18",
+         "Medley Block Ind Corp",
+         "B",
+         500
+        ],
+        [
+         "2026-08-18",
+         "Universal Concrete & Ready Mix Corp",
+         "B",
+         500
+        ],
+        [
+         "2026-08-18",
+         "AISA Enterprises Corp",
+         "B",
+         500
+        ],
+        [
+         "2026-08-18",
+         "Concrete Products Transport Corp",
+         "B",
+         500
+        ],
+        [
+         "2026-08-18",
+         "Rodal Inv Corp",
+         "B",
+         500
+        ],
+        [
+         "2026-08-18",
+         "Jumar Truck Inc",
+         "B",
+         500
+        ],
+        [
+         "2026-08-18",
+         "GCR Automotive Service Corp",
+         "B",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-08-22/2026-09-04",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-08-27",
+         "Ins. & Beyond LLC",
+         "B",
+         500
+        ],
+        [
+         "2026-08-27",
+         "The Elite Carrier Serv. of Mia LLC",
+         "B",
+         500
+        ]
+       ]
+      },
+      {
+       "report": "2026 G3",
+       "period": "2026-09-05/2026-09-18",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-09-10",
+         "Waste Management Inc of Florida",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-10",
+         "Okeechobee Landfill Inc",
+         "B",
+         500
+        ],
+        [
+         "2026-09-16",
+         "Powder Coating Tech",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-16",
+         "MRG Glass Corp",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-16",
+         "Mr Glass Doors & Windows",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-18",
+         "Ana Stefano",
+         "I",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G4",
+       "period": "2026-09-19/2026-10-02",
+       "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF",
+       "rows": [
+        [
+         "2026-09-21",
+         "Stop Trucks Parts Corp",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-21",
+         "Andre Gonzalez",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-21",
+         "Andry Gonzalez",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-22",
+         "Yvette Garcia",
+         "I",
+         500
+        ],
+        [
+         "2026-09-23",
+         "Yvette Garcia",
+         "I",
+         500
+        ],
+        [
+         "2026-09-29",
+         "The Lasarte Law Firm",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-30",
+         "Ram Invest / Sea Vee Boats",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-30",
+         "Ariel Pared",
+         "I",
+         1000
+        ],
+        [
+         "2026-09-30",
+         "Herrero Law",
+         "B",
+         1000
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "pending": "The town's 2026 reports are in a SharePoint folder that refuses automated reads; G5 and Pacheco's G4 not yet checked as of Oct 23.",
+   "checked": "2026-10-23"
+  },
+  {
+   "city": "Virginia Gardens",
+   "match": "^\\s*virginia gardens\\b",
+   "label": "Village of Virginia Gardens",
+   "portal": "https://virginiagardens-fl.gov/campaign-finance-report-documents/",
+   "candidates": [
+    {
+     "name": "Tim Boylan",
+     "office": "Mayor",
+     "reports": [
+      {
+       "report": "2026 G1",
+       "period": "2026-07-01/2026-10-02",
+       "url": "https://virginiagardens-fl.gov/wp-content/uploads/2026/10/1238_001.pdf",
+       "rows": [
+        [
+         "2026-08-06",
+         "Tim Boylan",
+         "S",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Fred Spencer Deno IV",
+     "office": "Mayor",
+     "reports": [
+      {
+       "report": "2026 G1",
+       "period": "2026-07-01/2026-10-02",
+       "url": "https://virginiagardens-fl.gov/wp-content/uploads/2026/10/1279_001.pdf",
+       "rows": [
+        [
+         "2026-07-24",
+         "Sandra Deno",
+         "I",
+         350
+        ],
+        [
+         "2026-08-26",
+         "Julio Fojon",
+         "I",
+         500
+        ],
+        [
+         "2026-08-26",
+         "Vac It Up, LLC",
+         "B",
+         500
+        ],
+        [
+         "2026-10-02",
+         "Miami Realtors Political Action Committee",
+         "F",
+         1000
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-10-03/2026-10-16",
+       "url": "https://virginiagardens-fl.gov/wp-content/uploads/2026/10/1328_001.pdf",
+       "rows": [
+        [
+         "2026-10-08",
+         "Becker & Poliakoff, P.A.",
+         "B",
+         1000
+        ],
+        [
+         "2026-10-09",
+         "Las Mercedes Management, LLC",
+         "B",
+         1000
+        ],
+        [
+         "2026-10-09",
+         "Clinica Las Mercedes LLC",
+         "B",
+         1000
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Jorge Arce",
+     "office": "Council",
+     "summary": {
+      "report": "2026 G1",
+      "url": "https://virginiagardens-fl.gov/wp-content/uploads/2026/10/1261_001.pdf",
+      "through": "2026-10-02",
+      "total": 150,
+      "note": "The report lists $150 in contributions but has no page naming the givers."
+     }
+    },
+    {
+     "name": "Elizabeth K. Taylor-Martinez",
+     "office": "Council",
+     "reports": [
+      {
+       "report": "2026 G1",
+       "period": "2026-07-01/2026-10-02",
+       "url": "https://virginiagardens-fl.gov/wp-content/uploads/2026/10/1273_001.pdf",
+       "rows": [
+        [
+         "2026-07-31",
+         "Elizabeth K. Taylor-Martinez",
+         "S",
+         300
+        ]
+       ]
+      },
+      {
+       "report": "2026 G2",
+       "period": "2026-10-03/2026-10-16",
+       "url": "https://virginiagardens-fl.gov/wp-content/uploads/2026/10/1355_001.pdf",
+       "rows": [],
+       "note": "G2 shows $300 in; the itemized page re-lists her Jul 31 $300 opening deposit already counted under G1, so nothing new is added."
+      }
+     ]
+    },
+    {
+     "name": "Michael Tur",
+     "office": "Council",
+     "reports": [
+      {
+       "report": "2026 G1",
+       "period": "2026-07-01/2026-10-02",
+       "url": "https://virginiagardens-fl.gov/wp-content/uploads/2026/10/1349_001.pdf",
+       "rows": [
+        [
+         "2026-08-13",
+         "Midtown Towing of Miami, Inc",
+         "B",
+         1000
+        ],
+        [
+         "2026-09-25",
+         "Michael Tur",
+         "S",
+         1500,
+         "loan"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "pending": "The village posts G1, G2 and G3 (due about Oct 9, Oct 23 and Oct 30). As of Oct 23: G2 is in for Deno and Taylor-Martinez and Tur's G1 is in; G2 not yet posted for Boylan, Arce and Tur; G3 not yet due.",
+   "checked": "2026-10-23"
+  },
+  {
+   "city": "North Miami",
+   "match": "^\\s*north miami\\b(?!\\s+beach)",
+   "label": "City of North Miami",
+   "portal": "https://northmiamifl.easyvotecampaignfinance.com/home/publicfilings",
+   "candidates": [
+    {
+     "name": "Brian Jinks",
+     "office": "District 2",
+     "summary": {"report": "2026 G2", "url": "https://ecf-api.easyvoteapp.com/documents/1C57F5F1-C8F3-4459-A54F-BB47B104E81D/viewfinalredactedpdf", "through": "2026-10-16", "total": 24765.29, "note": "His three reports (filed Jul 10, Oct 12 and Oct 23, 2026) are handwritten scans on the city's EasyVote portal, so the givers are not itemized here yet."}
+    }
+   ],
+   "checked": "2026-10-23",
+   "pending": "North Miami's 2026 codes: G1 Jul 1 to Oct 2 (due Oct 9), G2 Oct 3 to 16 (due Oct 23), G3 Oct 17 to 29 (due Oct 30). The city's 2026 page is northmiamifl.gov/1426; the EasyVote portal is read live on the site."
+  },
+  {
+   "city": "Biscayne Park",
+   "match": "^\\s*biscayne park\\b",
+   "label": "Village of Biscayne Park",
+   "portal": "https://biscayneparkfl.gov/elections",
+   "candidates": [
+    {
+     "name": "Howard Goldmann",
+     "none": "The Village of Biscayne Park has not posted campaign reports online as of 2026-10-14, so no official donor list is available. ballot305 requested the reports from the village clerk on 2026-10-12."
+    },
+    {
+     "name": "Judi Hamelburg",
+     "none": "The Village of Biscayne Park has not posted campaign reports online as of 2026-10-14, so no official donor list is available. ballot305 requested the reports from the village clerk on 2026-10-12."
+    },
+    {
+     "name": "Daniel Samaria",
+     "none": "The Village of Biscayne Park has not posted campaign reports online as of 2026-10-14, so no official donor list is available. ballot305 requested the reports from the village clerk on 2026-10-12."
+    }
+   ],
+   "checked": "2026-10-23",
+   "pending": "Still nothing on the village site as of Oct 23: no candidate list and no treasurer's reports. Our Oct 12 records request is the only path; the county ballot confirms the three candidates."
+  },
+    {"city": "Sunny Isles Beach", "match": "^\\s*sunny isles beach\\b", "label": "City of Sunny Isles Beach", "portal": "https://cityofsunnyislesbeachfl.easyvotecampaignfinance.com/home/publicfilings", "pending": "Only Dana Goldman is typed in here: her reports on the city's EasyVote portal are scanned, not itemized. Other Sunny Isles Beach candidates come straight from the portal's itemized data.", "checked": "2026-10-23", "candidates": [{"name": "Dana Goldman", "office": "Mayor", "reports": [{"report": "2026 Q1", "period": "2026-01-01/2026-03-31", "url": "https://ecf-api.easyvoteapp.com/documents/26BC4F84-8E5B-4797-9974-42FFA16F5E93/viewfinalredactedpdf", "note": "Both gifts are dated only 03/2026 on the report; shown as March 31.", "rows": [["2026-03-31", "Norman S. Edelcup", "I", 500], ["2026-03-31", "Dana Goldman", "S", 9000, "loan"]]}, {"report": "2026 Q2", "period": "2026-04-01/2026-06-30", "url": "https://ecf-api.easyvoteapp.com/documents/E6A14801-E80D-42CE-950A-CE9B6E45208D/viewfinalredactedpdf", "rows": [["2026-05-28", "Ryan Bailine", "I", 1000], ["2026-06-05", "Ethan B Wasserman", "I", 250], ["2026-06-05", "GMI Brokerage Corp", "B", 1000], ["2026-06-05", "Iryna Gunko", "I", 1000], ["2026-06-05", "Viktoria Gennadiivna Grodsky", "I", 1000], ["2026-06-17", "Thomas Jack O. Connell", "I", 1000], ["2026-06-18", "Kevin Veilleux", "I", 333], ["2026-06-16", "Dana Goldman", "S", 6017.5, "in-kind"]]}, {"report": "2026 Q3 (filed as 2026-25GE)", "period": "2026-07-01/2026-10-08", "url": "https://ecf-api.easyvoteapp.com/documents/35A61880-950B-42B0-97E7-AD78582FBED6/viewfinalredactedpdf", "rows": [["2026-07-10", "CF Promote, LLC", "B", 1000], ["2026-07-10", "C Member Promote, LLC", "B", 1000], ["2026-07-10", "C Member Equity, Inc.", "B", 1000], ["2026-07-10", "CF Sunny Isles LLC", "B", 1000], ["2026-07-10", "Abus Sunny Isles Property Inc.", "B", 1000], ["2026-07-10", "Scaffold Investments LLC", "B", 1000], ["2026-07-10", "Sand Investments LLC", "B", 1000], ["2026-07-10", "F Member Promote LLC", "B", 1000], ["2026-07-10", "FI SIBA, LLC", "B", 1000], ["2026-07-10", "ED FL Investments, LLC", "B", 1000], ["2026-08-04", "RK FL Management Inc.", "B", 1000], ["2026-08-17", "Futurebound Corp", "B", 1000], ["2026-09-02", "Brent Friedman", "I", 500], ["2026-07-21", "Marc Ross", "I", 360], ["2026-08-07", "Gloria Romero Roses", "I", 50], ["2026-09-07", "Gloria Romero Roses", "I", 50], ["2026-10-07", "Gloria Romero Roses", "I", 50], ["2026-09-23", "Michele Schimmel", "I", 250], ["2026-09-30", "17550 Collins Ave LLC", "B", 1000], ["2026-09-30", "Jorge Matamoros", "I", 1000], ["2026-09-30", "2000 Biscayne Boulevard", "B", 1000], ["2026-09-30", "Timur Lobanov", "I", 1000], ["2026-09-30", "Imperium Venture Group Inc.", "B", 1000], ["2026-09-30", "670 Golden Beach Drive LLC", "B", 1000], ["2026-09-30", "93 Cypress Point LLC", "B", 1000], ["2026-09-30", "Elevare Construction Management LLC", "B", 1000], ["2026-09-30", "610 Sabal Palm Rd LLC", "B", 1000], ["2026-09-30", "Septaria Holdings, LLC", "B", 1000]]}]}]}
+  ]
+}

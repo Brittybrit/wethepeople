@@ -18,6 +18,7 @@
     "decisions/0005-address-never-stored.md",
     "decisions/0006-money-figures-stay-on-ballot305.md",
     "decisions/0007-mcp-and-openapi-from-one-schema.md",
+    "decisions/0008-ledger-moves-to-platform.md",
     "privacy.md"
   ]
 }

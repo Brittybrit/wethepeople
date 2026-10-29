@@ -1,0 +1,130 @@
+{
+ "updated": "2026-10-27",
+ "note": "Connections between officials and the parties, donors, lobbyists and vendors before them, published only when an official record states the relationship: the official's own financial disclosure, a Sunbiz officer listing with a matching filed address, a voting-conflict memo, an ethics opinion or complaint. Leads the tool is still checking are counted per official but not named. Rebuild: node scripts/leads.mjs.",
+ "confirmed": [
+  {
+   "person": "byron-donalds",
+   "official": "Byron Donalds",
+   "other": "Onesto, LLC: Optima Management Services, LLC and OptimaEd (charter school services and curriculum)",
+   "otherKind": "business",
+   "signal": "stated",
+   "relationship": {
+    "en": "His spouse owns Onesto, LLC, which owns Optima Management Services and OptimaEd, per his own House financial disclosures.",
+    "es": "Su cónyuge es dueña de Onesto, LLC, que es dueña de Optima Management Services y OptimaEd, según sus propias declaraciones financieras ante la Cámara.",
+    "ht": "Konjwen li posede Onesto, LLC, ki posede Optima Management Services ak OptimaEd, dapre pwòp deklarasyon finansye li nan Chanm nan."
+   },
+   "headline": {
+    "en": "$30.4 million in tax dollars went to companies his spouse owns (2022-23 to 2025-26), paid by charter schools that hired them. No vote of his directed this money.",
+    "es": "$30.4 millones en dinero de impuestos fueron a empresas de su cónyuge (2022-23 a 2025-26), pagados por escuelas chárter que las contrataron. Ningún voto suyo dirigió este dinero.",
+    "ht": "$30.4 milyon lajan taks te ale nan konpayi konjwen li posede (2022-23 rive 2025-26), lekòl charter ki te anboche yo te peye yo. Okenn vòt li pa t dirije lajan sa a."
+   },
+   "headlineNote": {
+    "en": "Another $15.7 million is budgeted for 2026-27. $23.9 million of the total was fees; the rest was school payroll paid through one of the companies. Partial: one school’s 2025-26 audit is not out yet.",
+    "es": "Hay otros $15.7 millones presupuestados para 2026-27. $23.9 millones del total fueron tarifas; el resto fue nómina escolar pagada a través de una de las empresas. Parcial: falta la auditoría 2025-26 de una escuela.",
+    "ht": "Gen yon lòt $15.7 milyon nan bidjè 2026-27. $23.9 milyon nan total la se te frè; rès la se te pewòl lekòl ki pase nan youn nan konpayi yo. Pa konplè: odit 2025-26 yon lekòl poko soti."
+   },
+   "record": {
+    "url": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10075306.pdf",
+    "label": {
+     "en": "2025 House financial disclosure",
+     "es": "Declaración financiera 2025 ante la Cámara",
+     "ht": "Deklarasyon finansye 2025 nan Chanm nan"
+    },
+    "note": {
+     "en": "2025 report (filed Aug 13, 2026): spouse's interests through Onesto, LLC: Optima Management Services, LLC $250,001-$500,000; OptimaEd, Inc. $500,001-$1,000,000; Dewalt Impact Group, LLC $250,001-$500,000 (business income $100,001-$1,000,000). The 2024 report valued Optima Management Services at $1,000,001-$5,000,000. Spouse salary amounts are not required and are listed N/A.",
+     "es": "Informe de 2025 (presentado el 13 de agosto de 2026): intereses del cónyuge a través de Onesto, LLC: Optima Management Services, LLC $250,001-$500,000; OptimaEd, Inc. $500,001-$1,000,000; Dewalt Impact Group, LLC $250,001-$500,000 (ingresos de negocio $100,001-$1,000,000). El informe de 2024 valoró Optima Management Services en $1,000,001-$5,000,000. Los salarios del cónyuge no se exigen y aparecen como N/A.",
+     "ht": "Rapò 2025 (depoze 13 out 2026): enterè konjwen an atravè Onesto, LLC: Optima Management Services, LLC $250,001-$500,000; OptimaEd, Inc. $500,001-$1,000,000; Dewalt Impact Group, LLC $250,001-$500,000 (revni biznis $100,001-$1,000,000). Rapò 2024 la te evalye Optima Management Services a $1,000,001-$5,000,000. Salè konjwen an pa obligatwa epi yo make N/A."
+    }
+   },
+   "evidence": [
+    {
+     "url": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2024/10071583.pdf",
+     "label": {
+      "en": "2024 House financial disclosure",
+      "es": "Declaración financiera 2024",
+      "ht": "Deklarasyon finansye 2024"
+     },
+     "note": {
+      "en": "Describes Onesto, LLC as a holding company in which the filer's spouse is the sole member.",
+      "es": "Describe a Onesto, LLC como una sociedad de cartera de la que el cónyuge del declarante es la única miembro.",
+      "ht": "Li dekri Onesto, LLC kòm yon konpayi kenbe kote konjwen deklaran an se sèl manm."
+     }
+    },
+    {
+     "url": "https://www.optimaeducationnetwork.org/wp-content/uploads/2026/10/26-27_Budget__OEN_dba_OCA_amendment_1.pdf",
+     "label": {
+      "en": "Optima Classical Academy 2026-27 budget",
+      "es": "Presupuesto 2026-27 de Optima Classical Academy",
+      "ht": "Bidjè 2026-27 Optima Classical Academy"
+     },
+     "note": {
+      "en": "The online charter school's 2026-27 budget sets aside $15,719,881 for OptimaEd, its virtual instruction provider. Its board approved the budget unanimously on June 10, 2026 and amended it on Sept 8, 2026. This is a budgeted amount, not money already paid.",
+      "es": "El presupuesto 2026-27 de la escuela chárter en línea reserva $15,719,881 para OptimaEd, su proveedor de instrucción virtual. Su junta lo aprobó por unanimidad el 10 de junio de 2026 y lo enmendó el 8 de septiembre de 2026. Es una cantidad presupuestada, no dinero ya pagado.",
+      "ht": "Bidjè 2026-27 lekòl charter anliy lan mete $15,719,881 sou kote pou OptimaEd, founisè enstriksyon vityèl li. Konsèy li te apwouve bidjè a inanimman 10 jen 2026 epi li te amande li 8 sept 2026. Se yon kantite ki nan bidjè, pa lajan ki deja peye."
+     }
+    },
+    {
+     "url": "https://www.optimaeducationnetwork.org/wp-content/uploads/2026/10/2026_Optima_Classical_Academy_Financial_Statements_final.pdf",
+     "label": {
+      "en": "Optima Classical Academy audited financial statements",
+      "es": "Estados financieros auditados de Optima Classical Academy",
+      "ht": "Deklarasyon finansye odite Optima Classical Academy"
+     },
+     "note": {
+      "en": "OptimaEd service fees the school recorded, per its audits: $1,085,266 (2022-23), about $2.1 million (2023-24), about $4.4 million (2024-25) and about $10.8 million (2025-26). The school pays OptimaEd all its public funding minus the district's administration fee. Earlier audits are on file with the Florida Auditor General.",
+      "es": "Tarifas de servicio de OptimaEd que registró la escuela, según sus auditorías: $1,085,266 (2022-23), unos $2.1 millones (2023-24), unos $4.4 millones (2024-25) y unos $10.8 millones (2025-26). La escuela paga a OptimaEd todos sus fondos públicos menos la tarifa administrativa del distrito. Las auditorías anteriores están en el Auditor General de Florida.",
+      "ht": "Frè sèvis OptimaEd lekòl la anrejistre, dapre odit li yo: $1,085,266 (2022-23), anviwon $2.1 milyon (2023-24), anviwon $4.4 milyon (2024-25) ak anviwon $10.8 milyon (2025-26). Lekòl la peye OptimaEd tout finansman piblik li mwens frè administrasyon distri a. Ansyen odit yo nan biwo Oditè Jeneral Florid."
+     }
+    },
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/842776904/202510859349301571/full",
+     "label": {
+      "en": "Naples Classical Academy IRS Form 990s",
+      "es": "Formularios 990 del IRS de Naples Classical Academy",
+      "ht": "Fòm 990 IRS Naples Classical Academy"
+     },
+     "note": {
+      "en": "Naples Classical Academy's IRS filings list payments to Optima Management Services of $2,857,910 (2022-23), $4,658,889 (2023-24) and $809,561 (2024-25), plus $810,601 to OptimaEd (2022-23). These include school payroll run through the company; the management fees alone in its audits are $1.38 million, $1.56 million and $800,000.",
+      "es": "Las declaraciones al IRS de Naples Classical Academy muestran pagos a Optima Management Services de $2,857,910 (2022-23), $4,658,889 (2023-24) y $809,561 (2024-25), más $810,601 a OptimaEd (2022-23). Incluyen la nómina de la escuela pagada a través de la empresa; solo las tarifas de gestión en sus auditorías son $1.38 millones, $1.56 millones y $800,000.",
+      "ht": "Deklarasyon IRS Naples Classical Academy yo montre peman bay Optima Management Services $2,857,910 (2022-23), $4,658,889 (2023-24) ak $809,561 (2024-25), plis $810,601 bay OptimaEd (2022-23). Sa gen ladan pewòl lekòl la ki pase nan konpayi a; frè jesyon sèlman nan odit yo se $1.38 milyon, $1.56 milyon ak $800,000."
+     }
+    },
+    {
+     "url": "https://projects.propublica.org/nonprofits/organizations/831701221/202401369349309310/full",
+     "label": {
+      "en": "Jacksonville and Treasure Coast schools IRS Form 990s",
+      "es": "Formularios 990 del IRS de las escuelas de Jacksonville y Treasure Coast",
+      "ht": "Fòm 990 IRS lekòl Jacksonville ak Treasure Coast"
+     },
+     "note": {
+      "en": "2022-23 IRS filings: Jacksonville Classical Academy paid Optima Management Services $1,574,417 and OptimaEd $378,095; Jacksonville Classical Academy East paid $548,107 and $144,156; Treasure Coast Classical Academy paid OptimaEd $222,946.",
+      "es": "Declaraciones al IRS 2022-23: Jacksonville Classical Academy pagó $1,574,417 a Optima Management Services y $378,095 a OptimaEd; Jacksonville Classical Academy East pagó $548,107 y $144,156; Treasure Coast Classical Academy pagó $222,946 a OptimaEd.",
+      "ht": "Deklarasyon IRS 2022-23: Jacksonville Classical Academy te peye Optima Management Services $1,574,417 ak OptimaEd $378,095; Jacksonville Classical Academy East te peye $548,107 ak $144,156; Treasure Coast Classical Academy te peye OptimaEd $222,946."
+     }
+    },
+    {
+     "note": {
+      "en": "Added up from the filings above, 2022-23 through 2025-26: about $30.4 million to the two companies when school payroll run through Optima Management Services is counted, and at least about $23.9 million in fees alone. Both totals are partial: Naples Classical's 2025-26 audit is not out yet.",
+      "es": "Sumado de las declaraciones anteriores, de 2022-23 a 2025-26: unos $30.4 millones a las dos empresas si se cuenta la nómina escolar pagada a través de Optima Management Services, y al menos unos $23.9 millones solo en tarifas. Ambos totales son parciales: la auditoría 2025-26 de Naples Classical aún no se publica.",
+      "ht": "Adisyone nan deklarasyon ki anwo yo, 2022-23 rive 2025-26: anviwon $30.4 milyon bay de konpayi yo si nou konte pewòl lekòl ki pase nan Optima Management Services, epi omwen anviwon $23.9 milyon nan frè sèlman. De total yo pa konplè: odit 2025-26 Naples Classical poko soti."
+     }
+    }
+   ]
+  }
+ ],
+ "underReview": {
+  "daniela-jean": 1,
+  "howard-s-weinberg": 1,
+  "keon-hardemon": 3,
+  "oliver-g-gilbert-iii": 17,
+  "vince-c-lago": 1,
+  "anthony-rodriguez": 5,
+  "ariel-fernandez": 3,
+  "danielle-cohen-higgins": 1,
+  "michael-joseph": 3,
+  "rene-garcia": 4,
+  "rhonda-anderson": 2,
+  "roberto-j-gonzalez": 8,
+  "vicki-l-lopez": 5
+ }
+}

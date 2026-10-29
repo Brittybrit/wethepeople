@@ -1,0 +1,1428 @@
+{
+ "updated": "2026-10-13",
+ "note": "Hand-checked against each city's own websites and the official systems they link to. r: yes | partial | no. Each item links the page the rating rests on. Edit by hand; re-check before changing a rating.",
+ "cities": [
+  {
+   "city": "Aventura",
+   "meetingsUrl": "https://www.cityofaventura.com/AgendaCenter",
+   "electionsUrl": "https://www.cityofaventura.com/428/2026-Municipal-Election-Candidate-Inform",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "Each 2026 candidate has a records folder with reports through the October G1 report.",
+      "es": "Cada candidato de 2026 tiene una carpeta con sus reportes hasta el reporte G1 de octubre.",
+      "ht": "Chak kandida 2026 gen yon dosye ak rapò li yo jiska rapò G1 oktòb la."
+     },
+     "url": "https://www.cityofaventura.com/428/2026-Municipal-Election-Candidate-Inform"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "The Candidate Information folder keeps 2024, 2022 and 2020 candidates and their reports.",
+      "es": "La carpeta de información de candidatos guarda los de 2024, 2022 y 2020 con sus reportes.",
+      "ht": "Dosye enfòmasyon kandida a kenbe kandida 2024, 2022 ak 2020 yo ak rapò yo."
+     },
+     "url": "https://egov2.cityofaventura.com/Imaging/Browse.aspx?id=300157&dbid=0&repo=CityHall"
+    },
+    "M3": {
+     "r": "no",
+     "note": {
+      "en": "Reports are scanned documents; there is no searchable database of gifts.",
+      "es": "Los reportes son documentos escaneados; no hay una base de datos de aportes para buscar.",
+      "ht": "Rapò yo se dokiman eskane; pa gen baz done pou chèche don yo."
+     },
+     "url": "https://egov2.cityofaventura.com/Imaging/Browse.aspx?id=300157&dbid=0&repo=CityHall"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Full agenda packets are posted (238 pages for Sep 8, 2026).",
+      "es": "Se publican los paquetes completos de la agenda (238 páginas para el 8 de septiembre de 2026).",
+      "ht": "Yo pibliye tout pake ajanda a (238 paj pou 8 septanm 2026)."
+     },
+     "url": "https://www.cityofaventura.com/AgendaCenter/ViewFile/Agenda/_09082026-516?packet=true"
+    },
+    "V2": {
+     "r": "partial",
+     "note": {
+      "en": "Full minutes appear only inside a later meeting's agenda packet; the Minutes links are one-line recaps.",
+      "es": "Las actas completas solo aparecen dentro del paquete de una reunión posterior; los enlaces de actas son resúmenes de una línea.",
+      "ht": "Pwosèvèbal konplè yo parèt sèlman nan pake ajanda yon lòt reyinyon apre; lyen pwosèvèbal yo se rezime yon liy."
+     },
+     "url": "https://www.cityofaventura.com/AgendaCenter/ViewFile/Agenda/_09082026-516?packet=true"
+    },
+    "V3": {
+     "r": "partial",
+     "note": {
+      "en": "Minutes give the tally (\"roll call vote 6-0\") and who was absent, not each member's vote.",
+      "es": "Las actas dan el conteo (\"votación nominal 6-0\") y quién faltó, no el voto de cada miembro.",
+      "ht": "Pwosèvèbal yo bay kantite vòt (\"vòt nominal 6-0\") ak kiyès ki te absan, men pa vòt chak manm."
+     },
+     "url": "https://www.cityofaventura.com/AgendaCenter/ViewFile/Agenda/_09082026-516?packet=true"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agenda packets and recaps are searchable text.",
+      "es": "Los paquetes y resúmenes son texto que se puede buscar.",
+      "ht": "Pake ak rezime yo se tèks ou ka chèche."
+     },
+     "url": "https://www.cityofaventura.com/AgendaCenter/ViewFile/Minutes/_09082026-516"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Commission meetings link to YouTube video through Oct 6, 2026.",
+      "es": "Las reuniones de la comisión tienen video en YouTube hasta el 6 de octubre de 2026.",
+      "ht": "Reyinyon komisyon yo gen videyo sou YouTube jiska 6 oktòb 2026."
+     },
+     "url": "https://www.cityofaventura.com/AgendaCenter"
+    }
+   }
+  },
+  {
+   "city": "Biscayne Park",
+   "meetingsUrl": "https://biscayneparkfl.gov/agendas",
+   "electionsUrl": "https://biscayneparkfl.gov/elections",
+   "items": {
+    "M1": {
+     "r": "no",
+     "note": {
+      "en": "No candidate list or campaign reports on the village site. We filed a records request on Oct 12.",
+      "es": "No hay lista de candidatos ni reportes de campaña en el sitio de la villa. Pedimos los registros el 12 de octubre.",
+      "ht": "Pa gen lis kandida ni rapò kanpay sou sit vil la. Nou te mande dosye yo 12 oktòb."
+     },
+     "url": "https://biscayneparkfl.gov/elections"
+    },
+    "M2": {
+     "r": "no",
+     "note": {
+      "en": "No past candidate lists or reports posted.",
+      "es": "No hay listas ni reportes de candidatos anteriores.",
+      "ht": "Pa gen lis ni rapò ansyen kandida."
+     },
+     "url": "https://biscayneparkfl.gov/elections"
+    },
+    "M3": {
+     "r": "no",
+     "note": {
+      "en": "No campaign finance data online.",
+      "es": "No hay datos de finanzas de campaña en línea.",
+      "ht": "Pa gen done finans kanpay sou entènèt."
+     },
+     "url": "https://biscayneparkfl.gov/elections"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas link each item's backup documents, back to 2021.",
+      "es": "Las agendas enlazan los documentos de respaldo de cada asunto, desde 2021.",
+      "ht": "Ajanda yo gen lyen dokiman sipò chak dosye, depi 2021."
+     },
+     "url": "https://biscayneparkfl.granicus.com/ViewPublisher.php?view_id=1"
+    },
+    "V2": {
+     "r": "yes",
+     "note": {
+      "en": "Approved minutes posted by year; latest is Aug 11, 2026.",
+      "es": "Actas aprobadas publicadas por año; la más reciente es del 11 de agosto de 2026.",
+      "ht": "Pwosèvèbal apwouve yo pibliye pa ane; dènye a se 11 out 2026."
+     },
+     "url": "https://biscayneparkfl.gov/agendas"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Ordinances get a roll call by name; other votes name the mover, seconder, absences and anyone voting no.",
+      "es": "Las ordenanzas se votan por nombre; los demás votos nombran a quien propone, secunda, falta o vota no.",
+      "ht": "Òdonans yo vote pa non; lòt vòt yo nonmen kiyès ki pwopoze, apiye, absan oswa vote non."
+     },
+     "url": "https://biscayneparkfl.gov/vertical/sites/%7BC4179EE4-3062-4442-8583-B704F0600806%7D/uploads/Minutes_Regular_Commission_Meeting_July_9_2026.pdf"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are searchable text.",
+      "es": "Las agendas y actas son texto que se puede buscar.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks ou ka chèche."
+     },
+     "url": "https://biscayneparkfl.gov/vertical/sites/%7BC4179EE4-3062-4442-8583-B704F0600806%7D/uploads/Minutes_Regular_Commission_Meeting_August_11_2026.pdf"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Meetings are on the village YouTube channel, through Sep 22, 2026.",
+      "es": "Las reuniones están en el canal de YouTube de la villa, hasta el 22 de septiembre de 2026.",
+      "ht": "Reyinyon yo sou chèn YouTube vil la, jiska 22 septanm 2026."
+     },
+     "url": "https://www.youtube.com/@biscayneparkfl/streams"
+    }
+   }
+  },
+  {
+   "city": "Coral Gables",
+   "meetingsUrl": "https://coralgables.legistar.com/Calendar.aspx",
+   "electionsUrl": "https://coralgables.com/department/office-city-clerk/city-coral-gables-elections",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "All 7 November candidates are listed, each linked to VoterFocus reports.",
+      "es": "Los 7 candidatos de noviembre aparecen, cada uno con enlace a sus reportes en VoterFocus.",
+      "ht": "Tout 7 kandida novanm yo la, chak ak lyen rapò yo sou VoterFocus."
+     },
+     "url": "https://coralgables.com/department/office-city-clerk/city-coral-gables-elections"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "VoterFocus keeps the 2025 and 2023 elections.",
+      "es": "VoterFocus guarda las elecciones de 2025 y 2023.",
+      "ht": "VoterFocus kenbe eleksyon 2025 ak 2023 yo."
+     },
+     "url": "https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=muncoralgables"
+    },
+    "M3": {
+     "r": "yes",
+     "note": {
+      "en": "VoterFocus lists every gift and exports to a spreadsheet.",
+      "es": "VoterFocus muestra cada aporte y se puede exportar a una hoja de cálculo.",
+      "ht": "VoterFocus montre chak don epi ou ka ekspòte l nan yon tablo."
+     },
+     "url": "https://www.voterfocus.com/CampaignFinance/candidate_pr.php?el=8&c=muncoralgables"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Legistar agendas with documents on each item.",
+      "es": "Agendas en Legistar con documentos en cada asunto.",
+      "ht": "Ajanda Legistar ak dokiman sou chak dosye."
+     },
+     "url": "https://coralgables.legistar.com/Calendar.aspx"
+    },
+    "V2": {
+     "r": "partial",
+     "note": {
+      "en": "Minutes through Aug 25, 2026, but none for the June 3, July 7 and July 8 meetings.",
+      "es": "Actas hasta el 25 de agosto de 2026, pero faltan las del 3 de junio, 7 de julio y 8 de julio.",
+      "ht": "Pwosèvèbal jiska 25 out 2026, men pa gen pou 3 jen, 7 jiyè ak 8 jiyè."
+     },
+     "url": "https://coralgables.legistar.com/Calendar.aspx"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Each member's vote is recorded by name.",
+      "es": "Se registra el voto de cada miembro por nombre.",
+      "ht": "Yo anrejistre vòt chak manm pa non."
+     },
+     "url": "https://coralgables.legistar.com/Calendar.aspx"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas, actions and votes are searchable text.",
+      "es": "Agendas, acciones y votos son texto que se puede buscar.",
+      "ht": "Ajanda, aksyon ak vòt yo se tèks ou ka chèche."
+     },
+     "url": "https://coralgables.legistar.com/Calendar.aspx"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video archive with the agenda linked to the video.",
+      "es": "Archivo de video con la agenda enlazada al video.",
+      "ht": "Achiv videyo ak ajanda a mare ak videyo a."
+     },
+     "url": "https://coralgablesfl.new.swagit.com/videos/398997?place=holder"
+    }
+   }
+  },
+  {
+   "city": "Cutler Bay",
+   "meetingsUrl": "https://pub-cutlerbay-fl.escribemeetings.com/",
+   "electionsUrl": "https://www.cutlerbay-fl.gov/node/11493",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "The 2026 election page links VoterFocus reports.",
+      "es": "La página de la elección de 2026 enlaza los reportes en VoterFocus.",
+      "ht": "Paj eleksyon 2026 la gen lyen rapò VoterFocus yo."
+     },
+     "url": "https://www.cutlerbay-fl.gov/townclerk/page/2026-municipal-general-election"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "VoterFocus keeps the 2024 and 2022 elections.",
+      "es": "VoterFocus guarda las elecciones de 2024 y 2022.",
+      "ht": "VoterFocus kenbe eleksyon 2024 ak 2022 yo."
+     },
+     "url": "https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=muncutlerbay"
+    },
+    "M3": {
+     "r": "yes",
+     "note": {
+      "en": "VoterFocus lists every gift and exports to a spreadsheet.",
+      "es": "VoterFocus muestra cada aporte y se puede exportar a una hoja de cálculo.",
+      "ht": "VoterFocus montre chak don epi ou ka ekspòte l nan yon tablo."
+     },
+     "url": "https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=muncutlerbay"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "eScribe agendas with documents on each item.",
+      "es": "Agendas en eScribe con documentos en cada asunto.",
+      "ht": "Ajanda eScribe ak dokiman sou chak dosye."
+     },
+     "url": "https://pub-cutlerbay-fl.escribemeetings.com/"
+    },
+    "V2": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes posted through Aug 25, 2026.",
+      "es": "Actas publicadas hasta el 25 de agosto de 2026.",
+      "ht": "Pwosèvèbal pibliye jiska 25 out 2026."
+     },
+     "url": "https://pub-cutlerbay-fl.escribemeetings.com/"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes list each member's vote by name.",
+      "es": "Las actas muestran el voto de cada miembro por nombre.",
+      "ht": "Pwosèvèbal yo bay vòt chak manm pa non."
+     },
+     "url": "https://pub-cutlerbay-fl.escribemeetings.com/"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are web text.",
+      "es": "Agendas y actas son texto web.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks sou entènèt."
+     },
+     "url": "https://pub-cutlerbay-fl.escribemeetings.com/"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video posted with each meeting, through Sep 22, 2026.",
+      "es": "Video publicado con cada reunión, hasta el 22 de septiembre de 2026.",
+      "ht": "Videyo pibliye ak chak reyinyon, jiska 22 septanm 2026."
+     },
+     "url": "https://pub-cutlerbay-fl.escribemeetings.com/"
+    }
+   }
+  },
+  {
+   "city": "Doral",
+   "meetingsUrl": "https://www.cityofdoral.com/Government-Center/Office-of-the-City-Clerk/Council-Meetings",
+   "electionsUrl": "https://www.cityofdoral.com/Government-Center/Office-of-the-City-Clerk/Election-Information",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "The city links VoterFocus, which lists 2026 candidates and reports.",
+      "es": "La ciudad enlaza VoterFocus, que muestra los candidatos y reportes de 2026.",
+      "ht": "Vil la gen lyen VoterFocus, ki montre kandida ak rapò 2026 yo."
+     },
+     "url": "https://www.voterfocus.com/CampaignFinance/candidate_pr.php?el=9&c=mundoral"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "VoterFocus keeps the 2024 and 2022 elections.",
+      "es": "VoterFocus guarda las elecciones de 2024 y 2022.",
+      "ht": "VoterFocus kenbe eleksyon 2024 ak 2022 yo."
+     },
+     "url": "https://www.voterfocus.com/CampaignFinance/candidate_pr.php?el=8&c=mundoral"
+    },
+    "M3": {
+     "r": "yes",
+     "note": {
+      "en": "VoterFocus lists every gift and exports to a spreadsheet.",
+      "es": "VoterFocus muestra cada aporte y se puede exportar a una hoja de cálculo.",
+      "ht": "VoterFocus montre chak don epi ou ka ekspòte l nan yon tablo."
+     },
+     "url": "https://www.voterfocus.com/CampaignFinance/candidate_pr.php?el=9&c=mundoral"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Legistar agendas with memos, resolutions and bids on each item.",
+      "es": "Agendas en Legistar con memorandos, resoluciones y ofertas en cada asunto.",
+      "ht": "Ajanda Legistar ak memo, rezolisyon ak òf sou chak dosye."
+     },
+     "url": "https://doral.legistar.com/Calendar.aspx"
+    },
+    "V2": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes posted through Sep 22, 2026.",
+      "es": "Actas publicadas hasta el 22 de septiembre de 2026.",
+      "ht": "Pwosèvèbal pibliye jiska 22 septanm 2026."
+     },
+     "url": "https://cityofdoral.granicus.com/ViewPublisher.php?view_id=2"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Roll call votes; minutes name who voted no.",
+      "es": "Votaciones nominales; las actas nombran a quien votó no.",
+      "ht": "Vòt nominal; pwosèvèbal yo nonmen kiyès ki vote non."
+     },
+     "url": "https://cityofdoral.granicus.com/ViewPublisher.php?view_id=2"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are searchable text.",
+      "es": "Agendas y actas son texto que se puede buscar.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks ou ka chèche."
+     },
+     "url": "https://doral.legistar.com/View.ashx?M=F&ID=15856185&GUID=AAD0FE0B-6707-4B20-A35F-D21F21E3F92B&G=D82F2348-2767-4256-B89E-318FCD920820"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video for each meeting through Oct 7, 2026.",
+      "es": "Video de cada reunión hasta el 7 de octubre de 2026.",
+      "ht": "Videyo chak reyinyon jiska 7 oktòb 2026."
+     },
+     "url": "https://cityofdoral.granicus.com/ViewPublisher.php?view_id=2"
+    }
+   }
+  },
+  {
+   "city": "El Portal",
+   "meetingsUrl": "https://elportalvillage.com/village-meetings/",
+   "electionsUrl": "https://elportalvillage.com/election-information/",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "All 2026 candidates listed with their August and September reports.",
+      "es": "Todos los candidatos de 2026 aparecen con sus reportes de agosto y septiembre.",
+      "ht": "Tout kandida 2026 yo la ak rapò out ak septanm yo."
+     },
+     "url": "https://elportalvillage.com/election-information/"
+    },
+    "M2": {
+     "r": "no",
+     "note": {
+      "en": "No 2024 or 2022 candidates or reports; the Election Information link is broken.",
+      "es": "No hay candidatos ni reportes de 2024 o 2022; el enlace de información electoral no funciona.",
+      "ht": "Pa gen kandida ni rapò 2024 oswa 2022; lyen enfòmasyon eleksyon an pa mache."
+     },
+     "url": "https://elportalvillage.com/village-clerk/"
+    },
+    "M3": {
+     "r": "no",
+     "note": {
+      "en": "Reports are scanned PDFs only.",
+      "es": "Los reportes son solo PDF escaneados.",
+      "ht": "Rapò yo se PDF eskane sèlman."
+     },
+     "url": "https://elportalvillage.com/wp-content/uploads/2026/09/Pulliam-Thomas-Campaign-Candidate-Report-26M09.pdf"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Agenda PDFs include the backup documents.",
+      "es": "Los PDF de la agenda incluyen los documentos de respaldo.",
+      "ht": "PDF ajanda yo gen dokiman sipò yo ladan."
+     },
+     "url": "https://elportalvillage.com/wp-content/uploads/2026/01/CouncilMeeting-Agenda-20260728.pdf"
+    },
+    "V2": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes through July 30, 2026; the March 24, 2026 minutes are missing.",
+      "es": "Actas hasta el 30 de julio de 2026; falta la del 24 de marzo de 2026.",
+      "ht": "Pwosèvèbal jiska 30 jiyè 2026; sa 24 mas 2026 la manke."
+     },
+     "url": "https://elportalvillage.com/village-meetings/"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes are word-for-word transcripts with roll calls by name.",
+      "es": "Las actas son transcripciones palabra por palabra con votaciones por nombre.",
+      "ht": "Pwosèvèbal yo se tout pawòl yo mo pou mo, ak vòt pa non."
+     },
+     "url": "https://elportalvillage.com/wp-content/uploads/2026/01/CouncilMeeting-Minutes-20260728.pdf"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are searchable text.",
+      "es": "Agendas y actas son texto que se puede buscar.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks ou ka chèche."
+     },
+     "url": "https://elportalvillage.com/wp-content/uploads/2026/01/CouncilMeeting-Minutes-20260728.pdf"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Council meeting videos through Sep 22, 2026.",
+      "es": "Videos de las reuniones del concejo hasta el 22 de septiembre de 2026.",
+      "ht": "Videyo reyinyon konsèy la jiska 22 septanm 2026."
+     },
+     "url": "https://elportalvillage.com/videos/"
+    }
+   }
+  },
+  {
+   "city": "Hialeah",
+   "meetingsUrl": "https://www.hialeahfl.gov/AgendaCenter/City-Council-9",
+   "electionsUrl": "https://www.hialeahfl.gov/166/Primary-Elections",
+   "items": {
+    "M1": {
+     "r": "partial",
+     "note": {
+      "en": "2026 reports are in the city's VoterFocus account, but the city site doesn't link it, and Luis Gonzalez has none.",
+      "es": "Los reportes de 2026 están en la cuenta de VoterFocus de la ciudad, pero el sitio no la enlaza, y Luis Gonzalez no tiene ninguno.",
+      "ht": "Rapò 2026 yo nan kont VoterFocus vil la, men sit la pa gen lyen, epi Luis Gonzalez pa gen okenn."
+     },
+     "url": "https://www.hialeahfl.gov/1203/2026-Special-Primary-Election"
+    },
+    "M2": {
+     "r": "partial",
+     "note": {
+      "en": "2023 and 2021 reports are posted; the 2025 election page has none.",
+      "es": "Se publican los reportes de 2023 y 2021; la página de la elección de 2025 no tiene ninguno.",
+      "ht": "Rapò 2023 ak 2021 yo pibliye; paj eleksyon 2025 la pa gen okenn."
+     },
+     "url": "https://www.hialeahfl.gov/1147/2025-Primary-Election"
+    },
+    "M3": {
+     "r": "partial",
+     "note": {
+      "en": "Only the 2026 special election is in VoterFocus; older reports are scanned PDFs.",
+      "es": "Solo la elección especial de 2026 está en VoterFocus; los reportes anteriores son PDF escaneados.",
+      "ht": "Se sèlman eleksyon espesyal 2026 la ki sou VoterFocus; ansyen rapò yo se PDF eskane."
+     },
+     "url": "https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=munhialeah"
+    },
+    "V1": {
+     "r": "partial",
+     "note": {
+      "en": "Agendas are posted, but not the backup documents.",
+      "es": "Se publican las agendas, pero no los documentos de respaldo.",
+      "ht": "Yo pibliye ajanda yo, men pa dokiman sipò yo."
+     },
+     "url": "https://www.hialeahfl.gov/AgendaCenter/ViewFile/Agenda/_09222026-1407"
+    },
+    "V2": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes for every 2026 meeting through Sep 22, 2026.",
+      "es": "Actas de cada reunión de 2026 hasta el 22 de septiembre de 2026.",
+      "ht": "Pwosèvèbal chak reyinyon 2026 jiska 22 septanm 2026."
+     },
+     "url": "https://www.hialeahfl.gov/AgendaCenter/City-Council-9"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes name who voted no, with roll calls by name.",
+      "es": "Las actas nombran a quien votó no, con votaciones por nombre.",
+      "ht": "Pwosèvèbal yo nonmen kiyès ki vote non, ak vòt pa non."
+     },
+     "url": "https://www.hialeahfl.gov/AgendaCenter/ViewFile/Minutes/_09222026-1407"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are searchable text.",
+      "es": "Agendas y actas son texto que se puede buscar.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks ou ka chèche."
+     },
+     "url": "https://www.hialeahfl.gov/AgendaCenter/ViewFile/Minutes/_09222026-1407"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Council meetings on the city YouTube channel, through Oct 13, 2026.",
+      "es": "Las reuniones del concejo están en el canal de YouTube de la ciudad, hasta el 13 de octubre de 2026.",
+      "ht": "Reyinyon konsèy la sou chèn YouTube vil la, jiska 13 oktòb 2026."
+     },
+     "url": "https://www.youtube.com/cityofhialeahgov/streams"
+    }
+   }
+  },
+  {
+   "city": "Key Biscayne",
+   "meetingsUrl": "https://keybiscayne.fl.gov/government/agendas_minutes.php",
+   "electionsUrl": "https://keybiscayne.fl.gov/government/village_clerk/elections/index.php",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "The village links EasyVote; all 2026 candidates have reports posted.",
+      "es": "La villa enlaza EasyVote; todos los candidatos de 2026 tienen reportes.",
+      "ht": "Vil la gen lyen EasyVote; tout kandida 2026 yo gen rapò."
+     },
+     "url": "https://villageofkeybiscaynefl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "An archive page keeps 2024, 2022 and 2020 candidates' reports.",
+      "es": "Una página de archivo guarda los reportes de los candidatos de 2024, 2022 y 2020.",
+      "ht": "Yon paj achiv kenbe rapò kandida 2024, 2022 ak 2020 yo."
+     },
+     "url": "https://keybiscayne.fl.gov/government/village_clerk/elections/campaign_treasurers_reports_archives.php"
+    },
+    "M3": {
+     "r": "yes",
+     "note": {
+      "en": "2026 gifts are searchable in EasyVote; older reports are PDFs.",
+      "es": "Los aportes de 2026 se pueden buscar en EasyVote; los reportes anteriores son PDF.",
+      "ht": "Ou ka chèche don 2026 yo sou EasyVote; ansyen rapò yo se PDF."
+     },
+     "url": "https://villageofkeybiscaynefl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "An agenda and full packet for each meeting.",
+      "es": "Una agenda y un paquete completo para cada reunión.",
+      "ht": "Yon ajanda ak tout pake a pou chak reyinyon."
+     },
+     "url": "https://keybiscayne.granicus.com/ViewPublisher.php?view_id=1"
+    },
+    "V2": {
+     "r": "partial",
+     "note": {
+      "en": "Latest council minutes are from May 14, 2026; none for June through September.",
+      "es": "Las últimas actas del concejo son del 14 de mayo de 2026; faltan las de junio a septiembre.",
+      "ht": "Dènye pwosèvèbal konsèy la se 14 me 2026; pa gen pou jen rive septanm."
+     },
+     "url": "https://keybiscayne.granicus.com/ViewPublisher.php?view_id=1"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes list each member's vote by name.",
+      "es": "Las actas muestran el voto de cada miembro por nombre.",
+      "ht": "Pwosèvèbal yo bay vòt chak manm pa non."
+     },
+     "url": "https://keybiscayne.granicus.com/ViewPublisher.php?view_id=1"
+    },
+    "V4": {
+     "r": "partial",
+     "note": {
+      "en": "Agendas are text; minutes are scans with rough machine-read text.",
+      "es": "Las agendas son texto; las actas son escaneos con texto leído por máquina, con errores.",
+      "ht": "Ajanda yo se tèks; pwosèvèbal yo se eskan ak tèks machin li ki gen erè."
+     },
+     "url": "https://keybiscayne.granicus.com/ViewPublisher.php?view_id=1"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video for each meeting through Sep 22, 2026.",
+      "es": "Video de cada reunión hasta el 22 de septiembre de 2026.",
+      "ht": "Videyo chak reyinyon jiska 22 septanm 2026."
+     },
+     "url": "https://keybiscayne.granicus.com/ViewPublisher.php?view_id=1"
+    }
+   }
+  },
+  {
+   "city": "Medley",
+   "meetingsUrl": "https://www.townofmedley.com/council-meetings",
+   "electionsUrl": "https://www.townofmedley.com/town-clerk",
+   "items": {
+    "M1": {
+     "r": "partial",
+     "note": {
+      "en": "Scanned reports in a public folder; Ivan Pacheco's latest (G4) report is missing.",
+      "es": "Reportes escaneados en una carpeta pública; falta el reporte más reciente (G4) de Ivan Pacheco.",
+      "ht": "Rapò eskane nan yon dosye piblik; dènye rapò (G4) Ivan Pacheco a manke."
+     },
+     "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "The clerk's page links folders for the 2024 and 2022 candidates.",
+      "es": "La página de la secretaría enlaza carpetas de los candidatos de 2024 y 2022.",
+      "ht": "Paj grefye a gen lyen dosye kandida 2024 ak 2022 yo."
+     },
+     "url": "https://www.townofmedley.com/town-clerk"
+    },
+    "M3": {
+     "r": "no",
+     "note": {
+      "en": "Reports are scanned PDFs only.",
+      "es": "Los reportes son solo PDF escaneados.",
+      "ht": "Rapò yo se PDF eskane sèlman."
+     },
+     "url": "https://townofmedley.sharepoint.com/:f:/s/townclerk/IgBXehd869RJQoAelqbmMIq0AfW32bu4EUm55Orbkh3PiK0?e=OHsolF"
+    },
+    "V1": {
+     "r": "partial",
+     "note": {
+      "en": "Two-page agendas with no backup documents.",
+      "es": "Agendas de dos páginas sin documentos de respaldo.",
+      "ht": "Ajanda de paj san dokiman sipò."
+     },
+     "url": "https://www.townofmedley.com/council-meetings"
+    },
+    "V2": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes through Sep 22, 2026, but only in a separate records portal, not on the meetings page.",
+      "es": "Actas hasta el 22 de septiembre de 2026, pero solo en un portal de registros aparte, no en la página de reuniones.",
+      "ht": "Pwosèvèbal jiska 22 septanm 2026, men sèlman nan yon lòt pòtal dosye, pa sou paj reyinyon yo."
+     },
+     "url": "https://www.medleydocs.com/WebLink/Browse.aspx?id=210251"
+    },
+    "V3": {
+     "r": "partial",
+     "note": {
+      "en": "Minutes name the mover and seconder and say \"carried unanimously\"; no vote by name.",
+      "es": "Las actas nombran a quien propone y secunda y dicen \"aprobado por unanimidad\"; no hay voto por nombre.",
+      "ht": "Pwosèvèbal yo nonmen kiyès ki pwopoze ak apiye epi di \"pase alinanimite\"; pa gen vòt pa non."
+     },
+     "url": "https://www.medleydocs.com/WebLink/DocView.aspx?id=211865&dbid=0&repo=LFMedley"
+    },
+    "V4": {
+     "r": "partial",
+     "note": {
+      "en": "Agendas are text; minutes are scanned images with no text.",
+      "es": "Las agendas son texto; las actas son imágenes escaneadas sin texto.",
+      "ht": "Ajanda yo se tèks; pwosèvèbal yo se imaj eskane san tèks."
+     },
+     "url": "https://www.medleydocs.com/WebLink/DocView.aspx?id=211865&dbid=0&repo=LFMedley"
+    },
+    "V5": {
+     "r": "no",
+     "note": {
+      "en": "No meeting video or audio found on the town's sites.",
+      "es": "No encontramos video ni audio de las reuniones en los sitios del municipio.",
+      "ht": "Nou pa jwenn videyo ni odyo reyinyon sou sit vil la."
+     },
+     "url": "https://www.townofmedley.com/council-meetings"
+    }
+   }
+  },
+  {
+   "city": "Miami Gardens",
+   "meetingsUrl": "https://miamigardens.civicweb.net/Portal/MeetingInformation.aspx?Id=313",
+   "electionsUrl": "https://miamigardens-fl.gov/836/Elections",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "The city links EasyVote, which lists every 2026 candidate's filings.",
+      "es": "La ciudad enlaza EasyVote, que muestra las declaraciones de cada candidato de 2026.",
+      "ht": "Vil la gen lyen EasyVote, ki montre dosye chak kandida 2026."
+     },
+     "url": "https://cityofmiamigardensfl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "M2": {
+     "r": "no",
+     "note": {
+      "en": "EasyVote has only 2026; the link to archived reports opens a folder that says Access denied.",
+      "es": "EasyVote solo tiene 2026; el enlace a los reportes archivados abre una carpeta que dice Acceso denegado.",
+      "ht": "EasyVote gen 2026 sèlman; lyen ansyen rapò yo louvri yon dosye ki di Aksè refize."
+     },
+     "url": "https://edocs.miamigardens-fl.gov/WebLink/Browse.aspx?id=696635&dbid=0&repo=Laserfiche"
+    },
+    "M3": {
+     "r": "yes",
+     "note": {
+      "en": "EasyVote lists gifts from reports filed online.",
+      "es": "EasyVote muestra los aportes de los reportes presentados en línea.",
+      "ht": "EasyVote montre don ki nan rapò yo depoze sou entènèt."
+     },
+     "url": "https://cityofmiamigardensfl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "A full agenda package for each meeting (41 pages for Sep 23, 2026).",
+      "es": "Un paquete completo de agenda para cada reunión (41 páginas para el 23 de septiembre de 2026).",
+      "ht": "Tout pake ajanda pou chak reyinyon (41 paj pou 23 septanm 2026)."
+     },
+     "url": "https://miamigardens.civicweb.net/Portal/MeetingTypeList.aspx"
+    },
+    "V2": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes through July 28, 2026; August and September not yet posted.",
+      "es": "Actas hasta el 28 de julio de 2026; agosto y septiembre aún no se publican.",
+      "ht": "Pwosèvèbal jiska 28 jiyè 2026; out ak septanm poko pibliye."
+     },
+     "url": "https://edocs.miamigardens-fl.gov/weblink/Browse.aspx?id=86952"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Roll call votes list each member's vote.",
+      "es": "Las votaciones nominales muestran el voto de cada miembro.",
+      "ht": "Vòt nominal yo montre vòt chak manm."
+     },
+     "url": "https://edocs.miamigardens-fl.gov/weblink/Browse.aspx?id=86952"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are searchable text.",
+      "es": "Agendas y actas son texto que se puede buscar.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks ou ka chèche."
+     },
+     "url": "https://edocs.miamigardens-fl.gov/weblink/Browse.aspx?id=86952"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Meetings on the city YouTube channel through Sep 23, 2026.",
+      "es": "Reuniones en el canal de YouTube de la ciudad hasta el 23 de septiembre de 2026.",
+      "ht": "Reyinyon sou chèn YouTube vil la jiska 23 septanm 2026."
+     },
+     "url": "https://www.youtube.com/channel/UCc5HrhAo_huvHpCqHGqNVyg/streams"
+    }
+   }
+  },
+  {
+   "city": "North Miami",
+   "meetingsUrl": "https://www.northmiamifl.gov/477/Agendas-Minutes",
+   "electionsUrl": "https://northmiamifl.gov/1053/Candidates-and-Campaign-Reports",
+   "items": {
+    "M1": {
+     "r": "partial",
+     "url": "https://northmiamifl.easyvotecampaignfinance.com/home/publicfilings",
+     "note": {
+      "en": "EasyVote lists the 2026 candidates' reports, but Brian Jinks (District 2) has none posted.",
+      "es": "EasyVote muestra los reportes de los candidatos de 2026, pero Brian Jinks (Distrito 2) no tiene ninguno publicado.",
+      "ht": "EasyVote montre rapò kandida 2026 yo, men Brian Jinks (Distri 2) pa gen okenn ki pibliye."
+     }
+    },
+    "M2": {
+     "r": "partial",
+     "note": {
+      "en": "The 2024 candidates are listed, but their reports are online only for those running again; nothing older.",
+      "es": "Aparecen los candidatos de 2024, pero sus reportes solo están para quienes se postulan de nuevo; nada más antiguo.",
+      "ht": "Kandida 2024 yo la, men rapò yo sèlman pou sa k ap kouri ankò; anyen ki pi ansyen."
+     },
+     "url": "https://northmiamifl.gov/1053/Candidates-and-Campaign-Reports"
+    },
+    "M3": {
+     "r": "yes",
+     "note": {
+      "en": "EasyVote lists gifts from reports filed online.",
+      "es": "EasyVote muestra los aportes de los reportes presentados en línea.",
+      "ht": "EasyVote montre don ki nan rapò yo depoze sou entènèt."
+     },
+     "url": "https://northmiamifl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas, full packets and item backup are in the meeting portal embedded on the city's page.",
+      "es": "Agendas, paquetes completos y respaldo de cada asunto están en el portal de reuniones dentro de la página de la ciudad.",
+      "ht": "Ajanda, tout pake ak dokiman sipò yo nan pòtal reyinyon ki sou paj vil la."
+     },
+     "url": "https://play.champds.com/northmiamifl/event/615"
+    },
+    "V2": {
+     "r": "partial",
+     "url": "https://play.champds.com/northmiamifl/archive/1",
+     "note": {
+      "en": "Summary minutes are posted for only nine 2026 meetings (Jan 27, then Mar 24 to Jun 23); none for 2025 or since June. Signed resolutions are posted separately.",
+      "es": "Solo hay actas resumidas de nueve reuniones de 2026 (27 de enero y del 24 de marzo al 23 de junio); ninguna de 2025 ni desde junio. Las resoluciones firmadas se publican aparte.",
+      "ht": "Gen pwosèvèbal rezime pou nèf reyinyon 2026 sèlman (27 janvye, epi 24 mas rive 23 jen); pa gen pou 2025 ni depi jen. Rezolisyon siyen yo pibliye apa."
+     }
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes give the tally and name anyone voting no.",
+      "es": "Las actas dan el conteo y nombran a quien vota no.",
+      "ht": "Pwosèvèbal yo bay kantite vòt epi nonmen kiyès ki vote non."
+     },
+     "url": "https://play.champds.com/northmiamifl/event/585"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are web text.",
+      "es": "Agendas y actas son texto web.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks sou entènèt."
+     },
+     "url": "https://play.champds.com/northmiamifl/archive/1"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video for each meeting, archived back to 2013.",
+      "es": "Video de cada reunión, archivado desde 2013.",
+      "ht": "Videyo chak reyinyon, achive depi 2013."
+     },
+     "url": "https://play.champds.com/northmiamifl/archive/1"
+    }
+   }
+  },
+  {
+   "city": "North Miami Beach",
+   "meetingsUrl": "https://nmb.novusagenda.com/agendapublic/",
+   "electionsUrl": "https://www.citynmb.com/1602/2026-Election",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "Each 2026 candidate has a folder of scanned reports.",
+      "es": "Cada candidato de 2026 tiene una carpeta de reportes escaneados.",
+      "ht": "Chak kandida 2026 gen yon dosye rapò eskane."
+     },
+     "url": "https://www.citynmb.com/1603/2026-Municipal-Election-Candidates"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "The 2024, 2023 special and 2022 election pages link candidate folders.",
+      "es": "Las páginas de las elecciones de 2024, la especial de 2023 y 2022 enlazan las carpetas de candidatos.",
+      "ht": "Paj eleksyon 2024, espesyal 2023 ak 2022 yo gen lyen dosye kandida yo."
+     },
+     "url": "https://www.citynmb.com/1459/2024-Municipal-Election-Candidates"
+    },
+    "M3": {
+     "r": "no",
+     "note": {
+      "en": "Reports are scanned PDFs only.",
+      "es": "Los reportes son solo PDF escaneados.",
+      "ht": "Rapò yo se PDF eskane sèlman."
+     },
+     "url": "https://www.citynmb.com/DocumentCenter/Index/899"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas with attachments on each item.",
+      "es": "Agendas con anexos en cada asunto.",
+      "ht": "Ajanda ak dokiman sou chak dosye."
+     },
+     "url": "https://nmb.novusagenda.com/agendapublic/"
+    },
+    "V2": {
+     "r": "yes",
+     "note": {
+      "en": "Signed minutes through Sep 10, 2026.",
+      "es": "Actas firmadas hasta el 10 de septiembre de 2026.",
+      "ht": "Pwosèvèbal siyen jiska 10 septanm 2026."
+     },
+     "url": "https://nmb.novusagenda.com/agendapublic/"
+    },
+    "V3": {
+     "r": "partial",
+     "note": {
+      "en": "Minutes give the tally, mover, seconder and absences (\"passed 6-0, Su absent\"), not each vote.",
+      "es": "Las actas dan el conteo, quién propone, secunda y falta (\"aprobado 6-0, Su ausente\"), no cada voto.",
+      "ht": "Pwosèvèbal yo bay kantite vòt, kiyès ki pwopoze, apiye ak absan (\"pase 6-0, Su absan\"), men pa chak vòt."
+     },
+     "url": "https://nmb.novusagenda.com/agendapublic/"
+    },
+    "V4": {
+     "r": "partial",
+     "note": {
+      "en": "Agendas are text; minutes are scanned images with no text.",
+      "es": "Las agendas son texto; las actas son imágenes escaneadas sin texto.",
+      "ht": "Ajanda yo se tèks; pwosèvèbal yo se imaj eskane san tèks."
+     },
+     "url": "https://nmb.novusagenda.com/agendapublic/"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video archive from 2018 on, through Sep 24, 2026.",
+      "es": "Archivo de video desde 2018, hasta el 24 de septiembre de 2026.",
+      "ht": "Achiv videyo depi 2018, jiska 24 septanm 2026."
+     },
+     "url": "https://citynmb.granicus.com/ViewPublisher.php?view_id=1"
+    }
+   }
+  },
+  {
+   "city": "Opa-locka",
+   "meetingsUrl": "https://opalockafl.portal.civicclerk.com",
+   "electionsUrl": "https://cityofopalockafl.easyvotecampaignfinance.com/home/publicfilings",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "EasyVote lists the 2026 candidates' reports.",
+      "es": "EasyVote muestra los reportes de los candidatos de 2026.",
+      "ht": "EasyVote montre rapò kandida 2026 yo."
+     },
+     "url": "https://cityofopalockafl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "EasyVote keeps the 2024 and 2022 candidates' reports.",
+      "es": "EasyVote guarda los reportes de los candidatos de 2024 y 2022.",
+      "ht": "EasyVote kenbe rapò kandida 2024 ak 2022 yo."
+     },
+     "url": "https://cityofopalockafl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "M3": {
+     "r": "yes",
+     "note": {
+      "en": "EasyVote lists gifts from reports filed online.",
+      "es": "EasyVote muestra los aportes de los reportes presentados en línea.",
+      "ht": "EasyVote montre don ki nan rapò yo depoze sou entènèt."
+     },
+     "url": "https://cityofopalockafl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "An agenda and full packet for each meeting.",
+      "es": "Una agenda y un paquete completo para cada reunión.",
+      "ht": "Yon ajanda ak tout pake a pou chak reyinyon."
+     },
+     "url": "https://opalockafl.portal.civicclerk.com"
+    },
+    "V2": {
+     "r": "partial",
+     "note": {
+      "en": "Minutes are never posted on their own; drafts appear inside the next meeting's packet.",
+      "es": "Las actas nunca se publican por separado; los borradores aparecen en el paquete de la siguiente reunión.",
+      "ht": "Pwosèvèbal yo pa janm pibliye apa; bouyon yo parèt nan pake pwochen reyinyon an."
+     },
+     "url": "https://opalockafl.portal.civicclerk.com"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes record roll calls by name.",
+      "es": "Las actas registran votaciones por nombre.",
+      "ht": "Pwosèvèbal yo anrejistre vòt pa non."
+     },
+     "url": "https://opalockafl.portal.civicclerk.com"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and packets are searchable text.",
+      "es": "Agendas y paquetes son texto que se puede buscar.",
+      "ht": "Ajanda ak pake yo se tèks ou ka chèche."
+     },
+     "url": "https://opalockafl.portal.civicclerk.com"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Meetings on the city YouTube channel through Sep 23, 2026.",
+      "es": "Reuniones en el canal de YouTube de la ciudad hasta el 23 de septiembre de 2026.",
+      "ht": "Reyinyon sou chèn YouTube vil la jiska 23 septanm 2026."
+     },
+     "url": "https://www.youtube.com/results?search_query=City+of+Opa-locka+commission+meeting"
+    }
+   }
+  },
+  {
+   "city": "Palmetto Bay",
+   "meetingsUrl": "https://www.palmettobay-fl.gov/586/Agendas-Minutes",
+   "electionsUrl": "https://villageofpalmettobayfl.easyvotecampaignfinance.com/home/publicfilings",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "The village links EasyVote, which lists the 2026 candidates' reports.",
+      "es": "La villa enlaza EasyVote, que muestra los reportes de los candidatos de 2026.",
+      "ht": "Vil la gen lyen EasyVote, ki montre rapò kandida 2026 yo."
+     },
+     "url": "https://www.palmettobay-fl.gov/1377/Campaign-Finance-Portal"
+    },
+    "M2": {
+     "r": "partial",
+     "note": {
+      "en": "Only one 2024 candidate's reports are online; no 2022 or 2024 report pages.",
+      "es": "Solo están en línea los reportes de un candidato de 2024; no hay páginas de reportes de 2022 o 2024.",
+      "ht": "Se rapò yon sèl kandida 2024 ki sou entènèt; pa gen paj rapò 2022 oswa 2024."
+     },
+     "url": "https://villageofpalmettobayfl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "M3": {
+     "r": "yes",
+     "note": {
+      "en": "EasyVote lists gifts from reports filed online.",
+      "es": "EasyVote muestra los aportes de los reportes presentados en línea.",
+      "ht": "EasyVote montre don ki nan rapò yo depoze sou entènèt."
+     },
+     "url": "https://villageofpalmettobayfl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Agenda items carry backup documents and packets.",
+      "es": "Los asuntos de la agenda tienen documentos de respaldo y paquetes.",
+      "ht": "Dosye ajanda yo gen dokiman sipò ak pake."
+     },
+     "url": "https://palmettobay.granicusideas.com/meetings/1665-regular-council/agenda_items?page=2"
+    },
+    "V2": {
+     "r": "partial",
+     "note": {
+      "en": "No minutes page; the latest minutes (July 6, 2026) are attached to a later agenda.",
+      "es": "No hay página de actas; las últimas (6 de julio de 2026) están anexadas a una agenda posterior.",
+      "ht": "Pa gen paj pwosèvèbal; dènye yo (6 jiyè 2026) tache nan yon ajanda apre."
+     },
+     "url": "https://palmettobay.granicus.com/services/legistar/download/pdf/4353688/2026-07-06_Regular-Minutes-FINAL.pdf"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Ordinances get a roll call by name.",
+      "es": "Las ordenanzas se votan por nombre.",
+      "ht": "Òdonans yo vote pa non."
+     },
+     "url": "https://palmettobay.granicus.com/services/legistar/download/pdf/4353688/2026-07-06_Regular-Minutes-FINAL.pdf"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are searchable text.",
+      "es": "Agendas y actas son texto que se puede buscar.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks ou ka chèche."
+     },
+     "url": "https://palmettobay.granicus.com/services/legistar/download/pdf/4353688/2026-07-06_Regular-Minutes-FINAL.pdf"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video for each council meeting through Oct 5, 2026.",
+      "es": "Video de cada reunión del concejo hasta el 5 de octubre de 2026.",
+      "ht": "Videyo chak reyinyon konsèy jiska 5 oktòb 2026."
+     },
+     "url": "https://palmettobay.granicus.com/ViewPublisher.php?view_id=3"
+    }
+   }
+  },
+  {
+   "city": "Pinecrest",
+   "meetingsUrl": "https://pinecrest.legistar.com/Calendar.aspx",
+   "electionsUrl": "https://www.pinecrest-fl.gov/Government/Clerk/Elections/2026-Municipal-Election",
+   "items": {
+    "M1": {
+     "r": "partial",
+     "note": {
+      "en": "Spring reports are posted; the TR, G1, G2 and G3 reports are listed without links.",
+      "es": "Los reportes de primavera están publicados; los reportes TR, G1, G2 y G3 aparecen sin enlace.",
+      "ht": "Rapò prentan yo pibliye; rapò TR, G1, G2 ak G3 yo nan lis la san lyen."
+     },
+     "url": "https://www.pinecrest-fl.gov/Government/Clerk/Elections/2026-Municipal-Election"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "2024 and 2022 election pages keep candidates' reports.",
+      "es": "Las páginas de las elecciones de 2024 y 2022 guardan los reportes.",
+      "ht": "Paj eleksyon 2024 ak 2022 yo kenbe rapò kandida yo."
+     },
+     "url": "https://www.pinecrest-fl.gov/Government/Clerk/Elections/2024-Municipal-Election"
+    },
+    "M3": {
+     "r": "no",
+     "note": {
+      "en": "Reports are scanned PDFs only.",
+      "es": "Los reportes son solo PDF escaneados.",
+      "ht": "Rapò yo se PDF eskane sèlman."
+     },
+     "url": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-clerk/documents/elections/2026-candidates/fairman-ken-2026q2.pdf"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Legistar agendas with documents on each item.",
+      "es": "Agendas en Legistar con documentos en cada asunto.",
+      "ht": "Ajanda Legistar ak dokiman sou chak dosye."
+     },
+     "url": "https://pinecrest.legistar.com/MeetingDetail.aspx?LEGID=1413&GID=302&G=B6156D18-A865-4A6E-BCA2-172C4144B836"
+    },
+    "V2": {
+     "r": "partial",
+     "note": {
+      "en": "Minutes appear only as attachments to a later meeting's agenda item.",
+      "es": "Las actas solo aparecen como anexo de un asunto de una reunión posterior.",
+      "ht": "Pwosèvèbal yo parèt sèlman kòm atachman nan yon dosye yon lòt reyinyon apre."
+     },
+     "url": "https://legistar1.granicus.com/Pinecrest/attachments/aa824dde-ac91-42c9-aefd-d028b3d5139b.pdf"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes list each member's vote by name.",
+      "es": "Las actas muestran el voto de cada miembro por nombre.",
+      "ht": "Pwosèvèbal yo bay vòt chak manm pa non."
+     },
+     "url": "https://legistar1.granicus.com/Pinecrest/attachments/aa824dde-ac91-42c9-aefd-d028b3d5139b.pdf"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are searchable text.",
+      "es": "Agendas y actas son texto que se puede buscar.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks ou ka chèche."
+     },
+     "url": "https://pinecrest.legistar.com/View.ashx?M=A&ID=1422419&GUID=F4AAB1F6-2423-4857-8D35-2A8C78D7AC0B&G=B6156D18-A865-4A6E-BCA2-172C4144B836"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video for each council meeting through Sep 22, 2026.",
+      "es": "Video de cada reunión del concejo hasta el 22 de septiembre de 2026.",
+      "ht": "Videyo chak reyinyon konsèy jiska 22 septanm 2026."
+     },
+     "url": "https://pinecrest.granicus.com/ViewPublisher.php?view_id=2"
+    }
+   }
+  },
+  {
+   "city": "South Miami",
+   "meetingsUrl": "https://southmiami.granicus.com/ViewPublisher.php?view_id=2",
+   "electionsUrl": "https://www.somifl.gov/846/2026-Election-Candidates-Campaign-Treasu",
+   "items": {
+    "M1": {
+     "r": "yes",
+     "note": {
+      "en": "All three candidates' Q1 and Q2 reports are posted.",
+      "es": "Están publicados los reportes Q1 y Q2 de los tres candidatos.",
+      "ht": "Rapò Q1 ak Q2 twa kandida yo pibliye."
+     },
+     "url": "https://www.somifl.gov/846/2026-Election-Candidates-Campaign-Treasu"
+    },
+    "M2": {
+     "r": "yes",
+     "note": {
+      "en": "2024 and 2022 pages keep full report series.",
+      "es": "Las páginas de 2024 y 2022 guardan todos los reportes.",
+      "ht": "Paj 2024 ak 2022 yo kenbe tout rapò yo."
+     },
+     "url": "https://www.somifl.gov/718/2024-Election-Candidates-Campaign-Treasu"
+    },
+    "M3": {
+     "r": "no",
+     "note": {
+      "en": "Reports are scanned PDFs only.",
+      "es": "Los reportes son solo PDF escaneados.",
+      "ht": "Rapò yo se PDF eskane sèlman."
+     },
+     "url": "https://www.somifl.gov/DocumentCenter/View/8962/Fernandez-Javier---20260401---20260630-CTR---Q2"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "An agenda and full packet for each meeting.",
+      "es": "Una agenda y un paquete completo para cada reunión.",
+      "ht": "Yon ajanda ak tout pake a pou chak reyinyon."
+     },
+     "url": "https://southmiami.granicus.com/ViewPublisher.php?view_id=2"
+    },
+    "V2": {
+     "r": "partial",
+     "note": {
+      "en": "Only three 2026 meetings have minutes (latest July 21); none from mid-2025 to April 2026.",
+      "es": "Solo tres reuniones de 2026 tienen actas (la última del 21 de julio); ninguna de mediados de 2025 a abril de 2026.",
+      "ht": "Se twa reyinyon 2026 sèlman ki gen pwosèvèbal (dènye a 21 jiyè); pa gen depi mitan 2025 rive avril 2026."
+     },
+     "url": "https://southmiami.granicus.com/ViewPublisher.php?view_id=2"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Minutes list each member's vote by name.",
+      "es": "Las actas muestran el voto de cada miembro por nombre.",
+      "ht": "Pwosèvèbal yo bay vòt chak manm pa non."
+     },
+     "url": "https://southmiami.granicus.com/DocumentViewer.php?file=southmiami_50f8e4a3-9a62-42c2-812d-87621d4d2fe2.pdf&view=1"
+    },
+    "V4": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas and minutes are searchable text.",
+      "es": "Agendas y actas son texto que se puede buscar.",
+      "ht": "Ajanda ak pwosèvèbal yo se tèks ou ka chèche."
+     },
+     "url": "https://southmiami.granicus.com/DocumentViewer.php?file=southmiami_50f8e4a3-9a62-42c2-812d-87621d4d2fe2.pdf&view=1"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video for each meeting through Oct 6, 2026.",
+      "es": "Video de cada reunión hasta el 6 de octubre de 2026.",
+      "ht": "Videyo chak reyinyon jiska 6 oktòb 2026."
+     },
+     "url": "https://southmiami.granicus.com/ViewPublisher.php?view_id=2"
+    }
+   }
+  },
+  {
+   "city": "Sunny Isles Beach",
+   "meetingsUrl": "https://www.sibfl.gov/City-Hall/Commission-Meetings-and-Agendas",
+   "electionsUrl": "https://www.sibfl.gov/Resident-Services/Elections",
+   "items": {
+    "M1": {
+     "r": "partial",
+     "note": {
+      "en": "EasyVote shows nothing filed after July 2026, and one candidate has no documents.",
+      "es": "EasyVote no muestra nada presentado después de julio de 2026, y un candidato no tiene documentos.",
+      "ht": "EasyVote pa montre anyen ki depoze apre jiyè 2026, epi yon kandida pa gen okenn dokiman."
+     },
+     "url": "https://cityofsunnyislesbeachfl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "M2": {
+     "r": "no",
+     "note": {
+      "en": "Only 2026 candidates are online; no past elections.",
+      "es": "Solo están en línea los candidatos de 2026; no hay elecciones anteriores.",
+      "ht": "Se kandida 2026 sèlman ki sou entènèt; pa gen ansyen eleksyon."
+     },
+     "url": "https://www.sibfl.gov/Resident-Services/Elections"
+    },
+    "M3": {
+     "r": "yes",
+     "note": {
+      "en": "EasyVote lists gifts from reports filed online.",
+      "es": "EasyVote muestra los aportes de los reportes presentados en línea.",
+      "ht": "EasyVote montre don ki nan rapò yo depoze sou entènèt."
+     },
+     "url": "https://cityofsunnyislesbeachfl.easyvotecampaignfinance.com/home/publicfilings"
+    },
+    "V1": {
+     "r": "yes",
+     "note": {
+      "en": "Agendas link each item's backup documents.",
+      "es": "Las agendas enlazan los documentos de respaldo de cada asunto.",
+      "ht": "Ajanda yo gen lyen dokiman sipò chak dosye."
+     },
+     "url": "https://sibfl.granicus.com/ViewPublisher.php?view_id=2"
+    },
+    "V2": {
+     "r": "partial",
+     "note": {
+      "en": "Only two 2026 meetings have minutes (Jan 15 and Mar 19); none since.",
+      "es": "Solo dos reuniones de 2026 tienen actas (15 de enero y 19 de marzo); ninguna después.",
+      "ht": "Se de reyinyon 2026 sèlman ki gen pwosèvèbal (15 janvye ak 19 mas); pa gen depi lè sa a."
+     },
+     "url": "http://docucenter.sibfl.net/WebLink/Browse.aspx?id=3090327"
+    },
+    "V3": {
+     "r": "yes",
+     "note": {
+      "en": "Ordinances get a roll call by name; other items name the mover and seconder.",
+      "es": "Las ordenanzas se votan por nombre; los demás asuntos nombran a quien propone y secunda.",
+      "ht": "Òdonans yo vote pa non; lòt dosye yo nonmen kiyès ki pwopoze ak apiye."
+     },
+     "url": "http://docucenter.sibfl.net/WebLink/DocView.aspx?id=3090420&dbid=0&repo=SIBFL"
+    },
+    "V4": {
+     "r": "partial",
+     "note": {
+      "en": "Agendas are text; signed minutes are scans with machine-read text.",
+      "es": "Las agendas son texto; las actas firmadas son escaneos con texto leído por máquina.",
+      "ht": "Ajanda yo se tèks; pwosèvèbal siyen yo se eskan ak tèks machin li."
+     },
+     "url": "http://docucenter.sibfl.net/WebLink/DocView.aspx?id=3090420&dbid=0&repo=SIBFL"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Video for each meeting through Sep 29, 2026.",
+      "es": "Video de cada reunión hasta el 29 de septiembre de 2026.",
+      "ht": "Videyo chak reyinyon jiska 29 septanm 2026."
+     },
+     "url": "https://sibfl.granicus.com/ViewPublisher.php?view_id=2"
+    }
+   }
+  },
+  {
+   "city": "Virginia Gardens",
+   "meetingsUrl": "https://virginiagardens-fl.gov/mayor-council/",
+   "electionsUrl": "https://virginiagardens-fl.gov/municipal-elections/",
+   "items": {
+    "M1": {
+     "r": "partial",
+     "note": {
+      "en": "Scanned reports, but none for Michael Tur, and Jorge Arce's has no list of givers.",
+      "es": "Reportes escaneados, pero ninguno de Michael Tur, y el de Jorge Arce no tiene la lista de donantes.",
+      "ht": "Rapò eskane, men pa gen pou Michael Tur, epi pa Jorge Arce a pa gen lis donatè."
+     },
+     "url": "https://virginiagardens-fl.gov/campaign-finance-report-documents/"
+    },
+    "M2": {
+     "r": "no",
+     "note": {
+      "en": "Only 2026 candidates are listed; no past reports.",
+      "es": "Solo aparecen los candidatos de 2026; no hay reportes anteriores.",
+      "ht": "Se kandida 2026 sèlman ki nan lis la; pa gen ansyen rapò."
+     },
+     "url": "https://virginiagardens-fl.gov/municipal-elections/"
+    },
+    "M3": {
+     "r": "no",
+     "note": {
+      "en": "Reports are scanned PDFs only.",
+      "es": "Los reportes son solo PDF escaneados.",
+      "ht": "Rapò yo se PDF eskane sèlman."
+     },
+     "url": "https://virginiagardens-fl.gov/campaign-finance-report-documents/"
+    },
+    "V1": {
+     "r": "partial",
+     "note": {
+      "en": "Short scanned agendas with no backup documents.",
+      "es": "Agendas cortas escaneadas sin documentos de respaldo.",
+      "ht": "Ti ajanda eskane san dokiman sipò."
+     },
+     "url": "https://virginiagardens-fl.gov/mayor-council/"
+    },
+    "V2": {
+     "r": "partial",
+     "note": {
+      "en": "Minutes are current, but only 2026 meetings are listed.",
+      "es": "Las actas están al día, pero solo aparecen las reuniones de 2026.",
+      "ht": "Pwosèvèbal yo ajou, men se reyinyon 2026 sèlman ki nan lis la."
+     },
+     "url": "https://virginiagardens-fl.gov/mayor-council/"
+    },
+    "V3": {
+     "r": "partial",
+     "note": {
+      "en": "Minutes give the tally, mover and seconder (\"passed unanimously 3-0\"), not each vote.",
+      "es": "Las actas dan el conteo, quién propone y secunda (\"aprobado por unanimidad 3-0\"), no cada voto.",
+      "ht": "Pwosèvèbal yo bay kantite vòt, kiyès ki pwopoze ak apiye (\"pase alinanimite 3-0\"), men pa chak vòt."
+     },
+     "url": "https://virginiagardens-fl.gov/mayor-council/"
+    },
+    "V4": {
+     "r": "partial",
+     "note": {
+      "en": "Nearly all agendas and minutes are scanned images with no text.",
+      "es": "Casi todas las agendas y actas son imágenes escaneadas sin texto.",
+      "ht": "Prèske tout ajanda ak pwosèvèbal yo se imaj eskane san tèks."
+     },
+     "url": "https://virginiagardens-fl.gov/mayor-council/"
+    },
+    "V5": {
+     "r": "yes",
+     "note": {
+      "en": "Meeting video archive from 2020 to 2026.",
+      "es": "Archivo de video de reuniones de 2020 a 2026.",
+      "ht": "Achiv videyo reyinyon depi 2020 rive 2026."
+     },
+     "url": "https://virginiagardens-fl.gov/village-meetings/archive-2026/"
+    }
+   }
+  }
+ ]
+}

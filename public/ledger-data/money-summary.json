@@ -1,0 +1,2142 @@
+{
+ "updated": "2026-10-22",
+ "cycleStart": "2025-01-01",
+ "people": {
+  "vicki-l-lopez": {
+   "pid": "vicki-l-lopez",
+   "body": "county",
+   "bodyName": {
+    "en": "Miami-Dade County Commission",
+    "es": "Comisión del Condado Miami-Dade",
+    "ht": "Komisyon Konte Miami-Dade"
+   },
+   "name": "Vicki L. Lopez",
+   "last": "Lopez",
+   "kind": "votes",
+   "total": 73400,
+   "donors": 29,
+   "gifts": 42,
+   "before": 28,
+   "beforeAmt": 46100,
+   "afterAmt": 27300,
+   "accounts": 2,
+   "campaignAmt": 19650,
+   "committeeAmt": 53750,
+   "committees": 1,
+   "against": {
+    "votes": 1,
+    "money": 28000,
+    "donors": 3
+   },
+   "items": 7,
+   "yes": 7,
+   "split": 7,
+   "share": {
+    "def": "county",
+    "n": 10,
+    "tied": 7,
+    "from": "2025-12"
+   },
+   "pron": "she"
+  },
+  "oliver-g-gilbert-iii": {
+   "pid": "oliver-g-gilbert-iii",
+   "body": "county",
+   "bodyName": {
+    "en": "Miami-Dade County Commission",
+    "es": "Comisión del Condado Miami-Dade",
+    "ht": "Komisyon Konte Miami-Dade"
+   },
+   "name": "Oliver G. Gilbert, III",
+   "last": "Gilbert",
+   "kind": "votes",
+   "total": 207550,
+   "donors": 68,
+   "gifts": 92,
+   "before": 75,
+   "beforeAmt": 157050,
+   "afterAmt": 50500,
+   "accounts": 4,
+   "campaignAmt": 58050,
+   "committeeAmt": 149500,
+   "committees": 1,
+   "cmteRole": "solicits",
+   "against": {
+    "votes": 1,
+    "money": 7500,
+    "donors": 1
+   },
+   "items": 41,
+   "yes": 41,
+   "split": 41,
+   "share": {
+    "def": "county",
+    "n": 134,
+    "tied": 41,
+    "from": "2020-12"
+   },
+   "giftsFrom": "2019-01-01",
+   "pron": "he"
+  },
+  "vince-c-lago": {
+   "pid": "vince-c-lago",
+   "body": "coralgables",
+   "bodyName": {
+    "en": "Coral Gables City Commission",
+    "es": "Comisión de la Ciudad de Coral Gables",
+    "ht": "Komisyon Vil Coral Gables"
+   },
+   "name": "Vince Lago",
+   "last": "Lago",
+   "kind": "votes",
+   "total": 16350,
+   "donors": 14,
+   "gifts": 18,
+   "before": 12,
+   "beforeAmt": 11100,
+   "afterAmt": 5250,
+   "accounts": 1,
+   "campaignAmt": 16350,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 10,
+   "yes": 10,
+   "split": 10,
+   "since": 2018,
+   "share": {
+    "def": "actions",
+    "n": 61,
+    "tied": 10,
+    "from": "2013-12"
+   },
+   "giftsFrom": "2011-01-01",
+   "pron": "he",
+   "donorGap": {
+    "years": [
+     2013,
+     2019
+    ],
+    "why": "notOnline"
+   }
+  },
+  "melissa-castro": {
+   "pid": "melissa-castro",
+   "body": "coralgables",
+   "bodyName": {
+    "en": "Coral Gables City Commission",
+    "es": "Comisión de la Ciudad de Coral Gables",
+    "ht": "Komisyon Vil Coral Gables"
+   },
+   "name": "Melissa Castro",
+   "last": "Castro",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 19,
+    "tied": 0,
+    "from": "2023-05"
+   },
+   "giftsFrom": "2021-01-01",
+   "pron": "she"
+  },
+  "maureen-porras": {
+   "pid": "maureen-porras",
+   "body": "doral",
+   "bodyName": {
+    "en": "Doral City Council",
+    "es": "Concejo de la Ciudad de Doral",
+    "ht": "Konsèy Vil Doral"
+   },
+   "name": "Maureen Porras",
+   "last": "Porras",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 1,
+    "money": 1000,
+    "donors": 1
+   },
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 27,
+    "tied": 0,
+    "from": "2023-05"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "she"
+  },
+  "howard-s-weinberg": {
+   "pid": "howard-s-weinberg",
+   "body": "aventura",
+   "bodyName": {
+    "en": "Aventura City Commission",
+    "es": "Comisión de la Ciudad de Aventura",
+    "ht": "Komisyon Vil Aventura"
+   },
+   "name": "Howard S. Weinberg",
+   "last": "Weinberg",
+   "kind": "votes",
+   "total": 4000,
+   "donors": 4,
+   "gifts": 4,
+   "before": 1,
+   "beforeAmt": 1000,
+   "afterAmt": 3000,
+   "accounts": 1,
+   "campaignAmt": 4000,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 1,
+    "money": 1000,
+    "donors": 1
+   },
+   "items": 5,
+   "yes": 5,
+   "split": 5,
+   "since": 2023,
+   "share": {
+    "def": "actions",
+    "n": 9,
+    "tied": 4,
+    "from": "2023-07"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "he"
+  },
+  "jay-r-chernoff": {
+   "pid": "jay-r-chernoff",
+   "body": "nmb",
+   "bodyName": {
+    "en": "North Miami Beach City Commission",
+    "es": "Comisión de la Ciudad de North Miami Beach",
+    "ht": "Komisyon Vil North Miami Beach"
+   },
+   "name": "Jay R. Chernoff",
+   "last": "Chernoff",
+   "kind": "votes",
+   "total": 6000,
+   "donors": 6,
+   "gifts": 6,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 6000,
+   "accounts": 1,
+   "campaignAmt": 6000,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 5,
+   "yes": 5,
+   "split": 5,
+   "since": 2024,
+   "share": {
+    "def": "actions",
+    "n": 65,
+    "tied": 5,
+    "from": "2023-03"
+   },
+   "giftsFrom": "2018-01-01",
+   "pron": "he"
+  },
+  "phyllis-smith": {
+   "pid": "phyllis-smith",
+   "body": "nmb",
+   "bodyName": {
+    "en": "North Miami Beach City Commission",
+    "es": "Comisión de la Ciudad de North Miami Beach",
+    "ht": "Komisyon Vil North Miami Beach"
+   },
+   "name": "Phyllis Smith",
+   "last": "Smith",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 1,
+    "money": 1000,
+    "donors": 1
+   },
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 65,
+    "tied": 0,
+    "from": "2023-03"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "she"
+  },
+  "mary-estime-irvin": {
+   "pid": "mary-estime-irvin",
+   "body": "northmiami",
+   "bodyName": {
+    "en": "North Miami City Council",
+    "es": "Concejo de la Ciudad de North Miami",
+    "ht": "Konsèy Vil North Miami"
+   },
+   "name": "Mary Estimé-Irvin",
+   "last": "Estimé-Irvin",
+   "kind": "votes",
+   "total": 1000,
+   "donors": 1,
+   "gifts": 1,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 1000,
+   "accounts": 1,
+   "campaignAmt": 1000,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 1,
+   "yes": 1,
+   "split": 1,
+   "share": {
+    "def": "actions",
+    "n": 39,
+    "tied": 1,
+    "from": "2019-06"
+   },
+   "giftsFrom": "2018-01-01",
+   "pron": "she"
+  },
+  "kassandra-timothe": {
+   "pid": "kassandra-timothe",
+   "body": "northmiami",
+   "bodyName": {
+    "en": "North Miami City Council",
+    "es": "Concejo de la Ciudad de North Miami",
+    "ht": "Konsèy Vil North Miami"
+   },
+   "name": "Kassandra Timothe",
+   "last": "Timothe",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 30,
+    "tied": 0,
+    "from": "2021-07"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "she"
+  },
+  "alix-desulme": {
+   "pid": "alix-desulme",
+   "body": "northmiami",
+   "bodyName": {
+    "en": "North Miami City Council",
+    "es": "Concejo de la Ciudad de North Miami",
+    "ht": "Konsèy Vil North Miami"
+   },
+   "name": "Alix Desulme",
+   "last": "Desulme",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 48,
+    "tied": 0,
+    "from": "2017-08"
+   },
+   "giftsFrom": "2014-01-01",
+   "pron": "he"
+  },
+  "steve-calle": {
+   "pid": "steve-calle",
+   "body": "southmiami",
+   "bodyName": {
+    "en": "South Miami City Commission",
+    "es": "Comisión de la Ciudad de South Miami",
+    "ht": "Komisyon Vil South Miami"
+   },
+   "name": "Steve Calle",
+   "last": "Calle",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 23,
+    "tied": 0,
+    "from": "2023-01"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "he"
+  },
+  "lisa-bonich": {
+   "pid": "lisa-bonich",
+   "body": "southmiami",
+   "bodyName": {
+    "en": "South Miami City Commission",
+    "es": "Comisión de la Ciudad de South Miami",
+    "ht": "Komisyon Vil South Miami"
+   },
+   "name": "Lisa Bonich",
+   "last": "Bonich",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 23,
+    "tied": 0,
+    "from": "2023-01"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "she"
+  },
+  "javier-fernandez": {
+   "pid": "javier-fernandez",
+   "body": "southmiami",
+   "bodyName": {
+    "en": "South Miami City Commission",
+    "es": "Comisión de la Ciudad de South Miami",
+    "ht": "Komisyon Vil South Miami"
+   },
+   "name": "Javier Fernández",
+   "last": "Fernandez",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 23,
+    "tied": 0,
+    "from": "2023-01"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "he"
+  },
+  "ken-fairman": {
+   "pid": "ken-fairman",
+   "body": "pinecrest",
+   "bodyName": {
+    "en": "Pinecrest Village Council",
+    "es": "Concejo de la Villa de Pinecrest",
+    "ht": "Konsèy Vilaj Pinecrest"
+   },
+   "name": "Ken Fairman",
+   "last": "Fairman",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 6,
+    "tied": 0,
+    "from": "2023-12"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "he"
+  },
+  "edgar-ayala": {
+   "pid": "edgar-ayala",
+   "body": "medley",
+   "bodyName": {
+    "en": "Medley Town Council",
+    "es": "Concejo del Pueblo de Medley",
+    "ht": "Konsèy Vil Medley"
+   },
+   "name": "Edgar Ayala",
+   "last": "Ayala",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "giftsFrom": "2010-01-01",
+   "pron": "he",
+   "donorGap": {
+    "years": [
+     2010,
+     2025
+    ],
+    "why": "notOnline"
+   }
+  },
+  "lizelh-rodriguez": {
+   "pid": "lizelh-rodriguez",
+   "body": "medley",
+   "bodyName": {
+    "en": "Medley Town Council",
+    "es": "Concejo del Pueblo de Medley",
+    "ht": "Konsèy Vil Medley"
+   },
+   "name": "Lizelh Rodriguez",
+   "last": "Rodriguez",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "giftsFrom": "2018-01-01",
+   "pron": "she",
+   "donorGap": {
+    "years": [
+     2018,
+     2025
+    ],
+    "why": "notOnline"
+   }
+  },
+  "luis-gonzalez": {
+   "pid": "luis-gonzalez",
+   "body": "hialeah",
+   "bodyName": {
+    "en": "Hialeah City Council",
+    "es": "Concejo de la Ciudad de Hialeah",
+    "ht": "Konsèy Vil Hialeah"
+   },
+   "name": "Luis Gonzalez",
+   "last": "Gonzalez",
+   "kind": "votes",
+   "total": 4000,
+   "donors": 4,
+   "gifts": 4,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 4000,
+   "accounts": 1,
+   "campaignAmt": 4000,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 7,
+   "yes": 7,
+   "split": 7,
+   "share": {
+    "def": "actions",
+    "n": 13,
+    "tied": 7,
+    "from": "2026-02"
+   },
+   "pron": "he"
+  },
+  "robert-duncan": {
+   "pid": "robert-duncan",
+   "body": "cutlerbay",
+   "bodyName": {
+    "en": "Cutler Bay Town Council",
+    "es": "Concejo del Pueblo de Cutler Bay",
+    "ht": "Konsèy Vil Cutler Bay"
+   },
+   "name": "Robert \"BJ\" Duncan",
+   "last": "Duncan",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 1,
+    "tied": 0,
+    "from": "2022-07"
+   },
+   "giftsFrom": "2016-01-01",
+   "pron": "he"
+  },
+  "suzy-lord": {
+   "pid": "suzy-lord",
+   "body": "cutlerbay",
+   "bodyName": {
+    "en": "Cutler Bay Town Council",
+    "es": "Concejo del Pueblo de Cutler Bay",
+    "ht": "Konsèy Vil Cutler Bay"
+   },
+   "name": "Suzy Lord",
+   "last": "Lord",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 1,
+    "tied": 0,
+    "from": "2022-07"
+   },
+   "giftsFrom": "2018-01-01",
+   "pron": "she"
+  },
+  "richard-ramirez": {
+   "pid": "richard-ramirez",
+   "body": "cutlerbay",
+   "bodyName": {
+    "en": "Cutler Bay Town Council",
+    "es": "Concejo del Pueblo de Cutler Bay",
+    "ht": "Konsèy Vil Cutler Bay"
+   },
+   "name": "Richard Ramirez",
+   "last": "Ramirez",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "giftsFrom": "2020-01-01",
+   "pron": "he"
+  },
+  "natasha-l-ervin": {
+   "pid": "natasha-l-ervin",
+   "body": "opalocka",
+   "bodyName": {
+    "en": "Opa-locka City Commission",
+    "es": "Comisión de la Ciudad de Opa-locka",
+    "ht": "Komisyon Vil Opa-locka"
+   },
+   "name": "Natasha L. Ervin",
+   "last": "Ervin",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 14,
+    "tied": 0,
+    "from": "2022-12"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "she"
+  },
+  "sherelean-bass": {
+   "pid": "sherelean-bass",
+   "body": "opalocka",
+   "bodyName": {
+    "en": "Opa-locka City Commission",
+    "es": "Comisión de la Ciudad de Opa-locka",
+    "ht": "Komisyon Vil Opa-locka"
+   },
+   "name": "Sherelean Bass",
+   "last": "Bass",
+   "kind": "votes",
+   "total": 3000,
+   "donors": 2,
+   "gifts": 3,
+   "before": 1,
+   "beforeAmt": 1000,
+   "afterAmt": 2000,
+   "accounts": 1,
+   "campaignAmt": 3000,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 2,
+   "yes": 2,
+   "split": 2,
+   "since": 2022,
+   "share": {
+    "def": "actions",
+    "n": 26,
+    "tied": 2,
+    "from": "2021-09"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "she",
+   "donorGap": {
+    "years": [
+     2020,
+     2021
+    ],
+    "why": "notOnline"
+   }
+  },
+  "oscar-sardinas": {
+   "pid": "oscar-sardinas",
+   "body": "keybiscayne",
+   "bodyName": {
+    "en": "Key Biscayne Village Council",
+    "es": "Concejo de la Villa de Key Biscayne",
+    "ht": "Konsèy Vilaj Key Biscayne"
+   },
+   "name": "Oscar Sardiñas",
+   "last": "Sardinas",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 14,
+    "tied": 0,
+    "from": "2023-10"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "he"
+  },
+  "fernando-a-vazquez": {
+   "pid": "fernando-a-vazquez",
+   "body": "keybiscayne",
+   "bodyName": {
+    "en": "Key Biscayne Village Council",
+    "es": "Concejo de la Villa de Key Biscayne",
+    "ht": "Konsèy Vilaj Key Biscayne"
+   },
+   "name": "Fernando A. Vazquez",
+   "last": "Vazquez",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "share": {
+    "def": "actions",
+    "n": 13,
+    "tied": 0,
+    "from": "2022-12"
+   },
+   "giftsFrom": "2020-01-01",
+   "pron": "he"
+  },
+  "larisa-svechin": {
+   "pid": "larisa-svechin",
+   "body": "sunnyisles",
+   "bodyName": {
+    "en": "Sunny Isles Beach City Commission",
+    "es": "Comisión de la Ciudad de Sunny Isles Beach",
+    "ht": "Komisyon Vil Sunny Isles Beach"
+   },
+   "name": "Larisa Svechin",
+   "last": "Svechin",
+   "kind": "votes",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "split": 0,
+   "giftsFrom": "2021-01-01",
+   "pron": "she",
+   "donorGap": {
+    "years": [
+     2021,
+     2024
+    ],
+    "why": "notOnline"
+   }
+  },
+  "fabian-basabe": {
+   "pid": "fabian-basabe",
+   "body": "flhouse",
+   "bodyName": {
+    "en": "Florida House",
+    "es": "Cámara de Representantes de Florida",
+    "ht": "Chanm Reprezantan Florid"
+   },
+   "name": "Fabián Basabe",
+   "last": "Basabe",
+   "kind": "state",
+   "total": 21750,
+   "donors": 16,
+   "gifts": 22,
+   "before": 7,
+   "beforeAmt": 7750,
+   "afterAmt": 14000,
+   "accounts": 3,
+   "campaignAmt": 15250,
+   "committeeAmt": 6500,
+   "committees": 1,
+   "requests": {
+    "n": 45,
+    "ask": 33066485,
+    "funded": 11671312,
+    "money": 9750,
+    "donors": 6,
+    "inBudget": 13636162,
+    "vetoed": 1964850,
+    "inN": 30
+   },
+   "bills": {
+    "bills": 6,
+    "votes": 7,
+    "yes": 7,
+    "money": 12000,
+    "donors": 10,
+    "universe": {
+     "n": 41,
+     "tied": 6,
+     "from": "2023-03"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 90,
+    "tied": 45,
+    "from": "2023-01"
+   },
+   "belowThreshold": {
+    "min": 1000,
+    "donors": 1,
+    "gifts": 1,
+    "money": 50
+   },
+   "giftsFrom": "2020-11-04",
+   "pron": "he"
+  },
+  "ashley-viola-gantt": {
+   "pid": "ashley-viola-gantt",
+   "body": "flhouse",
+   "bodyName": {
+    "en": "Florida House",
+    "es": "Cámara de Representantes de Florida",
+    "ht": "Chanm Reprezantan Florid"
+   },
+   "name": "Ashley Viola Gantt",
+   "last": "Gantt",
+   "kind": "state",
+   "total": 12500,
+   "donors": 11,
+   "gifts": 15,
+   "before": 5,
+   "beforeAmt": 4000,
+   "afterAmt": 8500,
+   "accounts": 2,
+   "campaignAmt": 12500,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 1,
+    "money": 2000,
+    "donors": 2,
+    "bills": 1
+   },
+   "requests": {
+    "n": 35,
+    "ask": 33230000,
+    "funded": 2225000,
+    "money": 8500,
+    "donors": 6,
+    "inBudget": 4600000,
+    "vetoed": 2375000,
+    "inN": 10
+   },
+   "bills": {
+    "bills": 4,
+    "votes": 4,
+    "yes": 4,
+    "money": 4000,
+    "donors": 5,
+    "universe": {
+     "n": 46,
+     "tied": 4,
+     "from": "2023-03"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 80,
+    "tied": 35,
+    "from": "2023-02"
+   },
+   "giftsFrom": "2020-11-04",
+   "pron": "she"
+  },
+  "omar-blanco": {
+   "pid": "omar-blanco",
+   "body": "flhouse",
+   "bodyName": {
+    "en": "Florida House",
+    "es": "Cámara de Representantes de Florida",
+    "ht": "Chanm Reprezantan Florid"
+   },
+   "name": "Omar Blanco",
+   "last": "Blanco",
+   "kind": "state",
+   "total": 21000,
+   "donors": 15,
+   "gifts": 16,
+   "before": 5,
+   "beforeAmt": 6000,
+   "afterAmt": 15000,
+   "accounts": 2,
+   "campaignAmt": 14000,
+   "committeeAmt": 7000,
+   "committees": 1,
+   "requests": {
+    "n": 38,
+    "ask": 39916225,
+    "funded": 18980500,
+    "money": 17000,
+    "donors": 11,
+    "inBudget": 23829225,
+    "vetoed": 4848725,
+    "inN": 22
+   },
+   "bills": {
+    "bills": 2,
+    "votes": 2,
+    "yes": 2,
+    "money": 4000,
+    "donors": 4,
+    "universe": {
+     "n": 16,
+     "tied": 2,
+     "from": "2025-04"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 76,
+    "tied": 38,
+    "from": "2025-01"
+   },
+   "pron": "he"
+  },
+  "kevin-d-chambliss": {
+   "pid": "kevin-d-chambliss",
+   "body": "flhouse",
+   "bodyName": {
+    "en": "Florida House",
+    "es": "Cámara de Representantes de Florida",
+    "ht": "Chanm Reprezantan Florid"
+   },
+   "name": "Kevin Chambliss",
+   "last": "Chambliss",
+   "kind": "state",
+   "total": 31500,
+   "donors": 28,
+   "gifts": 36,
+   "before": 9,
+   "beforeAmt": 7500,
+   "afterAmt": 24000,
+   "accounts": 2,
+   "campaignAmt": 31500,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 3,
+    "money": 5500,
+    "donors": 6,
+    "bills": 3
+   },
+   "requests": {
+    "n": 20,
+    "ask": 15275000,
+    "funded": 3362500,
+    "money": 6500,
+    "donors": 8,
+    "inBudget": 9062500,
+    "vetoed": 5700000,
+    "inN": 13
+   },
+   "bills": {
+    "bills": 8,
+    "votes": 8,
+    "yes": 8,
+    "money": 25000,
+    "donors": 20,
+    "universe": {
+     "n": 57,
+     "tied": 8,
+     "from": "2021-04"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 73,
+    "tied": 20,
+    "from": "2021-02"
+   },
+   "giftsFrom": "2018-11-07",
+   "pron": "he"
+  },
+  "mike-redondo": {
+   "pid": "mike-redondo",
+   "body": "flhouse",
+   "bodyName": {
+    "en": "Florida House",
+    "es": "Cámara de Representantes de Florida",
+    "ht": "Chanm Reprezantan Florid"
+   },
+   "name": "Mike Redondo",
+   "last": "Redondo",
+   "kind": "state",
+   "total": 371995.05,
+   "donors": 65,
+   "gifts": 100,
+   "before": 56,
+   "beforeAmt": 133624.27,
+   "afterAmt": 238370.78,
+   "accounts": 3,
+   "campaignAmt": 38690,
+   "committeeAmt": 333305.05,
+   "committees": 1,
+   "requests": {
+    "n": 48,
+    "ask": 175055168,
+    "funded": 87978613,
+    "money": 105945.05,
+    "donors": 30,
+    "inBudget": 89453613,
+    "vetoed": 1475000,
+    "inN": 41
+   },
+   "bills": {
+    "bills": 10,
+    "votes": 11,
+    "yes": 11,
+    "money": 266050,
+    "donors": 35,
+    "universe": {
+     "n": 30,
+     "tied": 10,
+     "from": "2024-02"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 91,
+    "tied": 48,
+    "from": "2023-11"
+   },
+   "giftsFrom": "2022-11-09",
+   "pron": "he"
+  },
+  "juan-carlos-porras": {
+   "pid": "juan-carlos-porras",
+   "body": "flhouse",
+   "bodyName": {
+    "en": "Florida House",
+    "es": "Cámara de Representantes de Florida",
+    "ht": "Chanm Reprezantan Florid"
+   },
+   "name": "Juan Carlos Porras",
+   "last": "Porras",
+   "kind": "state",
+   "total": 141561.52,
+   "donors": 74,
+   "gifts": 99,
+   "before": 54,
+   "beforeAmt": 63030.76,
+   "afterAmt": 78530.76,
+   "accounts": 3,
+   "campaignAmt": 59311.52,
+   "committeeAmt": 82250,
+   "committees": 1,
+   "requests": {
+    "n": 19,
+    "ask": 37264784,
+    "funded": 7662784,
+    "money": 28811.52,
+    "donors": 22,
+    "inBudget": 14077284,
+    "vetoed": 6414500,
+    "inN": 15
+   },
+   "bills": {
+    "bills": 17,
+    "votes": 18,
+    "yes": 18,
+    "money": 112750,
+    "donors": 52,
+    "universe": {
+     "n": 46,
+     "tied": 17,
+     "from": "2023-03"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 49,
+    "tied": 19,
+    "from": "2022-12"
+   },
+   "giftsFrom": "2020-11-04",
+   "pron": "he"
+  },
+  "angela-nixon": {
+   "pid": "angela-nixon",
+   "body": "flhouse",
+   "bodyName": {
+    "en": "Florida House",
+    "es": "Cámara de Representantes de Florida",
+    "ht": "Chanm Reprezantan Florid"
+   },
+   "name": "Angie Nixon",
+   "last": "Nixon",
+   "kind": "state",
+   "total": 1500,
+   "donors": 2,
+   "gifts": 3,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 1500,
+   "accounts": 1,
+   "campaignAmt": 1500,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 2,
+    "money": 8558.46,
+    "donors": 7,
+    "bills": 2
+   },
+   "requests": {
+    "n": 1,
+    "ask": 750000,
+    "funded": 0,
+    "money": 1500,
+    "donors": 2,
+    "inBudget": 0,
+    "vetoed": 0,
+    "inN": 0
+   },
+   "bills": {
+    "bills": 0,
+    "votes": 0,
+    "yes": 0,
+    "money": 0,
+    "donors": 0,
+    "universe": {
+     "n": 61,
+     "tied": 0,
+     "from": "2021-04"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 25,
+    "tied": 1,
+    "from": "2021-01"
+   },
+   "giftsFrom": "2018-11-07",
+   "pron": "she"
+  },
+  "ileana-garcia": {
+   "pid": "ileana-garcia",
+   "body": "flsenate",
+   "bodyName": {
+    "en": "Florida Senate",
+    "es": "Senado de Florida",
+    "ht": "Sena Florid"
+   },
+   "name": "Ileana Garcia",
+   "last": "Garcia",
+   "kind": "state",
+   "total": 436617.47,
+   "donors": 122,
+   "gifts": 200,
+   "before": 141,
+   "beforeAmt": 310117.47,
+   "afterAmt": 126500,
+   "accounts": 3,
+   "campaignAmt": 110171,
+   "committeeAmt": 326446.47,
+   "committees": 2,
+   "against": {
+    "votes": 1,
+    "money": 13500,
+    "donors": 1,
+    "bills": 1
+   },
+   "requests": {
+    "n": 202,
+    "ask": 200809560,
+    "funded": 86419269,
+    "money": 149211.47,
+    "donors": 39,
+    "inBudget": 117458469,
+    "vetoed": 31039200,
+    "inN": 168
+   },
+   "bills": {
+    "bills": 13,
+    "votes": 13,
+    "yes": 13,
+    "money": 287406,
+    "donors": 83,
+    "universe": {
+     "n": 41,
+     "tied": 13,
+     "from": "2021-03"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 295,
+    "tied": 202,
+    "from": "2021-01"
+   },
+   "giftsFrom": "2018-11-07",
+   "pron": "she"
+  },
+  "alexis-calatayud": {
+   "pid": "alexis-calatayud",
+   "body": "flsenate",
+   "bodyName": {
+    "en": "Florida Senate",
+    "es": "Senado de Florida",
+    "ht": "Sena Florid"
+   },
+   "name": "Alexis Maria Calatayud",
+   "last": "Calatayud",
+   "kind": "state",
+   "total": 973485.93,
+   "donors": 213,
+   "gifts": 326,
+   "before": 146,
+   "beforeAmt": 353850,
+   "afterAmt": 619635.93,
+   "accounts": 2,
+   "campaignAmt": 143950,
+   "committeeAmt": 829535.93,
+   "committees": 1,
+   "requests": {
+    "n": 238,
+    "ask": 370300136,
+    "funded": 151232864,
+    "money": 108054.24,
+    "donors": 48,
+    "inBudget": 179333986,
+    "vetoed": 28101122,
+    "inN": 152
+   },
+   "bills": {
+    "bills": 14,
+    "votes": 14,
+    "yes": 14,
+    "money": 865431.69,
+    "donors": 165,
+    "universe": {
+     "n": 35,
+     "tied": 14,
+     "from": "2023-03"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 405,
+    "tied": 238,
+    "from": "2023-02"
+   },
+   "belowThreshold": {
+    "min": 1000,
+    "donors": 3,
+    "gifts": 3,
+    "money": 1500
+   },
+   "giftsFrom": "2020-11-04",
+   "pron": "she"
+  },
+  "ana-maria-rodriguez": {
+   "pid": "ana-maria-rodriguez",
+   "body": "flsenate",
+   "bodyName": {
+    "en": "Florida Senate",
+    "es": "Senado de Florida",
+    "ht": "Sena Florid"
+   },
+   "name": "Ana Maria Rodriguez",
+   "last": "Rodriguez",
+   "kind": "state",
+   "total": 1047675,
+   "donors": 316,
+   "gifts": 526,
+   "before": 410,
+   "beforeAmt": 664412.5,
+   "afterAmt": 383262.5,
+   "accounts": 2,
+   "campaignAmt": 285712.5,
+   "committeeAmt": 761962.5,
+   "committees": 1,
+   "requests": {
+    "n": 330,
+    "ask": 656850754,
+    "funded": 210800188,
+    "money": 123212.5,
+    "donors": 62,
+    "inBudget": 251530712,
+    "vetoed": 40730524,
+    "inN": 230
+   },
+   "bills": {
+    "bills": 21,
+    "votes": 21,
+    "yes": 21,
+    "money": 924462.5,
+    "donors": 254,
+    "universe": {
+     "n": 46,
+     "tied": 21,
+     "from": "2021-03"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 625,
+    "tied": 330,
+    "from": "2020-12"
+   },
+   "belowThreshold": {
+    "min": 1000,
+    "donors": 4,
+    "gifts": 4,
+    "money": 2000
+   },
+   "giftsFrom": "2018-11-07",
+   "pron": "she"
+  },
+  "blaise-ingoglia": {
+   "pid": "blaise-ingoglia",
+   "body": "flsenate",
+   "bodyName": {
+    "en": "Florida Senate",
+    "es": "Senado de Florida",
+    "ht": "Sena Florid"
+   },
+   "name": "Blaise Ingoglia",
+   "last": "Ingoglia",
+   "kind": "state",
+   "total": 829752.74,
+   "donors": 148,
+   "gifts": 235,
+   "before": 165,
+   "beforeAmt": 606169.24,
+   "afterAmt": 223583.5,
+   "accounts": 3,
+   "campaignAmt": 61294.75,
+   "committeeAmt": 768457.99,
+   "committees": 2,
+   "requests": {
+    "n": 83,
+    "ask": 241646987,
+    "funded": 48296507,
+    "money": 159314.56,
+    "donors": 38,
+    "inBudget": 71746433,
+    "vetoed": 23449926,
+    "inN": 46
+   },
+   "bills": {
+    "bills": 10,
+    "votes": 10,
+    "yes": 10,
+    "money": 670438.18,
+    "donors": 110,
+    "universe": {
+     "n": 29,
+     "tied": 10,
+     "from": "2023-03"
+    }
+   },
+   "share": {
+    "def": "requests",
+    "n": 141,
+    "tied": 83,
+    "from": "2023-02"
+   },
+   "giftsFrom": "2020-11-04",
+   "pron": "he",
+   "fullCheck": {
+    "decisions": 708,
+    "helped": 148,
+    "amount": 1487110,
+    "donors": 338,
+    "record": {
+     "en": "State House 2014-2022, State Senate 2022-2025, and Chief Financial Officer since July 2025",
+     "es": "Cámara estatal 2014-2022, Senado estatal 2022-2025, y Director Financiero desde julio de 2025",
+     "ht": "Chanm Reprezantan Leta 2014-2022, Sena Leta 2022-2025, ak Chèf Ofisye Finansye depi jiyè 2025"
+    }
+   }
+  },
+  "mario-diaz-balart": {
+   "pid": "mario-diaz-balart",
+   "body": "ushouse",
+   "bodyName": {
+    "en": "U.S. House",
+    "es": "Cámara de Representantes de EE. UU.",
+    "ht": "Chanm Reprezantan Etazini"
+   },
+   "name": "Mario Diaz-Balart",
+   "last": "Diaz-Balart",
+   "kind": "federal",
+   "total": 2757499,
+   "donors": 163,
+   "gifts": 178,
+   "before": 152,
+   "beforeAmt": 2658749,
+   "afterAmt": 98750,
+   "accounts": 1,
+   "campaignAmt": 2757499,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 2,
+    "money": 31500,
+    "donors": 2,
+    "bills": 2
+   },
+   "requests": {
+    "n": 54,
+    "ask": 224455186,
+    "funded": 0,
+    "money": 86300,
+    "donors": 40,
+    "inBudget": 0,
+    "vetoed": 0,
+    "inN": 0,
+    "fedChecked": 30,
+    "fedAsk": 113891736,
+    "fedFunded": 49617428
+   },
+   "bills": {
+    "bills": 106,
+    "votes": 106,
+    "yes": 106,
+    "money": 2671199,
+    "donors": 123,
+    "universe": {
+     "n": 173,
+     "tied": 106,
+     "from": "2003-02"
+    }
+   },
+   "share": {
+    "def": "earmarks",
+    "n": 90,
+    "tied": 54,
+    "from": "2021-04"
+   },
+   "giftsFrom": "2001-01-01",
+   "pron": "he"
+  },
+  "maria-elvira-salazar": {
+   "pid": "maria-elvira-salazar",
+   "body": "ushouse",
+   "bodyName": {
+    "en": "U.S. House",
+    "es": "Cámara de Representantes de EE. UU.",
+    "ht": "Chanm Reprezantan Etazini"
+   },
+   "name": "Maria Elvira Salazar",
+   "last": "Salazar",
+   "kind": "federal",
+   "total": 209300,
+   "donors": 41,
+   "gifts": 43,
+   "before": 39,
+   "beforeAmt": 193300,
+   "afterAmt": 16000,
+   "accounts": 1,
+   "campaignAmt": 209300,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 2,
+    "money": 80500,
+    "donors": 10,
+    "bills": 2
+   },
+   "requests": {
+    "n": 44,
+    "ask": 143346446,
+    "funded": 0,
+    "money": 27800,
+    "donors": 13,
+    "inBudget": 0,
+    "vetoed": 0,
+    "inN": 0,
+    "fedChecked": 27,
+    "fedAsk": 88403446,
+    "fedFunded": 37320580
+   },
+   "bills": {
+    "bills": 25,
+    "votes": 25,
+    "yes": 25,
+    "money": 181500,
+    "donors": 28,
+    "universe": {
+     "n": 54,
+     "tied": 25,
+     "from": "2021-03"
+    }
+   },
+   "share": {
+    "def": "earmarks",
+    "n": 88,
+    "tied": 44,
+    "from": "2021-04"
+   },
+   "giftsFrom": "2019-01-01",
+   "pron": "she"
+  },
+  "carlos-a-gimenez": {
+   "pid": "carlos-a-gimenez",
+   "body": "ushouse",
+   "bodyName": {
+    "en": "U.S. House",
+    "es": "Cámara de Representantes de EE. UU.",
+    "ht": "Chanm Reprezantan Etazini"
+   },
+   "name": "Carlos A. Gimenez",
+   "last": "Gimenez",
+   "kind": "federal",
+   "total": 248200,
+   "donors": 50,
+   "gifts": 55,
+   "before": 49,
+   "beforeAmt": 234700,
+   "afterAmt": 13500,
+   "accounts": 1,
+   "campaignAmt": 248200,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 2,
+    "money": 46000,
+    "donors": 10,
+    "bills": 2
+   },
+   "requests": {
+    "n": 49,
+    "ask": 195146016,
+    "funded": 0,
+    "money": 20200,
+    "donors": 9,
+    "inBudget": 0,
+    "vetoed": 0,
+    "inN": 0,
+    "fedChecked": 30,
+    "fedAsk": 104642891,
+    "fedFunded": 34288600
+   },
+   "bills": {
+    "bills": 22,
+    "votes": 22,
+    "yes": 22,
+    "money": 228000,
+    "donors": 41,
+    "universe": {
+     "n": 60,
+     "tied": 22,
+     "from": "2021-03"
+    }
+   },
+   "share": {
+    "def": "earmarks",
+    "n": 90,
+    "tied": 49,
+    "from": "2021-04"
+   },
+   "giftsFrom": "2019-01-01",
+   "pron": "he"
+  },
+  "jared-moskowitz": {
+   "pid": "jared-moskowitz",
+   "body": "ushouse",
+   "bodyName": {
+    "en": "U.S. House",
+    "es": "Cámara de Representantes de EE. UU.",
+    "ht": "Chanm Reprezantan Etazini"
+   },
+   "name": "Jared Moskowitz",
+   "last": "Moskowitz",
+   "kind": "federal",
+   "total": 114200,
+   "donors": 46,
+   "gifts": 57,
+   "before": 53,
+   "beforeAmt": 107200,
+   "afterAmt": 7000,
+   "accounts": 1,
+   "campaignAmt": 114200,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 2,
+    "money": 35500,
+    "donors": 5,
+    "bills": 2
+   },
+   "requests": {
+    "n": 29,
+    "ask": 104641858.21,
+    "funded": 0,
+    "money": 28700,
+    "donors": 25,
+    "inBudget": 0,
+    "vetoed": 0,
+    "inN": 0,
+    "fedChecked": 14,
+    "fedAsk": 57994384.41,
+    "fedFunded": 6552000
+   },
+   "bills": {
+    "bills": 12,
+    "votes": 12,
+    "yes": 12,
+    "money": 85500,
+    "donors": 21,
+    "universe": {
+     "n": 45,
+     "tied": 12,
+     "from": "2023-05"
+    }
+   },
+   "share": {
+    "def": "earmarks",
+    "n": 65,
+    "tied": 29,
+    "from": "2023-04"
+   },
+   "giftsFrom": "2021-01-01",
+   "pron": "he"
+  },
+  "byron-donalds": {
+   "pid": "byron-donalds",
+   "body": "ushouse",
+   "bodyName": {
+    "en": "U.S. House",
+    "es": "Cámara de Representantes de EE. UU.",
+    "ht": "Chanm Reprezantan Etazini"
+   },
+   "name": "Byron Donalds",
+   "last": "Donalds",
+   "kind": "federal",
+   "total": 284000,
+   "donors": 53,
+   "gifts": 55,
+   "before": 43,
+   "beforeAmt": 270000,
+   "afterAmt": 14000,
+   "accounts": 1,
+   "campaignAmt": 284000,
+   "committeeAmt": 0,
+   "committees": 0,
+   "against": {
+    "votes": 2,
+    "money": 67500,
+    "donors": 12,
+    "bills": 2
+   },
+   "requests": {
+    "n": 15,
+    "ask": 83470000,
+    "funded": 0,
+    "money": 11000,
+    "donors": 11,
+    "inBudget": 0,
+    "vetoed": 0,
+    "inN": 0,
+    "fedChecked": 14,
+    "fedAsk": 80470000,
+    "fedFunded": 14940000
+   },
+   "bills": {
+    "bills": 17,
+    "votes": 17,
+    "yes": 17,
+    "money": 273000,
+    "donors": 42,
+    "universe": {
+     "n": 61,
+     "tied": 17,
+     "from": "2021-03"
+    }
+   },
+   "share": {
+    "def": "earmarks",
+    "n": 50,
+    "tied": 15,
+    "from": "2022-04"
+   },
+   "giftsFrom": "2019-01-01",
+   "pron": "he"
+  },
+  "ashley-moody": {
+   "pid": "ashley-moody",
+   "body": "ussenate",
+   "bodyName": {
+    "en": "U.S. Senate",
+    "es": "Senado de EE. UU.",
+    "ht": "Sena Etazini"
+   },
+   "name": "Ashley Moody",
+   "last": "Moody",
+   "kind": "federal",
+   "total": 235500,
+   "donors": 39,
+   "gifts": 39,
+   "before": 18,
+   "beforeAmt": 146500,
+   "afterAmt": 89000,
+   "accounts": 1,
+   "campaignAmt": 235500,
+   "committeeAmt": 0,
+   "committees": 0,
+   "requests": {
+    "n": 0,
+    "ask": 0,
+    "funded": 0,
+    "money": 0,
+    "donors": 0,
+    "inBudget": 0,
+    "vetoed": 0,
+    "inN": 0
+   },
+   "bills": {
+    "bills": 13,
+    "votes": 13,
+    "yes": 13,
+    "money": 235500,
+    "donors": 39,
+    "universe": {
+     "n": 27,
+     "tied": 13,
+     "from": "2025-02"
+    }
+   },
+   "giftsFrom": "2023-01-01",
+   "pron": "she"
+  },
+  "james-uthmeier": {
+   "pid": "james-uthmeier",
+   "body": "cabinet",
+   "bodyName": {
+    "en": "Cabinet or their own office",
+    "es": "el Gabinete o su propio despacho",
+    "ht": "Kabinè a oswa pwòp biwo yo"
+   },
+   "name": "James Uthmeier",
+   "last": "Uthmeier",
+   "kind": "cabinet",
+   "total": 634000,
+   "donors": 9,
+   "gifts": 15,
+   "before": 8,
+   "beforeAmt": 94000,
+   "afterAmt": 540000,
+   "accounts": 2,
+   "campaignAmt": 9000,
+   "committeeAmt": 625000,
+   "committees": 1,
+   "items": 4,
+   "yes": 0,
+   "acted": 4,
+   "votes": 0,
+   "split": 0,
+   "share": {
+    "def": "cabinet",
+    "n": 60,
+    "tied": 4,
+    "from": "2025-01"
+   },
+   "pron": "he",
+   "fullCheck": {
+    "decisions": 66,
+    "helped": 4,
+    "amount": 634000,
+    "donors": 8,
+    "record": {
+     "en": "Attorney General since February 2025, and two acts as the Governor's chief of staff",
+     "es": "Fiscal General desde febrero de 2025, y dos actos como jefe de gabinete del Gobernador",
+     "ht": "Pwokirè Jeneral depi fevriye 2025, ak de aksyon kòm chèf kabinè Gouvènè a"
+    }
+   }
+  },
+  "wilton-simpson": {
+   "pid": "wilton-simpson",
+   "body": "cabinet",
+   "bodyName": {
+    "en": "Cabinet or their own office",
+    "es": "el Gabinete o su propio despacho",
+    "ht": "Kabinè a oswa pwòp biwo yo"
+   },
+   "name": "Wilton Simpson",
+   "last": "Simpson",
+   "kind": "cabinet",
+   "total": 0,
+   "donors": 0,
+   "gifts": 0,
+   "before": 0,
+   "beforeAmt": 0,
+   "afterAmt": 0,
+   "accounts": 0,
+   "campaignAmt": 0,
+   "committeeAmt": 0,
+   "committees": 0,
+   "items": 0,
+   "yes": 0,
+   "acted": 0,
+   "votes": 0,
+   "split": 0,
+   "share": {
+    "def": "cabinet",
+    "n": 22,
+    "tied": 0,
+    "from": "2025-01"
+   },
+   "pron": "he"
+  },
+  "daniel-samaria": {
+   "body": null,
+   "bodyName": {
+    "en": "Biscayne Park",
+    "es": "Biscayne Park",
+    "ht": "Biscayne Park"
+   },
+   "name": "Daniel Samaria",
+   "kind": "none",
+   "status": "nodata"
+  },
+  "omarr-c-nickerson": {
+   "body": null,
+   "bodyName": {
+    "en": "El Portal",
+    "es": "El Portal",
+    "ht": "El Portal"
+   },
+   "name": "Omarr C. Nickerson",
+   "kind": "none",
+   "status": "nogivers"
+  },
+  "anders-urbom": {
+   "body": null,
+   "bodyName": {
+    "en": "El Portal",
+    "es": "El Portal",
+    "ht": "El Portal"
+   },
+   "name": "Anders Urbom",
+   "kind": "none",
+   "status": "nogivers"
+  },
+  "charles-winters": {
+   "body": null,
+   "bodyName": {
+    "en": "El Portal",
+    "es": "El Portal",
+    "ht": "El Portal"
+   },
+   "name": "Charles Winters",
+   "kind": "none",
+   "status": "nogivers"
+  },
+  "fred-spencer-deno-iv": {
+   "body": null,
+   "bodyName": {
+    "en": "Virginia Gardens",
+    "es": "Virginia Gardens",
+    "ht": "Virginia Gardens"
+   },
+   "name": "Fred Spencer Deno IV",
+   "kind": "none",
+   "status": "none"
+  },
+  "jorge-arce": {
+   "body": null,
+   "bodyName": {
+    "en": "Virginia Gardens",
+    "es": "Virginia Gardens",
+    "ht": "Virginia Gardens"
+   },
+   "name": "Jorge Arce",
+   "kind": "none",
+   "status": "nodata"
+  },
+  "elizabeth-taylor-martinez": {
+   "body": null,
+   "bodyName": {
+    "en": "Virginia Gardens",
+    "es": "Virginia Gardens",
+    "ht": "Virginia Gardens"
+   },
+   "name": "Elizabeth K. Taylor-Martinez",
+   "kind": "none",
+   "status": "nogivers"
+  },
+  "michael-tur": {
+   "body": null,
+   "bodyName": {
+    "en": "Virginia Gardens",
+    "es": "Virginia Gardens",
+    "ht": "Virginia Gardens"
+   },
+   "name": "Michael Tur",
+   "kind": "none",
+   "status": "nodata"
+  },
+  "jose-javier-rodriguez": {
+   "pid": "jose-javier-rodriguez",
+   "body": null,
+   "name": "Jose Javier Rodriguez",
+   "last": "Rodriguez",
+   "kind": "fullcheck",
+   "total": 33800,
+   "pron": "he",
+   "fullCheck": {
+    "decisions": 160,
+    "helped": 41,
+    "amount": 33800,
+    "donors": 33,
+    "record": {
+     "en": "State House 2012-2016, State Senate 2016-2020, and U.S. Assistant Secretary of Labor 2024-2025",
+     "es": "Cámara estatal 2012-2016, Senado estatal 2016-2020, y subsecretario de Trabajo de EE. UU. 2024-2025",
+     "ht": "Chanm Reprezantan Leta 2012-2016, Sena Leta 2016-2020, ak Sekretè Adjwen Travay Etazini 2024-2025"
+    }
+   }
+  },
+  "annette-taddeo": {
+   "pid": "annette-taddeo",
+   "body": null,
+   "name": "Annette Taddeo",
+   "last": "Taddeo",
+   "kind": "fullcheck",
+   "total": 32500,
+   "pron": "she",
+   "fullCheck": {
+    "decisions": 63,
+    "helped": 20,
+    "amount": 32500,
+    "donors": 26,
+    "record": {
+     "en": "State Senate 2017-2022",
+     "es": "Senado estatal 2017-2022",
+     "ht": "Sena Leta 2017-2022"
+    }
+   }
+  }
+ },
+ "byBallot": {
+  "County Commissioner, District 5|Vicki L. Lopez": "vicki-l-lopez",
+  "Representative in Congress, District 24|Oliver G. Gilbert III": "oliver-g-gilbert-iii",
+  "Coral Gables - for Mayor - Group I|Vince Lago": "vince-c-lago",
+  "Coral Gables - for Commissioner - Group IV|Melissa Castro": "melissa-castro",
+  "Doral - Councilmember - Seat 2|Maureen Porras": "maureen-porras",
+  "Aventura - Mayor|Howard S. Weinberg": "howard-s-weinberg",
+  "North Miami Beach - Group 2 - Commissioner|Jay R. Chernoff": "jay-r-chernoff",
+  "North Miami Beach - Group 6 - Commissioner|Phyllis Smith": "phyllis-smith",
+  "North Miami - Councilperson - District 3|Mary Estimé-Irvin": "mary-estime-irvin",
+  "North Miami - Councilperson - District 2|Kassandra Timothe": "kassandra-timothe",
+  "North Miami - Mayor|Alix Desulme": "alix-desulme",
+  "South Miami - Commissioner - Group I|Steve Calle": "steve-calle",
+  "South Miami - Commissioner - Group IV|Lisa Bonich": "lisa-bonich",
+  "South Miami - Mayor|Javier E. Fernández": "javier-fernandez",
+  "Pinecrest - Councilmember - Seat 4|Ken Fairman": "ken-fairman",
+  "Medley - for Council Member|Edgar Ayala": "edgar-ayala",
+  "Medley - for Council Member|Lizelh Rodriguez": "lizelh-rodriguez",
+  "Hialeah - Councilmember - Group II|Luis Gonzalez": "luis-gonzalez",
+  "Cutler Bay - Mayor|Robert \"B.J.\" Duncan": "robert-duncan",
+  "Cutler Bay - Mayor|Suzy Lord": "suzy-lord",
+  "Cutler Bay - Residential Area Council Member - Seat 3|Richard Ramirez": "richard-ramirez",
+  "Opa-locka - Mayor|Natasha L. Ervin": "natasha-l-ervin",
+  "Opa-locka - Commissioners|Sherelean Bass": "sherelean-bass",
+  "Key Biscayne - Village Council|Oscar Sardiñas": "oscar-sardinas",
+  "Key Biscayne - Village Council|Fernando Vazquez": "fernando-a-vazquez",
+  "Sunny Isles Beach - Mayor|Larisa Svechin": "larisa-svechin",
+  "State Representative, District 106|Fabián Basabe": "fabian-basabe",
+  "State Senator, District 34|Ashley Viola Gantt": "ashley-viola-gantt",
+  "State Representative, District 115|Omar Blanco": "omar-blanco",
+  "State Representative, District 117|Kevin Chambliss": "kevin-d-chambliss",
+  "State Representative, District 118|Mike Redondo": "mike-redondo",
+  "State Representative, District 119|Juan Carlos Porras": "juan-carlos-porras",
+  "United States Senator|Angie Nixon": "angela-nixon",
+  "State Senator, District 36|Ileana Garcia": "ileana-garcia",
+  "State Senator, District 38|Alexis Maria Calatayud": "alexis-calatayud",
+  "State Senator, District 40|Ana Maria Rodriguez": "ana-maria-rodriguez",
+  "Chief Financial Officer|Blaise Ingoglia": "blaise-ingoglia",
+  "Representative in Congress, District 26|Mario Diaz-Balart": "mario-diaz-balart",
+  "Representative in Congress, District 27|Maria Elvira Salazar": "maria-elvira-salazar",
+  "Representative in Congress, District 28|Carlos A. Gimenez": "carlos-a-gimenez",
+  "Representative in Congress, District 25|Jared Moskowitz": "jared-moskowitz",
+  "Governor and Lieutenant Governor|Byron Donalds": "byron-donalds",
+  "United States Senator|Ashley Moody": "ashley-moody",
+  "Attorney General|James Uthmeier": "james-uthmeier",
+  "Commissioner of Agriculture|Wilton Simpson": "wilton-simpson",
+  "Biscayne Park - Commissioner|Daniel Samaria": "daniel-samaria",
+  "El Portal - Mayor|Omarr C. Nickerson": "omarr-c-nickerson",
+  "El Portal - Councilperson - Seat 1|Anders Urbom": "anders-urbom",
+  "El Portal - Councilperson - Seat 2|Charles Winters": "charles-winters",
+  "Virginia Gardens - Mayor|Fred Spencer Deno IV": "fred-spencer-deno-iv",
+  "Virginia Gardens - Council|Jorge Arce": "jorge-arce",
+  "Virginia Gardens - Council|Elizabeth K. Taylor-Martinez": "elizabeth-taylor-martinez",
+  "Virginia Gardens - Council|Michael Tur": "michael-tur",
+  "Attorney General|Jose Javier Rodriguez": "jose-javier-rodriguez",
+  "Chief Financial Officer|Annette Taddeo": "annette-taddeo"
+ }
+}

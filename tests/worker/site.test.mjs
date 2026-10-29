@@ -43,7 +43,9 @@ describe('public site', () => {
     expect(init.result.serverInfo.name).toBe('wethepeople305');
     expect((await post({ jsonrpc: '2.0', method: 'notifications/initialized' })).status).toBe(202);
     const list = await (await post({ jsonrpc: '2.0', id: 2, method: 'tools/list' })).json();
-    expect(list.result.tools.map(t => t.name)).toEqual(['find_precinct', 'your_area']);
+    const names = list.result.tools.map(t => t.name);
+    expect(names.slice(0, 2)).toEqual(['find_precinct', 'your_area']);
+    expect(names.filter(n => !n.startsWith('ledger_'))).toEqual(['find_precinct', 'your_area']);
     const bad = await (await post({ jsonrpc: '2.0', id: 3, method: 'tools/call', params: { name: 'your_area', arguments: { precinct: '33' } } })).json();
     expect(bad.result.isError).toBe(true);
     expect((await SELF.fetch('https://wethepeople305.org/mcp')).status).toBe(405);

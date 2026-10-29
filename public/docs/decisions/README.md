@@ -9,3 +9,4 @@ Short records of choices that shape the platform. Each has a status, a date, the
 - 0005-address-never-stored.md: an address is passed through and never stored
 - 0006-money-figures-stay-on-ballot305.md: money is shown only with full context, on Ballot305
 - 0007-mcp-and-openapi-from-one-schema.md: OpenAPI and MCP tools are generated from one schema
+- 0008-ledger-moves-to-platform.md: the ledger API is served here from a copy of Ballot305's data; after Nov 3 Ballot305 reads it

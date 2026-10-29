@@ -1,0 +1,142 @@
+{
+  "note": "Copy of Ballot305 public data (CC BY 4.0, attribution Ballot305, ballot305.org) served by the ledger API. Written by scripts/sync-ballot305-data.mjs; do not edit by hand.",
+  "repo": "https://github.com/Brittybrit/vote-informed",
+  "path": "public/data",
+  "commit": "7198a8ed9d34058a732f46cb14a694e9676b4f87",
+  "copiedAt": "2026-10-29T22:46:01.858Z",
+  "license": "CC BY 4.0",
+  "files": {
+    "decisions/index.json": {
+      "bytes": 146616,
+      "sha256": "c4d8c141539a2e99b964a63a87aeff08b39a736ffaf227ffafee53283dd53a03"
+    },
+    "roster.json": {
+      "bytes": 759708,
+      "sha256": "af17f117f2d6cd3f8cc0e53ccaa57dfa860f74668fae59a2b2d21f020db11a72"
+    },
+    "transparency.json": {
+      "bytes": 58081,
+      "sha256": "2ed9e16efe64d5042b35f2d597066391b698c754286b92f0ecde5458b00f7eaf"
+    },
+    "money-summary.json": {
+      "bytes": 44892,
+      "sha256": "2cfb1e7b16812e460f699efe3e25a6024b3f1bb4e52eb1cfab246402286a0513"
+    },
+    "cycles.json": {
+      "bytes": 282958,
+      "sha256": "591d49d91d271ee7fe57e03293fd169063c817f15832db047e87114441f94973"
+    },
+    "precincts.json": {
+      "bytes": 35107,
+      "sha256": "aae7bf1a333e9a3ee8a13780b428f8b4532ca16d60cea4d02dab4e3cfbcc4e93"
+    },
+    "contacts.json": {
+      "bytes": 92318,
+      "sha256": "acf4ca31958c6fc6d2c29b38706353f56c584a0fbd19215508d1317e01354666"
+    },
+    "upcoming.json": {
+      "bytes": 581700,
+      "sha256": "f3a769534ff24b9a739c3c133808b587df6619ddf5da24a966ed64201b42e658"
+    },
+    "connections.json": {
+      "bytes": 11097,
+      "sha256": "9f123e12ed8375baa435a3ac21bead42e042d852c60b31f8b1e9616fc9d710bf"
+    },
+    "decisions/county.json": {
+      "bytes": 6906972,
+      "sha256": "dbdabe3c9797548cc19232cf26fdafc5e317927056c1c93627c3c906b7adb2e7"
+    },
+    "decisions/coralgables.json": {
+      "bytes": 1252044,
+      "sha256": "c3b7215acc4d95d362153793fcfa6c03359728ca9fb9c6b0b1aea5dea8f01559"
+    },
+    "decisions/doral.json": {
+      "bytes": 673923,
+      "sha256": "de0a46597168406b2adfe7be723a66d8f3f97ef96af826d9f337c2604056a80b"
+    },
+    "decisions/aventura.json": {
+      "bytes": 185527,
+      "sha256": "14318d0528d81816eec58bb415efcd061f468bcf98c097b8da1e266730af6397"
+    },
+    "decisions/nmb.json": {
+      "bytes": 375589,
+      "sha256": "49bbb3bb22a2456a5cada7425f1559d2d7ea7b1754b56e0f820180e34906f670"
+    },
+    "decisions/northmiami.json": {
+      "bytes": 618653,
+      "sha256": "6e567d89b522836713b2708fd7b86a572e49beac4b425f730d7771fb7d6bb656"
+    },
+    "decisions/southmiami.json": {
+      "bytes": 351865,
+      "sha256": "87545622070f8010ede145dfc283bfe55641e29c688d17a085b11f34ef7d68b7"
+    },
+    "decisions/pinecrest.json": {
+      "bytes": 165363,
+      "sha256": "66f90c3ee6ff5a5d368348f4fb28b10f7bcbf3d8e714f5fd7ece1b299736663d"
+    },
+    "decisions/medley.json": {
+      "bytes": 219982,
+      "sha256": "beac75042bc8d5033d09e613f930548429bdeb9c548b8a623404ebe588646bd1"
+    },
+    "decisions/hialeah.json": {
+      "bytes": 811818,
+      "sha256": "981fa83e8238caeeabd4732cbaf8c9326198e8e36e0d27d61acbe78a6334cc5d"
+    },
+    "decisions/cutlerbay.json": {
+      "bytes": 233300,
+      "sha256": "e255ef538b7a235e1582d3758e46fbd32615e124d277b29244d7e126085ac535"
+    },
+    "decisions/opalocka.json": {
+      "bytes": 306519,
+      "sha256": "43d0ceccc842a4947782742b09b102af7f402b3940805ff68dafdced2e58024c"
+    },
+    "decisions/keybiscayne.json": {
+      "bytes": 167986,
+      "sha256": "ac3b8b90b70aa23a4926263406b0470c1060372e22e683acf9a8336e848de236"
+    },
+    "decisions/sunnyisles.json": {
+      "bytes": 323254,
+      "sha256": "b3c78ac442688d84232abd413df90669f7089643041c930e9a389fbeb0b6cbcc"
+    },
+    "decisions/flhouse.json": {
+      "bytes": 1343834,
+      "sha256": "5f2db2b2a130030e87e3662b399ba4c1cc3483d25d23de2253017943c51672b9"
+    },
+    "decisions/flsenate.json": {
+      "bytes": 4379188,
+      "sha256": "103b2fcf5b691096eafde0c70d136953f349085e0e02297da253a3ffb6d8ce1c"
+    },
+    "decisions/ushouse.json": {
+      "bytes": 2566972,
+      "sha256": "34f002f188d1d3ed4ff594fc3a667cf1bb307856802440e2b1245f620773d215"
+    },
+    "decisions/ussenate.json": {
+      "bytes": 103080,
+      "sha256": "e621db69a85defda746515b8222196d0c3fbd7677607ac52631b07f00d949585"
+    },
+    "decisions/cabinet.json": {
+      "bytes": 37763,
+      "sha256": "b3369490a8d647cd63a25847af3b002204e75b66ea8f2c2a26cbe0ab2c15f5ff"
+    },
+    "donor-actions.json": {
+      "bytes": 625974,
+      "sha256": "cf4a8f40838b200bd3641baa496d2ec629b5360246af844c384b4cd05393e0cd"
+    },
+    "lobby-ledger.json": {
+      "bytes": 428406,
+      "sha256": "9599f231e0e521dc90a707e4eb930d1b3baaf7ba56e39199316fd5c5be6f7e72"
+    },
+    "county-lobbyists.json": {
+      "bytes": 477802,
+      "sha256": "568e496f995f7c98ad3b8d4b4191d5db94f2ae0b914027cddb1a51066492e541"
+    },
+    "school-board-lobbyists.json": {
+      "bytes": 54569,
+      "sha256": "8bd414d6194cccd681212de1574d6fadb725a0fc2439c0c6a27eecc1cd52f632"
+    },
+    "city-reports.json": {
+      "bytes": 147206,
+      "sha256": "cd006d8491b6f385f47052e88287c8f68557623f259b5c9ddf4c9e520e093453"
+    }
+  }
+}

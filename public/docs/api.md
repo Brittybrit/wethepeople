@@ -33,5 +33,29 @@ One precinct's view, closest to home first.
 
 Money behind officials is not in this response. It lives on Ballot305 with its full context and methodology, so a figure is never shown without its denominator.
 
+## Ledger
+Ballot305's read API, served here from this platform's own copy of its data (`public/ledger-data/`, synced hourly from the Ballot305 repo; `/ledger-data/SOURCE.json` has the Ballot305 commit and copy time). Paths, parameters, paging and response bodies are the same as `https://ballot305.org/api/v1`, so a client can switch hosts without changes. The one difference: Ballot305's index at `/api/v1` is at `/api/v1/ledger` here, and bulk file links point at `/ledger-data/`. Each operation is also an MCP tool with the id shown, except `bulk`.
+
+Lists are paged with `limit` (default 100, max 500) and `offset`; the total is in the body and in `X-Total-Count`. Responses carry `ETag` (an `If-None-Match` match returns 304) and `X-Data-Updated`. Every action carries `source` (data file and date). Every tie carries `match`, `basis`, `timing`, `days` and `actionSplit`: repeat them with any amount.
+
+| Path | What it returns |
+|---|---|
+| `/ledger` (`ledger_index`) | Version, data dates, license, counts, endpoints, and what the tie and action fields mean |
+| `/bodies`, `/bodies/{key}` (`ledger_bodies`, `ledger_body`) | Bodies covered, with members, campaign accounts, who is on the ballot, coverage note |
+| `/actions`, `/actions/{body}/{id}` (`ledger_actions`, `ledger_action`) | Official actions with roll calls and tied gifts. Filters: `body`, `person`, `kind`, `since`, `until`, `split=1`, `tied=1`, `party`, `q` |
+| `/ties` (`ledger_ties`) | One row per gift tied to an action. Filters: `person`, `body`, `donor`, `timing`, `match`, `since`, `until`, `minAmount` |
+| `/people`, `/people/{id}` (`ledger_people`, `ledger_person`) | Roster people (`q`, `onBallot=1`); one person with terms, races, actions, ties, connections, contact |
+| `/transparency` (`ledger_transparency`) | City records scorecard |
+| `/cycles`, `/cycles/{key}` (`ledger_cycles`, `ledger_cycle`) | Meetings, budget and election phases, and levers per body |
+| `/now?precinct=` (`ledger_now`) | The raw precinct view behind `your-area`; `date` optional |
+| `/upcoming` (`ledger_upcoming`) | Items on posted agendas with matches and tags. Filters: `body`, `precinct` (adds relevance), `since`, `until`, `tagged` |
+| `/contacts`, `/contacts/{office}` (`ledger_contacts`, `ledger_contact`) | Official contacts per office |
+| `/procurement`, `/procurement/{body}` (`ledger_procurement`, `ledger_procurement_for_body`) | Open solicitations, expiring contracts, capital plan, levers |
+| `/payments`, `/payments/{body}` (`ledger_payments`, `ledger_payments_for_body`) | Staffing, top vendors with matches, union contracts, levers |
+| `/connections`, `/connections/{person}` (`ledger_connections`, `ledger_connections_for_person`) | Confirmed connections with the record that states each; counts under review |
+| `/bulk` (`ledger_bulk`, HTTP only) | Links to the raw data files |
+
+Ballot305's `/api/v1/openapi.json` (OpenAPI 3.0) is not copied: this platform's `/api/v1/openapi.json` (OpenAPI 3.1) describes these paths. See `decisions/0008-ledger-moves-to-platform.md`.
+
 ## Source and license
 Data comes from the Ballot305 public API (`https://ballot305.org/api`, CC BY 4.0) through one adapter, `lib/sources/ballot305.mjs`. Upstream reads are edge-cached for 15 minutes. The code is MIT.
