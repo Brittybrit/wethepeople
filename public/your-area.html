@@ -66,6 +66,16 @@
   .seat .h{font-weight:600}
   .seat .c{font-family:var(--mono);font-size:12px;margin-top:2px;display:flex;gap:12px;flex-wrap:wrap}
   .seat .bal{font-size:13px;margin-top:2px}
+  .seat .h span{font-weight:400;font-size:12px;color:var(--ink-soft)}
+  .grp{border-bottom:1px solid var(--hair);padding:10px 0}
+  .grp summary{font-family:var(--sans);font-size:15px;font-weight:600;cursor:pointer;list-style:none}
+  .grp summary::-webkit-details-marker{display:none}
+  .grp summary::after{content:" +";font-family:var(--mono);color:var(--ink-soft)}
+  .grp[open] summary::after{content:" −"}
+  .grp .does{display:block;font-size:13px;color:var(--ink-soft);font-weight:400}
+  .grp ul{list-style:none;margin:6px 0 2px}
+  .grp li{font-size:14px;padding:3px 0}
+  .grp li span{color:var(--ink-soft);font-size:12px}
   details{margin-top:8px}
   summary{cursor:pointer;font-family:var(--mono);font-size:12px}
   details p{font-size:13px;color:var(--ink-soft);margin:6px 0}
@@ -109,6 +119,19 @@
     <p class="sub">Every seat that represents this precinct, closest to home first. Money behind each official is on <a href="https://ballot305.org">Ballot305</a>.</p>
     <div id="servants"></div>
     <p class="fine" id="gaps"></p>
+
+    <h2>Appointed to run your government</h2>
+    <p class="sub">Not on any ballot. Hired or appointed by the officials above, and they run the day-to-day.</p>
+    <div id="appointed"></div>
+
+    <h2>Courts that hear your cases</h2>
+    <p class="sub">Circuit and county judges are elected. Appeals court and Supreme Court justices are appointed, then face retention votes.</p>
+    <div id="courts"></div>
+
+    <h2>Boards that spend public money for you</h2>
+    <p class="sub">Countywide boards and authorities, mostly appointed, that tax, borrow or spend for everyone in Miami-Dade.</p>
+    <div id="boards"></div>
+    <p class="fine" id="moreNote"></p>
 
     <p class="fine" style="margin-top:28px" id="src"></p>
   </div>
@@ -226,6 +249,16 @@
         return '<div class="seat"><div class="o">' + esc(s.name) + '</div><div class="h">' + esc(holders) + esc(since) + '</div>' + bal + (contact ? '<div class="c">' + contact + '</div>' : '') + '</div>';
       }).join('');
     }).join('');
+    var who = function(h){ return esc(h.name) + (h.since && h.sinceKnown ? ' <span>since ' + esc(h.since.slice(0, 4)) + '</span>' : ''); };
+    $('appointed').innerHTML = (d.appointed || []).map(function(a){
+      return '<div class="lvl">' + esc(a.name) + '</div>' + a.seats.map(function(s){
+        return '<div class="seat"><div class="o">' + esc(s.name) + '</div><div class="h">' + (s.holders.length ? s.holders.map(who).join(', ') : 'Not filed yet') + '</div></div>';
+      }).join('');
+    }).join('');
+    var group = function(g, rows){ return '<details class="grp"><summary>' + esc(g.name) + ' · ' + g.count + '<span class="does">' + esc(g.hears || g.does || '') + '</span></summary><ul>' + rows + '</ul></details>'; };
+    $('courts').innerHTML = (d.courts || []).map(function(c){ return group(c, c.judges.map(function(j){ return '<li>' + who(j) + '</li>'; }).join('')); }).join('');
+    $('boards').innerHTML = (d.boards || []).map(function(b){ return group(b, b.members.map(function(m){ return '<li>' + who(m) + ' <span>' + esc(m.seat) + (m.selection ? ' · ' + esc(m.selection) : '') + '</span></li>'; }).join('')); }).join('');
+    $('moreNote').textContent = d.note || '';
     $('gaps').textContent = d.notResearchedYet.length ? 'Meeting calendars and ways to weigh in are not researched yet for: ' + d.notResearchedYet.join('; ') + '.' : '';
     $('src').innerHTML = 'Data: ' + link(d.source.docs, d.source.name) + ', ' + esc(d.source.license) + '. Updated ' + esc(d.dataUpdated || '') + '; officeholders as of ' + esc(d.rosterUpdated || '') + '. ' + link(d.source.methodology, 'Methodology');
     $('out').hidden = false;

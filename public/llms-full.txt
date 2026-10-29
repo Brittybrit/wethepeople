@@ -190,6 +190,9 @@ One precinct's view, closest to home first.
 | `decisionPoints` | Budget, election and session phases over the next six months, with what each decides. |
 | `servants` | Every seat that represents the precinct, by level (city, schools, county, state, federal): who holds it, since when, who is on the ballot for it, and the office's contact. |
 | `levers` | Every documented way to act on each body: public comment, written comment, records requests, petitions, boards. |
+| `appointed` | Appointed officials who run the precinct's city, schools and county (manager, attorney, clerk, superintendent, county attorney, inspectors general). |
+| `courts` | The four courts that hear the precinct's cases, with every sitting judge. |
+| `boards` | Countywide boards and authorities that tax, borrow or spend public money, with members, seats and how each was chosen. |
 | `notResearchedYet` | Seats whose meeting calendar and levers are not researched yet. |
 
 Money behind officials is not in this response. It lives on Ballot305 with its full context and methodology, so a figure is never shown without its denominator.
@@ -219,7 +222,7 @@ Lists are paged with `limit` (default 100, max 500) and `offset`; the total is i
 Ballot305's `/api/v1/openapi.json` (OpenAPI 3.0) is not copied: this platform's `/api/v1/openapi.json` (OpenAPI 3.1) describes these paths. See `decisions/0008-ledger-moves-to-platform.md`.
 
 ## Source and license
-Data comes from the Ballot305 public API (`https://ballot305.org/api`, CC BY 4.0) through one adapter, `lib/sources/ballot305.mjs`. Upstream reads are edge-cached for 15 minutes. The code is MIT.
+Your area reads the platform's own copy of Ballot305's data (`public/ledger-data/`, synced hourly, CC BY 4.0; see decisions/0008) plus the roster additions in `data/roster-additions/` (appointed officials and boards, each term with an official source). No call to Ballot305 at request time. The code is MIT.
 
 ---
 File: https://wethepeople305.org/docs/ai/system-card.md

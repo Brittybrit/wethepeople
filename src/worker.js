@@ -11,8 +11,13 @@
 //   POST /mcp                       MCP (Streamable HTTP, stateless): the same operations as tools
 // Every API and MCP response carries X-Trace-Id. The founder board is a separate private Worker and is not in this repo.
 import { geocode, suggest, precinctAt, precinctCodes, SOURCES } from '../lib/geo.mjs';
-import { ballot305Source, BALLOT305 } from '../lib/sources/ballot305.mjs';
+import { BALLOT305 } from '../lib/sources/ballot305.mjs';
 import { yourArea, todayIn } from '../lib/your-area.mjs';
+import { moreOfficials } from '../lib/more-officials.mjs';
+import additionsOffices from '../data/roster-additions/offices.json';
+import additionsPeople from '../data/roster-additions/people.json';
+import additionsTerms from '../data/roster-additions/terms.json';
+const ROSTER_ADDITIONS = { offices: additionsOffices, people: additionsPeople, terms: additionsTerms };
 import { tracer, sinks } from '../lib/events.mjs';
 import { OPERATIONS, checkParams, openApi, API_VERSION, matchOperation } from '../lib/api-schema.mjs';
 import { handleMcp } from '../lib/mcp.mjs';
@@ -23,20 +28,19 @@ import { identityFetch, isIdentityPath } from './identity.js'; // identity: sign
 const BASE_HEADERS = { 'Content-Type': 'application/json; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'X-Trace-Id' };
 const json = (body, status, extra = {}) => new Response(JSON.stringify(body), { status, headers: { ...BASE_HEADERS, ...extra } });
 
-// Upstream reads of public data go through the edge cache for 15 minutes; address lookups never do.
-const cachedFetch = (u, init = {}) => fetch(u, { ...init, cf: { cacheTtl: 900, cacheEverything: true } });
 
 // Handlers return { status, body, cache } so the HTTP route and the MCP tool share them.
 const HANDLERS = {
   async suggest_address({ text }) {
     return { status: 200, body: { suggestions: await suggest(text, { fetch }) }, cache: 'no-store' };
   },
-  async find_precinct({ address, magicKey }) {
+  async find_precinct({ address, magicKey }, trace, ctx) {
     const hit = await geocode(address, { fetch, magicKey });
     if (!hit) return { status: 404, body: { error: 'Address not found. Try the house number, street and city in Miami-Dade.' } };
     const whole = await precinctAt(hit.lat, hit.lng, { fetch });
     if (!whole) return { status: 404, body: { error: 'That address is not in a Miami-Dade precinct.' } };
-    const codes = precinctCodes(whole, await ballot305Source({ fetch: cachedFetch }).precinctCodes());
+    const ledger = await loadLedger(ledgerReader(ctx.env));
+    const codes = precinctCodes(whole, Object.keys((ledger.precincts && ledger.precincts.precincts) || {}));
     return {
       status: 200, cache: 'no-store',
       body: {
@@ -46,12 +50,16 @@ const HANDLERS = {
       }
     };
   },
-  async your_area({ precinct }, trace) {
-    const src = ballot305Source({ fetch: cachedFetch });
-    const [now, upcoming] = await trace.span('source.read', { task: 'ballot305.now+upcoming', precinct }, () => Promise.all([src.now(precinct), src.upcoming(precinct)]));
-    if (!now || !Array.isArray(now.bodies) || !now.bodies.length) return { status: 404, body: { error: 'No data for precinct ' + precinct } };
-    const out = yourArea(now, upcoming, todayIn());
-    out.source = { name: BALLOT305.attribution, license: BALLOT305.license, docs: BALLOT305.docs, methodology: BALLOT305.methodology };
+  // Reads the platform's own copy of the data (the ledger), plus the roster additions: everyone who serves the precinct.
+  async your_area({ precinct }, trace, ctx) {
+    const today = todayIn();
+    const data = await trace.span('ledger.load', { task: 'ledger.load' }, () => loadLedger(ledgerReader(ctx.env)));
+    const now = runLedger('ledger_now', data, { precinct }, { origin: ctx.origin, today });
+    if (now.status !== 200 || !now.body.bodies || !now.body.bodies.length) return { status: 404, body: { error: 'No data for precinct ' + precinct } };
+    const upcoming = runLedger('ledger_upcoming', data, { precinct, limit: '200' }, { origin: ctx.origin, today });
+    const out = yourArea(now.body, upcoming.body, today);
+    Object.assign(out, moreOfficials(data, ROSTER_ADDITIONS, now.body.districts, today));
+    out.source = { name: BALLOT305.attribution, license: BALLOT305.license, docs: BALLOT305.docs, methodology: BALLOT305.methodology, rosterAdditions: 'https://github.com/Brittybrit/wethepeople/tree/main/data/roster-additions' };
     return { status: 200, body: out, cache: 'public, max-age=900' };
   }
 };
