@@ -696,7 +696,6 @@ The Worker runs one handler per operation id for both.
 ---
 File: https://wethepeople305.org/docs/privacy.md
 
-<!-- Confirm this address is routed in Cloudflare Email Routing before publishing. -->
 # Privacy
 
 This describes the site as of 2026-10-29.

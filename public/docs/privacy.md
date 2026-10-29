@@ -1,4 +1,3 @@
-<!-- Confirm this address is routed in Cloudflare Email Routing before publishing. -->
 # Privacy
 
 This describes the site as of 2026-10-29.

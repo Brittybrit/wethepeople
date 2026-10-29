@@ -1,4 +1,3 @@
-<!-- Confirm this address is routed in Cloudflare Email Routing before publishing. -->
 # Code of conduct
 
 This project serves every resident of Miami-Dade, whatever their party or views. Its spaces should work the same way.

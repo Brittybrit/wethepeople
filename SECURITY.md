@@ -1,4 +1,3 @@
-<!-- Confirm this address is routed in Cloudflare Email Routing before publishing. -->
 # Security
 
 ## Report a vulnerability
