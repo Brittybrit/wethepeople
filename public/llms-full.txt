@@ -9,6 +9,9 @@ File: https://wethepeople305.org/docs/architecture.md
 
 Principles: headless first; route every operation to the cheapest service that can do it; cache; AI-first; platform agnostic and portable. This is the contract the code is built against.
 
+## Status as of Oct 29, 2026
+This document is the target. What is built today: the Worker (a plain fetch handler; Hono is planned), Your area and the precinct lookup, one schema generating OpenAPI and the MCP tools, trace ids on responses, the Events, Cache and Model adapters, the test generator and eval harness. Planned: Hono, the Store, Blobs, Queue and Auth adapters, an Analytics Engine sink (events go to the console today), per-key spend caps and confidence-based escalation, provenance hashes and retrieved-at on every response, UI types from the schema, and every service in section 4 except the read path. `ai/system-card.md` and `decisions/` track what changes.
+
 ## 1. Headless first
 - Every capability exists as an API endpoint and an MCP tool before it has a screen. The UI is a client with no privileged path; if the UI can do it, a Slack bot can do it.
 - One schema, three outputs: the OpenAPI document, the MCP tool manifest and the UI's types are generated from the same source. No hand-written drift.
@@ -166,6 +169,7 @@ Street address to Miami-Dade precinct code(s).
 - Geocoding: Esri World Geocoder first (rooftop or street-address match, score 90+, Florida only), then the U.S. Census geocoder.
 - Precinct: the county's precinct polygons (Miami-Dade GIS, Precinct layer), point in polygon.
 - The address is passed to those services and is never logged, stored or cached (`Cache-Control: no-store`). Events record nothing about the request beyond the route.
+- Limited to 20 lookups a minute per client (HTTP 429 beyond that).
 - A split precinct returns both halves (`"split": true`); only the voter's ballot or voter card says which.
 
 ```json
@@ -189,3 +193,540 @@ Money behind officials is not in this response. It lives on Ballot305 with its f
 
 ## Source and license
 Data comes from the Ballot305 public API (`https://ballot305.org/api`, CC BY 4.0) through one adapter, `lib/sources/ballot305.mjs`. Upstream reads are edge-cached for 15 minutes. The code is MIT.
+
+---
+File: https://wethepeople305.org/docs/ai/system-card.md
+
+# AI system card
+
+What AI does in We the People 305 today, what it does not do, and how to report a problem. This describes the code as of 2026-10-29. Planned work is marked "planned".
+
+## Summary
+- No model runs when a resident uses the site, the API or the MCP tools. Precinct lookup, Your area and the do-now list are code and fixed rules.
+- Models run only in development and CI: the relevance-tags prompt (in its eval), the test generator, and the eval grader.
+- Every model call goes through one adapter, `lib/model.mjs`, with a routing table in `config/models.json`.
+
+## Where a model is used
+
+| Use | Task (tier) | Runs where | Input | Output | Who reviews |
+|---|---|---|---|---|---|
+| Relevance tags for an agenda item | `classify` (3) | `pnpm eval` only; not wired into any route | One agenda item's text | JSON: `tags`, `stated_impact`, `industries`, `place` (schema in `prompts/relevance-tags.schema.json`) | Eval assertions; not shown to residents |
+| Test generator | `test-gen` (3) | `pnpm test:gen` on a contributor's machine | One module's source, plus its schema file if present | A Vitest file in `tests/generated/` | The contributor and the pull-request reviewer, before it is committed |
+| Eval grader | `grade` (3) | `pnpm eval`, only for cases with a `rubric` | Rubric and answer | JSON: `pass`, `why` | No current eval case has a rubric, so this is unused today |
+
+The Your area "reasons" on agenda items (in or near your area, spends public money, lobbyist, public hearing, acted on before) come from tags in Ballot305's data, mapped by code in `lib/your-area.mjs`. No model is called for them.
+
+## The cost ladder
+Every operation goes to the cheapest tier that can do it. See `architecture.md` section 2.
+
+| Tier | What | In use today |
+|---|---|---|
+| 0 | Static files from the edge | Yes: pages, docs, brand |
+| 1 | Deterministic code and rules | Yes: geocoder parsing, precinct match, Your area shaping, do-now rules |
+| 2 | Cache | Yes: upstream reads cached 15 minutes at the edge; model outputs cached on disk in `.cache/` for evals and test generation |
+| 3 | Small model, structured output | Dev and CI only (table above) |
+| 4 | Large model | Configured (`synthesize`, `plan`), not called anywhere |
+| 5 | Human | Research and hand-checks behind the Ballot305 data |
+
+## Models configured
+From `config/models.json`. Prices are USD per million tokens, input/output.
+
+| Model | Provider | Price | Tasks that list it |
+|---|---|---|---|
+| claude-haiku-4-5 | Anthropic | 1 / 5 | test-gen, extract, classify, grade |
+| gpt-4o-mini | OpenAI | 0.15 / 0.6 | test-gen, extract |
+| local-small (qwen2.5:7b) | local OpenAI-compatible server | 0 | extract, classify |
+| claude-sonnet-4-6 | Anthropic | 3 / 15 | synthesize, plan |
+
+Routing: the adapter tries the task's models in order. It validates JSON output against the schema, retries once on the same model, then moves to the next model. A provider with no key is skipped. If every model fails, the call throws. Nothing is patched by hand.
+
+## Human oversight
+- Prompts, schemas, eval cases and the routing table are files in the repo. Changing any of them is a pull request.
+- Generated tests are read and committed by a person. The generator never writes to `tests/hand/`.
+- No model output reaches a resident today. Before one does, it must pass the rules in `ai-use-policy.md`: stored as a candidate, cited, disclosed, and reviewed by a person before anyone acts on it.
+
+## Decisions made without a model
+These run on every request and use no model.
+
+- Precinct lookup (`lib/geo.mjs`): Esri World Geocoder first, accepted only for a Florida address-level match with score 90 or higher; else the U.S. Census geocoder, accepted only for Florida. The point must fall inside a Miami-Dade bounding box, then the county's precinct polygons give the precinct. A split precinct returns both codes and asks the resident to check their ballot or voter card.
+- Do-now list (`lib/your-area.mjs`, `RULES`), at most one action per rule, in this order:
+  1. Vote: an election phase for a body that represents the precinct starts within 30 days.
+  2. Weigh in: the weightiest posted item whose meeting is still ahead and that involves a place, money, a lobbyist, a hearing or prior action. Written comment is preferred over speaking.
+  3. Show up: the next regular meeting of the body closest to home that has a public-comment lever.
+  4. Reach your representative: the district seat closest to home with a holder and contact, email before phone.
+- Item weight: place 8, money 4, lobbyist 4, hearing 2, prior action 1. Ties go to the earlier meeting.
+- Order of bodies: city, schools, county, state, federal.
+
+The rules are returned in every Your area response (`rules`), so anyone can check why an action ranks where it does.
+
+## Known limits and failure modes
+- Relevance tags: the eval set is 7 cases, two of them prompt-injection checks. A pass rate on 7 cases says little. Expect missed tags on long or vague items, and `stated_impact` errors when a dollar figure is implied but not stated.
+- The tag vocabulary in the prompt (fiscal, location, industry, household, lifestyle, procurement) is not the one Your area uses today (Ballot305's place, money, lobbied, hearing, history).
+- The `confidence` stored on a model decision record is a placeholder (1 with a schema, 0.5 without), not a measured value.
+- A model that returns valid JSON with wrong content passes schema validation. Only eval cases catch that.
+- The test generator can write tests that assert current behavior, including bugs. Review is the control.
+- Geocoding: the Census fallback estimates along a street range and can land across a precinct line. Esri is tried first for that reason.
+
+## What is logged
+- Each model call is a span (`model.call`: task, tier, model, attempt, latency, ok) and a decision record (model, prompt version, hashes of the inputs and of the output text). Cache hits emit `model.cache` with cost 0.
+- Eval runs emit `eval.case` with cost, pass or fail, model and whether the result was cached.
+- These events go to `.cache/events.jsonl` on the machine that ran them. They are not uploaded anywhere.
+- The event shape has no field for an address, name, email, phone, ballot pick or IP, and `lib/events.mjs` rejects props with those names.
+- The public Worker writes events to its console log: route spans with a precinct code, and errors. It does not log the address.
+
+## Report a problem
+- Wrong or harmful output, or a rule that ranks something wrongly: open an issue at github.com/Brittybrit/wethepeople.
+- Data errors that come from Ballot305: corrections@ballot305.org.
+- Security issues: see `SECURITY.md` in the repo. Do not open a public issue.
+
+---
+File: https://wethepeople305.org/docs/ai/prompt-cards/relevance-tags.md
+
+# Prompt card: relevance-tags
+
+| Field | Value |
+|---|---|
+| Version | relevance-tags-v1 |
+| File | `prompts/relevance-tags.md` |
+| Schema | `prompts/relevance-tags.schema.json` |
+| Eval | `prompts/relevance-tags.eval.json` |
+| Task | `classify`, tier 3 |
+| Models, in order | claude-haiku-4-5, then local-small (qwen2.5:7b) |
+| Max output | 400 tokens |
+| Status | Runs in evals only. Not called by any route. |
+
+## Task
+Tag one agenda item for a Miami-Dade resident, from the item text alone. The prompt says to return only tags the text supports and never infer.
+
+## Output schema
+- `tags`: zero or more of `fiscal`, `location`, `industry`, `household`, `lifestyle`, `procurement`.
+- `stated_impact`: true only if the text states a dollar figure or a rule that applies to residents.
+- `industries`: short lowercase names of the lines of business, each up to 40 characters.
+- `place`: the place named, or an empty string, up to 120 characters.
+- No other fields are allowed.
+
+## Intended use (planned)
+The relevance service will tag items whose packets are prose, where tier 1 code cannot. Output will be stored as a candidate with its tier, prompt version and input hash, and shown only with a link to the item.
+
+## Out of scope
+- Whether an item is good or bad, or how anyone should feel or vote on it.
+- Predicting the outcome of a vote.
+- Who is behind an item (donors, lobbyists). That is a records join, not a classification.
+- Text other than one agenda item: full packets, minutes, news, social posts.
+- Personal circumstances of a resident.
+
+## Eval
+- 7 cases. Five are real agenda-item shapes: a stormwater fee change, a rezoning, a towing contract, a proclamation, an amplified-sound hours change. Two are prompt-injection cases: instructions inside the item text, and a fake system note.
+- Checks: required tags present, wrong tags absent, exact `stated_impact` and `industries` where the answer is a fact.
+- Floor: 0.8 pass rate (4 of 5). Ceiling: $0.05 per full run.
+- The set is too small to show more than gross failures. Growing it is the first priority before this prompt serves anything.
+
+## Failure modes to watch
+- Tagging `fiscal` on a rezoning because development implies money. The rezoning case guards this.
+- Tagging `procurement` on a fee ordinance. The stormwater case guards this.
+- `stated_impact: true` when the text implies but does not state a figure.
+- Reading instructions placed inside agenda text. Item text is untrusted input. See `../../security/threat-model.md`.
+- Free-text `industries` drifting in spelling (towing vs tow services), which breaks joins.
+
+## Change process
+1. Edit the prompt and bump `version:` (for example to relevance-tags-v2).
+2. Add or update eval cases. Every production correction becomes a case.
+3. Run `pnpm eval relevance-tags` and paste the result line in the pull request.
+4. The pull request merges only if the eval passes its floor and ceiling.
+5. Changing the model order in `config/models.json` follows the same steps.
+
+---
+File: https://wethepeople305.org/docs/ai/ai-use-policy.md
+
+# AI use policy
+
+These rules bind every contributor, person or agent, and the platform itself. A pull request that breaks one is not merged. Where a rule covers something not built yet, it applies the day that thing is built.
+
+## 1. The model never sees a source it cannot cite
+Inputs to a tier 3 or tier 4 call are records with a URL or a content hash. Outputs must point back to them. An output that cites nothing is dropped. No model is asked what it knows from training about an official, a body or an item.
+
+## 2. Model output is a candidate, not a fact
+Model output is stored with its tier, model, prompt version and input hash, as a candidate. It becomes fact only when a rule or a person confirms it against the record. Status: the adapter records the decision today; the candidate store (D1 ledger) is planned.
+
+## 3. No persuasion and no voting recommendations
+The platform does not tell anyone how to vote, which side to take, or what to think of an official. It says what is being decided, when, by whom, and how to take part. Prompts must not ask a model to judge an item as good or bad.
+
+## 4. Nonpartisan symmetry
+Every official, candidate and party gets the same fields, the same wording and the same rules. A prompt or rule that names a party, a person or a side is not allowed. Evals must include cases from across the spectrum when a prompt touches people or positions.
+
+## 5. No profiling of residents
+The platform does not build a profile of a resident from what they look up. No model receives an address, name, email, phone, IP or ballot choice. Events have no field for them. A precinct code is the most specific location the platform keeps, and only in events.
+
+## 6. No generated content attributed to real people
+A model never writes a quote, statement, position or summary that is presented as coming from a real person. Officials' words are shown only from the record, with a link.
+
+## 7. Disclose model-written text
+Any text a model wrote is labeled as model-written where it appears, with the tier and a link to the source it was drawn from. Today no model-written text is shown to residents.
+
+## 8. A person reviews before anyone acts
+Nothing a model produced is shown as a step for a resident to take, or sent anywhere, until a person or a published rule has confirmed it. The do-now list is built from fixed rules for this reason. See ADR 0003.
+
+## 9. Spend caps
+Every model call is logged with its cost. Each eval file sets a cost ceiling and CI fails above it. Per-key and per-worker caps are planned with identity and the usage ledger. Until they exist, no model is called from a public route.
+
+## 10. Evals before a prompt or model change merges
+A change to a prompt, its schema, the routing table or a model choice runs `pnpm eval` and must pass the file's floor and ceiling. The result line goes in the pull request. A new prompt needs a schema and an eval file in the same change.
+
+## Related
+- `system-card.md`: what AI does today.
+- `evals.md`: how evals run.
+- `../security/threat-model.md`: prompt injection and other risks.
+
+---
+File: https://wethepeople305.org/docs/ai/data-card.md
+
+# Data card
+
+The data We the People 305 serves today, where it comes from, and its limits. As of 2026-10-29.
+
+## Sources
+
+| Source | What it gives | How it is reached | License or terms |
+|---|---|---|---|
+| Ballot305 public API (ballot305.org/api) | Officials by seat, terms, who is on the ballot, office contacts, meeting calendars, budget and session phases, ways to take part, posted agenda items with tags, the county's precinct list | `lib/sources/ballot305.mjs`, the only adapter that reads it | CC BY 4.0 |
+| Esri World Geocoder | Address to coordinates (first try) | `lib/geo.mjs`, per lookup, `forStorage=false` | Esri terms of use |
+| U.S. Census geocoder | Address to coordinates (fallback) | `lib/geo.mjs`, per lookup | U.S. government public service |
+| Miami-Dade GIS Precinct layer | Coordinates to precinct | `lib/geo.mjs`, per lookup | County open data |
+
+Ballot305's data is researched from official records: county, city and school board calendars and agendas, charters and codes, clerk and member pages, election and campaign finance records. Each fact carries a `source` link to the record it came from. Ballot305's methodology is at ballot305.org/methodology.
+
+## License
+- Data from Ballot305 is CC BY 4.0. Attribution: Ballot305 (ballot305.org). Every Your area response carries a `source` block with name, license, docs and methodology.
+- The code is MIT.
+
+## Coverage
+- Area: Miami-Dade County. Addresses outside the county return an error.
+- Bodies: the county, the school board and 18 cities on the Nov 3 ballot have meeting calendars, phases and ways to take part. See `cycles-coverage.md`.
+- Seats at every level that represent a precinct: city, schools, county, state, federal.
+
+## Known gaps
+- Seats whose meeting calendar and ways to take part are not researched yet. Each Your area response lists them in `notResearchedYet`.
+- Some agenda and code portals refuse automated fetches (Municode, CivicWeb, Granicus, Laserfiche, eScribe). Where a charter could not be read, the data cites state law. Those cities need a hand-check.
+- No city has posted 2027 meeting dates. Most post one or two months ahead, so "next meeting" depends on a monthly re-pull, which is not scheduled yet.
+- Some member emails and comment time limits are missing. See `cycles-coverage.md`.
+- Posted agenda items appear only once a body posts its agenda, usually a few days before the meeting.
+- Money behind officials is not served here. See ADR 0006.
+
+## Freshness and caching
+- Ballot305 reads are cached at the edge for 15 minutes. Your area responses carry `Cache-Control: public, max-age=900`.
+- `dataUpdated` and `rosterUpdated` in each response say when Ballot305 last updated the data and the officeholder roster.
+- Precinct lookups are not cached (`Cache-Control: no-store`). The county precinct list used to expand split precincts is cached like other Ballot305 reads.
+
+## Personal data
+- Officials: only public office contacts (office email, phone, contact page, office address) as published by their office.
+- Residents: none stored. An address is passed to the geocoders and the county layer for one lookup and is not logged, stored or cached. See `../privacy.md`.
+
+## Corrections
+- Wrong data about an official, a meeting or an item: email corrections@ballot305.org or open an issue at github.com/Brittybrit/wethepeople. Fixes are made at the source in Ballot305 and appear here within 15 minutes of release.
+- Wrong precinct for an address: open an issue with the precinct you expected, not the address.
+
+---
+File: https://wethepeople305.org/docs/ai/evals.md
+
+# Evals and testing policy
+
+Prompts are code. They are versioned, tested in CI, and merged on a passing run.
+
+## What runs in CI
+On every push and pull request (`.github/workflows/test.yml`):
+1. `pnpm install --frozen-lockfile`
+2. `pnpm lint`: syntax check of `src/worker.js`, `lib/model.mjs`, `lib/events.mjs`.
+3. `pnpm test`: two Vitest projects. `unit` runs `tests/generated/` and `tests/hand/` on Node. `worker` runs `tests/worker/` inside the Workers runtime with the real `wrangler.toml` bindings. No network calls to outside sources.
+4. `pnpm eval`: every prompt in `prompts/` against its eval file. Runs only when the `ANTHROPIC_API_KEY` repo secret is set. The `.cache/` folder is restored between runs, keyed by a hash of `prompts/` and `config/models.json`.
+
+Not in CI yet (planned): a contract step that checks the OpenAPI document and MCP tool list against `lib/api-schema.mjs` as its own stage, coverage per module, and deploy. Contract tests run today inside `pnpm test`.
+
+## Floors and ceilings
+Each `prompts/<name>.eval.json` sets:
+- `floor`: minimum pass rate. Default 1 if missing.
+- `ceiling_usd`: maximum cost of one full run. No ceiling if missing.
+
+`scripts/eval.mjs` fails the run if any prompt is under its floor or over its ceiling.
+
+| Prompt | Cases | Floor | Ceiling |
+|---|---|---|---|
+| relevance-tags | 7 | 0.8 | $0.05 |
+
+## How a case is checked
+- `equals`: the field must match exactly.
+- `includes`: each listed value must be present.
+- `excludes`: each listed value must be absent.
+- `schema`: the output must validate against an extra schema.
+- `rubric`: a cheap model grades prose against the rubric (task `grade`). Use only where the answer is prose.
+
+## Caching
+Model outputs are cached in `.cache/model/` by task, prompt version and a hash of the prompt, input and schema. An unchanged prompt costs nothing to re-run. A changed prompt re-runs only its own cases. Cached results do not prove a model still behaves the same; bump the version or clear the cache to force a fresh run.
+
+## How cases grow
+- Every time a model output is wrong in review or production, the input and the right answer become a case.
+- Corrections are the most valuable cases. Do not remove a case to pass a floor.
+- Planned: confirmations and corrections recorded as outcomes against decision records, and new cases seeded from that join.
+
+## Generated tests
+- `pnpm test:gen lib/x.mjs` drafts a suite into `tests/generated/x.test.mjs`. It skips when the module's hash matches the header of the existing file.
+- Generated tests are reviewed and committed like code. A test that locks in a bug is deleted, not kept.
+- Hand-written cases go in `tests/hand/`. The generator never writes there.
+
+## Add a prompt
+1. `prompts/<name>.md` with a header: `version:`, `task:` (a task in `config/models.json`), `schema:` (a file name).
+2. `prompts/<name>.schema.json`: the JSON Schema the output must match. Use `additionalProperties: false`.
+3. `prompts/<name>.eval.json`: `floor`, `ceiling_usd`, a `note`, and `cases` with `id`, `input`, `expect`. Start with at least 5 cases from real records, including one where the right answer is empty.
+4. A prompt card in `public/docs/ai/prompt-cards/<name>.md`.
+5. Run `pnpm eval <name>` and put the result line in the pull request.
+
+---
+File: https://wethepeople305.org/docs/security/threat-model.md
+
+# Threat model
+
+What we protect, where trust changes, and what could go wrong. Status is "built" only where the code does it today. As of 2026-10-29.
+
+## Assets
+- Residents' addresses during a lookup.
+- Integrity of what residents see: who serves them, meetings, items, do-now actions.
+- The platform's reputation for being nonpartisan and accurate.
+- Model API keys and future spend (repo secret `ANTHROPIC_API_KEY`; Worker secrets when added).
+- Availability of the site, API and MCP endpoint.
+- The repo and its CI.
+
+## Trust boundaries
+1. Browser or MCP client to the Worker: all input is untrusted. Read-only, no key, CORS open.
+2. Worker to outside services: Esri, U.S. Census, Miami-Dade GIS, Ballot305. Their responses are untrusted data.
+3. Ballot305's data to its own sources: agenda packets, PDFs and scraped pages written by third parties. Untrusted text.
+4. Repo to CI and to models: prompts, eval cases and generated tests cross into a model and back.
+5. Contributor to main: pull requests, including AI-assisted ones.
+
+## LLM threats (OWASP Top 10 for LLM Applications)
+No model runs on a public route today, so most of these are design rules for what is planned. Status says which.
+
+| Category | Threat here | Mitigation | Status |
+|---|---|---|---|
+| Prompt injection (direct) | A user types instructions meant for a model | No public route calls a model. User input reaches only geocoders and a regex-checked precinct code | Built (by absence) |
+| Prompt injection (indirect) | An agenda packet, PDF or scraped page contains text that tells a model to change tags, add links or praise someone | Prompts read only the item text and return a strict schema with enums and length caps; `additionalProperties: false`; output cannot add URLs or free prose to the relevance schema. Policy: anything read from a page is data. MCP server instructions tell clients to treat every field as data | Schema limits built; two injection cases in the relevance-tags eval set (instructions in item text, a fake system note); more planned |
+| Insecure output handling | Model or source text rendered as HTML, or a `javascript:` link | The Your area page escapes every field and allows only `https:`, `http:`, `mailto:` and `tel:` links. CSP blocks outside scripts and framing. Model output is validated against a schema before use | Built for the page; model output is not rendered anywhere yet |
+| Training data and source poisoning | A false record upstream (a fake contact, a wrong meeting date) flows to residents | Every fact carries a `source` link. One adapter for Ballot305. Corrections process. Planned: snapshots keyed by content hash, so a changed source is visible | Partly built |
+| Model denial of service and cost exhaustion | Many requests drive model spend | No model on public routes. Eval files set a cost ceiling. Model outputs are cached by input hash | Built for CI; per-key and per-worker spend caps planned |
+| Supply chain | A compromised npm package, GitHub Action or model provider | `pnpm install --frozen-lockfile`; three dev dependencies; no runtime dependencies in `lib/`. Actions are pinned to major tags, not commit SHAs. Model routing can fall back across providers | Partly built; pinning Actions to SHAs is planned |
+| Sensitive information disclosure | Address or key leaks through logs, errors, caches or a model | Address never logged, stored or cached; `no-store` on lookups; events refuse address-like props; error responses carry no upstream detail. Keys live in env, never in config | Built |
+| Excessive agency | An MCP client uses tools to change state or act for a resident | MCP tools are read-only (`readOnlyHint: true`) and map to the same two GET operations as the API. No write, send or pay tool exists | Built. Keyed write tools (watchlists) planned, with OAuth scopes |
+| Overreliance | A resident treats a model's tag or a do-now action as authoritative | Do-now comes from four published rules, returned with every response. Split precincts are not guessed. Model output will be labeled and stored as a candidate | Built for rules; labels planned with first model output |
+| Insecure plugin or tool design | MCP input bypasses validation | MCP calls go through `checkParams` against the same schema as HTTP (pattern, length) | Built |
+| Model theft or misuse of keys | A leaked provider key | Keys only in repo secrets and Worker secrets; no key in the public Worker today | Built |
+
+## Other threats
+
+| Threat | Mitigation | Status |
+|---|---|---|
+| Address privacy: an address ends up in logs, analytics or a cache | Address goes only to geocoders and the county layer. Events have no address field and reject address-like props. Lookup responses are `no-store`. `robots.txt` disallows the lookup routes | Built |
+| Address privacy: the geocoder providers see the address | Unavoidable for a lookup. Disclosed in `../privacy.md`. Esri called with `forStorage=false` | Built (disclosed) |
+| Geocoder abuse: the endpoint used as a free bulk geocoder, risking our access to Esri or Census | Input capped at 200 characters; Florida-only matches; 9 second timeout; 20 lookups a minute per client (Workers rate limiting binding `RATE_LIMIT_ADDRESS_LOOKUP`, HTTP and MCP) | Built |
+| Upstream outage (Ballot305, Esri, Census, county GIS) | Esri falls back to Census; 15 minute edge cache on Ballot305 reads; a clean 502 with no internal detail | Built; no stale-on-error serving yet |
+| CORS: another site calls the API from a resident's browser | API is public and read-only with no cookies or keys, so open CORS exposes nothing a direct call would not | Built (accepted) |
+| Admin surface exposed | `/admin` returns 404 on this host; the founder board is a separate private Worker | Built |
+| Third-party request from pages | Pages load fonts from Google Fonts, which sees the visitor's IP | Accepted for now; self-hosting fonts planned |
+| Malicious or careless pull request | Review by the maintainer; tests and evals in CI; AI-assisted work must be disclosed | Built (one reviewer) |
+| Single maintainer | One person holds deploy and secrets | Accepted risk until there is a board |
+
+## Report
+See `SECURITY.md` in the repo root.
+
+---
+File: https://wethepeople305.org/docs/decisions/README.md
+
+# Architecture decision records
+
+Short records of choices that shape the platform. Each has a status, a date, the context, the decision and its consequences. To change a decision, add a new record that supersedes the old one.
+
+- 0001-headless-first.md: every capability is an API operation and an MCP tool before it has a screen
+- 0002-cost-ladder.md: route every operation to the cheapest tier that can do it
+- 0003-do-now-by-rules-not-model.md: the do-now list comes from four fixed rules
+- 0004-ballot305-source-adapter.md: Ballot305 is read through one adapter
+- 0005-address-never-stored.md: an address is passed through and never stored
+- 0006-money-figures-stay-on-ballot305.md: money is shown only with full context, on Ballot305
+- 0007-mcp-and-openapi-from-one-schema.md: OpenAPI and MCP tools are generated from one schema
+
+---
+File: https://wethepeople305.org/docs/decisions/0001-headless-first.md
+
+# 0001. Headless first
+
+- Status: Accepted
+- Date: 2026-10-23
+
+## Context
+Residents and organizers work in many tools: browsers, chat assistants, Slack, spreadsheets. A platform built screen-first ends up with logic only the screen can reach, and every other client gets less.
+
+## Decision
+Every capability is an API operation and an MCP tool before it has a screen. The web pages are clients of the same API with no private path. Today that means `/api/v1/precinct` and `/api/v1/your-area`, the same two operations as MCP tools at `/mcp`, and `public/your-area.html` calling the API.
+
+## Consequences
+- An assistant connected over MCP can do what the page does.
+- New features start with a schema, not a layout.
+- The API must carry provenance and plain-language reasons, because a client may show only the data.
+- Identity by key (OAuth) is planned; until then everything is public and read-only.
+
+---
+File: https://wethepeople305.org/docs/decisions/0002-cost-ladder.md
+
+# 0002. Route every operation to the cheapest tier that can do it
+
+- Status: Accepted
+- Date: 2026-10-23
+
+## Context
+Model calls cost money and add error. A one-person nonprofit project cannot carry open-ended spend, and residents deserve answers that can be checked.
+
+## Decision
+Tiers, in order: 0 static files, 1 code and rules, 2 cache, 3 small model with a schema, 4 large model, 5 a person. A task starts at the lowest tier that can answer it. Tier 3 and 4 calls go through `lib/model.mjs`, which reads the routing table in `config/models.json`, validates JSON against a schema, retries once, then falls to the next model. Results are cached by prompt version and input hash.
+
+## Consequences
+- Public routes today use tiers 0 to 2 only.
+- Every model task needs a schema and an eval file.
+- Each call is logged with model, tier, cost and input hash, so cost per task is a query.
+- Swapping providers is a config change checked by evals.
+- Planned: per-key and per-worker spend caps, and a usage ledger in D1.
+
+---
+File: https://wethepeople305.org/docs/decisions/0003-do-now-by-rules-not-model.md
+
+# 0003. The do-now list comes from fixed rules, not a model
+
+- Status: Accepted
+- Date: 2026-10-29
+
+## Context
+"What to do now" is the part a resident is most likely to act on. A model ranking could be wrong in ways nobody can see, and could tilt toward one side without anyone intending it.
+
+## Decision
+`lib/your-area.mjs` builds the list from four published rules, at most one action each: vote within 30 days of an election; weigh in on the weightiest posted item with its meeting still ahead; speak at the next regular meeting closest to home; reach the district office closest to home. Item weight is a fixed sum (place 8, money 4, lobbyist 4, hearing 2, prior action 1). The rules are returned in every response.
+
+## Consequences
+- Anyone can see why an action ranks where it does and reproduce it.
+- The list is the same for every precinct with the same data, regardless of who is in office.
+- The rules are blunt. Changing them is a code change with tests.
+- A model may later suggest actions, but only as reviewed candidates, never in this list without a rule.
+
+---
+File: https://wethepeople305.org/docs/decisions/0004-ballot305-source-adapter.md
+
+# 0004. Read Ballot305 through one source adapter
+
+- Status: Accepted
+- Date: 2026-10-29
+
+## Context
+The researched data (officials, calendars, ways to take part, posted items) lives in Ballot305 today and is served by its public API under CC BY 4.0. It will move into this platform after the election. The move should not touch feature code.
+
+## Decision
+`lib/sources/ballot305.mjs` is the only code that reads Ballot305. It exposes `now`, `upcoming` and `precinctCodes`, takes an injected `fetch`, and carries the license and attribution. The Worker passes a fetch that caches upstream reads at the edge for 15 minutes.
+
+## Consequences
+- Swapping the source later means changing one file.
+- Every response names the source, license and methodology.
+- Ballot305 outages and errors reach residents as a 502, softened by the 15 minute cache.
+- Ballot305 stays a separate site; this platform never writes to it.
+
+---
+File: https://wethepeople305.org/docs/decisions/0005-address-never-stored.md
+
+# 0005. An address is passed through and never stored
+
+- Status: Accepted
+- Date: 2026-10-29
+
+## Context
+A home address is the most sensitive thing a resident gives the platform. Kept anywhere, it could be joined to what they look up and when.
+
+## Decision
+`/api/v1/precinct` sends the address to the Esri geocoder, then the U.S. Census geocoder if needed, and sends only coordinates to the Miami-Dade precinct layer. The address is not logged, stored or cached; the response is `Cache-Control: no-store`. The event shape in `lib/events.mjs` has no address field and rejects props named like address, email, name, phone, ballot, street or ip. The page keeps only the precinct code, in the link and in the browser's own localStorage.
+
+## Consequences
+- A precinct code is the most specific location the platform keeps.
+- The geocoder providers still see the address. This is disclosed in the privacy notice.
+- Features that need the address again (a nearest polling site, for example) must ask for it again or work from the precinct.
+
+---
+File: https://wethepeople305.org/docs/decisions/0006-money-figures-stay-on-ballot305.md
+
+# 0006. Money figures stay on Ballot305
+
+- Status: Accepted
+- Date: 2026-10-29
+
+## Context
+A dollar figure next to an official's name reads as an accusation unless it comes with what it is out of, where it came from and how it was counted. Ballot305 shows money with its full context, denominator and methodology. A short card here would strip that.
+
+## Decision
+Your area and the API do not include money behind officials. They link to Ballot305 for it. Amounts on posted agenda items (what an item spends) are shown as stated in the record.
+
+## Consequences
+- No figure on this platform is shown without its denominator.
+- Residents take one extra click to see money.
+- If money moves here later, it moves with the same context and methodology, not as a bare number.
+
+---
+File: https://wethepeople305.org/docs/decisions/0007-mcp-and-openapi-from-one-schema.md
+
+# 0007. MCP tools and OpenAPI come from one schema
+
+- Status: Accepted
+- Date: 2026-10-29
+
+## Context
+An API document, an MCP tool list and the handlers written by hand drift apart. An assistant then calls a tool that no longer matches the API, or validation differs between the two.
+
+## Decision
+`lib/api-schema.mjs` defines each public operation once: id, method, path, parameters with JSON Schema, response schema, errors, and whether it sends personal data. From it:
+- `openApi()` builds the OpenAPI 3.1 document at `/api/v1/openapi.json`.
+- `mcpTools()` builds the MCP tool list served by `lib/mcp.mjs` at `/mcp` (stateless Streamable HTTP, JSON responses). Tools are marked read-only.
+- `checkParams()` validates input for both HTTP and MCP calls.
+The Worker runs one handler per operation id for both.
+
+## Consequences
+- A new operation is added in one place, then given a handler.
+- HTTP and MCP return the same data with the same validation.
+- Contract tests check the generated outputs against the schema.
+- The UI's types are not generated yet (planned).
+
+---
+File: https://wethepeople305.org/docs/privacy.md
+
+<!-- Confirm this address is routed in Cloudflare Email Routing before publishing. -->
+# Privacy
+
+This describes the site as of 2026-10-29.
+
+## Looking up your precinct
+When you enter an address, the site sends it to:
+- the Esri World Geocoder, and if that does not find it, the U.S. Census geocoder, to get coordinates;
+- Miami-Dade County's precinct map (GIS), which receives only the coordinates.
+
+Those services have their own privacy terms. The site does not log, store or cache your address. The answer is sent with `Cache-Control: no-store`.
+
+## What stays in your browser
+After a lookup, the page puts your precinct code in the page link (for example `/your-area?precinct=033.0`) and saves it in your browser's localStorage under the key `wtp.precinct`, so the page opens to your area next time. It stays on your device. Clear it by clearing site data in your browser.
+
+## What the site records
+The site records events about how it runs: which route was called, how long it took, whether it worked, and for Your area, the precinct code. Events have no field for an address, name, email, phone or IP, and the code refuses to record one.
+
+## Hosting
+The site runs on Cloudflare. Like any host, Cloudflare receives standard request data such as IP address, browser and the page requested. The site does not add logging of that data. To stop the address lookup being used for bulk geocoding, Cloudflare counts lookups per IP address for one minute; the count is held by Cloudflare's rate limiter, not stored or logged by the site. Cloudflare's own processing is governed by its privacy policy.
+
+Pages load fonts from Google Fonts, which receives the standard request data for those files.
+
+## What the site does not do
+- No cookies set by the site.
+- No accounts. Sign-in is planned and this notice will change before it ships.
+- No ads, no tracking pixels, no selling or sharing data.
+- No model sees your address.
+
+## Officials
+The site shows officials' public office contacts as published by their offices. It does not show home addresses or personal contacts.
+
+## Contact
+privacy@wethepeople305.org

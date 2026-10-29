@@ -3,6 +3,21 @@
   "files": [
     "architecture.md",
     "cycles-coverage.md",
-    "api.md"
+    "api.md",
+    "ai/system-card.md",
+    "ai/prompt-cards/relevance-tags.md",
+    "ai/ai-use-policy.md",
+    "ai/data-card.md",
+    "ai/evals.md",
+    "security/threat-model.md",
+    "decisions/README.md",
+    "decisions/0001-headless-first.md",
+    "decisions/0002-cost-ladder.md",
+    "decisions/0003-do-now-by-rules-not-model.md",
+    "decisions/0004-ballot305-source-adapter.md",
+    "decisions/0005-address-never-stored.md",
+    "decisions/0006-money-figures-stay-on-ballot305.md",
+    "decisions/0007-mcp-and-openapi-from-one-schema.md",
+    "privacy.md"
   ]
 }

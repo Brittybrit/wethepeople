@@ -8,6 +8,7 @@ Street address to Miami-Dade precinct code(s).
 - Geocoding: Esri World Geocoder first (rooftop or street-address match, score 90+, Florida only), then the U.S. Census geocoder.
 - Precinct: the county's precinct polygons (Miami-Dade GIS, Precinct layer), point in polygon.
 - The address is passed to those services and is never logged, stored or cached (`Cache-Control: no-store`). Events record nothing about the request beyond the route.
+- Limited to 20 lookups a minute per client (HTTP 429 beyond that).
 - A split precinct returns both halves (`"split": true`); only the voter's ballot or voter card says which.
 
 ```json

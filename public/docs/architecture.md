@@ -2,6 +2,9 @@
 
 Principles: headless first; route every operation to the cheapest service that can do it; cache; AI-first; platform agnostic and portable. This is the contract the code is built against.
 
+## Status as of Oct 29, 2026
+This document is the target. What is built today: the Worker (a plain fetch handler; Hono is planned), Your area and the precinct lookup, one schema generating OpenAPI and the MCP tools, trace ids on responses, the Events, Cache and Model adapters, the test generator and eval harness. Planned: Hono, the Store, Blobs, Queue and Auth adapters, an Analytics Engine sink (events go to the console today), per-key spend caps and confidence-based escalation, provenance hashes and retrieved-at on every response, UI types from the schema, and every service in section 4 except the read path. `ai/system-card.md` and `decisions/` track what changes.
+
 ## 1. Headless first
 - Every capability exists as an API endpoint and an MCP tool before it has a screen. The UI is a client with no privileged path; if the UI can do it, a Slack bot can do it.
 - One schema, three outputs: the OpenAPI document, the MCP tool manifest and the UI's types are generated from the same source. No hand-written drift.

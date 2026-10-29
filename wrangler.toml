@@ -13,3 +13,11 @@ routes = [
 directory = "./public"
 binding = "ASSETS"
 run_worker_first = ["/admin/*", "/api", "/api/*", "/mcp"]
+
+# Address lookups per client: 20 a minute. Keeps /api/v1/precinct and find_precinct from being used as a free bulk
+# geocoder, which would put our access to Esri and the Census at risk. The key is the client IP, held in memory by
+# Cloudflare for the window only; the Worker never logs or stores it.
+[[ratelimits]]
+name = "RATE_LIMIT_ADDRESS_LOOKUP"
+namespace_id = "1001"
+simple = { limit = 20, period = 60 }

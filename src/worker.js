@@ -49,10 +49,11 @@ const HANDLERS = {
 };
 
 // Run one operation by id with validated input. Address-bearing calls never reach the event stream except as a route name.
-async function run(id, args, trace) {
+async function run(id, args, trace, limit) {
   const op = OPERATIONS.find(o => o.id === id);
   const bad = checkParams(op, args);
   if (bad) return { status: 400, body: { error: bad } };
+  if (op.sendsPersonalData && limit && !(await limit())) return { status: 429, body: { error: 'Too many address lookups. Try again in a minute.' } };
   try {
     return await HANDLERS[id](args, trace);
   } catch (e) {
@@ -77,6 +78,8 @@ export default {
     if (!path.startsWith('/api/') && path !== '/api' && path !== '/mcp') return env.ASSETS.fetch(request);
 
     // Events carry a route and at most a precinct; never an address (lib/events.mjs refuses address-like fields).
+    // Rate limit for address lookups (wrangler.toml RATE_LIMIT_ADDRESS_LOOKUP). The IP is the key only; it is not logged.
+    const limit = env.RATE_LIMIT_ADDRESS_LOOKUP ? async () => (await env.RATE_LIMIT_ADDRESS_LOOKUP.limit({ key: request.headers.get('CF-Connecting-IP') || 'unknown' })).success : null;
     const trace = tracer({ service: 'wethepeople-public', sink: sinks.console(), client: path === '/mcp' ? 'mcp' : 'http' });
     const traced = r => { r.headers.set('X-Trace-Id', trace.trace_id); return r; };
     try {
@@ -86,7 +89,7 @@ export default {
         if (request.method !== 'POST') return traced(json({ error: 'POST JSON-RPC messages to /mcp' }, 405, { Allow: 'POST' }));
         let payload;
         try { payload = await request.json(); } catch { return traced(json({ jsonrpc: '2.0', id: null, error: { code: -32700, message: 'Parse error' } }, 400)); }
-        const { status, body } = await handleMcp(payload, (id, args) => run(id, args, trace));
+        const { status, body } = await handleMcp(payload, (id, args) => run(id, args, trace, limit));
         return traced(body === null ? new Response(null, { status: 202, headers: BASE_HEADERS }) : json(body, status, { 'Cache-Control': 'no-store' }));
       }
 
@@ -96,7 +99,7 @@ export default {
       const op = OPERATIONS.find(o => o.path === path && o.method === 'GET');
       if (!op) return traced(json({ error: 'Not found' }, 404));
       const args = Object.fromEntries(Object.keys(op.params).map(k => [k, url.searchParams.get(k) ?? undefined]));
-      const { status, body, cache } = await run(op.id, args, trace);
+      const { status, body, cache } = await run(op.id, args, trace, limit);
       return traced(json(body, status, { 'Cache-Control': cache && status === 200 ? cache : 'no-store' }));
     } finally {
       if (ctx && ctx.waitUntil) ctx.waitUntil(trace.flush()); else await trace.flush();
