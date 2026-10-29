@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your area · We the People 305</title>
+<meta name="description" content="Put in your address. See who works for you at every level, what is about to be decided, and the most effective thing you can do now.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://wethepeople305.org/your-area">
+<meta property="og:title" content="Your area · We the People 305">
+<meta property="og:description" content="Who works for you, what is about to be decided, and what you can do now.">
+<meta property="og:image" content="https://wethepeople305.org/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/brand/brand.css">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+  a{color:inherit}
+  header{background:#131F3C;color:#FAFAF7;padding:22px 16px 20px}
+  .wrap{max-width:760px;margin:0 auto}
+  header .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  header a{text-decoration:none}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#C9CFDF}
+  header .wtp-mark{font-size:44px}
+  main{max-width:760px;margin:0 auto;padding:24px 16px 56px}
+  h1{font-weight:900;font-size:26px;line-height:1.1;margin-bottom:6px}
+  h2{font-weight:800;font-size:18px;margin:34px 0 4px;padding-top:14px;border-top:4px solid var(--ink)}
+  .sub{color:var(--ink-soft);font-size:14px;margin-bottom:12px}
+  form{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 6px}
+  input{flex:1 1 260px;min-height:var(--touch);padding:0 12px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);font:inherit}
+  button{cursor:pointer;border:0;font-family:var(--sans)}
+  .fine{font-size:12px;color:var(--ink-soft);font-family:var(--mono)}
+  .status{margin:10px 0;font-size:14px}
+  .err{color:#A3262A}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+  .chip{border:1.5px solid var(--ink);background:var(--card);padding:6px 12px;font-family:var(--mono);font-size:13px;cursor:pointer;color:var(--ink)}
+  .card{border:1.5px solid var(--ink);background:var(--card);padding:12px 14px;margin:10px 0}
+  .card .t{font-weight:800;line-height:1.25}
+  .card .w{font-size:14px;color:var(--ink-soft);margin-top:4px}
+  .card .meta{font-family:var(--mono);font-size:12px;margin-top:8px;display:flex;gap:12px;flex-wrap:wrap}
+  .now .k{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:var(--area);color:#FAFAF7;padding:2px 7px;margin-bottom:6px}
+  .row{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--hair)}
+  .row .d{font-family:var(--mono);font-size:13px;width:92px;flex:none}
+  .row .b{min-width:0}
+  .row .b b{font-weight:600}
+  .row .b span{display:block;font-size:13px;color:var(--ink-soft)}
+  .lvl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin:18px 0 4px}
+  .seat{padding:8px 0;border-bottom:1px solid var(--hair)}
+  .seat .o{font-size:13px;color:var(--ink-soft)}
+  .seat .h{font-weight:600}
+  .seat .c{font-family:var(--mono);font-size:12px;margin-top:2px;display:flex;gap:12px;flex-wrap:wrap}
+  .seat .bal{font-size:13px;margin-top:2px}
+  details{margin-top:8px}
+  summary{cursor:pointer;font-family:var(--mono);font-size:12px}
+  details p{font-size:13px;color:var(--ink-soft);margin:6px 0}
+  footer{border-top:4px solid var(--ink);padding:18px 16px;font-family:var(--mono);font-size:12px;color:var(--ink-soft);text-align:center}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a href="/"><div class="kicker">We the People</div><div class="wtp-mark">305</div></a>
+  <span class="wtp-area">Your area</span>
+</div></header>
+<main>
+  <h1>Who works for you, and what is about to be decided</h1>
+  <p class="sub">Put in your home address. You get every seat that represents it, from your city to Washington, the next meetings and decision points, and the most effective thing you can do now.</p>
+  <form id="f">
+    <input id="addr" name="address" autocomplete="street-address" placeholder="1700 Convention Center Dr, Miami Beach" aria-label="Home address" required>
+    <button class="wtp-btn" type="submit">Find my area</button>
+  </form>
+  <p class="fine">Your address goes to our server and on to the Esri and U.S. Census geocoders and the county's precinct map to find your precinct. We do not log or keep it. Only the precinct number stays in the page link.</p>
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+  <div id="pick" hidden><p class="status">The county splits your precinct. Your ballot or voter card says which half you are in:</p><div class="chips" id="chips"></div></div>
+
+  <div id="out" hidden>
+    <h2>Do this now</h2>
+    <p class="sub" id="nowSub"></p>
+    <div id="doNow"></div>
+    <details><summary>How these are picked</summary><div id="rules"></div></details>
+
+    <h2>On posted agendas</h2>
+    <div id="items"></div>
+
+    <h2>Next meetings</h2>
+    <div id="meetings"></div>
+
+    <h2>Decision points ahead</h2>
+    <p class="sub">When each body decides what, over the next six months.</p>
+    <div id="phases"></div>
+
+    <h2>Who works for you</h2>
+    <p class="sub">Every seat that represents this precinct, closest to home first. Money behind each official is on <a href="https://ballot305.org">Ballot305</a>.</p>
+    <div id="servants"></div>
+    <p class="fine" id="gaps"></p>
+
+    <p class="fine" style="margin-top:28px" id="src"></p>
+  </div>
+</main>
+<footer>Open source (MIT) · <a href="https://github.com/Brittybrit/wethepeople">github.com/Brittybrit/wethepeople</a> · <a href="/docs/api.md">API</a><br>Nonpartisan. No money from candidates, campaigns, parties or political committees.</footer>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
+  var safeUrl = function(u){ return /^(https?:|mailto:|tel:)/i.test(String(u || '')) ? String(u) : ''; };
+  var link = function(u, t){ u = safeUrl(u); return u ? '<a href="' + esc(u) + '" rel="noopener">' + esc(t) + '</a>' : ''; };
+  var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var day = function(d){ if(!d) return ''; var p = String(d).split('-'); return MONTHS[+p[1]-1] + ' ' + (+p[2]); };
+  var dayLong = function(d){ if(!d) return ''; var x = new Date(d + 'T12:00:00'); return x.toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric' }); };
+  var time = function(t){ if(!t) return ''; var p = t.split(':'), h = +p[0]; return (h % 12 || 12) + ':' + p[1] + (h < 12 ? ' a.m.' : ' p.m.'); };
+  var LEVEL = { municipal:'Your city', school:'Your schools', county:'Your county', state:'Your state', federal:'Washington' };
+  var store = { get: function(){ try { return localStorage.getItem('wtp.precinct'); } catch(e){ return null; } }, set: function(v){ try { localStorage.setItem('wtp.precinct', v); } catch(e){} } };
+
+  function status(msg, err){ $('status').innerHTML = msg ? '<span class="' + (err ? 'err' : '') + '">' + esc(msg) + '</span>' : ''; }
+
+  $('f').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var a = $('addr').value.trim(); if(!a) return;
+    status('Finding your precinct…'); $('pick').hidden = true;
+    fetch('/api/v1/precinct?address=' + encodeURIComponent(a)).then(function(r){ return r.json().then(function(j){ return { ok: r.ok, j: j }; }); }).then(function(x){
+      if(!x.ok){ status(x.j.error || 'Could not find that address.', true); return; }
+      var p = x.j.precincts || [];
+      if(!p.length){ status('That address is not in a Miami-Dade precinct.', true); return; }
+      if(p.length === 1){ load(p[0], x.j.matchedAddress); return; }
+      status('Matched ' + x.j.matchedAddress + '.');
+      $('chips').innerHTML = p.map(function(c){ return '<button class="chip" type="button" data-p="' + esc(c) + '">Precinct ' + esc(c) + '</button>'; }).join('');
+      $('pick').hidden = false;
+    }).catch(function(){ status('The lookup failed. Try again in a minute.', true); });
+  });
+  $('chips').addEventListener('click', function(ev){ var b = ev.target.closest('[data-p]'); if(b){ $('pick').hidden = true; load(b.getAttribute('data-p')); } });
+
+  function load(precinct, matched){
+    status('Loading precinct ' + precinct + '…');
+    history.replaceState(null, '', '/your-area?precinct=' + encodeURIComponent(precinct));
+    store.set(precinct);
+    fetch('/api/v1/your-area?precinct=' + encodeURIComponent(precinct)).then(function(r){ return r.json().then(function(j){ return { ok: r.ok, j: j }; }); }).then(function(x){
+      if(!x.ok){ status(x.j.error || 'Could not load that precinct.', true); return; }
+      status((matched ? 'Matched ' + matched + '. ' : '') + 'Precinct ' + precinct + '.');
+      render(x.j);
+    }).catch(function(){ status('Could not load your area. Try again in a minute.', true); });
+  }
+
+  function render(d){
+    $('nowSub').textContent = 'Ranked by fixed rules, not by a model. Today is ' + dayLong(d.today) + '.';
+    $('doNow').innerHTML = d.doNow.length ? d.doNow.map(function(a){
+      var kind = { vote:'Vote', write:'Write', speak:'Speak', contact:'Reach out' }[a.kind] || a.kind;
+      var title = a.title.replace(/\d{4}-\d{2}-\d{2}/g, dayLong);
+      return '<div class="card now"><span class="k">' + esc(kind) + '</span><div class="t">' + esc(title) + '</div><div class="w">' + esc(a.why) + '</div><div class="meta">' +
+        (a.deadline && !/^\d{4}-/.test(a.deadline) ? '<span>' + esc(a.deadline) + '</span>' : '') +
+        link(a.url, a.kind === 'contact' && /^mailto:/.test(a.url || '') ? 'Email' : 'Go') + (a.phone ? link('tel:' + a.phone.replace(/[^\d+]/g, ''), a.phone) : '') + link(a.source, 'Source') + '</div></div>';
+    }).join('') : '<p class="sub">Nothing time-sensitive found for your area right now.</p>';
+    $('rules').innerHTML = d.rules.map(function(r, i){ return '<p>' + (i + 1) + '. ' + esc(r) + '</p>'; }).join('');
+
+    $('items').innerHTML = d.upcomingItems.length ? d.upcomingItems.map(function(i){
+      return '<div class="row"><div class="d">' + esc(day(i.meeting.date)) + '</div><div class="b"><b>' + esc(i.title) + '</b><span>' + esc(i.bodyName) + (i.reasons.length ? ' · ' + esc(i.reasons.join(', ')) : '') + '</span><span>' + link(i.meeting.agendaUrl, 'Agenda') + '</span></div></div>';
+    }).join('') : '<p class="sub">No items posted yet for your bodies. Agendas usually post a few days before each meeting below.</p>';
+
+    $('meetings').innerHTML = d.meetings.length ? d.meetings.map(function(m){
+      return '<div class="row"><div class="d">' + esc(day(m.date)) + '</div><div class="b"><b>' + esc(m.bodyName) + '</b><span>' + esc([time(m.time), m.note].filter(Boolean).join(' · ')) + '</span></div></div>';
+    }).join('') : '<p class="sub">No meeting dates posted.</p>';
+
+    $('phases').innerHTML = d.decisionPoints.length ? d.decisionPoints.map(function(p){
+      var when = p.end && p.end !== p.start ? day(p.start) + '–' + day(p.end) : day(p.start);
+      return '<div class="row"><div class="d">' + esc(when) + '</div><div class="b"><b>' + esc(p.name) + '</b><span>' + esc(p.bodyName) + (p.now ? ' · happening now' : '') + '</span><span>' + esc(p.decides || '') + '</span></div></div>';
+    }).join('') : '<p class="sub">No decision points posted for the next six months.</p>';
+
+    var lastLevel = '';
+    $('servants').innerHTML = d.servants.map(function(b){
+      var head = b.level !== lastLevel ? '<div class="lvl">' + esc(LEVEL[b.level] || b.level) + '</div>' : ''; lastLevel = b.level;
+      return head + b.seats.map(function(s){
+        var holders = s.holders.map(function(h){ return h.name; }).join(', ') || 'Vacant';
+        var since = s.holders[0] && s.holders[0].since && s.holders[0].sinceKnown !== false ? ' · since ' + s.holders[0].since.slice(0, 4) : '';
+        var bal = s.onBallot.length ? '<div class="bal">On your Nov 3 ballot: ' + esc(s.onBallot.map(function(c){ return c.name + (c.incumbent ? ' (incumbent)' : ''); }).join(', ')) + '</div>' : '';
+        var c = s.contact || {};
+        var contact = [c.email ? link('mailto:' + c.email, c.email) : '', c.phone ? link('tel:' + c.phone.replace(/[^\d+]/g, ''), c.phone) : '', c.contactUrl ? link(c.contactUrl, 'Contact page') : ''].filter(Boolean).join('');
+        return '<div class="seat"><div class="o">' + esc(s.name) + '</div><div class="h">' + esc(holders) + esc(since) + '</div>' + bal + (contact ? '<div class="c">' + contact + '</div>' : '') + '</div>';
+      }).join('');
+    }).join('');
+    $('gaps').textContent = d.notResearchedYet.length ? 'Meeting calendars and ways to weigh in are not researched yet for: ' + d.notResearchedYet.join('; ') + '.' : '';
+    $('src').innerHTML = 'Data: ' + link(d.source.docs, d.source.name) + ', ' + esc(d.source.license) + '. Updated ' + esc(d.dataUpdated || '') + '; officeholders as of ' + esc(d.rosterUpdated || '') + '. ' + link(d.source.methodology, 'Methodology');
+    $('out').hidden = false;
+  }
+
+  var q = new URLSearchParams(location.search).get('precinct') || store.get();
+  if(q && /^\d{3}\.\d$/.test(q)) load(q);
+})();
+</script>
+</body>
+</html>

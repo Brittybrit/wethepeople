@@ -15,7 +15,18 @@ describe('public site', () => {
     expect(idx.files).not.toContain('founder-board.md');
     for (const f of idx.files) expect((await SELF.fetch('https://wethepeople305.org/docs/' + f)).status).toBe(200);
   });
-  it('has no admin and no API on this host', async () => {
+  it('has no admin on this host', async () => {
     for (const p of ['/admin', '/admin/board.html', '/api/admin/board']) expect((await SELF.fetch('https://wethepeople305.org' + p)).status).toBe(404);
+  });
+  it('serves the Your area page', async () => {
+    const r = await SELF.fetch('https://wethepeople305.org/your-area');
+    expect(r.status).toBe(200);
+    expect(await r.text()).toContain('Who works for you');
+  });
+  it('validates API input before calling any source', async () => {
+    expect((await SELF.fetch('https://wethepeople305.org/api/v1/your-area?precinct=33')).status).toBe(400);
+    expect((await SELF.fetch('https://wethepeople305.org/api/v1/precinct')).status).toBe(400);
+    expect((await SELF.fetch('https://wethepeople305.org/api/v1/nope')).status).toBe(404);
+    expect((await SELF.fetch('https://wethepeople305.org/api/v1/your-area', { method: 'POST' })).status).toBe(405);
   });
 });

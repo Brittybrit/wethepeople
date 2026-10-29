@@ -1,0 +1,562 @@
+{
+ "precinct": "033.0",
+ "date": "2026-10-29",
+ "updated": "2026-10-24",
+ "rosterUpdated": "2026-10-18",
+ "districts": {
+  "congress": 25,
+  "stateSenate": 36,
+  "stateHouse": 106,
+  "municipality": "MIAMI BEACH",
+  "municipalityBody": "city-miami-beach",
+  "cityDistrict": null,
+  "schoolBoard": 3,
+  "countyCommission": 5
+ },
+ "bodies": [
+  {
+   "body": "mdc-commission",
+   "name": "Miami-Dade County Commission",
+   "level": "county",
+   "jurisdiction": "Miami-Dade County",
+   "seats": [
+    {
+     "office": "mdc-commission-5",
+     "name": "County Commissioner, District 5",
+     "district": "5",
+     "kind": "legislative",
+     "actionScope": "all",
+     "holders": [
+      {
+       "person": "vicki-l-lopez",
+       "name": "Vicki L. Lopez",
+       "since": "2025-11-18",
+       "sinceKnown": true,
+       "via": "appointed",
+       "termExpires": null,
+       "actionCount": 2039,
+       "moneySummary": {
+        "total": 73400,
+        "donors": 29,
+        "gifts": 42,
+        "before": 28,
+        "items": 7,
+        "split": 7
+       }
+      }
+     ],
+     "onBallot": [
+      {
+       "office": "County Commissioner, District 5",
+       "judicial": false,
+       "candidates": [
+        {
+         "person": "vicki-l-lopez",
+         "name": "Vicki L. Lopez",
+         "party": "Nonpartisan",
+         "incumbent": true
+        },
+        {
+         "person": "rob-piper",
+         "name": "Rob Piper",
+         "party": "Nonpartisan",
+         "incumbent": false
+        }
+       ]
+      }
+     ],
+     "contact": {
+      "office": "mdc-commission-5",
+      "holder": "Vicki L. Lopez",
+      "email": "district5@miamidade.gov",
+      "phone": "305-375-5924",
+      "officeAddress": "Stephen P. Clark Center, 111 NW 1st St, Suite 220, Miami, FL 33128",
+      "districtOffice": {
+       "address": "2100 Coral Way, Suite 400, Miami, FL 33145",
+       "phone": "305-375-5924",
+       "hours": null
+      },
+      "contactUrl": "https://www.miamidade.gov/global/government/commission/district05/contact-us.page",
+      "staff": [
+       {
+        "role": "chief of staff",
+        "name": "Arleen Gomez",
+        "email": "Arleen.Gomez@miamidade.gov"
+       }
+      ],
+      "source": "https://www.miamidade.gov/global/government/commission/district05/home.page; https://www.miamidade.gov/global/government/commission/district05/contact-us.page",
+      "notes": "Fax 305-375-5904. Second district office at Miami Beach City Hall, 1700 Convention Center Dr, 1st Floor, Miami Beach, FL 33139. Clark Center suite from the contact-us page; the home page lists only the two district offices.",
+      "body": "mdc-commission",
+      "checked": "2026-10-23"
+     }
+    }
+   ],
+   "cycle": {
+    "key": "county",
+    "meetings": {
+     "next": [
+      {
+       "date": "2026-11-09",
+       "time": "09:00",
+       "kind": "regular",
+       "note": "Committees: Policy Council 9:00, Aviation and Seaport 10:30, Safety and Health 12:30",
+       "source": "https://www.miamidade.gov/resources/commission/documents/2026-bcc-calendar.pdf"
+      },
+      {
+       "date": "2026-11-10",
+       "time": "09:00",
+       "kind": "regular",
+       "note": "Committees: Transportation 9:00, Recreation Tourism and Resiliency 10:30, Housing 12:30",
+       "source": "https://www.miamidade.gov/resources/commission/documents/2026-bcc-calendar.pdf"
+      },
+      {
+       "date": "2026-11-12",
+       "time": "09:00",
+       "kind": "regular",
+       "note": "Committees: Appropriations 9:00, Intergovernmental and Economic Impact 10:30, Infrastructure Innovation and Technology 12:30",
+       "source": "https://www.miamidade.gov/resources/commission/documents/2026-bcc-calendar.pdf"
+      }
+     ]
+    },
+    "phases": {
+     "current": [],
+     "upcoming": [
+      {
+       "key": "election",
+       "name": "General election (runoffs for county races)",
+       "start": "2026-11-03",
+       "end": "2026-11-03",
+       "repeats": "once",
+       "decides": "Runoffs for Commission Districts 2, 4, 6, 8, 10 and 12 where no candidate won a majority in the Aug 18 primary; also county charter questions.",
+       "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/county-commissioners.pdf"
+      },
+      {
+       "key": "swearing-in",
+       "name": "New terms begin",
+       "start": "2026-11-17",
+       "end": "2026-11-17",
+       "repeats": "once",
+       "decides": "Commissioners elected in 2026 take office the second Tuesday after the general election (Charter Sec. 3.01(C)).",
+       "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/county-commissioners.pdf"
+      },
+      {
+       "key": "recess",
+       "name": "Winter recess",
+       "start": "2026-11-20",
+       "end": "2026-12-31",
+       "repeats": "yearly",
+       "decides": "No full-board or zoning meetings are posted after Nov 19, 2026; only Dec 3 committee meetings. The calendar legend lists spring, summer and winter recess without exact dates.",
+       "source": "https://www.miamidade.gov/resources/commission/documents/2026-bcc-calendar.pdf"
+      },
+      {
+       "key": "regular",
+       "name": "Departments submit budget requests",
+       "start": "2027-02-01",
+       "end": "2027-02-28",
+       "repeats": "yearly",
+       "decides": "County departments send business plans and budget requests to the Office of Management and Budget; the Mayor gives a budget address in March setting priorities.",
+       "source": "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/budget-process.pdf"
+      }
+     ]
+    },
+    "levers": [
+     {
+      "key": "public-comment",
+      "how": "Speak on any public hearing item: register at the Agenda Coordination table in the chamber lobby (first floor) at least 15 minutes before the item is called; you are escorted to the chambers. State your name, address and whom you represent.",
+      "rules": "Up to 5 minutes per speaker on a public hearing item (Rule 6.04). Public hearings are scheduled for 9:30 a.m. You may also waive your time 'in support' or 'in opposition'.",
+      "deadline": "Register at the meeting, at least 15 minutes before the item is discussed",
+      "url": "https://www.miamidade.gov/global/webcasting/home.page",
+      "source": "https://www.miamidade.gov/commission/library/2019-02-05-rules-of-procedure.pdf",
+      "nextMeeting": "2026-11-09"
+     },
+     {
+      "key": "public-comment",
+      "how": "Speak on any other agenda item (not a public hearing) during the 'reasonable opportunity to be heard' period under Rule 6.06, which comes near the start of the meeting before the agenda is set. Register with a speaker card the morning of the meeting.",
+      "rules": "2 minutes per speaker, 10 minutes total per side; if more than five people sign up on one side they pick a representative who gets 4 minutes. No one may speak more than 5 minutes total on one agenda. Registration closes 30 minutes after the noticed start time.",
+      "deadline": "Register by 10:00 a.m. for a 9:30 a.m. meeting",
+      "url": "https://www.miamidade.gov/global/webcasting/home.page",
+      "source": "https://www.miamidade.gov/commission/library/2019-02-05-rules-of-procedure.pdf",
+      "nextMeeting": "2026-11-09"
+     },
+     {
+      "key": "public-comment",
+      "how": "Citizens' presentation: ask your commissioner or the Mayor to place you on the regular meeting agenda to speak on any matter in the Commission's power. Only a commissioner or the Mayor can place you.",
+      "rules": "5 minutes maximum (agenda item 1E). The Commission cannot act on it unless two thirds of members present agree it needs immediate action.",
+      "deadline": "Request to a commissioner by noon on the Monday of the week before the meeting week",
+      "url": "https://www.miamidade.gov/global/government/commission/home.page",
+      "source": "https://www.miamidade.gov/commission/library/2019-02-05-rules-of-procedure.pdf",
+      "nextMeeting": "2026-11-09"
+     }
+    ]
+   },
+   "bodyContact": {
+    "clerkEmail": "cocpubreq@miamidadeclerk.gov",
+    "clerkPhone": "305-275-1155",
+    "clerkUrl": "https://www.miamidadeclerk.gov/clerk/cob-home.page",
+    "clerkAddress": "Clerk of the Board, Stephen P. Clark Center, 111 NW 1st St, Suite 17-202, Miami, FL 33128",
+    "commentEmail": null,
+    "recordsRequestUrl": "https://miamidadecounty.govqa.us/WEBAPP/_rs/RequestSelect.aspx",
+    "source": "https://www.miamidadeclerk.gov/clerk/cob-contact.page; https://www.miamidadeclerk.gov/clerk/public-records-requests.page",
+    "checked": "2026-10-23",
+    "notes": "All emails on miamidade.gov are Cloudflare-protected; each was decoded from the page's email-protection link and the decode was verified locally (XOR with first byte). Case of district emails is as the page encodes it. No district page lists office hours except District 6's Hialeah satellite and mobile hours. Chief of staff appears only on the contact-us pages of Districts 1, 5, 7 and 13; the other contact-us pages list only the commissioner. Clerk of the Board pages list no email (\"contact this office by phone or in writing\"); cocpubreq@miamidadeclerk.gov is the Clerk's public records email from the public-records-requests page, which also directs BCC records requests to the county GovQA portal (select Board of County Commission) and gives (305) 593-1352 for questions. No written-comment email found on the commission pages; written comment route not confirmed. Mayor row is included here because mdc-mayor is a one-office body."
+   }
+  },
+  {
+   "body": "mdcps-board",
+   "name": "Miami-Dade County School Board",
+   "level": "school",
+   "jurisdiction": "Miami-Dade County Public Schools",
+   "seats": [
+    {
+     "office": "mdcps-board-district-3",
+     "name": "Miami-Dade County Public Schools, District 3",
+     "district": "3",
+     "kind": "board",
+     "actionScope": "all",
+     "holders": [
+      {
+       "person": "joseph-geller",
+       "name": "Joseph \"Joe\" Geller",
+       "since": "2024-11-19",
+       "sinceKnown": true,
+       "via": "runoff",
+       "termExpires": null,
+       "actionCount": 0,
+       "moneySummary": null
+      }
+     ],
+     "onBallot": [],
+     "contact": {
+      "office": "mdcps-board-district-3",
+      "holder": "Joseph \"Joe\" Geller",
+      "email": null,
+      "phone": "305-995-1334",
+      "officeAddress": "School Board Administration Building, 1450 NE 2nd Ave, Miami, FL 33132",
+      "districtOffice": null,
+      "contactUrl": "https://www3.dadeschools.net/SchoolBoard/",
+      "staff": [],
+      "source": "https://www.miamidade.gov/resources/intergovernmental-affairs/documents/municipality-directory.pdf (School Board office line, updated 10/1/2025); member page on www3.dadeschools.net/SchoolBoard/ unreachable",
+      "notes": "Individual email and direct phone not captured: dadeschools.net School Board pages are a JavaScript app whose content comes from api.dadeschools.net, which could not be fetched; the phone here is the shared School Board office number, not the member's own line.",
+      "body": "mdcps-board",
+      "checked": "2026-10-23"
+     }
+    }
+   ],
+   "cycle": {
+    "key": "schoolboard",
+    "meetings": {
+     "next": [
+      {
+       "date": "2026-11-17",
+       "time": "10:00",
+       "kind": "special",
+       "note": "Organization Meeting (Tuesday): members elected Nov 3 are sworn in; Board elects Chair and Vice Chair; final approval of the 2027 meeting schedule",
+       "source": "https://pdfs.dadeschools.net/Bdarch/2025/Bd111925/agenda/sp2.pdf"
+      },
+      {
+       "date": "2026-11-18",
+       "time": "11:00",
+       "kind": "regular",
+       "note": "",
+       "source": "https://pdfs.dadeschools.net/Bdarch/2025/Bd111925/agenda/sp2.pdf"
+      },
+      {
+       "date": "2026-12-16",
+       "time": "11:00",
+       "kind": "regular",
+       "note": "Last meeting of 2026",
+       "source": "https://pdfs.dadeschools.net/Bdarch/2025/Bd111925/agenda/sp2.pdf"
+      }
+     ]
+    },
+    "phases": {
+     "current": [],
+     "upcoming": [
+      {
+       "key": "election",
+       "name": "General election (runoffs for Board seats)",
+       "start": "2026-11-03",
+       "end": "2026-11-03",
+       "repeats": "once",
+       "decides": "Runoffs for School Board Districts 2, 4, 6 and 8 where no candidate won a majority in the August 18 primary.",
+       "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/school-board-members.pdf"
+      },
+      {
+       "key": "swearing-in",
+       "name": "New terms begin, Organization Meeting",
+       "start": "2026-11-17",
+       "end": "2026-11-17",
+       "repeats": "yearly",
+       "decides": "Members elected Nov 3 take office the second Tuesday after the general election; the Board elects its Chair and Vice Chair and gives final approval to the next year's meeting schedule.",
+       "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/school-board-members.pdf"
+      },
+      {
+       "key": "regular",
+       "name": "Attendance boundary changes",
+       "start": "2027-04-14",
+       "end": "2027-05-19",
+       "repeats": "yearly",
+       "decides": "First reading of school attendance zones for the coming school year at the April meeting (2026: conference session at 10:00 a.m. and initial reading April 22), with final action at a later meeting.",
+       "source": "https://pdfs.dadeschools.net/Bdarch/2025/Bd111925/agenda/sp2.pdf"
+      },
+      {
+       "key": "budget-proposal",
+       "name": "Budget workshops",
+       "start": "2027-05-12",
+       "end": "2027-06-09",
+       "repeats": "yearly",
+       "decides": "Two public workshops where the Superintendent and CFO walk the Board through the coming year's budget before anything is adopted (2026: May 20 and June 10 at 10:00 a.m.).",
+       "source": "https://pdfs.dadeschools.net/Bdarch/2026/Bd072226/agenda/e106.pdf"
+      }
+     ]
+    },
+    "levers": [
+     {
+      "key": "public-comment",
+      "how": "Speak on an agenda item: file a Request for Appearance (form FM-6314) with the Citizen Information Center by mail, in person, email (Request4Appearance@dadeschools.net) or the online form at cic.dadeschools.net, naming the meeting date and item numbers. Speakers are called in agenda order.",
+      "rules": "2 minutes per speaker (or group spokesperson) per agenda item; 10 minutes total per speaker per meeting; a speaker not pre-registered needs a majority vote of the Board to be heard. Bylaw 0169.1.",
+      "deadline": "4:30 p.m. the Monday before a regular Wednesday meeting (Tuesday if Monday is a district holiday); noon the last business day before a special meeting",
+      "url": "https://cic.dadeschools.net/",
+      "source": "https://pdfs.dadeschools.net/Bdarch/pdfs/FM-6314.pdf",
+      "nextMeeting": "2026-11-17"
+     },
+     {
+      "key": "public-comment",
+      "how": "Speak on any topic not on the agenda at the Scheduled Public Hearing, which follows the regular agenda and starts no later than about 6:30 p.m. Register with the same Request for Appearance form, listing your topic.",
+      "rules": "3 minutes per speaker regardless of number of topics; the hearing is capped at one and a half hours unless the Board votes to extend; large groups may pick a spokesperson; extra comments may be submitted in writing. Topics must relate to Board business.",
+      "deadline": "4:30 p.m. the Monday before the meeting",
+      "url": "https://cic.dadeschools.net/",
+      "source": "https://pdfs.dadeschools.net/Bdarch/2025/Bd011525/agenda/g4.pdf",
+      "nextMeeting": "2026-11-17"
+     },
+     {
+      "key": "public-comment",
+      "how": "Budget hearings: register to speak at the July and September 6:00 p.m. budget hearings with a written request to the Superintendent (Room 102 or request4appearance@dadeschools.net).",
+      "rules": "Special-meeting deadline applies: noon the day before (2026 first hearing: by 12:00 p.m. Tuesday July 28).",
+      "deadline": "Noon the business day before the hearing",
+      "url": "https://cic.dadeschools.net/",
+      "source": "https://pdfs.dadeschools.net/Bdarch/2026/Bd072926/budget-public-hearing.html",
+      "nextMeeting": "2026-11-17"
+     }
+    ]
+   },
+   "bodyContact": {
+    "clerkEmail": "Request4Appearance@dadeschools.net",
+    "clerkPhone": "305-995-1128",
+    "clerkUrl": "https://cic.dadeschools.net/",
+    "clerkAddress": "School Board Administration Building, 1450 NE 2nd Ave, Miami, FL 33132",
+    "commentEmail": null,
+    "recordsRequestEmail": "prr@dadeschools.net",
+    "recordsRequestUrl": "https://cic.dadeschools.net/",
+    "source": "https://pdfs.dadeschools.net/Bdarch/pdfs/FM-6314.pdf (speaker request form, Citizen Information Center); https://ehandbooks.dadeschools.net/user_guides/147.pdf (public records email); https://www.miamidade.gov/resources/intergovernmental-affairs/documents/municipality-directory.pdf (office phone 305.995.1334, fax 305.995.1572)",
+    "checked": "2026-10-23",
+    "notes": "BLOCKED: www3.dadeschools.net/SchoolBoard/ and its /information, /members, /contact and per-district pages returned server errors or only page metadata on 2026-10-23 (content is rendered client-side from api.dadeschools.net). The Wayback Machine is blocked from this environment. So no member has an individual email or direct phone; all nine rows carry the shared School Board office number from the county's municipality directory. The Board has no clerk; speaker requests go to the Citizen Information Center and are addressed to the Superintendent (Request4Appearance@dadeschools.net, 305-995-1128). Public records requests: prr@dadeschools.net. ADA accommodations: carmengmolina@dadeschools.net, 305-995-7104 (from the June 17, 2026 agenda). No written-comment email found. To fill: open https://www3.dadeschools.net/SchoolBoard/ in a browser and read each member's page."
+   }
+  },
+  {
+   "body": "city-miami-beach",
+   "name": "Miami Beach City Commission",
+   "level": "municipal",
+   "jurisdiction": "Miami Beach",
+   "seats": [
+    {
+     "office": "city-miami-beach-group-1",
+     "name": "Miami Beach, Group 1",
+     "district": "1",
+     "kind": "board",
+     "actionScope": "all",
+     "holders": [
+      {
+       "person": "monica-matteo-salinas",
+       "name": "Monica Matteo-Salinas",
+       "since": null,
+       "sinceKnown": false,
+       "via": "elected",
+       "termExpires": null,
+       "actionCount": 0,
+       "moneySummary": null
+      }
+     ],
+     "onBallot": [],
+     "contact": null
+    },
+    {
+     "office": "city-miami-beach-group-2",
+     "name": "Miami Beach, Group 2",
+     "district": "2",
+     "kind": "board",
+     "actionScope": "all",
+     "holders": [
+      {
+       "person": "laura-dominguez",
+       "name": "Laura Dominguez",
+       "since": null,
+       "sinceKnown": false,
+       "via": "elected",
+       "termExpires": null,
+       "actionCount": 0,
+       "moneySummary": null
+      }
+     ],
+     "onBallot": [],
+     "contact": null
+    }
+   ],
+   "cycle": {
+    "key": "city-miami-beach",
+    "meetings": {
+     "next": [
+      {
+       "date": "2026-11-04",
+       "time": "17:00",
+       "kind": "special",
+       "note": "Presentations and Awards meeting, 5:00 p.m.",
+       "source": "https://www.miamibeachfl.gov/city-hall/city-clerk/city-commission-meeting-dates/"
+      },
+      {
+       "date": "2026-11-12",
+       "time": "15:30",
+       "kind": "special",
+       "note": "Special Commission Meeting, 3:30 p.m. Subject not stated on the dates page.",
+       "source": "https://www.miamibeachfl.gov/city-hall/city-clerk/city-commission-meeting-dates/"
+      },
+      {
+       "date": "2026-11-16",
+       "time": "09:00",
+       "kind": "special",
+       "note": "Special Commission Meeting, 9:00 a.m. Subject not stated on the dates page.",
+       "source": "https://www.miamibeachfl.gov/city-hall/city-clerk/city-commission-meeting-dates/"
+      }
+     ]
+    },
+    "phases": {
+     "current": [],
+     "upcoming": [
+      {
+       "key": "election",
+       "name": "Special election (ballot question only)",
+       "start": "2026-11-03",
+       "end": "2026-11-03",
+       "repeats": "once",
+       "decides": "One city ballot question, with the county general election: whether to amend the 1999 lease with RK Rivani LLC at 1691 Michigan Avenue (two 20-year extension options and about 47,000 square feet of new development above the garage), Resolution 2026-34389. No Commission seats are on this ballot.",
+       "source": "https://www.miamibeachfl.gov/city-hall/city-clerk/election-information/related-resolutions-november-3-2026/"
+      },
+      {
+       "key": "budget-proposal",
+       "name": "Commission budget retreat",
+       "start": "2027-05-05",
+       "end": "2026-05-05",
+       "repeats": "yearly",
+       "decides": "The Commission and City Manager set priorities for the next fiscal year's budget at a retreat (2026: May 5, 3:30 p.m., Convention Center Room 211, in person only).",
+       "source": "https://www.miamibeachfl.gov/city-hall/city-clerk/city-commission-meeting-dates/"
+      },
+      {
+       "key": "budget-proposal",
+       "name": "Finance committee budget briefings and proposed budget",
+       "start": "2027-06-17",
+       "end": "2026-08-31",
+       "repeats": "yearly",
+       "decides": "The Finance and Economic Resiliency Committee gets two budget briefings on the operating and capital budgets and the millage rate (2026: June 17 and July 17, per the posted briefing files). The City Manager's proposed operating and capital budget books and budget message are posted on the budget page (the FY 2027 books were posted in August 2026). State law requires the city to tell the property appraiser its proposed millage and first hearing date within 35 days of the July 1 value certification.",
+       "source": "https://www.miamibeachfl.gov/city-hall/office-of-budget-peformance/budget-development-process/"
+      },
+      {
+       "key": "recess",
+       "name": "August recess",
+       "start": "2027-08-01",
+       "end": "2026-08-31",
+       "repeats": "yearly",
+       "decides": "No Commission meetings; the dates page says 'August - City Commission in recess'.",
+       "source": "https://www.miamibeachfl.gov/city-hall/city-clerk/city-commission-meeting-dates/"
+      }
+     ]
+    },
+    "levers": [
+     {
+      "key": "public-comment",
+      "how": "Speak at the Dr. Stanley Sutnick Citizens' Forum at any regular Commission meeting, on any issue. Come to the Commission Chamber or join the Zoom webinar (ID 81392857671, phone 1.305.224.1968 or 888.475.4499) and use 'raise hand' or press *9.",
+      "rules": "Forum times are 8:30 a.m. and 1:00 p.m., or as soon after as possible, for about 30 minutes each. Two minutes per speaker or a time set by the Mayor. No appointment or advance registration needed. Anyone may speak; the Charter's Citizens' Bill of Rights (item 5) gives any interested person the right to appear on matters within City jurisdiction, subject to reasonable time limits.",
+      "deadline": "Be present at 8:30 a.m. or 1:00 p.m. on meeting day",
+      "url": "https://www.miamibeachfl.gov/city-hall/city-clerk/city-commission-meeting-dates/",
+      "source": "https://www.miamibeachfl.gov/city-hall/city-clerk/city-commission-meeting-dates/",
+      "nextMeeting": "2026-11-04"
+     },
+     {
+      "key": "public-comment",
+      "how": "Speak on a specific agenda item, including second-reading ordinance public hearings and the budget hearings, in person or on Zoom when the item is called. Public hearings are noticed with the time each item will be heard.",
+      "rules": "Raise hand in Zoom or press *9 by phone to be recognized. Audio or visual materials must be emailed to communications@miamibeachfl.gov by 8:30 a.m. one business day before the meeting. Accommodation requests: 305.604.2232; sign language interpreters need five days' notice.",
+      "deadline": "At the meeting when the item is called; presentation files one business day before",
+      "url": "https://www.miamibeachfl.gov/city-hall/city-clerk/meetings-and-agendas/",
+      "source": "https://www.miamidade.gov/resources/legal-ads/municipalities/miami-beach/04-11202025-01avmbudgetrelated.pdf",
+      "nextMeeting": "2026-11-04"
+     },
+     {
+      "key": "written-comment",
+      "how": "Post an eComment on the item from the agenda page (comment bubble icon under Current and Upcoming Meetings) or email CityClerk@miamibeachfl.gov with the agenda item number in the subject line. Comments go to the Mayor and Commissioners and into the meeting record.",
+      "rules": "Accepted until 5:00 p.m. the day before the meeting.",
+      "deadline": "5:00 p.m. the day before the meeting",
+      "url": "https://www.miamibeachfl.gov/city-hall/city-clerk/agenda",
+      "source": "https://www.miamidade.gov/resources/legal-ads/municipalities/miami-beach/04-11202025-01avmbudgetrelated.pdf",
+      "nextMeeting": "2026-11-04"
+     }
+    ]
+   },
+   "bodyContact": null
+  },
+  {
+   "body": "us-house",
+   "name": "U.S. House",
+   "level": "federal",
+   "jurisdiction": "United States",
+   "seats": [
+    {
+     "office": "us-house-fl-25",
+     "name": "U.S. Representative, Florida District 25",
+     "district": "25",
+     "kind": "legislative",
+     "actionScope": "all",
+     "holders": [
+      {
+       "person": "debbie-wasserman-schultz",
+       "name": "Debbie Wasserman Schultz",
+       "since": "2025-01-03",
+       "sinceKnown": true,
+       "via": "elected",
+       "termExpires": null,
+       "actionCount": 0,
+       "moneySummary": null
+      }
+     ],
+     "onBallot": [
+      {
+       "office": "Representative in Congress, District 25",
+       "judicial": false,
+       "candidates": [
+        {
+         "person": "scott-singer",
+         "name": "Scott Singer",
+         "party": "REP",
+         "incumbent": false
+        },
+        {
+         "person": "jared-moskowitz",
+         "name": "Jared Moskowitz",
+         "party": "DEM",
+         "incumbent": false
+        },
+        {
+         "person": "peter-jassenoff",
+         "name": "Peter Jassenoff",
+         "party": "LPF",
+         "incumbent": false
+        }
+       ]
+      }
+     ],
+     "contact": null
+    }
+   ],
+   "cycle": null,
+   "bodyContact": null
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "updated": "2026-10-22",
+ "total": 2,
+ "items": [
+  {
+   "body": "city-miami-beach",
+   "bodyName": "Miami Beach City Commission",
+   "id": "R7-A",
+   "title": "Award a contract for seawall repairs",
+   "meeting": {
+    "date": "2026-11-04",
+    "time": "08:30",
+    "agendaUrl": "https://example.org/agenda"
+   },
+   "amount": 1200000,
+   "publicHearing": false,
+   "links": [],
+   "comment": [
+    {
+     "key": "public-comment",
+     "url": "https://example.org/speak"
+    },
+    {
+     "key": "written-comment",
+     "url": "mailto:clerk@example.org",
+     "deadline": "Nov 3 at 5 p.m."
+    }
+   ],
+   "tags": {
+    "place": true,
+    "money": true
+   }
+  },
+  {
+   "body": "city-miami-beach",
+   "bodyName": "Miami Beach City Commission",
+   "id": "C4-B",
+   "title": "Proclamation",
+   "meeting": {
+    "date": "2026-11-04"
+   },
+   "links": [],
+   "comment": [],
+   "tags": {}
+  },
+  {
+   "body": "city-miami-beach",
+   "bodyName": "Miami Beach City Commission",
+   "id": "old",
+   "title": "Past item",
+   "meeting": {
+    "date": "2026-10-01"
+   },
+   "links": [],
+   "comment": [],
+   "tags": {
+    "money": true
+   }
+  }
+ ]
+}
