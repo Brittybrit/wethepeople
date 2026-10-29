@@ -1,0 +1,832 @@
+{
+ "kind": "election-to-office",
+ "name": "Elections to office",
+ "checked": "2026-10-29",
+ "variants": [
+  {
+   "key": "election-to-office-county-and-school",
+   "kind": "election-to-office",
+   "name": "County Commission and School Board elections",
+   "appliesToLevels": [
+    "county",
+    "school"
+   ],
+   "summary": "Nonpartisan seats elected by district in the August primary of even years; if no one wins a majority, the top two meet in a runoff on the November general election ballot. New terms start the second Tuesday after the general election.",
+   "dayCounting": "Offsets are calendar days from the anchor; \"29 days before\" is offset -29.",
+   "legalBasis": [
+    {
+     "cite": "ch. 99 to 106, F.S. (Florida Election Code)",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/100.061"
+    }
+   ],
+   "milestones": [
+    {
+     "key": "qualifying",
+     "name": "Candidate qualifying",
+     "actor": "Candidates, filing with the Supervisor of Elections",
+     "legallyRequired": true,
+     "inputs": [
+      "Qualifying papers",
+      "Fee or petition signatures"
+     ],
+     "output": "Who is on the ballot",
+     "timing": {
+      "rule": "Noon of the 71st day to noon of the 67th day before the primary.",
+      "anchor": "primary-election",
+      "offsetDays": {
+       "min": -71,
+       "max": -67
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 99.061(2), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/99.061"
+      },
+      {
+       "cite": "s. 105.031(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/105.031"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "qualify",
+       "how": "Run: file papers and the fee, or petition signatures by the earlier petition deadline."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Decides who you can choose from."
+    },
+    {
+     "key": "campaign-reports",
+     "name": "Campaign finance reports",
+     "actor": "Candidates",
+     "legallyRequired": true,
+     "inputs": [
+      "Contributions and expenses"
+     ],
+     "output": "Public reports: every other Friday from the 60th day before the primary to the 4th day before the general, plus reports on the 25th and 11th days before each election",
+     "timing": {
+      "rule": "Quarterly, then on the pre-election schedule; the filing officer publishes exact dates.",
+      "anchor": "primary-election",
+      "offsetDays": {
+       "min": -60,
+       "max": null
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 106.07(1)(b), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/106.07"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read who is funding each candidate on the Supervisor of Elections site."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Lets voters weigh who funds a candidate before voting."
+    },
+    {
+     "key": "primary-election",
+     "name": "Primary election",
+     "actor": "Voters",
+     "legallyRequired": true,
+     "inputs": [
+      "Qualified candidates"
+     ],
+     "output": "Winner with a majority, or top two to the runoff",
+     "timing": {
+      "rule": "The Tuesday 11 weeks before the general election.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": -77,
+       "max": -77
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 100.061, F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/100.061"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Vote; nonpartisan races are open to all registered voters."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Many seats are decided outright here."
+    },
+    {
+     "key": "registration-closes",
+     "name": "Voter registration closes",
+     "actor": "Supervisor of Elections",
+     "legallyRequired": true,
+     "inputs": [
+      "Voter registration applications"
+     ],
+     "output": "Voter roll for the election",
+     "timing": {
+      "rule": "29 days before the election.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": -29,
+       "max": -29
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 97.055(1)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/97.055"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Register or update your address by this date."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Miss it and you cannot vote in this election."
+    },
+    {
+     "key": "vote-by-mail-request-deadline",
+     "name": "Last day to request a mail ballot",
+     "actor": "Supervisor of Elections",
+     "legallyRequired": true,
+     "inputs": [
+      "Voter request"
+     ],
+     "output": "Mail ballot sent",
+     "timing": {
+      "rule": "5 p.m. on the 12th day before the election.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": -12,
+       "max": -12
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 101.62(3)(c), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/101.62"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Request a mail ballot by this deadline; it must be received by 7 p.m. on election day (s. 101.67(2), F.S.)."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Keeps the mail option open."
+    },
+    {
+     "key": "early-voting",
+     "name": "Early voting",
+     "actor": "Supervisor of Elections",
+     "legallyRequired": true,
+     "inputs": [
+      "Ballots"
+     ],
+     "output": "Votes cast in person before election day",
+     "timing": {
+      "rule": "Required from the 10th to the 3rd day before the election; the Supervisor may add any of the 15th to 11th days and the 2nd day, so the outer limit is the 15th to the 2nd day.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": -15,
+       "max": -2
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 101.657(1)(d), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/101.657"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Vote early at any early voting site in the county."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Your vote is the decision."
+    },
+    {
+     "key": "election-day",
+     "name": "General election (runoff)",
+     "actor": "Voters",
+     "legallyRequired": true,
+     "inputs": [
+      "Runoff candidates"
+     ],
+     "output": "Winner",
+     "timing": {
+      "rule": "The first Tuesday after the first Monday in November of even years.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 100.031, F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/100.031"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Vote at your precinct, 7 a.m. to 7 p.m."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Your vote is the decision."
+    },
+    {
+     "key": "unofficial-results",
+     "name": "Unofficial results due",
+     "actor": "Canvassing board",
+     "legallyRequired": true,
+     "inputs": [
+      "Counted ballots"
+     ],
+     "output": "First unofficial returns",
+     "timing": {
+      "rule": "Noon on the 4th day after a general election.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": 4,
+       "max": 4
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 102.141(5), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/102.141"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "other",
+       "how": "Canvassing board meetings are public."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A count, not a choice."
+    },
+    {
+     "key": "recount-if-close",
+     "name": "Recount if the margin is close",
+     "actor": "Canvassing board",
+     "appliesWhen": "margin-half-percent-or-less",
+     "legallyRequired": true,
+     "inputs": [
+      "Unofficial results"
+     ],
+     "output": "Machine recount at 0.5% or less; manual recount of over and under votes at 0.25% or less",
+     "timing": {
+      "rule": "After unofficial results; the trailing candidate may waive.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 102.141(7), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/102.141"
+      },
+      {
+       "cite": "s. 102.166(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/102.166"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "other",
+       "how": "Canvassing board meetings are public; you may observe."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A count, not a choice."
+    },
+    {
+     "key": "results-certified",
+     "name": "Official results certified",
+     "actor": "Canvassing board",
+     "legallyRequired": true,
+     "inputs": [
+      "Unofficial results",
+      "Recount results if any"
+     ],
+     "output": "Certified winners",
+     "timing": {
+      "rule": "Noon on the 13th day after a general election.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": 13,
+       "max": 13
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 102.112(2), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/102.112"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the certified precinct results."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A count, not a choice."
+    },
+    {
+     "key": "contest-window",
+     "name": "Election contest window",
+     "actor": "Unsuccessful candidate or any voter",
+     "legallyRequired": true,
+     "inputs": [
+      "Certified results"
+     ],
+     "output": "Contest filed in circuit court, or results stand",
+     "timing": {
+      "rule": "Within 10 days after certification.",
+      "anchor": "results-certified",
+      "offsetDays": {
+       "min": 0,
+       "max": 10
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 102.168(2), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/102.168"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "other",
+       "how": "A qualified voter may file a contest in circuit court within 10 days of certification."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Rare and costly."
+    },
+    {
+     "key": "swearing-in",
+     "name": "New terms begin",
+     "actor": "Winners",
+     "legallyRequired": true,
+     "inputs": [
+      "Certified results"
+     ],
+     "output": "Members take office",
+     "timing": {
+      "rule": "The second Tuesday after the general election.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 100.041(2)(a) and (3)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/100.041"
+      },
+      {
+       "cite": "Miami-Dade Home Rule Charter Sec. 3.01(C)",
+       "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf",
+       "level": "county"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Introduce yourself to the new member's office and name your top issue."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "New members set staff and priorities in their first weeks."
+    },
+    {
+     "key": "campaign-account-closed",
+     "name": "Campaign accounts closed and final report",
+     "actor": "Candidates",
+     "legallyRequired": true,
+     "inputs": [
+      "Leftover campaign funds"
+     ],
+     "output": "Disposition of surplus funds reported",
+     "timing": {
+      "rule": "Within 90 days after the candidate is elected, eliminated or unopposed.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": 0,
+       "max": 90
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 106.141(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/106.141"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the final report to see where leftover money went."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "After the fact, but it shows who funded the winner."
+    }
+   ]
+  },
+  {
+   "key": "election-to-office-municipal",
+   "kind": "election-to-office",
+   "name": "City elections",
+   "appliesToLevels": [
+    "municipal"
+   ],
+   "summary": "City charters set qualifying, election and runoff dates and when terms begin. State law still sets registration, mail ballot, campaign finance, recount and contest rules.",
+   "dayCounting": "Offsets are calendar days from the anchor; \"29 days before\" is offset -29.",
+   "legalBasis": [
+    {
+     "cite": "s. 100.3605, F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/100.3605"
+    }
+   ],
+   "milestones": [
+    {
+     "key": "qualifying",
+     "name": "Candidate qualifying",
+     "actor": "Candidates, filing with the City Clerk",
+     "legallyRequired": true,
+     "inputs": [
+      "Qualifying papers",
+      "Fee or petition signatures"
+     ],
+     "output": "Who is on the ballot",
+     "timing": {
+      "rule": "Set by the city charter or code; the city may change it by ordinance.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 100.3605(2), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/100.3605"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "qualify",
+       "how": "Run: file with the City Clerk during the window."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Decides who you can choose from."
+    },
+    {
+     "key": "campaign-reports",
+     "name": "Campaign finance reports",
+     "actor": "Candidates",
+     "legallyRequired": true,
+     "inputs": [
+      "Contributions and expenses"
+     ],
+     "output": "Public reports filed with the City Clerk on the state schedule",
+     "timing": {
+      "rule": "The City Clerk gives each candidate the schedule; cities may not adopt a different one.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 106.07(1)(b), (e) and (f), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/106.07"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the reports on the clerk's site or ask the clerk."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Lets voters weigh who funds a candidate before voting."
+    },
+    {
+     "key": "registration-closes",
+     "name": "Voter registration closes",
+     "actor": "Supervisor of Elections",
+     "legallyRequired": true,
+     "inputs": [
+      "Voter registration applications"
+     ],
+     "output": "Voter roll for the election",
+     "timing": {
+      "rule": "29 days before the election.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": -29,
+       "max": -29
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 97.055(1)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/97.055"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Register or update your address by this date."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Miss it and you cannot vote in this election."
+    },
+    {
+     "key": "vote-by-mail-request-deadline",
+     "name": "Last day to request a mail ballot",
+     "actor": "Supervisor of Elections",
+     "legallyRequired": true,
+     "inputs": [
+      "Voter request"
+     ],
+     "output": "Mail ballot sent",
+     "timing": {
+      "rule": "5 p.m. on the 12th day before the election.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": -12,
+       "max": -12
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 101.62(3)(c), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/101.62"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Request a mail ballot by this deadline; it must be received by 7 p.m. on election day (s. 101.67(2), F.S.)."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Keeps the mail option open."
+    },
+    {
+     "key": "early-voting",
+     "name": "Early voting",
+     "actor": "Supervisor of Elections or the city",
+     "legallyRequired": false,
+     "inputs": [
+      "Ballots"
+     ],
+     "output": "Votes cast before election day",
+     "timing": {
+      "rule": "When held with a state election: required from the 10th to the 3rd day before, and the Supervisor may add the 15th to 11th and the 2nd day. A city election held alone may offer early voting at its own sites.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": -15,
+       "max": -2
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 101.657(1)(d) and (e), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/101.657"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Vote early at any county early voting site when the city election is on a county ballot."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Your vote is the decision."
+    },
+    {
+     "key": "election-day",
+     "name": "City election",
+     "actor": "Voters",
+     "legallyRequired": true,
+     "inputs": [
+      "Qualified candidates"
+     ],
+     "output": "Winner, or a runoff where the charter requires a majority",
+     "timing": {
+      "rule": "Set by the city charter.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 100.3605, F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/100.3605"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Vote, 7 a.m. to 7 p.m."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Your vote is the decision."
+    },
+    {
+     "key": "recount-if-close",
+     "name": "Recount if the margin is close",
+     "actor": "Canvassing board",
+     "appliesWhen": "margin-half-percent-or-less",
+     "legallyRequired": true,
+     "inputs": [
+      "Unofficial results"
+     ],
+     "output": "Machine recount at 0.5% or less; manual recount of over and under votes at 0.25% or less",
+     "timing": {
+      "rule": "After unofficial results; the trailing candidate may waive.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 102.141(7), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/102.141"
+      },
+      {
+       "cite": "s. 102.166(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/102.166"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "other",
+       "how": "Canvassing board meetings are public; you may observe."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A count, not a choice."
+    },
+    {
+     "key": "results-certified",
+     "name": "Official results certified",
+     "actor": "Canvassing board",
+     "legallyRequired": true,
+     "inputs": [
+      "Counted ballots"
+     ],
+     "output": "Certified winners",
+     "timing": {
+      "rule": "Set by the city charter or code and the canvassing board.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 100.3605(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/100.3605"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the certified results."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A count, not a choice."
+    },
+    {
+     "key": "contest-window",
+     "name": "Election contest window",
+     "actor": "Unsuccessful candidate or any voter",
+     "legallyRequired": true,
+     "inputs": [
+      "Certified results"
+     ],
+     "output": "Contest filed in circuit court, or results stand",
+     "timing": {
+      "rule": "Within 10 days after certification.",
+      "anchor": "results-certified",
+      "offsetDays": {
+       "min": 0,
+       "max": 10
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 102.168(2), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/102.168"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "other",
+       "how": "A qualified voter may file a contest in circuit court within 10 days of certification."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Rare and costly."
+    },
+    {
+     "key": "runoff",
+     "name": "Runoff election (if needed)",
+     "actor": "Voters",
+     "appliesWhen": "no-majority-winner",
+     "legallyRequired": false,
+     "inputs": [
+      "Top two candidates"
+     ],
+     "output": "Winner",
+     "timing": {
+      "rule": "Set by the city charter.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "vote",
+       "how": "Vote in the runoff; registration closes 29 days before it."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Runoffs often have low turnout, so each vote weighs more."
+    },
+    {
+     "key": "swearing-in",
+     "name": "New terms begin",
+     "actor": "Winners",
+     "legallyRequired": true,
+     "inputs": [
+      "Certified results"
+     ],
+     "output": "Members take office",
+     "timing": {
+      "rule": "Set by the city charter.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 100.3605(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/100.3605"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Introduce yourself to the new member and name your top issue."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "New members set priorities in their first weeks."
+    },
+    {
+     "key": "campaign-account-closed",
+     "name": "Campaign accounts closed and final report",
+     "actor": "Candidates",
+     "legallyRequired": true,
+     "inputs": [
+      "Leftover campaign funds"
+     ],
+     "output": "Disposition of surplus funds reported",
+     "timing": {
+      "rule": "Within 90 days after the candidate is elected, eliminated or unopposed.",
+      "anchor": "election-day",
+      "offsetDays": {
+       "min": 0,
+       "max": 90
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 106.141(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/106.141"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the final report to see where leftover money went."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "After the fact, but it shows who funded the winner."
+    }
+   ]
+  }
+ ]
+}

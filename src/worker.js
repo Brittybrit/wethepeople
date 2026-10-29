@@ -14,6 +14,8 @@ import { geocode, suggest, precinctAt, precinctCodes, SOURCES } from '../lib/geo
 import { BALLOT305 } from '../lib/sources/ballot305.mjs';
 import { yourArea, todayIn } from '../lib/your-area.mjs';
 import { moreOfficials } from '../lib/more-officials.mjs';
+import { decisionChains, decisionBodyKeys } from '../lib/decision-view.mjs';
+import DECISION_PROCESSES from '../data/decision-processes/index.json';
 import additionsOffices from '../data/roster-additions/offices.json';
 import additionsPeople from '../data/roster-additions/people.json';
 import additionsTerms from '../data/roster-additions/terms.json';
@@ -59,6 +61,7 @@ const HANDLERS = {
     const upcoming = runLedger('ledger_upcoming', data, { precinct, limit: '200' }, { origin: ctx.origin, today });
     const out = yourArea(now.body, upcoming.body, today);
     Object.assign(out, moreOfficials(data, ROSTER_ADDITIONS, now.body.districts, today));
+    Object.assign(out, decisionChains(decisionBodyKeys(now.body.bodies, DECISION_PROCESSES), today, DECISION_PROCESSES));
     out.source = { name: BALLOT305.attribution, license: BALLOT305.license, docs: BALLOT305.docs, methodology: BALLOT305.methodology, rosterAdditions: 'https://github.com/Brittybrit/wethepeople/tree/main/data/roster-additions' };
     return { status: 200, body: out, cache: 'public, max-age=900' };
   }

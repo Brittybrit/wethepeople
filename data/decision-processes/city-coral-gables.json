@@ -1,0 +1,281 @@
+{
+ "key": "city-coral-gables",
+ "name": "Coral Gables City Commission",
+ "level": "municipal",
+ "jurisdiction": "City of Coral Gables",
+ "cycleFile": {
+  "path": "vote-informed/scripts/data/cycles/city-coral-gables.json",
+  "checked": "2026-10-22"
+ },
+ "meetingPattern": {
+  "text": "Regular meetings about twice a month on Tuesdays at 9:00 a.m. (one meeting in March, April and August 2026). Since March 2026 held at the Police and Fire Headquarters Community Meeting Room, 2151 Salzedo Street, while City Hall is renovated. Streamed on Zoom and Coral Gables TV.",
+  "source": "https://coralgables.legistar.com/Calendar.aspx"
+ },
+ "leverLinks": {
+  "public-comment": {
+   "url": "https://coralgables.legistar.com/Calendar.aspx",
+   "deadline": "Sign up at the meeting before the item is called",
+   "source": "https://www.coralgables.com/sites/default/files/2022-10/CAO%202015-104%20Rules%20of%20Public%20Participation%20and%20Decorum.pdf"
+  },
+  "written-comment": {
+   "url": "mailto:cityclerk@coralgables.com",
+   "source": "https://coralgables.legistar.com/Calendar.aspx"
+  },
+  "contact": {
+   "url": "https://www.coralgables.com/department/city-commission/contacts",
+   "source": "https://www.coralgables.com/department/city-commission"
+  },
+  "records-request": {
+   "url": "https://coralgablesfl.justfoia.com/publicportal/home/newrequest",
+   "source": "https://www.coralgables.com/department/office-city-clerk"
+  },
+  "petition": {
+   "url": "https://library.municode.com/fl/coral_gables/codes/code_of_ordinances",
+   "source": "https://www.coralgables.com/sites/default/files/2024-01/CAO-2016-091-Charter-Revisions-Consistent-with-City-Referendum-Results-CH.pdf"
+  },
+  "referendum": {
+   "url": "https://library.municode.com/fl/coral_gables/codes/code_of_ordinances",
+   "source": "https://www.coralgables.com/sites/default/files/2024-01/CAO-2016-091-Charter-Revisions-Consistent-with-City-Referendum-Results-CH.pdf"
+  },
+  "recall": {
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/100.361",
+   "source": "https://www.coralgables.com/sites/default/files/2024-01/CAO-2016-091-Charter-Revisions-Consistent-with-City-Referendum-Results-CH.pdf"
+  },
+  "qualify": {
+   "url": "https://www.coralgables.com/department/office-city-clerk/city-coral-gables-elections",
+   "deadline": "Noon on the 46th day before the election",
+   "source": "https://www.coralgables.com/media/5301"
+  },
+  "vote": {
+   "url": "https://www.coralgables.com/department/office-city-clerk/city-coral-gables-elections",
+   "deadline": "Election Day November 3, 2026; run-off December 1, 2026 if needed",
+   "source": "https://www.coralgables.com/media/5301"
+  },
+  "serve-on-board": {
+   "url": "https://www.coralgables.com/departments/CityClerk/boards-committees",
+   "source": "https://www.coralgables.com/department/office-city-clerk"
+  }
+ },
+ "decisions": [
+  {
+   "key": "budget-fy2027-28",
+   "kind": "annual-budget-and-millage",
+   "template": "annual-budget-and-millage",
+   "name": "FY 2027-28 budget and property tax rate",
+   "cycle": "FY 2027-28 (October 1, 2027 to September 30, 2028)",
+   "milestones": [
+    {
+     "milestone": "taxable-value-certified",
+     "date": "2027-07-01",
+     "dateBasis": "statutory-window",
+     "note": "July 1 is the legal deadline and day 1 of the TRIM clock. If the Property Appraiser certifies later, every window below shifts by the same number of days."
+    },
+    {
+     "milestone": "proposed-budget-presented",
+     "date": "2027-07-07",
+     "dateBasis": "pattern",
+     "source": "https://www.coralgables.com/sites/default/files/2026-07/FY%2026-27%20Budget%20Meeting%20Estimate%20Presentation%20July%208%2C%202026.pdf",
+     "note": "Estimated, not confirmed: 2026 was 2026-07-08 (a Wednesday; same weekday 52 weeks later); the same pattern gives 2027-07-07. The Manager submits the estimate July 1 and presents it July 8."
+    },
+    {
+     "milestone": "maximum-millage-set",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-04"
+     },
+     "dateBasis": "statutory-window",
+     "note": "The city budget presentation says the proposed rate is certified to the Property Appraiser by August 4 (day 35)."
+    },
+    {
+     "milestone": "trim-notice-mailed",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-24"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Usually mailed in mid to late August."
+    },
+    {
+     "milestone": "tentative-budget-posted",
+     "window": {
+      "from": null,
+      "to": "2027-09-09"
+     },
+     "dateBasis": "statutory-window",
+     "note": "At least 5 days before the first hearing.",
+     "anchorBasis": "first-public-hearing:pattern"
+    },
+    {
+     "milestone": "first-public-hearing",
+     "date": "2027-09-14",
+     "dateBasis": "pattern",
+     "source": "https://www.coralgables.com/sites/default/files/2026-07/FY%2026-27%20Budget%20Meeting%20Estimate%20Presentation%20July%208%2C%202026.pdf",
+     "note": "Estimated, not confirmed: 2026 was 2026-09-15 (a Tuesday; same weekday 52 weeks later); the same pattern gives 2027-09-14. 5:01 p.m."
+    },
+    {
+     "milestone": "final-hearing-advertised",
+     "window": {
+      "from": "2027-09-23",
+      "to": "2027-09-26"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Within 15 days after the first hearing and 2 to 5 days before the final hearing.",
+     "anchorBasis": "first-public-hearing:pattern, final-public-hearing:pattern"
+    },
+    {
+     "milestone": "final-public-hearing",
+     "date": "2027-09-28",
+     "dateBasis": "pattern",
+     "source": "https://www.coralgables.com/sites/default/files/2026-07/FY%2026-27%20Budget%20Meeting%20Estimate%20Presentation%20July%208%2C%202026.pdf",
+     "note": "Estimated, not confirmed: 2026 was 2026-09-29 (a Tuesday; same weekday 52 weeks later); the same pattern gives 2027-09-28. 5:01 p.m."
+    },
+    {
+     "milestone": "resolutions-to-appraiser",
+     "window": {
+      "from": "2027-09-28",
+      "to": "2027-10-01"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:pattern"
+    },
+    {
+     "milestone": "fiscal-year-start",
+     "date": "2027-10-01",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "trim-compliance-certified",
+     "window": {
+      "from": "2027-09-28",
+      "to": "2027-10-28"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:pattern"
+    },
+    {
+     "milestone": "final-budget-posted",
+     "window": {
+      "from": "2027-09-28",
+      "to": "2027-10-28"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:pattern"
+    }
+   ]
+  },
+  {
+   "key": "ordinance-adoption",
+   "kind": "ordinance-adoption",
+   "template": "ordinance-adoption-municipal",
+   "name": "Passing or changing a local law (ordinance)",
+   "processOnly": true,
+   "notes": "Dates depend on the item. First and second readings happen at the meetings above; watch posted agendas.",
+   "milestones": []
+  },
+  {
+   "key": "procurement-award",
+   "kind": "procurement-award",
+   "template": "procurement-award",
+   "name": "Buying goods, services and construction (contract awards)",
+   "processOnly": true,
+   "milestones": [
+    {
+     "dateBasis": "unknown",
+     "milestone": "solicitation-advertised",
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade County Code Sec. 2-11.1(t)",
+       "url": "https://www.miamidade.gov/global/strategic-procurement/procedures-cone-of-silence.page"
+      },
+      {
+       "cite": "Miami-Dade Commission on Ethics, INQ 2020-90 (county Cone of Silence applied to a city procurement)",
+       "url": "https://ethics.miamidade.gov/library/inquiry-2020/inq-2020-90-herin-biscayne-park-rfp.pdf"
+      }
+     ],
+     "note": "The county Cone of Silence applies to city officials under the county ethics code; check the city's own procurement code for added rules."
+    },
+    {
+     "dateBasis": "unknown",
+     "milestone": "bid-protest-window",
+     "note": "The city's bid protest deadline was not checked; it is set by the city procurement code and stated in each solicitation."
+    }
+   ]
+  },
+  {
+   "key": "election-2026",
+   "kind": "election-to-office",
+   "template": "election-to-office-municipal",
+   "name": "2026 Coral Gables election (Mayor, Groups IV and V)",
+   "cycle": "2026",
+   "milestones": [
+    {
+     "milestone": "qualifying",
+     "window": {
+      "from": "2026-06-08",
+      "to": "2026-06-12"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.coralgables.com/media/5301"
+    },
+    {
+     "milestone": "campaign-reports",
+     "dateBasis": "unknown",
+     "note": "The City Clerk gives each candidate the report schedule."
+    },
+    {
+     "milestone": "registration-closes",
+     "date": "2026-10-05",
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/voters/calendar-2026.page"
+    },
+    {
+     "milestone": "vote-by-mail-request-deadline",
+     "date": "2026-10-22",
+     "dateBasis": "statutory-window",
+     "note": "5 p.m."
+    },
+    {
+     "milestone": "early-voting",
+     "window": {
+      "from": "2026-10-19",
+      "to": "2026-11-01"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/early-voting/2026-11-03-general-election-early-voting-schedule.pdf",
+     "note": "City races are on the county ballot, so county early voting sites apply."
+    },
+    {
+     "milestone": "election-day",
+     "date": "2026-11-03",
+     "dateBasis": "body-source",
+     "source": "https://www.coralgables.com/department/office-city-clerk/city-coral-gables-elections"
+    },
+    {
+     "milestone": "results-certified",
+     "dateBasis": "unknown",
+     "note": "Set by the canvassing board; not posted."
+    },
+    {
+     "milestone": "runoff",
+     "date": "2026-12-01",
+     "dateBasis": "body-source",
+     "source": "https://www.coralgables.com/media/5301",
+     "note": "Held only if no candidate wins a majority."
+    },
+    {
+     "milestone": "swearing-in",
+     "dateBasis": "unknown",
+     "note": "Set by the city charter; date not posted."
+    },
+    {
+     "milestone": "campaign-account-closed",
+     "window": {
+      "from": "2026-11-03",
+      "to": "2027-02-01"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  }
+ ]
+}

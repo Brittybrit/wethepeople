@@ -1,0 +1,401 @@
+{
+ "key": "schoolboard",
+ "name": "Miami-Dade County School Board",
+ "level": "school",
+ "jurisdiction": "Miami-Dade County Public Schools",
+ "cycleFile": {
+  "path": "vote-informed/scripts/data/cycles/school-board.json",
+  "checked": "2026-10-22"
+ },
+ "meetingPattern": {
+  "text": "Regular meetings about once a month, usually a Wednesday at 11:00 a.m., in the School Board Administration Building Auditorium, 1450 NE 2nd Avenue, Miami 33132. The public hearing for non-agenda topics follows the regular agenda and begins no later than about 6:30 p.m. Budget hearings are evening special meetings at 6:00 p.m. Workshops (budget, safety) are usually 10:00 a.m. The Board sets each year's schedule at its November Organization Meeting.",
+  "source": "https://pdfs.dadeschools.net/Bdarch/2025/Bd111925/agenda/sp2.pdf"
+ },
+ "leverLinks": {
+  "public-comment": {
+   "url": "https://cic.dadeschools.net/",
+   "deadline": "4:30 p.m. the Monday before a regular Wednesday meeting (Tuesday if Monday is a district holiday); noon the last business day before a special meeting",
+   "source": "https://pdfs.dadeschools.net/Bdarch/pdfs/FM-6314.pdf"
+  },
+  "written-comment": {
+   "url": "https://cic.dadeschools.net/",
+   "deadline": "For policy changes, the written-comment date printed in the first-reading item",
+   "source": "https://pdfs.dadeschools.net/Bdarch/2025/Bd011525/agenda/g4.pdf"
+  },
+  "contact": {
+   "url": "https://www3.dadeschools.net/SchoolBoard/",
+   "source": "https://www.miamidade.gov/resources/intergovernmental-affairs/documents/municipality-directory.pdf"
+  },
+  "records-request": {
+   "url": "https://cic.dadeschools.net/",
+   "source": "https://ehandbooks.dadeschools.net/user_guides/147.pdf"
+  },
+  "recall": {
+   "url": "https://www.votemiamidade.gov/elections/voters/petitions.page"
+  },
+  "qualify": {
+   "url": "https://www.votemiamidade.gov/elections/candidates-campaigns/candidate-qualifying-handbook.page",
+   "deadline": "Noon on the last day of qualifying (June 12 in 2026; 2028 dates not yet posted)",
+   "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/school-board-members.pdf"
+  },
+  "vote": {
+   "url": "https://www.votemiamidade.gov",
+   "deadline": "Nov 3, 2026 runoffs; register 29 days before an election",
+   "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/school-board-members.pdf"
+  },
+  "serve-on-board": {
+   "url": "https://cic.dadeschools.net/"
+  }
+ },
+ "decisions": [
+  {
+   "key": "budget-fy2027-28",
+   "kind": "annual-budget-and-millage",
+   "template": "annual-budget-and-millage-school-district",
+   "name": "FY 2027-28 school budget and property tax rate",
+   "cycle": "FY 2027-28 (July 1, 2027 to June 30, 2028)",
+   "notes": "All 2027 Board dates are from the TENTATIVE 2027 schedule approved July 22, 2026 (item E-106); final approval is on the Nov 17, 2026 Organization Meeting agenda. Times are carried from the 2026 pattern.",
+   "milestones": [
+    {
+     "milestone": "budget-workshops",
+     "date": "2027-05-12",
+     "dateBasis": "body-source",
+     "source": "https://pdfs.dadeschools.net/Bdarch/2026/Bd072226/agenda/e106.pdf",
+     "note": "Budget workshop (tentative schedule)."
+    },
+    {
+     "milestone": "budget-workshops",
+     "date": "2027-06-09",
+     "dateBasis": "body-source",
+     "source": "https://pdfs.dadeschools.net/Bdarch/2026/Bd072226/agenda/e106.pdf",
+     "note": "Budget workshop (tentative schedule)."
+    },
+    {
+     "milestone": "taxable-value-certified",
+     "date": "2027-07-01",
+     "dateBasis": "statutory-window",
+     "note": "Day 1 of the TRIM clock unless certification comes later."
+    },
+    {
+     "milestone": "fiscal-year-start",
+     "date": "2027-07-01",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "required-local-effort-certified",
+     "window": {
+      "from": null,
+      "to": "2027-07-19"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "tentative-budget-submitted",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-07-24"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "tentative-budget-advertised",
+     "window": {
+      "from": "2027-07-23",
+      "to": "2027-07-26"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Within 29 days of certification and 2 to 5 days before the July 28 hearing. The Board authorizes the ad at its July 21 regular meeting (tentative schedule).",
+     "anchorBasis": "tentative-budget-hearing:body-source"
+    },
+    {
+     "milestone": "tentative-budget-posted",
+     "window": {
+      "from": null,
+      "to": "2027-07-26"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "tentative-budget-hearing",
+     "date": "2027-07-28",
+     "dateBasis": "body-source",
+     "source": "https://pdfs.dadeschools.net/Bdarch/2026/Bd072226/agenda/e106.pdf",
+     "note": "First Budget Public Hearing, 6:00 p.m. (tentative date; time from the 2026 pattern)."
+    },
+    {
+     "milestone": "proposed-millage-to-appraiser",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-04"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "trim-notice-mailed",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-24"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "final-budget-hearing",
+     "date": "2027-09-15",
+     "dateBasis": "body-source",
+     "source": "https://pdfs.dadeschools.net/Bdarch/2026/Bd072226/agenda/e106.pdf",
+     "note": "Second Budget Public Hearing, evening (tentative date)."
+    },
+    {
+     "milestone": "resolutions-to-appraiser",
+     "window": {
+      "from": "2027-09-15",
+      "to": "2027-09-18"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "trim-compliance-certified",
+     "window": {
+      "from": "2027-09-15",
+      "to": "2027-10-15"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "final-budget-posted",
+     "window": {
+      "from": "2027-09-15",
+      "to": "2027-10-15"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  },
+  {
+   "key": "policy-adoption",
+   "kind": "ordinance-adoption",
+   "template": "rule-adoption-school-district",
+   "name": "Adopting or changing a Board policy",
+   "processOnly": true,
+   "notes": "Dates depend on the item. Readings happen at the regular meetings above; watch posted agendas.",
+   "milestones": []
+  },
+  {
+   "key": "procurement-award",
+   "kind": "procurement-award",
+   "template": "procurement-award",
+   "name": "Buying goods, services and construction (contract awards)",
+   "processOnly": true,
+   "notes": "Whether the School Board has its own cone of silence rule was not checked.",
+   "milestones": [
+    {
+     "dateBasis": "unknown",
+     "milestone": "bid-protest-window",
+     "timing": {
+      "rule": "Notice of protest within 72 hours (excluding weekends and state holidays) after the decision or intended decision is posted; formal written protest within 10 days after that. A timely protest stops the award.",
+      "anchor": "award-recommendation",
+      "offsetDays": {
+       "min": 0,
+       "max": 3
+      },
+      "offsetUnit": "business-days"
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 120.57(3)(b)-(c), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/120.57"
+      },
+      {
+       "cite": "s. 120.52(1)(a) and (6), F.S. (school districts are agencies)",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/120.52"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "election-2026",
+   "kind": "election-to-office",
+   "template": "election-to-office-county-and-school",
+   "name": "2026 School Board elections (Districts 2, 4, 6, 8)",
+   "cycle": "2026",
+   "notes": "November 3, 2026 is the runoff for Districts 2, 4, 6 and 8 where no one won a majority on August 18.",
+   "milestones": [
+    {
+     "milestone": "qualifying",
+     "window": {
+      "from": "2026-06-08",
+      "to": "2026-06-12"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/candidates-campaigns/candidate-qualifying-handbook.page",
+     "note": "Noon June 8 to noon June 12, 2026."
+    },
+    {
+     "milestone": "campaign-reports",
+     "dateBasis": "unknown",
+     "note": "The Supervisor of Elections publishes each candidate's report dates; not copied here."
+    },
+    {
+     "milestone": "primary-election",
+     "date": "2026-08-18",
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/voters/calendar-2026.page"
+    },
+    {
+     "milestone": "registration-closes",
+     "date": "2026-10-05",
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/voters/calendar-2026.page"
+    },
+    {
+     "milestone": "vote-by-mail-request-deadline",
+     "date": "2026-10-22",
+     "dateBasis": "statutory-window",
+     "note": "5 p.m."
+    },
+    {
+     "milestone": "early-voting",
+     "window": {
+      "from": "2026-10-19",
+      "to": "2026-11-01"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/early-voting/2026-11-03-general-election-early-voting-schedule.pdf",
+     "note": "7 a.m. to 7 p.m. daily."
+    },
+    {
+     "milestone": "election-day",
+     "date": "2026-11-03",
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/reports/elected-officials.pdf"
+    },
+    {
+     "milestone": "unofficial-results",
+     "date": "2026-11-07",
+     "dateBasis": "statutory-window",
+     "note": "Noon."
+    },
+    {
+     "milestone": "results-certified",
+     "date": "2026-11-16",
+     "dateBasis": "statutory-window",
+     "note": "Noon; deadline for the county canvassing board."
+    },
+    {
+     "milestone": "contest-window",
+     "window": {
+      "from": "2026-11-16",
+      "to": "2026-11-26"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "results-certified:statutory-window"
+    },
+    {
+     "milestone": "swearing-in",
+     "date": "2026-11-17",
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/school-board-members.pdf",
+     "note": "Organization Meeting."
+    },
+    {
+     "milestone": "campaign-account-closed",
+     "window": {
+      "from": "2026-11-03",
+      "to": "2027-02-01"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  },
+  {
+   "key": "election-2028",
+   "kind": "election-to-office",
+   "template": "election-to-office-county-and-school",
+   "name": "2028 School Board elections (Districts 1, 3, 5, 7, 9)",
+   "cycle": "2028",
+   "notes": "All 2028 dates are computed from state law; the Supervisor of Elections has not posted the 2028 calendar.",
+   "milestones": [
+    {
+     "milestone": "qualifying",
+     "window": {
+      "from": "2028-06-12",
+      "to": "2028-06-16"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Noon of the 71st day to noon of the 67th day before the August 22, 2028 primary (s. 105.031(1), F.S.).",
+     "anchorBasis": "primary-election:statutory-window"
+    },
+    {
+     "milestone": "campaign-reports",
+     "dateBasis": "unknown",
+     "note": "The Supervisor of Elections publishes the schedule."
+    },
+    {
+     "milestone": "primary-election",
+     "date": "2028-08-22",
+     "dateBasis": "statutory-window",
+     "note": "The Tuesday 11 weeks before the general election."
+    },
+    {
+     "milestone": "registration-closes",
+     "date": "2028-10-09",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "vote-by-mail-request-deadline",
+     "date": "2028-10-26",
+     "dateBasis": "statutory-window",
+     "note": "5 p.m."
+    },
+    {
+     "milestone": "early-voting",
+     "window": {
+      "from": "2028-10-28",
+      "to": "2028-11-04"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Required days only; the Supervisor may add more."
+    },
+    {
+     "milestone": "election-day",
+     "date": "2028-11-07",
+     "dateBasis": "statutory-window",
+     "note": "First Tuesday after the first Monday in November."
+    },
+    {
+     "milestone": "unofficial-results",
+     "date": "2028-11-11",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "results-certified",
+     "date": "2028-11-20",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "contest-window",
+     "window": {
+      "from": "2028-11-20",
+      "to": "2028-11-30"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "swearing-in",
+     "date": "2028-11-21",
+     "dateBasis": "statutory-window",
+     "note": "Second Tuesday after the general election."
+    },
+    {
+     "milestone": "campaign-account-closed",
+     "window": {
+      "from": "2028-11-07",
+      "to": "2029-02-05"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  }
+ ]
+}

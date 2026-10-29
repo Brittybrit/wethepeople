@@ -1,0 +1,289 @@
+{
+ "key": "city-cutler-bay",
+ "name": "Cutler Bay Town Council",
+ "level": "municipal",
+ "jurisdiction": "Town of Cutler Bay",
+ "cycleFile": {
+  "path": "vote-informed/scripts/data/cycles/city-cutler-bay.json",
+  "checked": "2026-10-22"
+ },
+ "meetingPattern": {
+  "text": "Third Wednesday of each month, 6:00 p.m., Town Hall Council Chambers, 10720 Caribbean Boulevard, Suite 115, Cutler Bay. Also streamed on Zoom (login on the town calendar). The agendas page says 7:00 p.m. but the council page and every 2026 posted meeting say 6:00 p.m.",
+  "source": "https://www.cutlerbay-fl.gov/meetings/recent"
+ },
+ "leverLinks": {
+  "public-comment": {
+   "url": "https://pub-cutlerbay-fl.escribemeetings.com/",
+   "deadline": "During the meeting",
+   "source": "https://www.cutlerbay-fl.gov/node/11692"
+  },
+  "written-comment": {
+   "url": "mailto:TownClerk@cutlerbay-fl.gov",
+   "deadline": "5 p.m. the day before the meeting",
+   "source": "https://www.cutlerbay-fl.gov/node/11692"
+  },
+  "contact": {
+   "url": "https://www.cutlerbay-fl.gov/node/98"
+  },
+  "petition": {
+   "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/town_clerk/page/2281/from_legal_-_town_charter_-_as_adopted_november_2018_-_final_no_maps.pdf",
+   "deadline": "60 days from the affidavit"
+  },
+  "referendum": {
+   "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/town_clerk/page/2281/from_legal_-_town_charter_-_as_adopted_november_2018_-_final_no_maps.pdf",
+   "deadline": "60 days from the affidavit"
+  },
+  "recall": {
+   "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/town_clerk/page/2281/from_legal_-_town_charter_-_as_adopted_november_2018_-_final_no_maps.pdf"
+  },
+  "qualify": {
+   "url": "https://www.cutlerbay-fl.gov/node/11493",
+   "deadline": "Noon on the last day of qualifying"
+  },
+  "vote": {
+   "url": "https://www.cutlerbay-fl.gov/node/11493",
+   "deadline": "2026-11-03"
+  }
+ },
+ "decisions": [
+  {
+   "key": "budget-fy2027-28",
+   "kind": "annual-budget-and-millage",
+   "template": "annual-budget-and-millage",
+   "name": "FY 2027-28 budget and property tax rate",
+   "cycle": "FY 2027-28 (October 1, 2027 to September 30, 2028)",
+   "milestones": [
+    {
+     "milestone": "taxable-value-certified",
+     "date": "2027-07-01",
+     "dateBasis": "statutory-window",
+     "note": "July 1 is the legal deadline and day 1 of the TRIM clock. If the Property Appraiser certifies later, every window below shifts by the same number of days."
+    },
+    {
+     "milestone": "budget-workshops-before-rate-cap",
+     "date": "2027-06-16",
+     "dateBasis": "pattern",
+     "source": "https://www.cutlerbay-fl.gov/node/11691",
+     "note": "Estimated, not confirmed: 2026 was 2026-06-17 (a Wednesday; same weekday 52 weeks later); the same pattern gives 2027-06-16. Visioning workshop."
+    },
+    {
+     "milestone": "budget-workshops-before-rate-cap",
+     "date": "2027-07-29",
+     "dateBasis": "pattern",
+     "source": "https://www.cutlerbay-fl.gov/node/11690",
+     "note": "Estimated, not confirmed: 2026 was 2026-07-30 (a Thursday; same weekday 52 weeks later); the same pattern gives 2027-07-29. Second budget workshop (general fund)."
+    },
+    {
+     "milestone": "maximum-millage-set",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-04"
+     },
+     "dateBasis": "statutory-window",
+     "note": "The body's own date for this vote was not found; the law requires it within this window."
+    },
+    {
+     "milestone": "budget-workshops-before-hearings",
+     "date": "2027-08-24",
+     "dateBasis": "pattern",
+     "source": "https://www.cutlerbay-fl.gov/node/11691",
+     "note": "Estimated, not confirmed: 2026 was 2026-08-25 (a Tuesday; same weekday 52 weeks later); the same pattern gives 2027-08-24. Third budget workshop (all funds)."
+    },
+    {
+     "milestone": "trim-notice-mailed",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-24"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Usually mailed in mid to late August."
+    },
+    {
+     "milestone": "tentative-budget-posted",
+     "window": {
+      "from": null,
+      "to": "2027-09-02"
+     },
+     "dateBasis": "statutory-window",
+     "note": "At least 5 days before the first hearing.",
+     "anchorBasis": "first-public-hearing:pattern"
+    },
+    {
+     "milestone": "first-public-hearing",
+     "date": "2027-09-07",
+     "dateBasis": "pattern",
+     "source": "https://www.cutlerbay-fl.gov/node/11692",
+     "note": "Estimated, not confirmed: 2026 was 2026-09-08 (a Tuesday; same weekday 52 weeks later); the same pattern gives 2027-09-07. 6:00 p.m."
+    },
+    {
+     "milestone": "final-hearing-advertised",
+     "window": {
+      "from": "2027-09-08",
+      "to": "2027-09-22"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Within 15 days after the first hearing.",
+     "anchorBasis": "first-public-hearing:pattern"
+    },
+    {
+     "milestone": "final-public-hearing",
+     "window": {
+      "from": "2027-09-10",
+      "to": "2027-09-27"
+     },
+     "dateBasis": "statutory-window",
+     "source": "https://www.cutlerbay-fl.gov/node/11692",
+     "note": "Not estimated: the 2025 date (2025-09-25, a Thursday; same weekday 104 weeks later) falls on 2027-09-23 in 2027, a date the County Commission has proposed for its own 2027 budget hearing. State law keeps other bodies off those dates (s. 200.065(2)(e)2., F.S.), so expect a different date. The 2026 second hearing date was not found; 2025 was September 25.",
+     "anchorBasis": "first-public-hearing:pattern"
+    },
+    {
+     "milestone": "resolutions-to-appraiser",
+     "window": {
+      "from": "2027-09-10",
+      "to": "2027-09-30"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:statutory-window"
+    },
+    {
+     "milestone": "fiscal-year-start",
+     "date": "2027-10-01",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "trim-compliance-certified",
+     "window": {
+      "from": "2027-09-10",
+      "to": "2027-10-27"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:statutory-window"
+    },
+    {
+     "milestone": "final-budget-posted",
+     "window": {
+      "from": "2027-09-10",
+      "to": "2027-10-27"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:statutory-window"
+    }
+   ]
+  },
+  {
+   "key": "ordinance-adoption",
+   "kind": "ordinance-adoption",
+   "template": "ordinance-adoption-municipal",
+   "name": "Passing or changing a local law (ordinance)",
+   "processOnly": true,
+   "notes": "Dates depend on the item. First and second readings happen at the meetings above; watch posted agendas.",
+   "milestones": []
+  },
+  {
+   "key": "procurement-award",
+   "kind": "procurement-award",
+   "template": "procurement-award",
+   "name": "Buying goods, services and construction (contract awards)",
+   "processOnly": true,
+   "milestones": [
+    {
+     "dateBasis": "unknown",
+     "milestone": "solicitation-advertised",
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade County Code Sec. 2-11.1(t)",
+       "url": "https://www.miamidade.gov/global/strategic-procurement/procedures-cone-of-silence.page"
+      },
+      {
+       "cite": "Miami-Dade Commission on Ethics, INQ 2020-90 (county Cone of Silence applied to a city procurement)",
+       "url": "https://ethics.miamidade.gov/library/inquiry-2020/inq-2020-90-herin-biscayne-park-rfp.pdf"
+      }
+     ],
+     "note": "The county Cone of Silence applies to city officials under the county ethics code; check the city's own procurement code for added rules."
+    },
+    {
+     "dateBasis": "unknown",
+     "milestone": "bid-protest-window",
+     "note": "The city's bid protest deadline was not checked; it is set by the city procurement code and stated in each solicitation."
+    }
+   ]
+  },
+  {
+   "key": "election-2026",
+   "kind": "election-to-office",
+   "template": "election-to-office-municipal",
+   "name": "2026 Cutler Bay election (Mayor, Seats 1 and 3)",
+   "cycle": "2026",
+   "notes": "The county 2027 calendar also lists a Cutler Bay special election on January 26, 2027 (qualifying Nov 5 to 19, 2026; runoff Feb 23, 2027); not modeled here.",
+   "milestones": [
+    {
+     "milestone": "qualifying",
+     "window": {
+      "from": "2026-07-23",
+      "to": "2026-08-06"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.cutlerbay-fl.gov/node/11493"
+    },
+    {
+     "milestone": "campaign-reports",
+     "dateBasis": "unknown",
+     "note": "The City Clerk gives each candidate the report schedule."
+    },
+    {
+     "milestone": "registration-closes",
+     "date": "2026-10-05",
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/voters/calendar-2026.page"
+    },
+    {
+     "milestone": "vote-by-mail-request-deadline",
+     "date": "2026-10-22",
+     "dateBasis": "statutory-window",
+     "note": "5 p.m."
+    },
+    {
+     "milestone": "early-voting",
+     "window": {
+      "from": "2026-10-19",
+      "to": "2026-11-01"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/early-voting/2026-11-03-general-election-early-voting-schedule.pdf",
+     "note": "City races are on the county ballot, so county early voting sites apply."
+    },
+    {
+     "milestone": "election-day",
+     "date": "2026-11-03",
+     "dateBasis": "body-source",
+     "source": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/town_clerk/page/2281/from_legal_-_town_charter_-_as_adopted_november_2018_-_final_no_maps.pdf"
+    },
+    {
+     "milestone": "results-certified",
+     "dateBasis": "unknown",
+     "note": "Set by the canvassing board; not posted."
+    },
+    {
+     "milestone": "runoff",
+     "date": "2026-12-01",
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/voters/calendar-2026.page",
+     "note": "Held only if no candidate wins a majority."
+    },
+    {
+     "milestone": "swearing-in",
+     "dateBasis": "unknown",
+     "note": "Set by the city charter; date not posted."
+    },
+    {
+     "milestone": "campaign-account-closed",
+     "window": {
+      "from": "2026-11-03",
+      "to": "2027-02-01"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  }
+ ]
+}

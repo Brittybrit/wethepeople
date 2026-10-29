@@ -1,0 +1,453 @@
+{
+ "key": "county",
+ "name": "Miami-Dade County Commission",
+ "level": "county",
+ "jurisdiction": "Miami-Dade County",
+ "cycleFile": {
+  "path": "vote-informed/scripts/data/cycles/county.json",
+  "checked": "2026-10-22"
+ },
+ "meetingPattern": {
+  "text": "Regular meetings on the first and third Tuesday of each month at 9:30 a.m. (the rules say first and third Tuesday and Thursday, but the posted calendar uses Tuesdays, with a carry-over day the next morning if needed). Zoning and master-plan (CDMP) meetings about once a month on a Thursday at 9:30 a.m. Committees meet the second week of the month. All in the Commission Chambers, 2nd floor, Stephen P. Clark Center, 111 NW 1st Street, Miami 33128. Meetings end no later than 6:30 p.m.",
+  "source": "https://www.miamidade.gov/resources/commission/documents/2026-bcc-calendar.pdf"
+ },
+ "leverLinks": {
+  "public-comment": {
+   "url": "https://www.miamidade.gov/global/webcasting/home.page",
+   "deadline": "Register at the meeting, at least 15 minutes before the item is discussed",
+   "source": "https://www.miamidade.gov/commission/library/2019-02-05-rules-of-procedure.pdf"
+  },
+  "written-comment": {
+   "url": "https://www.miamidade.gov/global/economy/zoning/county-commission-hearings.page",
+   "deadline": "Before the meeting"
+  },
+  "contact": {
+   "url": "https://www.miamidade.gov/global/government/commission/home.page",
+   "source": "https://www.miamidade.gov/global/government/commission/district01/home.page"
+  },
+  "records-request": {
+   "url": "https://miamidadecounty.govqa.us/WEBAPP/_rs/RequestSelect.aspx",
+   "source": "https://www.miamidadeclerk.gov/clerk/public-records-requests.page"
+  },
+  "petition": {
+   "url": "https://www.votemiamidade.gov/elections/voters/petitions.page",
+   "deadline": "120 days from approval of the petition form",
+   "source": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf"
+  },
+  "recall": {
+   "url": "https://www.votemiamidade.gov/elections/voters/petitions.page",
+   "deadline": "120 days from approval of the petition form",
+   "source": "https://www.miamidade.gov/charter/library/08-01-29-charter.pdf"
+  },
+  "qualify": {
+   "url": "https://www.votemiamidade.gov/elections/candidates-campaigns/candidate-qualifying-handbook.page",
+   "deadline": "Noon on the last day of qualifying (June 9 in 2026; 2028 dates not yet posted)",
+   "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/county-commissioners.pdf"
+  },
+  "vote": {
+   "url": "https://www.votemiamidade.gov",
+   "deadline": "Nov 3, 2026 runoffs; register 29 days before an election",
+   "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/county-commissioners.pdf"
+  },
+  "serve-on-board": {
+   "url": "https://www.miamidade.gov/Apps/COB/CBASOnlinePublic/",
+   "source": "https://www.miamidadeclerk.gov/clerk/cob-vacancies.page"
+  }
+ },
+ "decisions": [
+  {
+   "key": "budget-fy2027-28",
+   "kind": "annual-budget-and-millage",
+   "template": "annual-budget-and-millage",
+   "name": "FY 2027-28 budget and property tax rate",
+   "cycle": "FY 2027-28 (October 1, 2027 to September 30, 2028)",
+   "milestones": [
+    {
+     "milestone": "budget-calendar-published",
+     "window": {
+      "from": null,
+      "to": "2027-01-30"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Deadline for posting the county budget calendar."
+    },
+    {
+     "milestone": "department-requests",
+     "window": {
+      "from": "2027-02-01",
+      "to": "2027-02-28"
+     },
+     "dateBasis": "pattern",
+     "source": "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/budget-process.pdf",
+     "note": "Estimated month, from the yearly pattern in the source. The county budget process document says departments submit budget requests in February."
+    },
+    {
+     "milestone": "budget-priorities",
+     "window": {
+      "from": "2027-03-01",
+      "to": "2027-03-31"
+     },
+     "dateBasis": "pattern",
+     "source": "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/budget-process.pdf",
+     "note": "Estimated month, from the yearly pattern in the source. The Mayor gives a budget address in March setting priorities."
+    },
+    {
+     "milestone": "taxable-value-certified",
+     "date": "2027-07-01",
+     "dateBasis": "statutory-window",
+     "note": "July 1 is the legal deadline and day 1 of the TRIM clock. If the Property Appraiser certifies later, every window below shifts by the same number of days."
+    },
+    {
+     "milestone": "proposed-budget-presented",
+     "window": {
+      "from": "2027-06-01",
+      "to": "2027-07-15"
+     },
+     "dateBasis": "statutory-window",
+     "source": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf",
+     "note": "Charter Sec. 5.03(B): prepared June 1 to July 15; the county budget process document says the County Code requires it by July 15."
+    },
+    {
+     "milestone": "maximum-millage-set",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-04"
+     },
+     "dateBasis": "statutory-window",
+     "note": "The county budget process says the Commission votes on the recommended (maximum) rates in July; the 2027 meeting date is not posted yet."
+    },
+    {
+     "milestone": "budget-workshops-before-hearings",
+     "window": {
+      "from": "2027-08-01",
+      "to": "2027-08-31"
+     },
+     "dateBasis": "pattern",
+     "source": "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/budget-process.pdf",
+     "note": "Estimated month, from the yearly pattern in the source. Countywide public meetings on proposed new or increased fees and taxes are held in August."
+    },
+    {
+     "milestone": "trim-notice-mailed",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-24"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Usually mailed in mid to late August."
+    },
+    {
+     "milestone": "tentative-budget-posted",
+     "window": {
+      "from": null,
+      "to": "2027-09-04"
+     },
+     "dateBasis": "statutory-window",
+     "note": "At least 5 days before the first hearing."
+    },
+    {
+     "milestone": "first-public-hearing",
+     "date": "2027-09-09",
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261528.pdf",
+     "note": "5:01 p.m. From the PROPOSED 2027 Commission calendar sent to the Board Oct 20, 2026; not yet approved."
+    },
+    {
+     "milestone": "final-hearing-advertised",
+     "window": {
+      "from": "2027-09-18",
+      "to": "2027-09-21"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Within 15 days after the first hearing and 2 to 5 days before the final hearing."
+    },
+    {
+     "milestone": "final-public-hearing",
+     "date": "2027-09-23",
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261528.pdf",
+     "note": "5:01 p.m. From the PROPOSED 2027 calendar; not yet approved."
+    },
+    {
+     "milestone": "mayor-veto-window",
+     "window": {
+      "from": "2027-09-23",
+      "to": "2027-10-03"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "resolutions-to-appraiser",
+     "window": {
+      "from": "2027-09-23",
+      "to": "2027-09-26"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "fiscal-year-start",
+     "date": "2027-10-01",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "trim-compliance-certified",
+     "window": {
+      "from": "2027-09-23",
+      "to": "2027-10-23"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "final-budget-posted",
+     "window": {
+      "from": "2027-09-23",
+      "to": "2027-10-23"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  },
+  {
+   "key": "ordinance-adoption",
+   "kind": "ordinance-adoption",
+   "template": "ordinance-adoption-county",
+   "name": "Passing or changing a local law (ordinance)",
+   "processOnly": true,
+   "notes": "Dates depend on the item. First and second readings happen at the meetings above; watch posted agendas.",
+   "milestones": []
+  },
+  {
+   "key": "procurement-award",
+   "kind": "procurement-award",
+   "template": "procurement-award",
+   "name": "Buying goods, services and construction (contract awards)",
+   "processOnly": true,
+   "milestones": [
+    {
+     "dateBasis": "unknown",
+     "milestone": "solicitation-advertised",
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade County Code Sec. 2-11.1(t)",
+       "url": "https://www.miamidade.gov/global/strategic-procurement/procedures-cone-of-silence.page"
+      }
+     ],
+     "note": "Cone of Silence starts when the solicitation is advertised. Written messages copied to the Clerk of the Board are allowed at all times. The county posts a Cone of Silence report listing covered solicitations."
+    },
+    {
+     "dateBasis": "unknown",
+     "milestone": "award-recommendation",
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade County Code Sec. 2-11.1(t)",
+       "url": "https://www.miamidade.gov/global/strategic-procurement/procedures-cone-of-silence.page"
+      }
+     ],
+     "note": "Cone ends when the Mayor issues a written recommendation to the Commission (or, for awards within the Mayor's authority, when the department recommends to the Mayor)."
+    },
+    {
+     "dateBasis": "unknown",
+     "milestone": "bid-protest-window",
+     "timing": {
+      "rule": "Notice of intent to protest filed with the Clerk of the Board within 3 work days after the award recommendation is filed; supporting documents within 3 more work days.",
+      "anchor": "award-recommendation",
+      "offsetDays": {
+       "min": 1,
+       "max": 3
+      },
+      "offsetUnit": "business-days"
+     },
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade Implementing Order 3-21 (bid protest procedures)",
+       "url": "https://www.miamidade.gov/global/strategic-procurement/bid-protest.page"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "election-2026",
+   "kind": "election-to-office",
+   "template": "election-to-office-county-and-school",
+   "name": "2026 County Commission elections (even districts)",
+   "cycle": "2026",
+   "notes": "November 3, 2026 is the runoff for even-numbered districts where no one won a majority on August 18.",
+   "milestones": [
+    {
+     "milestone": "qualifying",
+     "window": {
+      "from": "2026-05-26",
+      "to": "2026-06-09"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/county-commissioners.pdf",
+     "note": "8:00 a.m. May 26 to noon June 9, 2026, per the qualifying handbook.",
+     "timing": {
+      "rule": "Set by the county: the 2026 window (May 26 to June 9) was earlier than the state default of noon of the 71st day to noon of the 67th day before the primary (s. 99.061(2), F.S.). The county rule that moves it was not checked.",
+      "anchor": null,
+      "offsetDays": null
+     }
+    },
+    {
+     "milestone": "campaign-reports",
+     "dateBasis": "unknown",
+     "note": "The Supervisor of Elections publishes each candidate's report dates; not copied here."
+    },
+    {
+     "milestone": "primary-election",
+     "date": "2026-08-18",
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/voters/calendar-2026.page"
+    },
+    {
+     "milestone": "registration-closes",
+     "date": "2026-10-05",
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/voters/calendar-2026.page"
+    },
+    {
+     "milestone": "vote-by-mail-request-deadline",
+     "date": "2026-10-22",
+     "dateBasis": "statutory-window",
+     "note": "5 p.m."
+    },
+    {
+     "milestone": "early-voting",
+     "window": {
+      "from": "2026-10-19",
+      "to": "2026-11-01"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/early-voting/2026-11-03-general-election-early-voting-schedule.pdf",
+     "note": "7 a.m. to 7 p.m. daily."
+    },
+    {
+     "milestone": "election-day",
+     "date": "2026-11-03",
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/county-commissioners.pdf"
+    },
+    {
+     "milestone": "unofficial-results",
+     "date": "2026-11-07",
+     "dateBasis": "statutory-window",
+     "note": "Noon."
+    },
+    {
+     "milestone": "results-certified",
+     "date": "2026-11-16",
+     "dateBasis": "statutory-window",
+     "note": "Noon; deadline for the county canvassing board."
+    },
+    {
+     "milestone": "contest-window",
+     "window": {
+      "from": "2026-11-16",
+      "to": "2026-11-26"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "results-certified:statutory-window"
+    },
+    {
+     "milestone": "swearing-in",
+     "date": "2026-11-17",
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/qualifying-handbook/county-commissioners.pdf",
+     "note": "Charter Sec. 3.01(C)."
+    },
+    {
+     "milestone": "campaign-account-closed",
+     "window": {
+      "from": "2026-11-03",
+      "to": "2027-02-01"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  },
+  {
+   "key": "election-2028",
+   "kind": "election-to-office",
+   "template": "election-to-office-county-and-school",
+   "name": "2028 County Commission elections (odd districts and Mayor)",
+   "cycle": "2028",
+   "notes": "All 2028 dates are computed from state law; the Supervisor of Elections has not posted the 2028 calendar. The County Mayor is elected on the same cycle; the Mayor's race is not modeled separately.",
+   "milestones": [
+    {
+     "milestone": "qualifying",
+     "dateBasis": "unknown",
+     "note": "Not estimated: the 2026 county window (May 26 to June 9) did not match the 71st to 67th day rule in s. 99.061(2), F.S., so the 2028 county window cannot be computed from law alone."
+    },
+    {
+     "milestone": "campaign-reports",
+     "dateBasis": "unknown",
+     "note": "The Supervisor of Elections publishes the schedule."
+    },
+    {
+     "milestone": "primary-election",
+     "date": "2028-08-22",
+     "dateBasis": "statutory-window",
+     "note": "The Tuesday 11 weeks before the general election."
+    },
+    {
+     "milestone": "registration-closes",
+     "date": "2028-10-09",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "vote-by-mail-request-deadline",
+     "date": "2028-10-26",
+     "dateBasis": "statutory-window",
+     "note": "5 p.m."
+    },
+    {
+     "milestone": "early-voting",
+     "window": {
+      "from": "2028-10-28",
+      "to": "2028-11-04"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Required days only; the Supervisor may add more."
+    },
+    {
+     "milestone": "election-day",
+     "date": "2028-11-07",
+     "dateBasis": "statutory-window",
+     "note": "First Tuesday after the first Monday in November."
+    },
+    {
+     "milestone": "unofficial-results",
+     "date": "2028-11-11",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "results-certified",
+     "date": "2028-11-20",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "contest-window",
+     "window": {
+      "from": "2028-11-20",
+      "to": "2028-11-30"
+     },
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "swearing-in",
+     "date": "2028-11-21",
+     "dateBasis": "statutory-window",
+     "note": "Second Tuesday after the general election."
+    },
+    {
+     "milestone": "campaign-account-closed",
+     "window": {
+      "from": "2028-11-07",
+      "to": "2029-02-05"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  }
+ ]
+}

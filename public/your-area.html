@@ -66,6 +66,32 @@
   .seat .h{font-weight:600}
   .seat .c{font-family:var(--mono);font-size:12px;margin-top:2px;display:flex;gap:12px;flex-wrap:wrap}
   .seat .bal{font-size:13px;margin-top:2px}
+  .lev{border:1.5px solid var(--area);background:var(--area-tint);padding:12px 14px;margin:10px 0}
+  .lev .t{font-weight:800}
+  .lev .w{font-size:14px;margin-top:4px}
+  .chain{border:1.5px solid var(--ink);background:var(--card);margin:10px 0}
+  .chain>summary{padding:12px 14px;cursor:pointer;list-style:none;font-family:var(--sans);font-size:16px}
+  .lev p{font-size:14px;margin-top:4px}
+  .chain>summary::-webkit-details-marker{display:none}
+  .chain .nm{font-weight:800;line-height:1.25}
+  .chain .bd{font-size:13px;color:var(--ink-soft)}
+  .chain .nx{font-family:var(--mono);font-size:12px;margin-top:6px}
+  .bar{display:flex;gap:2px;margin-top:8px}
+  .bar i{flex:1;height:6px;background:var(--hair)}
+  .bar i.done{background:var(--ink-soft)}
+  .bar i.now{background:var(--area)}
+  ol.steps{list-style:none;border-top:1px solid var(--hair)}
+  ol.steps li{padding:10px 14px;border-bottom:1px solid var(--hair);font-size:14px}
+  ol.steps li.done{opacity:.6}
+  ol.steps li.now{background:var(--area-tint)}
+  .st{display:flex;gap:10px;align-items:baseline}
+  .st .n{font-family:var(--mono);font-size:12px;width:38px;flex:none}
+  .st b{font-weight:600}
+  .st .inf{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;margin-left:auto;flex:none}
+  .st .inf.high{color:var(--area)}
+  .sd{margin-left:48px;color:var(--ink-soft);font-size:13px}
+  .sd p{margin:3px 0}
+  .sd .act{color:var(--ink)}
   .seat .h span{font-weight:400;font-size:12px;color:var(--ink-soft)}
   .grp{border-bottom:1px solid var(--hair);padding:10px 0}
   .grp summary{font-family:var(--sans);font-size:15px;font-weight:600;cursor:pointer;list-style:none}
@@ -111,9 +137,14 @@
     <h2>Next meetings</h2>
     <div id="meetings"></div>
 
-    <h2>Decision points ahead</h2>
-    <p class="sub">When each body decides what, over the next six months.</p>
-    <div id="phases"></div>
+    <h2>Decisions in motion</h2>
+    <p class="sub">Each decision is a chain of steps. Most of the leverage is early, before the final vote. Open one to see every step, who acts, what feeds it, the law that requires it, and what you can do.</p>
+    <div id="lev"></div>
+    <div id="chains"></div>
+
+    <h2>How things get decided here</h2>
+    <p class="sub">The steps every local law and every public contract goes through, and where you can weigh in.</p>
+    <div id="processes"></div>
 
     <h2>Who works for you</h2>
     <p class="sub">Every seat that represents this precinct, closest to home first. Money behind each official is on <a href="https://ballot305.org">Ballot305</a>.</p>
@@ -232,10 +263,27 @@
       return '<div class="row"><div class="d">' + esc(day(m.date)) + '</div><div class="b"><b>' + esc(m.bodyName) + '</b><span>' + esc([time(m.time), m.note].filter(Boolean).join(' · ')) + '</span></div></div>';
     }).join('') : '<p class="sub">No meeting dates posted.</p>';
 
-    $('phases').innerHTML = d.decisionPoints.length ? d.decisionPoints.map(function(p){
-      var when = p.end && p.end !== p.start ? day(p.start) + '–' + day(p.end) : day(p.start);
-      return '<div class="row"><div class="d">' + esc(when) + '</div><div class="b"><b>' + esc(p.name) + '</b><span>' + esc(p.bodyName) + (p.now ? ' · happening now' : '') + '</span><span>' + esc(p.decides || '') + '</span></div></div>';
-    }).join('') : '<p class="sub">No decision points posted for the next six months.</p>';
+    var span = function(w){ return !w ? 'date not set' : (w.from === w.to ? dayLong(w.from) : dayLong(w.from) + ' to ' + dayLong(w.to)); };
+    var basis = function(s){ return s.dateBasis === 'body-source' ? '' : s.dateBasis === 'statutory-window' ? ' (legal window)' : s.dateBasis === 'pattern' ? ' (estimated from last year)' : s.dateBasis === 'unknown' ? ' (date not known yet)' : ''; };
+    var levers = function(r){ return (r || []).map(function(x){ return '<p class="act">' + esc(x.how) + (x.url ? ' ' + link(x.url, 'Go') : '') + '</p>'; }).join(''); };
+    var law = function(l){ return (l || []).map(function(x){ return link(x.url, x.cite); }).join(', '); };
+    var stepItem = function(s, dated){
+      return '<li class="' + (dated ? s.status : '') + '"><div class="st"><span class="n">' + s.step + '/' + s.of + '</span><b>' + esc(s.name) + '</b>' + (s.influence ? '<span class="inf ' + esc(s.influence) + '">' + esc(s.influence) + ' leverage</span>' : '') + '</div><div class="sd">' +
+        (dated ? '<p>' + esc(span(s.when)) + esc(basis(s)) + (s.status === 'now' ? ' · open now' : s.status === 'done' ? ' · done' : '') + '</p>' : '') +
+        '<p>' + esc(s.actor) + (s.inputs && s.inputs.length ? ' · from ' + esc(s.inputs.join(', ')) : '') + (s.output ? ' → ' + esc(s.output) : '') + '</p>' +
+        (s.appliesWhen ? '<p>Only when ' + esc(s.appliesWhen) + '</p>' : '') +
+        (s.influenceWhy ? '<p>' + esc(s.influenceWhy) + '</p>' : '') + levers(s.residentCan) +
+        (s.legalBasis && s.legalBasis.length ? '<p>Law: ' + law(s.legalBasis) + '</p>' : '') + '</div></li>';
+    };
+    var L = d.nextLeveragePoint;
+    $('lev').innerHTML = L ? '<div class="lev"><div class="fine">Your next high-leverage moment</div><div class="t">' + esc(L.milestone.name) + ' · ' + esc(L.decision.name) + '</div><div class="w">' + esc(L.body.name) + ' · step ' + esc(L.stepLabel) + ' · ' + esc(span(L.when)) + (L.openNow ? ' · open now' : '') + '</div><div class="w">' + esc(L.influenceWhy || '') + '</div>' + levers(L.residentCan) + '</div>' : '';
+    $('chains').innerHTML = (d.decisionChains || []).map(function(c){
+      var bar = c.steps.map(function(s){ return '<i class="' + s.status + '"></i>'; }).join('');
+      return '<details class="chain"><summary><div class="nm">' + esc(c.decision.name) + '</div><div class="bd">' + esc(c.body.name) + '</div><div class="bar">' + bar + '</div><div class="nx">Step ' + c.next.step + ' of ' + c.next.of + ': ' + esc(c.next.name) + ' · ' + esc(span(c.next.when)) + (c.next.status === 'now' ? ' · open now' : '') + '</div></summary><ol class="steps">' + c.steps.map(function(s){ return stepItem(s, true); }).join('') + '</ol></details>';
+    }).join('') || '<p class="sub">No dated decisions ahead for your bodies yet.</p>';
+    $('processes').innerHTML = (d.processes || []).map(function(c){
+      return '<details class="chain"><summary><div class="nm">' + esc(c.decision.name) + '</div><div class="bd">' + esc(c.body.name) + ' · ' + c.steps.length + ' steps</div></summary><ol class="steps">' + c.steps.map(function(s){ return stepItem(s, false); }).join('') + '</ol></details>';
+    }).join('');
 
     var lastLevel = '';
     $('servants').innerHTML = d.servants.map(function(b){

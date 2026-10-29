@@ -1,0 +1,307 @@
+{
+ "kind": "procurement-award",
+ "name": "Contract awards",
+ "checked": "2026-10-29",
+ "variants": [
+  {
+   "key": "procurement-award",
+   "kind": "procurement-award",
+   "name": "Contract award (procurement)",
+   "appliesToLevels": [
+    "county",
+    "municipal",
+    "school"
+   ],
+   "summary": "How a public contract is bought: a solicitation, sealed responses, an evaluation, a written recommendation, a protest window, and the award vote. In Miami-Dade a Cone of Silence limits oral contact with officials while the solicitation is open.",
+   "dayCounting": "Offsets are calendar days unless offsetUnit says business days.",
+   "legalBasis": [
+    {
+     "cite": "Miami-Dade County Code Sec. 2-11.1(t) (Cone of Silence)",
+     "url": "https://www.miamidade.gov/global/strategic-procurement/procedures-cone-of-silence.page"
+    },
+    {
+     "cite": "s. 119.071(1)(b), F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.071"
+    },
+    {
+     "cite": "s. 286.0113(2), F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/286.0113"
+    }
+   ],
+   "milestones": [
+    {
+     "key": "need-funded",
+     "name": "Need identified and funded",
+     "actor": "Department and Commission",
+     "legallyRequired": false,
+     "inputs": [
+      "Adopted budget or capital plan"
+     ],
+     "output": "Funded project or service ready to buy",
+     "timing": {
+      "rule": "Usually through the yearly budget.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at budget hearings about the project."
+      },
+      {
+       "lever": "contact",
+       "how": "Ask your commissioner whether the project is in the capital plan."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Whether to buy at all is decided in the budget."
+    },
+    {
+     "key": "solicitation-drafted",
+     "name": "Scope and evaluation criteria written",
+     "actor": "Procurement office",
+     "legallyRequired": false,
+     "inputs": [
+      "Department scope of work"
+     ],
+     "output": "Draft ITB, RFP or RFQ with scope and scoring criteria",
+     "timing": {
+      "rule": "Before advertisement; set by the body's procurement code.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Ask the department or your commissioner about scope (for example local hiring or service levels) before the solicitation is advertised."
+      },
+      {
+       "lever": "records-request",
+       "how": "Request the draft scope."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Scope and scoring decide the outcome, and they are fixed once advertised."
+    },
+    {
+     "key": "solicitation-advertised",
+     "name": "Solicitation advertised; Cone of Silence begins",
+     "actor": "Procurement office",
+     "legallyRequired": true,
+     "inputs": [
+      "Final solicitation"
+     ],
+     "output": "Public ITB, RFP or RFQ; oral contact about it with officials is restricted",
+     "timing": {
+      "rule": "Set by the body's code. For architecture and engineering services, public notice of the need is required.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade County Code Sec. 2-11.1(t)",
+       "url": "https://www.miamidade.gov/global/strategic-procurement/procedures-cone-of-silence.page"
+      },
+      {
+       "cite": "s. 287.055(3)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/287.055"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "written-comment",
+       "how": "Write to officials: in the county, written messages copied to the Clerk of the Board are allowed at all times."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Terms are public but fixed; addenda can still change them."
+    },
+    {
+     "key": "responses-opened",
+     "name": "Bids or proposals opened",
+     "actor": "Procurement office",
+     "legallyRequired": true,
+     "inputs": [
+      "Sealed responses"
+     ],
+     "output": "List of bidders; contents stay confidential for a time",
+     "timing": {
+      "rule": "The due date in the solicitation.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 119.071(1)(b)2., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.071"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask for the bidder list now and the full responses once they become public."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A fact-finding step."
+    },
+    {
+     "key": "evaluation",
+     "name": "Evaluation or selection committee scores responses",
+     "actor": "Evaluation or selection committee",
+     "legallyRequired": false,
+     "inputs": [
+      "Responses",
+      "Scoring criteria"
+     ],
+     "output": "Ranking",
+     "timing": {
+      "rule": "After opening. Vendor presentations and negotiations are closed but must be recorded.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 286.0113(2), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/286.0113"
+      },
+      {
+       "cite": "s. 287.055(4), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/287.055"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask for score sheets and the recordings once the exemption ends (notice of intended decision or 30 days after opening)."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Residents cannot take part, but the record becomes public."
+    },
+    {
+     "key": "award-recommendation",
+     "name": "Written award recommendation; Cone of Silence ends",
+     "actor": "Mayor, City Manager or Superintendent",
+     "legallyRequired": true,
+     "inputs": [
+      "Committee ranking",
+      "Negotiated terms"
+     ],
+     "output": "Recommendation on the commission agenda",
+     "timing": {
+      "rule": "When the recommendation is issued. Sealed responses must become public by now or 30 days after opening, whichever is earlier.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade County Code Sec. 2-11.1(t)",
+       "url": "https://www.miamidade.gov/global/strategic-procurement/procedures-cone-of-silence.page"
+      },
+      {
+       "cite": "s. 119.071(1)(b)2., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.071"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Now officials may discuss it openly: call or write before the vote."
+      },
+      {
+       "lever": "records-request",
+       "how": "Get the full responses and scoring."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Send written comments for the agenda item."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "The choice is public and not yet voted; this is the window to question it."
+    },
+    {
+     "key": "bid-protest-window",
+     "name": "Bid protest window",
+     "actor": "Bidders",
+     "legallyRequired": false,
+     "setBy": "The body's procurement code; school districts follow s. 120.57(3), F.S.",
+     "inputs": [
+      "Recommendation or notice of intended decision"
+     ],
+     "output": "Protest filed (award paused) or window closes",
+     "timing": {
+      "rule": "Short, and set by the body's procurement code or implementing order.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask the clerk whether a protest was filed; protests are public records."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Only bidders can protest."
+    },
+    {
+     "key": "award-vote",
+     "name": "Award vote",
+     "actor": "Commission or Board",
+     "legallyRequired": false,
+     "inputs": [
+      "Recommendation",
+      "Protest outcome"
+     ],
+     "output": "Contract awarded, rejected or sent back",
+     "timing": {
+      "rule": "A regular meeting after the protest window. Awards under the delegated limit are made by the Mayor or Manager without a vote.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak on the award item."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Send written comments before the meeting."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Officials can still reject or send it back, but rarely do."
+    },
+    {
+     "key": "contract-executed",
+     "name": "Contract signed",
+     "actor": "Mayor, City Manager or Superintendent",
+     "legallyRequired": false,
+     "inputs": [
+      "Award"
+     ],
+     "output": "Signed contract",
+     "timing": {
+      "rule": "After award.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask for the signed contract and later amendments and change orders."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Decided; watch for change orders."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1193 @@
+{
+ "kind": "annual-budget-and-millage",
+ "name": "Yearly budget and property tax rate",
+ "checked": "2026-10-29",
+ "variants": [
+  {
+   "key": "annual-budget-and-millage",
+   "kind": "annual-budget-and-millage",
+   "name": "Yearly budget and property tax rate (county and cities)",
+   "appliesToLevels": [
+    "county",
+    "municipal"
+   ],
+   "summary": "How a county or city sets its property tax rate and budget each year under the TRIM (Truth in Millage) law. The rate a body sends the Property Appraiser in July becomes, in practice, the highest rate it can adopt in September.",
+   "dayCounting": "TRIM periods count the later of July 1 or the value certification date as day 1 (s. 200.065(12), F.S.). Offsets here are calendar days added to the anchor date, so \"within 35 days\" is offset 0 to 34.",
+   "legalBasis": [
+    {
+     "cite": "s. 200.065, F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+    },
+    {
+     "cite": "TRIM timetable for regular taxing authorities, Florida DOR",
+     "url": "https://floridarevenue.com/property/Documents/trimregwb.pdf"
+    }
+   ],
+   "milestones": [
+    {
+     "key": "budget-calendar-published",
+     "name": "Budget calendar posted online",
+     "actor": "County budget officer",
+     "appliesToLevels": [
+      "county"
+     ],
+     "legallyRequired": true,
+     "inputs": [
+      "Last year's budget timeline"
+     ],
+     "output": "Public calendar of this year's budget steps",
+     "timing": {
+      "rule": "On or before January 30 each year.",
+      "anchor": "date:01-30",
+      "offsetDays": {
+       "min": null,
+       "max": 0
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 129.03(3)(h), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/129.03"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Use the calendar to put the workshop and hearing dates in your own calendar now."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A schedule, not a decision, but it tells you when every later step happens."
+    },
+    {
+     "key": "department-requests",
+     "name": "Departments ask for money",
+     "actor": "Departments and budget office",
+     "legallyRequired": false,
+     "inputs": [
+      "Department business plans",
+      "Revenue forecast"
+     ],
+     "output": "Budget requests to the Manager or Mayor",
+     "timing": {
+      "rule": "Set by each body, usually winter or spring. Not set by state law.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Tell your commissioner and the department head what service you want funded, before the request is written."
+      },
+      {
+       "lever": "records-request",
+       "how": "Ask for last year's department requests to see what was asked for and cut."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Requests are still being written, but they are internal and not yet on any agenda."
+    },
+    {
+     "key": "budget-priorities",
+     "name": "Elected officials set budget priorities",
+     "actor": "Commission and Mayor or Manager",
+     "legallyRequired": false,
+     "inputs": [
+      "Department requests",
+      "Revenue forecast",
+      "Commission goals"
+     ],
+     "output": "Priorities the proposed budget must follow",
+     "timing": {
+      "rule": "Set by each body (a retreat, budget address or early workshop). Not set by state law.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the retreat or workshop if public comment is taken."
+      },
+      {
+       "lever": "contact",
+       "how": "Send your commissioner one or two specific asks while priorities are open."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Priorities steer the draft before numbers are fixed, but nothing is voted on yet."
+    },
+    {
+     "key": "taxable-value-certified",
+     "name": "Property Appraiser certifies taxable value",
+     "actor": "Property Appraiser",
+     "legallyRequired": true,
+     "inputs": [
+      "Assessment roll"
+     ],
+     "output": "Certification of Taxable Value (Form DR-420) with the rolled-back rate",
+     "timing": {
+      "rule": "Assessment complete by July 1; this date (or a later certification date) is day 1 of the TRIM clock.",
+      "anchor": "date:07-01",
+      "offsetDays": {
+       "min": 0,
+       "max": 0
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 193.023(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/193.023"
+      },
+      {
+       "cite": "s. 200.065(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "s. 200.065(12), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the DR-420: it shows how much taxable value grew and the rolled-back rate (the rate that raises the same money as last year)."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A valuation by the Property Appraiser, not a policy choice by the body."
+    },
+    {
+     "key": "proposed-budget-presented",
+     "name": "Mayor or Manager presents the proposed budget",
+     "actor": "Mayor or City Manager",
+     "legallyRequired": true,
+     "inputs": [
+      "Certified taxable value",
+      "Budget priorities",
+      "Department requests"
+     ],
+     "output": "Proposed budget and recommended tax rates",
+     "timing": {
+      "rule": "Set by the county charter and code or the city charter. County: the Mayor prepares it June 1 to July 15 and presents it no later than the day the Commission sets tentative rates.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade Home Rule Charter Sec. 5.03(B)",
+       "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf",
+       "level": "county"
+      },
+      {
+       "cite": "s. 129.03(3), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/129.03",
+       "level": "county"
+      },
+      {
+       "cite": "s. 166.241(2), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.241",
+       "level": "municipal"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the proposed budget the day it is posted and note the lines you care about."
+      },
+      {
+       "lever": "contact",
+       "how": "Ask your commissioner to raise a specific change before the rate cap vote."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "The draft now exists, so specific asks are possible, and the rate cap has not been voted yet."
+    },
+    {
+     "key": "budget-workshops-before-rate-cap",
+     "name": "Early budget workshops",
+     "actor": "Commission",
+     "legallyRequired": false,
+     "inputs": [
+      "Draft revenue and spending figures"
+     ],
+     "output": "Direction to staff before the rate cap is set",
+     "timing": {
+      "rule": "Set by each body, usually June or July. Not set by state law.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Attend and speak if the workshop takes comment."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Email the commission before the workshop with a specific line item."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Officials are still shaping the plan and can be moved before the July rate vote."
+    },
+    {
+     "key": "maximum-millage-set",
+     "name": "Commission sets the proposed (maximum) tax rate and first hearing date",
+     "actor": "Commission",
+     "legallyRequired": true,
+     "inputs": [
+      "DR-420 certification",
+      "Proposed budget"
+     ],
+     "output": "Proposed millage, rolled-back rate and first hearing date sent to the Property Appraiser (DR-420)",
+     "timing": {
+      "rule": "Within 35 days of certification (day 35 is about August 4). A body that misses it cannot levy above the rolled-back rate.",
+      "anchor": "taxable-value-certified",
+      "offsetDays": {
+       "min": 0,
+       "max": 34
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(b), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "TRIM timetable, Florida DOR (day 35)",
+       "url": "https://floridarevenue.com/property/Documents/trimregwb.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the July meeting where the proposed rate is voted."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Write to each commissioner before the vote asking for a specific rate, such as the rolled-back rate."
+      },
+      {
+       "lever": "contact",
+       "how": "Call your district office the week of the vote."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "This rate goes on every TRIM notice and in practice caps the September rate; raising it later needs a new mailed notice to every taxpayer."
+    },
+    {
+     "key": "budget-workshops-before-hearings",
+     "name": "Budget workshops and town halls",
+     "actor": "Commission and Manager",
+     "legallyRequired": false,
+     "inputs": [
+      "Proposed budget"
+     ],
+     "output": "Changes the commission asks for before the hearings",
+     "timing": {
+      "rule": "Set by each body, usually August. Not set by state law.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Attend the town hall or workshop and ask about a specific line."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Email questions in advance so staff answer them in the room."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Spending lines can still move, but the rate cap is already set."
+    },
+    {
+     "key": "trim-notice-mailed",
+     "name": "TRIM notices mailed to property owners",
+     "actor": "Property Appraiser",
+     "legallyRequired": true,
+     "inputs": [
+      "Proposed rates and hearing dates from every taxing authority"
+     ],
+     "output": "Notice of Proposed Property Taxes (TRIM notice) to every owner",
+     "timing": {
+      "rule": "By the later of 55 days after certification (about August 24) or 10 days after the roll is approved.",
+      "anchor": "taxable-value-certified",
+      "offsetDays": {
+       "min": 0,
+       "max": 54
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(b), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "s. 200.069, F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.069"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "other",
+       "how": "Check your notice: it lists each body's proposed rate and hearing date. To appeal your assessed value, petition the Value Adjustment Board within 25 days of the mailing (s. 194.011(3)(d), F.S.)."
+      },
+      {
+       "lever": "public-comment",
+       "how": "Use the hearing date on the notice to plan to speak."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Turns the July rate into a dollar figure owners can see; strong turnout at the first hearing starts here."
+    },
+    {
+     "key": "tentative-budget-posted",
+     "name": "Tentative budget posted online",
+     "actor": "Budget office",
+     "legallyRequired": true,
+     "inputs": [
+      "Proposed budget as amended"
+     ],
+     "output": "Tentative budget on the official website",
+     "timing": {
+      "rule": "At least 5 days before the first budget hearing, and kept online at least 45 days.",
+      "anchor": "first-public-hearing",
+      "offsetDays": {
+       "min": null,
+       "max": -5
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 129.03(3)(c), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/129.03",
+       "level": "county"
+      },
+      {
+       "cite": "s. 166.241(3)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.241",
+       "level": "municipal"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Download the tentative budget and compare it with the proposed one."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Last look at the numbers before the hearing that fixes the ceiling."
+    },
+    {
+     "key": "first-public-hearing",
+     "name": "First public budget hearing (tentative rate and budget)",
+     "actor": "Commission",
+     "legallyRequired": true,
+     "inputs": [
+      "Tentative budget",
+      "TRIM notice"
+     ],
+     "output": "Tentative millage and tentative budget adopted",
+     "timing": {
+      "rule": "Between day 65 and day 80 after certification (about September 3 to 18), after 5 p.m. on a weekday. The first item is the percent increase over the rolled-back rate. The county may not use a School Board hearing date; cities may not use county or School Board dates.",
+      "anchor": "taxable-value-certified",
+      "offsetDays": {
+       "min": 64,
+       "max": 79
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(c), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "s. 200.065(2)(e), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the hearing: the public must be heard before any vote."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Send written comments before the hearing so they are in the record."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "The tentative rate set here is the most the final rate can be; the final hearing can only hold or lower it."
+    },
+    {
+     "key": "final-hearing-advertised",
+     "name": "Final hearing advertised",
+     "actor": "Clerk or budget office",
+     "legallyRequired": true,
+     "inputs": [
+      "Tentative millage and budget"
+     ],
+     "output": "Newspaper notice of the final hearing with a budget summary (Notice of Proposed Tax Increase if above rolled-back rate)",
+     "timing": {
+      "rule": "Within 15 days after the first hearing.",
+      "anchor": "first-public-hearing",
+      "offsetDays": {
+       "min": 1,
+       "max": 15
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(d), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "s. 200.065(3), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "written-comment",
+       "how": "Read the notice and send comments before the final hearing."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A notice, not a decision."
+    },
+    {
+     "key": "final-public-hearing",
+     "name": "Final public budget hearing (final rate and budget)",
+     "actor": "Commission",
+     "legallyRequired": true,
+     "inputs": [
+      "Tentative millage and budget",
+      "Final hearing ad"
+     ],
+     "output": "Final millage and budget adopted, rate first, by separate votes",
+     "timing": {
+      "rule": "Not less than 2 nor more than 5 days after the ad first runs. The final rate may not exceed the tentative rate.",
+      "anchor": "final-hearing-advertised",
+      "offsetDays": {
+       "min": 2,
+       "max": 5
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(d), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "s. 200.065(2)(e), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the final hearing."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Send written comments before the hearing."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "The rate can still go down here, but not up, and most lines were settled at the first hearing."
+    },
+    {
+     "key": "mayor-veto-window",
+     "name": "Mayor may veto budget items",
+     "actor": "County Mayor",
+     "appliesToLevels": [
+      "county"
+     ],
+     "legallyRequired": false,
+     "inputs": [
+      "Adopted budget"
+     ],
+     "output": "Veto message, or the budget stands",
+     "timing": {
+      "rule": "Within 10 days of final adoption. The Commission may override by two thirds of members present at its next regular meeting.",
+      "anchor": "final-public-hearing",
+      "offsetDays": {
+       "min": 0,
+       "max": 10
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade Home Rule Charter Sec. 2.02(D)",
+       "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Ask the Mayor's office to veto or keep a specific item within the 10 days."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Rarely used and limited: vetoing revenue requires vetoing equal spending."
+    },
+    {
+     "key": "resolutions-to-appraiser",
+     "name": "Adopted rate sent to Property Appraiser and Tax Collector",
+     "actor": "Clerk or budget office",
+     "legallyRequired": true,
+     "inputs": [
+      "Adopted millage resolution or ordinance"
+     ],
+     "output": "Rate on file for the November tax bills",
+     "timing": {
+      "rule": "Within 3 days after adoption.",
+      "anchor": "final-public-hearing",
+      "offsetDays": {
+       "min": 0,
+       "max": 3
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(4), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask for the adopted millage resolution or ordinance."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Paperwork after the decision."
+    },
+    {
+     "key": "fiscal-year-start",
+     "name": "Fiscal year begins",
+     "actor": "Manager or Mayor",
+     "legallyRequired": true,
+     "inputs": [
+      "Adopted budget"
+     ],
+     "output": "Budget in effect October 1 to September 30",
+     "timing": {
+      "rule": "October 1.",
+      "anchor": "date:10-01",
+      "offsetDays": {
+       "min": 0,
+       "max": 0
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 218.33(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/218.33"
+      },
+      {
+       "cite": "s. 166.241(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.241",
+       "level": "municipal"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Watch for budget amendments during the year; they are adopted the same way as the budget."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "The budget is set; changes come only by amendment."
+    },
+    {
+     "key": "trim-compliance-certified",
+     "name": "Certification of TRIM compliance to the state",
+     "actor": "Budget office",
+     "legallyRequired": true,
+     "inputs": [
+      "Adopted resolutions",
+      "Copies of the ads"
+     ],
+     "output": "Form DR-487 filed with the Florida Department of Revenue",
+     "timing": {
+      "rule": "Within 30 days after adoption.",
+      "anchor": "final-public-hearing",
+      "offsetDays": {
+       "min": 0,
+       "max": 30
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.068, F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.068"
+      },
+      {
+       "cite": "TRIM timetable, Florida DOR (DR-487)",
+       "url": "https://floridarevenue.com/property/Documents/trimregwb.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask for the DR-487 package to check the ads and votes followed the law."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A compliance filing; problems found here go to the Department of Revenue."
+    },
+    {
+     "key": "final-budget-posted",
+     "name": "Final budget posted online",
+     "actor": "Budget office",
+     "legallyRequired": true,
+     "inputs": [
+      "Adopted budget"
+     ],
+     "output": "Adopted budget on the official website for at least 5 years",
+     "timing": {
+      "rule": "Within 30 days after adoption.",
+      "anchor": "final-public-hearing",
+      "offsetDays": {
+       "min": 0,
+       "max": 30
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 129.03(3)(c), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/129.03",
+       "level": "county"
+      },
+      {
+       "cite": "s. 166.241(3)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.241",
+       "level": "municipal"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Download the adopted budget to track spending during the year."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Publication of a decision already made."
+    }
+   ]
+  },
+  {
+   "key": "annual-budget-and-millage-school-district",
+   "kind": "annual-budget-and-millage",
+   "name": "Yearly school budget and property tax rate (school district)",
+   "appliesToLevels": [
+    "school"
+   ],
+   "summary": "School districts run on a faster TRIM clock: the tentative budget hearing is in late July, before TRIM notices go out. Most of the school tax rate is the required local effort set by the state; the board sets the discretionary rates.",
+   "dayCounting": "Same day counting as the regular TRIM template: the later of July 1 or certification is day 1 (s. 200.065(12), F.S.).",
+   "legalBasis": [
+    {
+     "cite": "s. 200.065(2)(a)3. and (2)(f), F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+    },
+    {
+     "cite": "s. 1011.03, F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/1011.03"
+    },
+    {
+     "cite": "TRIM timetable for school districts, Florida DOR",
+     "url": "https://floridarevenue.com/property/Documents/trimschoolswb.pdf"
+    }
+   ],
+   "milestones": [
+    {
+     "key": "budget-workshops",
+     "name": "Board budget workshops",
+     "actor": "Superintendent and School Board",
+     "legallyRequired": false,
+     "inputs": [
+      "Enrollment projections",
+      "State funding estimates"
+     ],
+     "output": "Direction for the tentative budget",
+     "timing": {
+      "rule": "Set by the board, usually May and June. Not set by state law.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Attend the workshop; ask the board to raise a specific priority."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Send written comments through the Citizen Information Center before the workshop."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "The last open stage before the tentative budget is drafted; the July ad and hearing then come within days."
+    },
+    {
+     "key": "taxable-value-certified",
+     "name": "Property Appraiser certifies school taxable value",
+     "actor": "Property Appraiser",
+     "legallyRequired": true,
+     "inputs": [
+      "Assessment roll"
+     ],
+     "output": "Certification of School Taxable Value (Form DR-420S)",
+     "timing": {
+      "rule": "July 1 or the certification date, whichever is later, is day 1.",
+      "anchor": "date:07-01",
+      "offsetDays": {
+       "min": 0,
+       "max": 0
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 193.023(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/193.023"
+      },
+      {
+       "cite": "s. 200.065(1), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "s. 200.065(12), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the DR-420S to see the rolled-back rate."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A valuation, not a board choice."
+    },
+    {
+     "key": "fiscal-year-start",
+     "name": "School fiscal year begins",
+     "actor": "School Board",
+     "legallyRequired": true,
+     "inputs": [
+      "Prior-year budget"
+     ],
+     "output": "District spends on ordinary expenses until the tentative budget becomes official",
+     "timing": {
+      "rule": "July 1. State law lets boards pay ordinary expenses from July 1 until the budget is official.",
+      "anchor": "date:07-01",
+      "offsetDays": {
+       "min": 0,
+       "max": 0
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 1011.08, F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/1011.08"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask what the district is spending under the interim authority."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Automatic."
+    },
+    {
+     "key": "required-local-effort-certified",
+     "name": "State sets required local effort tax rate",
+     "actor": "Commissioner of Education",
+     "legallyRequired": true,
+     "inputs": [
+      "Department of Revenue estimate of school taxable value"
+     ],
+     "output": "Required local effort millage certified to the board",
+     "timing": {
+      "rule": "Not later than July 19.",
+      "anchor": "date:07-19",
+      "offsetDays": {
+       "min": null,
+       "max": 0
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 1011.62(4)(a)1.a., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/1011.62"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "This rate is set in Tallahassee; contact your state legislators about it, not the School Board."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Set by the state; the board must levy it."
+    },
+    {
+     "key": "tentative-budget-submitted",
+     "name": "Superintendent submits the tentative budget",
+     "actor": "Superintendent",
+     "legallyRequired": true,
+     "inputs": [
+      "Required local effort rate",
+      "Certified taxable value",
+      "Workshop direction"
+     ],
+     "output": "Tentative budget and proposed millage to the board",
+     "timing": {
+      "rule": "No later than 24 days after certification (about July 24).",
+      "anchor": "taxable-value-certified",
+      "offsetDays": {
+       "min": 0,
+       "max": 23
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(a)3., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "s. 1011.02, F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/1011.02"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the tentative budget when it is posted with the July agenda."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "The draft exists; specific asks to board members can still change it before the hearing."
+    },
+    {
+     "key": "tentative-budget-advertised",
+     "name": "Tentative budget and tax rate advertised",
+     "actor": "School Board",
+     "legallyRequired": true,
+     "inputs": [
+      "Tentative budget"
+     ],
+     "output": "Notice of the tentative budget hearing with a budget summary (Notice of Proposed Tax Increase if above rolled-back rate)",
+     "timing": {
+      "rule": "Within 29 days after certification (about July 29).",
+      "anchor": "taxable-value-certified",
+      "offsetDays": {
+       "min": 0,
+       "max": 28
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(f)1., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "s. 1011.03(1)-(2), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/1011.03"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the July regular meeting where the board authorizes the ad."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "The proposed rate becomes public here; the hearing follows within days."
+    },
+    {
+     "key": "tentative-budget-posted",
+     "name": "Tentative budget posted online",
+     "actor": "School district",
+     "legallyRequired": true,
+     "inputs": [
+      "Tentative budget"
+     ],
+     "output": "Tentative budget on the district website",
+     "timing": {
+      "rule": "At least 2 days before the tentative budget hearing.",
+      "anchor": "tentative-budget-hearing",
+      "offsetDays": {
+       "min": null,
+       "max": -2
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 1011.03(3), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/1011.03"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Download it and bring specific questions to the hearing."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Last look before the hearing that sets the ceiling."
+    },
+    {
+     "key": "tentative-budget-hearing",
+     "name": "Tentative budget hearing",
+     "actor": "School Board",
+     "legallyRequired": true,
+     "inputs": [
+      "Tentative budget",
+      "Ad"
+     ],
+     "output": "Tentative millage and budget adopted",
+     "timing": {
+      "rule": "Not less than 2 nor more than 5 days after the ad runs.",
+      "anchor": "tentative-budget-advertised",
+      "offsetDays": {
+       "min": 2,
+       "max": 5
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(f)1., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      },
+      {
+       "cite": "s. 1011.03(3), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/1011.03"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Register to speak by the deadline for special meetings and speak at the hearing."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Send written comments before the hearing."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Sets the tentative rate that goes on TRIM notices and caps the September rate."
+    },
+    {
+     "key": "proposed-millage-to-appraiser",
+     "name": "Proposed rate sent to Property Appraiser",
+     "actor": "School district",
+     "legallyRequired": true,
+     "inputs": [
+      "Tentative millage"
+     ],
+     "output": "Proposed rate, rolled-back rate and final hearing date for the TRIM notice",
+     "timing": {
+      "rule": "Within 35 days of certification (about August 4).",
+      "anchor": "taxable-value-certified",
+      "offsetDays": {
+       "min": 0,
+       "max": 34
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(f)2., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask for the DR-420S as filed."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Paperwork carrying the July decision."
+    },
+    {
+     "key": "trim-notice-mailed",
+     "name": "TRIM notices mailed",
+     "actor": "Property Appraiser",
+     "legallyRequired": true,
+     "inputs": [
+      "Proposed rates from every taxing authority"
+     ],
+     "output": "Notice of Proposed Property Taxes to every owner",
+     "timing": {
+      "rule": "By about 55 days after certification.",
+      "anchor": "taxable-value-certified",
+      "offsetDays": {
+       "min": 0,
+       "max": 54
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(b), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "other",
+       "how": "Check the school line on your notice. Appeal your assessed value to the Value Adjustment Board within 25 days of mailing (s. 194.011(3)(d), F.S.)."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Shows owners the school tax in dollars before the final hearing."
+    },
+    {
+     "key": "final-budget-hearing",
+     "name": "Final budget hearing",
+     "actor": "School Board",
+     "legallyRequired": true,
+     "inputs": [
+      "Tentative budget",
+      "TRIM notice"
+     ],
+     "output": "Final millage and budget adopted",
+     "timing": {
+      "rule": "Between day 65 and day 80 after certification (about September 3 to 18). No newspaper ad is required before it.",
+      "anchor": "taxable-value-certified",
+      "offsetDays": {
+       "min": 64,
+       "max": 79
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(2)(f)3., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the final hearing."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Send written comments before the hearing."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "The rate can be held or lowered here, not raised above the tentative rate."
+    },
+    {
+     "key": "resolutions-to-appraiser",
+     "name": "Adopted rate sent to Property Appraiser and Tax Collector",
+     "actor": "School district",
+     "legallyRequired": true,
+     "inputs": [
+      "Adopted resolution"
+     ],
+     "output": "Rate on file for tax bills",
+     "timing": {
+      "rule": "Within 3 days after adoption.",
+      "anchor": "final-budget-hearing",
+      "offsetDays": {
+       "min": 0,
+       "max": 3
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.065(4), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask for the adopted millage resolution."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Paperwork."
+    },
+    {
+     "key": "trim-compliance-certified",
+     "name": "Certification of TRIM compliance to the state",
+     "actor": "School district",
+     "legallyRequired": true,
+     "inputs": [
+      "Adopted resolutions and ads"
+     ],
+     "output": "Form DR-487 filed with the Department of Revenue",
+     "timing": {
+      "rule": "Within 30 days after adoption.",
+      "anchor": "final-budget-hearing",
+      "offsetDays": {
+       "min": 0,
+       "max": 30
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 200.068, F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.068"
+      },
+      {
+       "cite": "TRIM timetable for school districts, Florida DOR (DR-487)",
+       "url": "https://floridarevenue.com/property/Documents/trimschoolswb.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask for the DR-487 package."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Compliance filing."
+    },
+    {
+     "key": "final-budget-posted",
+     "name": "Final budget posted online",
+     "actor": "School district",
+     "legallyRequired": true,
+     "inputs": [
+      "Adopted budget"
+     ],
+     "output": "Adopted budget on the district website",
+     "timing": {
+      "rule": "Within 30 days after adoption.",
+      "anchor": "final-budget-hearing",
+      "offsetDays": {
+       "min": 0,
+       "max": 30
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 1011.03(3), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/1011.03"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Download the adopted budget."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Publication of a decision already made."
+    }
+   ]
+  }
+ ]
+}

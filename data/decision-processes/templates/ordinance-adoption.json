@@ -1,0 +1,818 @@
+{
+ "kind": "ordinance-adoption",
+ "name": "Passing a local law or policy",
+ "checked": "2026-10-29",
+ "variants": [
+  {
+   "key": "ordinance-adoption-municipal",
+   "kind": "ordinance-adoption",
+   "name": "City ordinance adoption",
+   "appliesToLevels": [
+    "municipal"
+   ],
+   "summary": "How a city passes a local law: two readings on separate days, a published notice at least 10 days before adoption, and a business impact estimate for most ordinances. Rezonings and use-list changes add mailed notice or two advertised hearings.",
+   "dayCounting": "Offsets are calendar days from the anchor.",
+   "legalBasis": [
+    {
+     "cite": "s. 166.041, F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+    }
+   ],
+   "milestones": [
+    {
+     "key": "drafted-and-sponsored",
+     "name": "Ordinance drafted and placed on an agenda",
+     "actor": "Commission member, City Manager or City Attorney",
+     "legallyRequired": true,
+     "inputs": [
+      "Request from a member, staff or applicant"
+     ],
+     "output": "Written ordinance with one subject stated in its title",
+     "timing": {
+      "rule": "Any time; set by the body's agenda deadlines.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 166.041(2), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Ask the sponsor or the City Attorney for the draft and suggest changes before it is public."
+      },
+      {
+       "lever": "records-request",
+       "how": "Request drafts and related emails."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Wording is easiest to change before the text is on an agenda."
+    },
+    {
+     "key": "planning-board-review",
+     "name": "Local Planning Agency review",
+     "actor": "Local Planning Agency (planning board)",
+     "appliesWhen": "land-development-regulation",
+     "legallyRequired": true,
+     "inputs": [
+      "Draft land development ordinance",
+      "Staff report"
+     ],
+     "output": "Recommendation on consistency with the comprehensive plan",
+     "timing": {
+      "rule": "Before the commission acts on a land development regulation; set by the city code.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 163.3174(4)(c), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/163.3174"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the planning board hearing."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Send comments to the planning department for the staff report."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Board recommendations shape the commission vote and the record for any later appeal."
+    },
+    {
+     "key": "first-reading",
+     "name": "First reading",
+     "actor": "Commission",
+     "legallyRequired": true,
+     "inputs": [
+      "Ordinance text"
+     ],
+     "output": "Ordinance passed on first reading (or changed, deferred or killed)",
+     "timing": {
+      "rule": "A regular or special meeting. The ordinance must be read on at least 2 separate days.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 166.041(3)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak on the item at the meeting."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Write to the commission before the meeting."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Amendments are most common between first and second reading."
+    },
+    {
+     "key": "business-impact-estimate-posted",
+     "name": "Business impact estimate posted",
+     "actor": "City staff",
+     "legallyRequired": true,
+     "inputs": [
+      "Ordinance text"
+     ],
+     "output": "Estimate of direct costs to for-profit businesses and number affected, on the city website",
+     "timing": {
+      "rule": "No later than the day the notice of adoption is published. Not required for budgets, procurement, emergency, contract or grant, debt, state-required, and certain development ordinances.",
+      "anchor": "notice-published",
+      "offsetDays": {
+       "min": null,
+       "max": 0
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 166.041(4), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+      },
+      {
+       "cite": "ch. 2023-309, Laws of Fla. (SB 170, 2023)",
+       "url": "https://flsenate.gov/Session/Bill/2023/170"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the estimate on the city website; ask for the backup if it looks thin."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Point out costs the estimate missed before the hearing."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Puts the business cost on the record before the vote."
+    },
+    {
+     "key": "notice-published",
+     "name": "Notice of proposed enactment published",
+     "actor": "City Clerk",
+     "legallyRequired": true,
+     "inputs": [
+      "Ordinance title",
+      "Hearing date"
+     ],
+     "output": "Newspaper or website notice with date, time, place and where to read the ordinance",
+     "timing": {
+      "rule": "At least 10 days before adoption.",
+      "anchor": "second-reading-hearing",
+      "offsetDays": {
+       "min": null,
+       "max": -10
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 166.041(3)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Inspect the ordinance where the notice says."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A notice, but it starts the clock to prepare comments."
+    },
+    {
+     "key": "zoning-mailed-notice",
+     "name": "Mailed notice to owners (small city-initiated rezoning)",
+     "actor": "City Clerk",
+     "appliesWhen": "city-initiated-rezoning-under-10-acres",
+     "legallyRequired": true,
+     "inputs": [
+      "Owner list from the tax roll"
+     ],
+     "output": "Letter to each affected owner",
+     "timing": {
+      "rule": "At least 30 days before the hearing.",
+      "anchor": "second-reading-hearing",
+      "offsetDays": {
+       "min": null,
+       "max": -30
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 166.041(3)(c)1., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "If you get a letter, plan to speak at the hearing."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Gives owners a month to organize."
+    },
+    {
+     "key": "zoning-first-hearing",
+     "name": "First advertised hearing (use-list change or 10 or more acres)",
+     "actor": "Commission",
+     "appliesWhen": "use-list-change-or-10-plus-acres",
+     "legallyRequired": true,
+     "inputs": [
+      "Display ad, not in the legal notices section"
+     ],
+     "output": "First of two hearings",
+     "timing": {
+      "rule": "At least 7 days after the first ad. At least one of the two hearings is after 5 p.m. on a weekday unless a majority plus one votes otherwise.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 166.041(3)(c)2., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the hearing."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Changes to what can be built are made between the two hearings."
+    },
+    {
+     "key": "second-reading-hearing",
+     "name": "Second reading and public hearing (adoption)",
+     "actor": "Commission",
+     "legallyRequired": true,
+     "inputs": [
+      "Notice",
+      "Business impact estimate"
+     ],
+     "output": "Ordinance adopted by majority of members present, each vote recorded",
+     "timing": {
+      "rule": "A separate day from first reading. For a use-list change or 10 or more acres, at least 10 days after the first hearing.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 166.041(3)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+      },
+      {
+       "cite": "s. 166.041(5), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the public hearing."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Send written comments before the hearing."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "The last public chance, but positions are often settled by now."
+    },
+    {
+     "key": "effective",
+     "name": "Ordinance takes effect",
+     "actor": "City Clerk",
+     "legallyRequired": true,
+     "inputs": [
+      "Adopted ordinance"
+     ],
+     "output": "Local law in force",
+     "timing": {
+      "rule": "10 days after passage unless the ordinance says otherwise.",
+      "anchor": "second-reading-hearing",
+      "offsetDays": {
+       "min": 10,
+       "max": 10
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 166.041(5), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.041"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "petition",
+       "how": "Where the charter allows, a referendum petition can ask voters to repeal it."
+      },
+      {
+       "lever": "referendum",
+       "how": "Check the city charter for the signature threshold and deadline."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Only a referendum petition or a new ordinance changes it now."
+    }
+   ]
+  },
+  {
+   "key": "ordinance-adoption-county",
+   "kind": "ordinance-adoption",
+   "name": "County ordinance adoption",
+   "appliesToLevels": [
+    "county"
+   ],
+   "summary": "How the County Commission passes an ordinance: first reading by title, committee review, a published notice, a public hearing at second reading, then a 10-day Mayor veto window.",
+   "dayCounting": "Offsets are calendar days from the anchor.",
+   "legalBasis": [
+    {
+     "cite": "s. 125.66, F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/125.66"
+    },
+    {
+     "cite": "Miami-Dade Home Rule Charter Sec. 1.02",
+     "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf"
+    }
+   ],
+   "milestones": [
+    {
+     "key": "drafted-and-sponsored",
+     "name": "Ordinance drafted and sponsored",
+     "actor": "Commissioner or Mayor, with the County Attorney",
+     "legallyRequired": true,
+     "inputs": [
+      "Request from a commissioner, the Mayor or staff"
+     ],
+     "output": "Written ordinance with a title and enacting clause",
+     "timing": {
+      "rule": "Any time; set by agenda printing deadlines.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade Home Rule Charter Sec. 1.02(B)",
+       "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Ask the sponsoring commissioner's office for the draft and suggest changes."
+      },
+      {
+       "lever": "records-request",
+       "how": "Request drafts and backup from the Clerk of the Board."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Wording is easiest to change before first reading."
+    },
+    {
+     "key": "first-reading",
+     "name": "First reading (title only)",
+     "actor": "Commission",
+     "legallyRequired": true,
+     "inputs": [
+      "Ordinance text"
+     ],
+     "output": "Ordinance set for committee and public hearing",
+     "timing": {
+      "rule": "A regular meeting. Read by title only; no debate except under the general comment rule.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "BCC Rules of Procedure 5.05(a), 5.06(a)",
+       "url": "https://www.miamidade.gov/commission/library/2019-02-05-rules-of-procedure.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Use the general comment period (Rule 6.06) at the start of the meeting."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Mostly procedural, but it starts the public clock."
+    },
+    {
+     "key": "committee-hearing",
+     "name": "Committee review and hearing",
+     "actor": "Commission committee",
+     "legallyRequired": false,
+     "inputs": [
+      "Ordinance",
+      "Fiscal impact and social equity statements"
+     ],
+     "output": "Recommendation: favorable, with amendments, no recommendation, or report only",
+     "timing": {
+      "rule": "After first reading, at the committee the Chair assigns. Deferral is limited to two meetings in a row.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "BCC Rules of Procedure 4.01",
+       "url": "https://www.miamidade.gov/commission/library/2019-02-05-rules-of-procedure.pdf"
+      },
+      {
+       "cite": "Miami-Dade Home Rule Charter Sec. 1.08",
+       "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak at the committee meeting if the committee takes testimony."
+      },
+      {
+       "lever": "contact",
+       "how": "Reach committee members before the meeting."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Most amendments happen in committee, before the full board."
+    },
+    {
+     "key": "business-impact-estimate-posted",
+     "name": "Business impact estimate posted",
+     "actor": "County staff",
+     "legallyRequired": true,
+     "inputs": [
+      "Ordinance text"
+     ],
+     "output": "Estimate of direct costs to for-profit businesses, on the county website",
+     "timing": {
+      "rule": "No later than the day the notice is published. Exemptions include budgets, procurement, emergency, contract or grant, debt, state-required and certain development ordinances.",
+      "anchor": "notice-published",
+      "offsetDays": {
+       "min": null,
+       "max": 0
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 125.66(3), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/125.66"
+      },
+      {
+       "cite": "ch. 2023-309, Laws of Fla. (SB 170, 2023)",
+       "url": "https://flsenate.gov/Session/Bill/2023/170"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "written-comment",
+       "how": "Point out costs the estimate missed before the hearing."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Puts the business cost on the record before the vote."
+    },
+    {
+     "key": "notice-published",
+     "name": "Notice of intent published",
+     "actor": "Clerk of the Board",
+     "legallyRequired": true,
+     "inputs": [
+      "Ordinance title and hearing date"
+     ],
+     "output": "Published notice with date, time, place and where to read the text",
+     "timing": {
+      "rule": "At least 10 days before the hearing (state law); the charter also requires a summary at least one week before. Ordinances that directly affect cities wait at least six weeks after first reading.",
+      "anchor": "commission-public-hearing",
+      "offsetDays": {
+       "min": null,
+       "max": -10
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 125.66(2)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/125.66"
+      },
+      {
+       "cite": "Miami-Dade Home Rule Charter Sec. 1.02(B)",
+       "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf"
+      },
+      {
+       "cite": "BCC Rules of Procedure 5.06(f)",
+       "url": "https://www.miamidade.gov/commission/library/2019-02-05-rules-of-procedure.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Read the ordinance where the notice says."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "A notice, but it starts the clock to prepare comments."
+    },
+    {
+     "key": "commission-public-hearing",
+     "name": "Public hearing and second reading (adoption)",
+     "actor": "Commission",
+     "legallyRequired": true,
+     "inputs": [
+      "Committee recommendation",
+      "Notice",
+      "Fiscal impact statement"
+     ],
+     "output": "Ordinance adopted, amended or rejected by individual vote",
+     "timing": {
+      "rule": "At a noticed regular meeting; public hearings are set for 9:30 a.m.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade Home Rule Charter Sec. 1.02(C)",
+       "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf"
+      },
+      {
+       "cite": "BCC Rules of Procedure 5.05, 6.03, 6.04",
+       "url": "https://www.miamidade.gov/commission/library/2019-02-05-rules-of-procedure.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Register at least 15 minutes before the item; up to 5 minutes to speak."
+      },
+      {
+       "lever": "written-comment",
+       "how": "Write to your district commissioner before the hearing."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "The last public chance; votes are often settled after committee."
+    },
+    {
+     "key": "mayor-veto-window",
+     "name": "Mayor may veto",
+     "actor": "County Mayor",
+     "legallyRequired": false,
+     "inputs": [
+      "Adopted ordinance"
+     ],
+     "output": "Veto, or the ordinance stands; override needs two thirds of members present at the next regular meeting",
+     "timing": {
+      "rule": "Within 10 days of adoption.",
+      "anchor": "commission-public-hearing",
+      "offsetDays": {
+       "min": 0,
+       "max": 10
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade Home Rule Charter Sec. 2.02(D)",
+       "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Ask the Mayor's office to veto or sign within the 10 days."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "A real check, open for only 10 days."
+    },
+    {
+     "key": "filed-and-effective",
+     "name": "Filed with the state and takes effect",
+     "actor": "Clerk of the Board",
+     "legallyRequired": true,
+     "inputs": [
+      "Adopted ordinance"
+     ],
+     "output": "Ordinance in force",
+     "timing": {
+      "rule": "Filed with the Department of State within 10 days; effective no earlier than 10 days after enactment (charter).",
+      "anchor": "commission-public-hearing",
+      "offsetDays": {
+       "min": 10,
+       "max": null
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 125.66(2)(b), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/125.66"
+      },
+      {
+       "cite": "Miami-Dade Home Rule Charter Sec. 1.02(E)",
+       "url": "https://www.miamidade.gov/charter/library/home-rule-charter.pdf"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "petition",
+       "how": "A referendum petition under Charter Sec. 8.01 can put repeal on the ballot."
+      }
+     ],
+     "influence": "low",
+     "influenceWhy": "Only a petition or new ordinance changes it now."
+    }
+   ]
+  },
+  {
+   "key": "rule-adoption-school-district",
+   "kind": "ordinance-adoption",
+   "name": "School Board policy adoption",
+   "appliesToLevels": [
+    "school"
+   ],
+   "summary": "School boards do not pass ordinances; they adopt policies (rules) under ch. 120, F.S.: first reading, a published notice, a written comment period, then final action.",
+   "dayCounting": "Offsets are calendar days from the anchor.",
+   "legalBasis": [
+    {
+     "cite": "s. 120.54, F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/120.54"
+    },
+    {
+     "cite": "s. 120.81(1), F.S.",
+     "url": "https://www.flsenate.gov/Laws/Statutes/2026/120.81"
+    }
+   ],
+   "milestones": [
+    {
+     "key": "drafted",
+     "name": "Policy change drafted",
+     "actor": "Superintendent or Board member",
+     "legallyRequired": false,
+     "inputs": [
+      "Board request, new state law or staff proposal"
+     ],
+     "output": "Draft policy for first reading",
+     "timing": {
+      "rule": "Any time.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [],
+     "residentCan": [
+      {
+       "lever": "contact",
+       "how": "Ask your Board member to sponsor or change a policy before it is drafted."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "Wording is easiest to change before first reading."
+    },
+    {
+     "key": "first-reading",
+     "name": "First reading and authority to give notice",
+     "actor": "School Board",
+     "legallyRequired": true,
+     "inputs": [
+      "Draft policy"
+     ],
+     "output": "Board authorizes notice of the proposed rule",
+     "timing": {
+      "rule": "A regular meeting.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 120.54(3)(a), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/120.54"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Register to speak on the item."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "The text is public and the comment period is about to open."
+    },
+    {
+     "key": "notice-published",
+     "name": "Notice of proposed rule published",
+     "actor": "School district",
+     "legallyRequired": true,
+     "inputs": [
+      "Proposed policy"
+     ],
+     "output": "Notice in a local newspaper or on a public website, mailed to people who asked",
+     "timing": {
+      "rule": "At least 28 days before final action.",
+      "anchor": "final-action",
+      "offsetDays": {
+       "min": null,
+       "max": -28
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 120.54(3)(a)2., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/120.54"
+      },
+      {
+       "cite": "s. 120.81(1)(d), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/120.81"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "records-request",
+       "how": "Ask to be on the mailing list for rule notices."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Opens the formal comment and hearing-request window."
+    },
+    {
+     "key": "hearing-request-deadline",
+     "name": "Deadline to request a public hearing",
+     "actor": "Any affected person",
+     "legallyRequired": true,
+     "inputs": [
+      "Published notice"
+     ],
+     "output": "Board must schedule a hearing if one is requested",
+     "timing": {
+      "rule": "Within 21 days after the notice.",
+      "anchor": "notice-published",
+      "offsetDays": {
+       "min": 0,
+       "max": 21
+      }
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 120.54(3)(c)1., F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/120.54"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "written-comment",
+       "how": "Send written comments during the period."
+      },
+      {
+       "lever": "other",
+       "how": "Request a public hearing in writing within 21 days of the notice."
+      }
+     ],
+     "influence": "high",
+     "influenceWhy": "A written request forces a hearing on the rule."
+    },
+    {
+     "key": "final-action",
+     "name": "Final action",
+     "actor": "School Board",
+     "legallyRequired": true,
+     "inputs": [
+      "Written comments",
+      "Hearing record if any"
+     ],
+     "output": "Policy adopted, changed or withdrawn",
+     "timing": {
+      "rule": "A regular meeting at least 28 days after the notice.",
+      "anchor": null,
+      "offsetDays": null
+     },
+     "legalBasis": [
+      {
+       "cite": "s. 120.54(3), F.S.",
+       "url": "https://www.flsenate.gov/Laws/Statutes/2026/120.54"
+      }
+     ],
+     "residentCan": [
+      {
+       "lever": "public-comment",
+       "how": "Speak on the item at the meeting."
+      }
+     ],
+     "influence": "medium",
+     "influenceWhy": "Last chance; changes after notice can require a new notice."
+    }
+   ]
+  }
+ ]
+}

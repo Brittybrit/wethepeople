@@ -1,0 +1,279 @@
+{
+ "key": "city-south-miami",
+ "name": "South Miami City Commission",
+ "level": "municipal",
+ "jurisdiction": "City of South Miami",
+ "cycleFile": {
+  "path": "vote-informed/scripts/data/cycles/city-south-miami.json",
+  "checked": "2026-10-22"
+ },
+ "meetingPattern": {
+  "text": "First and third Tuesday of most months, 7:00 p.m., Commission Chambers, City Hall, 6130 Sunset Drive, with Zoom participation (chambers open 6:30 p.m. for in-person comment). Charter Art. II Sec. 5C requires at least two meetings a month generally and at least one a month from Nov 1 to Jan 31 and Jun 1 to Aug 31.",
+  "source": "https://www.somifl.gov/calendar.aspx?CID=14"
+ },
+ "leverLinks": {
+  "public-comment": {
+   "url": "https://www.somifl.gov/102/Agendas-Meeting-Videos-Minutes",
+   "deadline": "During the meeting",
+   "source": "https://www.somifl.gov/DocumentCenter/View/7995/010725-Notice-of-Virtual-City-Commission-meeting"
+  },
+  "written-comment": {
+   "url": "mailto:CityClerk@SoMiFL.gov",
+   "source": "https://www.somifl.gov/418/City-Clerk"
+  },
+  "contact": {
+   "url": "https://www.somifl.gov/Directory.aspx?DID=4",
+   "source": "https://www.somifl.gov/102/Agendas-Meeting-Videos-Minutes"
+  },
+  "records-request": {
+   "url": "https://www.somifl.gov/527/Public-Records-Requests",
+   "source": "https://www.somifl.gov/418/City-Clerk"
+  },
+  "petition": {
+   "url": "https://www.somifl.gov/362/South-Miami-Charter"
+  },
+  "referendum": {
+   "url": "https://www.somifl.gov/362/South-Miami-Charter",
+   "deadline": "30 days after the ordinance is adopted"
+  },
+  "recall": {
+   "url": "https://www.somifl.gov/362/South-Miami-Charter"
+  },
+  "qualify": {
+   "url": "https://www.somifl.gov/130/Elections",
+   "deadline": "5:00 p.m. on the last day of qualifying"
+  },
+  "vote": {
+   "url": "https://www.somifl.gov/130/Elections",
+   "deadline": "2026-11-03"
+  }
+ },
+ "decisions": [
+  {
+   "key": "budget-fy2027-28",
+   "kind": "annual-budget-and-millage",
+   "template": "annual-budget-and-millage",
+   "name": "FY 2027-28 budget and property tax rate",
+   "cycle": "FY 2027-28 (October 1, 2027 to September 30, 2028)",
+   "milestones": [
+    {
+     "milestone": "taxable-value-certified",
+     "date": "2027-07-01",
+     "dateBasis": "statutory-window",
+     "note": "July 1 is the legal deadline and day 1 of the TRIM clock. If the Property Appraiser certifies later, every window below shifts by the same number of days."
+    },
+    {
+     "milestone": "proposed-budget-presented",
+     "date": "2027-07-01",
+     "dateBasis": "pattern",
+     "source": "https://www.somifl.gov/DocumentCenter/View/8911/FY-2027-Budget-Schedule",
+     "note": "Estimated, not confirmed: 2026 was 2026-07-01 (same calendar date (July 1)); the same pattern gives 2027-07-01. Charter Art. IV Sec. 2 requires it 60 days before the fiscal year."
+    },
+    {
+     "milestone": "budget-workshops-before-rate-cap",
+     "date": "2027-07-14",
+     "dateBasis": "pattern",
+     "source": "https://www.somifl.gov/DocumentCenter/View/8911/FY-2027-Budget-Schedule",
+     "note": "Estimated, not confirmed: 2026 was 2026-07-15 (a Wednesday; same weekday 52 weeks later); the same pattern gives 2027-07-14. 4:00 p.m. workshop."
+    },
+    {
+     "milestone": "maximum-millage-set",
+     "date": "2027-07-20",
+     "dateBasis": "pattern",
+     "source": "https://www.somifl.gov/DocumentCenter/View/8911/FY-2027-Budget-Schedule",
+     "note": "Estimated, not confirmed: 2026 was 2026-07-21 (a Tuesday; same weekday 52 weeks later); the same pattern gives 2027-07-20. Proposed millage resolution."
+    },
+    {
+     "milestone": "trim-notice-mailed",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-24"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Usually mailed in mid to late August."
+    },
+    {
+     "milestone": "tentative-budget-posted",
+     "window": {
+      "from": null,
+      "to": "2027-09-02"
+     },
+     "dateBasis": "statutory-window",
+     "note": "At least 5 days before the first hearing.",
+     "anchorBasis": "first-public-hearing:pattern"
+    },
+    {
+     "milestone": "first-public-hearing",
+     "date": "2027-09-07",
+     "dateBasis": "pattern",
+     "source": "https://www.somifl.gov/DocumentCenter/View/8911/FY-2027-Budget-Schedule",
+     "note": "Estimated, not confirmed: 2026 was 2026-09-08 (a Tuesday; same weekday 52 weeks later); the same pattern gives 2027-09-07. 5:01 p.m."
+    },
+    {
+     "milestone": "final-hearing-advertised",
+     "window": {
+      "from": "2027-09-16",
+      "to": "2027-09-19"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Within 15 days after the first hearing and 2 to 5 days before the final hearing.",
+     "anchorBasis": "first-public-hearing:pattern, final-public-hearing:pattern"
+    },
+    {
+     "milestone": "final-public-hearing",
+     "date": "2027-09-21",
+     "dateBasis": "pattern",
+     "source": "https://www.somifl.gov/DocumentCenter/View/8911/FY-2027-Budget-Schedule",
+     "note": "Estimated, not confirmed: 2026 was 2026-09-22 (a Tuesday; same weekday 52 weeks later); the same pattern gives 2027-09-21. 5:01 p.m."
+    },
+    {
+     "milestone": "resolutions-to-appraiser",
+     "window": {
+      "from": "2027-09-21",
+      "to": "2027-09-24"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:pattern"
+    },
+    {
+     "milestone": "fiscal-year-start",
+     "date": "2027-10-01",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "trim-compliance-certified",
+     "window": {
+      "from": "2027-09-21",
+      "to": "2027-10-21"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:pattern"
+    },
+    {
+     "milestone": "final-budget-posted",
+     "window": {
+      "from": "2027-09-21",
+      "to": "2027-10-21"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:pattern"
+    }
+   ]
+  },
+  {
+   "key": "ordinance-adoption",
+   "kind": "ordinance-adoption",
+   "template": "ordinance-adoption-municipal",
+   "name": "Passing or changing a local law (ordinance)",
+   "processOnly": true,
+   "notes": "Dates depend on the item. First and second readings happen at the meetings above; watch posted agendas.",
+   "milestones": []
+  },
+  {
+   "key": "procurement-award",
+   "kind": "procurement-award",
+   "template": "procurement-award",
+   "name": "Buying goods, services and construction (contract awards)",
+   "processOnly": true,
+   "milestones": [
+    {
+     "dateBasis": "unknown",
+     "milestone": "solicitation-advertised",
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade County Code Sec. 2-11.1(t)",
+       "url": "https://www.miamidade.gov/global/strategic-procurement/procedures-cone-of-silence.page"
+      },
+      {
+       "cite": "Miami-Dade Commission on Ethics, INQ 2020-90 (county Cone of Silence applied to a city procurement)",
+       "url": "https://ethics.miamidade.gov/library/inquiry-2020/inq-2020-90-herin-biscayne-park-rfp.pdf"
+      }
+     ],
+     "note": "The county Cone of Silence applies to city officials under the county ethics code; check the city's own procurement code for added rules."
+    },
+    {
+     "dateBasis": "unknown",
+     "milestone": "bid-protest-window",
+     "note": "The city's bid protest deadline was not checked; it is set by the city procurement code and stated in each solicitation."
+    }
+   ]
+  },
+  {
+   "key": "election-2026",
+   "kind": "election-to-office",
+   "template": "election-to-office-municipal",
+   "name": "2026 South Miami election (Mayor, Groups I and IV)",
+   "cycle": "2026",
+   "notes": "All three 2026 seats are unopposed per the city elections page.",
+   "milestones": [
+    {
+     "milestone": "qualifying",
+     "window": {
+      "from": "2026-07-27",
+      "to": "2026-08-07"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.somifl.gov/130/Elections"
+    },
+    {
+     "milestone": "campaign-reports",
+     "dateBasis": "unknown",
+     "note": "The City Clerk gives each candidate the report schedule."
+    },
+    {
+     "milestone": "registration-closes",
+     "date": "2026-10-05",
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/voters/calendar-2026.page"
+    },
+    {
+     "milestone": "vote-by-mail-request-deadline",
+     "date": "2026-10-22",
+     "dateBasis": "statutory-window",
+     "note": "5 p.m."
+    },
+    {
+     "milestone": "early-voting",
+     "window": {
+      "from": "2026-10-19",
+      "to": "2026-11-01"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/elections/library/early-voting/2026-11-03-general-election-early-voting-schedule.pdf",
+     "note": "City races are on the county ballot, so county early voting sites apply."
+    },
+    {
+     "milestone": "election-day",
+     "date": "2026-11-03",
+     "dateBasis": "body-source",
+     "source": "https://www.somifl.gov/362/South-Miami-Charter"
+    },
+    {
+     "milestone": "results-certified",
+     "dateBasis": "unknown",
+     "note": "Set by the canvassing board; not posted."
+    },
+    {
+     "milestone": "runoff",
+     "date": "2026-12-01",
+     "dateBasis": "body-source",
+     "source": "https://www.votemiamidade.gov/elections/voters/calendar-2026.page",
+     "note": "Held only if no candidate wins a majority."
+    },
+    {
+     "milestone": "swearing-in",
+     "dateBasis": "unknown",
+     "note": "Set by the city charter; date not posted."
+    },
+    {
+     "milestone": "campaign-account-closed",
+     "window": {
+      "from": "2026-11-03",
+      "to": "2027-02-01"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  }
+ ]
+}

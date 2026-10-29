@@ -190,6 +190,9 @@ One precinct's view, closest to home first.
 | `decisionPoints` | Budget, election and session phases over the next six months, with what each decides. |
 | `servants` | Every seat that represents the precinct, by level (city, schools, county, state, federal): who holds it, since when, who is on the ballot for it, and the office's contact. |
 | `levers` | Every documented way to act on each body: public comment, written comment, records requests, petitions, boards. |
+| `decisionChains` | Each upcoming decision (budget and tax rate, elections) broken into milestones: who acts, what feeds the step, what it produces, the law that requires it, what a resident can do, and how much leverage that step gives. Each step has a status (done, now, ahead) and says whether its date is from the body, a legal window, or an estimate. Source: `data/decision-processes/`. |
+| `processes` | How a local law (ordinance) passes and how a contract is awarded, per body, step by step. |
+| `nextLeveragePoint` | The soonest open or upcoming high-leverage step. |
 | `appointed` | Appointed officials who run the precinct's city, schools and county (manager, attorney, clerk, superintendent, county attorney, inspectors general). |
 | `courts` | The four courts that hear the precinct's cases, with every sitting judge. |
 | `boards` | Countywide boards and authorities that tax, borrow or spend public money, with members, seats and how each was chosen. |

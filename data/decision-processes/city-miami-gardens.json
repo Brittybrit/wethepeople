@@ -1,0 +1,253 @@
+{
+ "key": "city-miami-gardens",
+ "name": "Miami Gardens City Council",
+ "level": "municipal",
+ "jurisdiction": "City of Miami Gardens",
+ "cycleFile": {
+  "path": "vote-informed/scripts/data/cycles/city-miami-gardens.json",
+  "checked": "2026-10-22"
+ },
+ "meetingPattern": {
+  "text": "Second and fourth Wednesday of each month, 5:30 p.m., City Hall Council Chambers, 18605 NW 27th Avenue, Miami Gardens, FL 33056",
+  "source": "https://miamigardens-fl.gov/Calendar.aspx?CID=23"
+ },
+ "leverLinks": {
+  "public-comment": {
+   "url": "https://miamigardens.civicweb.net/Portal/Default.aspx",
+   "deadline": "At least one hour before the meeting for pre-registration, per the Sept 23, 2026 CRA notice; confirm for regular meetings",
+   "source": "https://www.miamidade.gov/resources/legal-ads/municipalities/miami-gardens/2026/2026-09-23-second-budget-hearing.pdf"
+  },
+  "written-comment": {
+   "url": "mailto:mbataille@miamigardens-fl.gov",
+   "source": "https://miamigardens-fl.gov/160/City-Clerks-Office"
+  },
+  "contact": {
+   "url": "https://miamigardens-fl.gov/285/City-Council"
+  },
+  "records-request": {
+   "url": "https://miamigardens-fl.gov/511/Public-Records",
+   "source": "https://miamigardens-fl.gov/160/City-Clerks-Office"
+  },
+  "petition": {
+   "url": "https://library.municode.com/fl/miami_gardens/codes/code_of_ordinances?nodeId=PTICH",
+   "source": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0166/Sections/0166.031.html"
+  },
+  "referendum": {
+   "url": "https://library.municode.com/fl/miami_gardens/codes/code_of_ordinances?nodeId=PTICH",
+   "source": "https://www.miamidade.gov/elections/library/sample-ballots/2014-08-26-miami-gardens.pdf"
+  },
+  "recall": {
+   "url": "https://miamigardens-fl.gov/160/City-Clerks-Office",
+   "deadline": "30 days for the first round of signatures; 60 days for the second",
+   "source": "https://www.flsenate.gov/Laws/Statutes/2025/100.361"
+  },
+  "qualify": {
+   "url": "https://miamigardens-fl.gov/836/Elections",
+   "source": "https://www.miamidade.gov/resources/legal-ads/municipalities/miami-gardens/Public%20Notice%20-%202026%20Election%20Qualifying%20Period.pdf"
+  },
+  "vote": {
+   "url": "https://miamigardens-fl.gov/836/Elections",
+   "deadline": "Early voting ends November 1, 2026"
+  },
+  "serve-on-board": {
+   "url": "https://miamigardens-fl.gov/Calendar.aspx?CID=26",
+   "source": "https://miamigardens-fl.gov/calendar.aspx?CID=26"
+  }
+ },
+ "decisions": [
+  {
+   "key": "budget-fy2027-28",
+   "kind": "annual-budget-and-millage",
+   "template": "annual-budget-and-millage",
+   "name": "FY 2027-28 budget and property tax rate",
+   "cycle": "FY 2027-28 (October 1, 2027 to September 30, 2028)",
+   "milestones": [
+    {
+     "milestone": "taxable-value-certified",
+     "date": "2027-07-01",
+     "dateBasis": "statutory-window",
+     "note": "July 1 is the legal deadline and day 1 of the TRIM clock. If the Property Appraiser certifies later, every window below shifts by the same number of days."
+    },
+    {
+     "milestone": "maximum-millage-set",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-04"
+     },
+     "dateBasis": "statutory-window",
+     "note": "The body's own date for this vote was not found; the law requires it within this window."
+    },
+    {
+     "milestone": "trim-notice-mailed",
+     "window": {
+      "from": "2027-07-01",
+      "to": "2027-08-24"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Usually mailed in mid to late August."
+    },
+    {
+     "milestone": "tentative-budget-posted",
+     "window": {
+      "from": null,
+      "to": "2027-09-13"
+     },
+     "dateBasis": "statutory-window",
+     "note": "At least 5 days before the first hearing.",
+     "anchorBasis": "first-public-hearing:statutory-window"
+    },
+    {
+     "milestone": "first-public-hearing",
+     "window": {
+      "from": "2027-09-03",
+      "to": "2027-09-18"
+     },
+     "dateBasis": "statutory-window",
+     "note": "The 2026 first hearing date was not found."
+    },
+    {
+     "milestone": "final-hearing-advertised",
+     "window": {
+      "from": "2027-09-17",
+      "to": "2027-09-20"
+     },
+     "dateBasis": "statutory-window",
+     "note": "Within 15 days after the first hearing and 2 to 5 days before the final hearing.",
+     "anchorBasis": "first-public-hearing:statutory-window, final-public-hearing:pattern"
+    },
+    {
+     "milestone": "final-public-hearing",
+     "date": "2027-09-22",
+     "dateBasis": "pattern",
+     "source": "https://www.miamidade.gov/resources/legal-ads/municipalities/miami-gardens/2026/2026-09-23-second-budget-hearing.pdf",
+     "note": "Estimated, not confirmed: 2026 was 2026-09-23 (a Wednesday; same weekday 52 weeks later); the same pattern gives 2027-09-22. 5:01 p.m."
+    },
+    {
+     "milestone": "resolutions-to-appraiser",
+     "window": {
+      "from": "2027-09-22",
+      "to": "2027-09-25"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:pattern"
+    },
+    {
+     "milestone": "fiscal-year-start",
+     "date": "2027-10-01",
+     "dateBasis": "statutory-window"
+    },
+    {
+     "milestone": "trim-compliance-certified",
+     "window": {
+      "from": "2027-09-22",
+      "to": "2027-10-22"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:pattern"
+    },
+    {
+     "milestone": "final-budget-posted",
+     "window": {
+      "from": "2027-09-22",
+      "to": "2027-10-22"
+     },
+     "dateBasis": "statutory-window",
+     "anchorBasis": "final-public-hearing:pattern"
+    }
+   ]
+  },
+  {
+   "key": "ordinance-adoption",
+   "kind": "ordinance-adoption",
+   "template": "ordinance-adoption-municipal",
+   "name": "Passing or changing a local law (ordinance)",
+   "processOnly": true,
+   "notes": "Dates depend on the item. First and second readings happen at the meetings above; watch posted agendas.",
+   "milestones": []
+  },
+  {
+   "key": "procurement-award",
+   "kind": "procurement-award",
+   "template": "procurement-award",
+   "name": "Buying goods, services and construction (contract awards)",
+   "processOnly": true,
+   "milestones": [
+    {
+     "dateBasis": "unknown",
+     "milestone": "solicitation-advertised",
+     "legalBasis": [
+      {
+       "cite": "Miami-Dade County Code Sec. 2-11.1(t)",
+       "url": "https://www.miamidade.gov/global/strategic-procurement/procedures-cone-of-silence.page"
+      },
+      {
+       "cite": "Miami-Dade Commission on Ethics, INQ 2020-90 (county Cone of Silence applied to a city procurement)",
+       "url": "https://ethics.miamidade.gov/library/inquiry-2020/inq-2020-90-herin-biscayne-park-rfp.pdf"
+      }
+     ],
+     "note": "The county Cone of Silence applies to city officials under the county ethics code; check the city's own procurement code for added rules."
+    },
+    {
+     "dateBasis": "unknown",
+     "milestone": "bid-protest-window",
+     "note": "The city's bid protest deadline was not checked; it is set by the city procurement code and stated in each solicitation."
+    }
+   ]
+  },
+  {
+   "key": "election-2026",
+   "kind": "election-to-office",
+   "template": "election-to-office-municipal",
+   "name": "2026 Miami Gardens election (Seats 2, 4, 6)",
+   "cycle": "2026",
+   "notes": "City elections are held with the state primary in August; the November general election date is the runoff. Early voting for the runoff is October 19 to November 1, 2026 at county sites.",
+   "milestones": [
+    {
+     "milestone": "qualifying",
+     "window": {
+      "from": "2026-04-13",
+      "to": "2026-04-15"
+     },
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/resources/legal-ads/municipalities/miami-gardens/Public%20Notice%20-%202026%20Election%20Qualifying%20Period.pdf"
+    },
+    {
+     "milestone": "campaign-reports",
+     "dateBasis": "unknown",
+     "note": "The City Clerk gives each candidate the report schedule."
+    },
+    {
+     "milestone": "election-day",
+     "date": "2026-08-18",
+     "dateBasis": "body-source",
+     "source": "https://www.miamidade.gov/resources/legal-ads/municipalities/miami-gardens/Public%20Notice%20-%202026%20Election%20Qualifying%20Period.pdf"
+    },
+    {
+     "milestone": "results-certified",
+     "dateBasis": "unknown",
+     "note": "Set by the canvassing board; not posted."
+    },
+    {
+     "milestone": "runoff",
+     "date": "2026-11-03",
+     "dateBasis": "body-source",
+     "source": "https://miamigardens-fl.gov/836/Elections",
+     "note": "Runoff for Residential Area Seat 4 only."
+    },
+    {
+     "milestone": "swearing-in",
+     "dateBasis": "unknown",
+     "note": "Set by the city charter; date not posted."
+    },
+    {
+     "milestone": "campaign-account-closed",
+     "window": {
+      "from": "2026-08-18",
+      "to": "2026-11-16"
+     },
+     "dateBasis": "statutory-window"
+    }
+   ]
+  }
+ ]
+}
