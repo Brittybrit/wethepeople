@@ -10,6 +10,8 @@
     "ai/data-card.md",
     "ai/evals.md",
     "security/threat-model.md",
+    "identity.md",
+    "organizer-criteria.md",
     "decisions/README.md",
     "decisions/0001-headless-first.md",
     "decisions/0002-cost-ladder.md",
@@ -19,6 +21,7 @@
     "decisions/0006-money-figures-stay-on-ballot305.md",
     "decisions/0007-mcp-and-openapi-from-one-schema.md",
     "decisions/0008-ledger-moves-to-platform.md",
+    "decisions/0009-passkeys-native-google-federated.md",
     "privacy.md"
   ]
 }

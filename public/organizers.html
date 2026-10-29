@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organizers · We the People 305</title>
+<meta name="description" content="How an organization becomes an organizer on We the People 305: the published criteria, reviewed by a person. DRAFT.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://wethepeople305.org/organizers">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/brand/brand.css">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+  a{color:inherit}
+  header{background:#131F3C;color:#FAFAF7;padding:22px 16px 20px}
+  .wrap{max-width:760px;margin:0 auto}
+  header .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  header a{text-decoration:none}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#C9CFDF}
+  header .wtp-mark{font-size:44px}
+  main{max-width:760px;margin:0 auto;padding:24px 16px 56px}
+  h1{font-weight:900;font-size:26px;line-height:1.1;margin-bottom:6px}
+  h2{font-weight:800;font-size:18px;margin:30px 0 6px;padding-top:14px;border-top:4px solid var(--ink)}
+  p{margin:8px 0}
+  .sub{color:var(--ink-soft);font-size:15px}
+  .draft{border:2px dashed #A3262A;color:#A3262A;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:8px 10px;margin:12px 0}
+  ol.crit{margin:10px 0 0 20px}
+  ol.crit li{margin:8px 0}
+  .fine{font-size:12px;color:var(--ink-soft);font-family:var(--mono)}
+  label{display:block;font-weight:600;font-size:14px;margin-top:12px}
+  input[type=text],input[type=url],textarea{width:100%;min-height:var(--touch);padding:8px 12px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);font:inherit}
+  textarea{min-height:120px;resize:vertical}
+  fieldset{border:1.5px solid var(--ink);padding:10px 12px;margin-top:14px;background:var(--card)}
+  legend{font-weight:600;font-size:14px;padding:0 6px}
+  .check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14px;margin:8px 0}
+  .check input{width:20px;height:20px;flex:none;margin-top:2px}
+  button{cursor:pointer;border:0;font-family:var(--sans)}
+  .actions{margin-top:16px;max-width:420px}
+  .actions .wtp-btn{width:100%}
+  .status{margin:10px 0;font-size:14px;min-height:1.4em}
+  .err{color:#A3262A}
+  .ok{color:var(--area)}
+  footer{border-top:4px solid var(--ink);padding:18px 16px;font-family:var(--mono);font-size:12px;color:var(--ink-soft);text-align:center}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a href="/"><div class="kicker">We the People</div><div class="wtp-mark">305</div></a>
+  <span class="wtp-area">Organizers</span>
+</div></header>
+<main>
+  <h1>Organizer admission</h1>
+  <p class="draft" role="note">DRAFT. These criteria are waiting for the founder's approval and may change.</p>
+  <p class="sub">The organizer role is for organizations, not individuals, and it is granted by criteria, not by name. Anyone can be a citizen. An organization becomes an organizer when a person on our side checks its application against the criteria below and approves it. The same criteria apply to every organization, whatever its views.</p>
+
+  <h2>Criteria</h2>
+  <ol class="crit" id="crit">
+    <li>The organization does civic work in Miami-Dade County: for example attending public meetings, public comment, voter education, or neighborhood service.</li>
+    <li>The organization can be checked in public: a website, a public social media page, a Florida corporation record, or a listing of its public meetings.</li>
+    <li>The organization is not a candidate, a campaign, a political party, or a political committee, and is not run by one.</li>
+    <li>The organization has someone who can answer questions from the reviewer about this application.</li>
+    <li>The organization agrees to the project Code of Conduct and to use organizer tools within it.</li>
+  </ol>
+  <p class="fine">Full text and how review works: <a href="/docs/organizer-criteria.md">docs/organizer-criteria.md</a>.</p>
+
+  <h2>Apply</h2>
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+  <p id="need" hidden>You need an account to apply. <a href="/account">Sign in or create one</a>, then come back here.</p>
+  <p id="off" hidden>Accounts are not switched on yet, so applications are closed for now.</p>
+  <form id="f" hidden novalidate>
+    <label for="org">Organization name</label>
+    <input id="org" type="text" maxlength="200" required autocomplete="organization">
+    <label for="web">Website or public page (optional)</label>
+    <input id="web" type="url" maxlength="300" placeholder="https://" autocomplete="url">
+    <fieldset>
+      <legend>Which criteria does your organization meet?</legend>
+      <div id="boxes"></div>
+    </fieldset>
+    <label for="stmt">What your organization does in Miami-Dade (20 to 1,000 characters)</label>
+    <textarea id="stmt" maxlength="1000" required aria-describedby="stmt-help"></textarea>
+    <p class="fine" id="stmt-help">Do not include anyone's home address or phone number.</p>
+    <div class="actions"><button class="wtp-btn" type="submit">Send application</button></div>
+  </form>
+</main>
+<footer>Open source (MIT) · <a href="https://github.com/Brittybrit/wethepeople">github.com/Brittybrit/wethepeople</a> · <a href="/account">Account</a> · <a href="/docs/privacy.md">privacy</a><br>Nonpartisan. No money from candidates, campaigns, parties or political committees.</footer>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
+  function say(msg, kind){ $('status').innerHTML = msg ? '<span class="' + (kind || '') + '">' + esc(msg) + '</span>' : ''; }
+  async function call(method, path, body){
+    var r = await fetch(path, { method: method, credentials: 'same-origin', headers: body ? { 'Content-Type': 'application/json', Accept: 'application/json' } : { Accept: 'application/json' }, body: body ? JSON.stringify(body) : undefined });
+    var j = null; try { j = await r.json(); } catch(e) {}
+    return { status: r.status, body: j };
+  }
+  async function load(){
+    var st = await call('GET', '/auth/status');
+    if (!st.body || !st.body.accounts) { $('off').hidden = false; return; }
+    var crit = await call('GET', '/api/v1/organizer-applications?criteria=1');
+    if (crit.status === 200) $('boxes').innerHTML = crit.body.criteria.map(function(c, i){ return '<label class="check"><input type="checkbox" name="criteria" value="' + esc(c.id) + '"> <span>' + (i + 1) + '. ' + esc(c.text) + '</span></label>'; }).join('');
+    var me = await call('GET', '/api/v1/me');
+    if (me.status !== 200) { $('need').hidden = false; return; }
+    if (me.body.roles.indexOf('organizer') >= 0) { say('This account is already an organizer.', 'ok'); return; }
+    var pending = (me.body.organizerApplications || []).filter(function(a){ return a.status === 'pending'; })[0];
+    if (pending) { say('Your application for ' + pending.organization + ' is waiting for review.', 'ok'); return; }
+    $('f').hidden = false;
+  }
+  $('f').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var criteria = Array.prototype.map.call(document.querySelectorAll('input[name=criteria]:checked'), function(x){ return x.value; });
+    var r = await call('POST', '/api/v1/organizer-applications', { organization: $('org').value, website: $('web').value || null, criteria: criteria, statement: $('stmt').value });
+    if (r.status === 201) { $('f').hidden = true; say('Application sent. A person will review it against the criteria. Your account page shows its status.', 'ok'); }
+    else say((r.body && r.body.error) || 'Could not send the application.', 'err');
+  });
+  load().catch(function(){ say('Could not reach the server. Try again.', 'err'); });
+})();
+</script>
+</body>
+</html>

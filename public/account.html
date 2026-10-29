@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account · We the People 305</title>
+<meta name="description" content="Create a We the People 305 account with a passkey, or continue with Google. We keep the minimum.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://wethepeople305.org/account">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/brand/brand.css">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+  a{color:inherit}
+  header{background:#131F3C;color:#FAFAF7;padding:22px 16px 20px}
+  .wrap{max-width:760px;margin:0 auto}
+  header .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  header a{text-decoration:none}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#C9CFDF}
+  header .wtp-mark{font-size:44px}
+  main{max-width:760px;margin:0 auto;padding:24px 16px 56px}
+  h1{font-weight:900;font-size:26px;line-height:1.1;margin-bottom:6px}
+  h2{font-weight:800;font-size:18px;margin:30px 0 6px;padding-top:14px;border-top:4px solid var(--ink)}
+  p{margin:8px 0}
+  .sub{color:var(--ink-soft);font-size:15px}
+  .fine{font-size:12px;color:var(--ink-soft);font-family:var(--mono)}
+  .stack{display:flex;flex-direction:column;gap:10px;margin:14px 0;max-width:420px}
+  .stack .wtp-btn{width:100%}
+  button{cursor:pointer;border:0;font-family:var(--sans)}
+  button:disabled{opacity:.55;cursor:wait}
+  label{display:block;font-weight:600;font-size:14px;margin-top:10px}
+  input[type=text],input[type=email]{width:100%;min-height:var(--touch);padding:0 12px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);font:inherit}
+  .check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14px;margin-top:10px}
+  .check input{width:20px;height:20px;flex:none;margin-top:2px}
+  .status{margin:10px 0;font-size:14px;min-height:1.4em}
+  .err{color:#A3262A}
+  .ok{color:var(--area)}
+  .row{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--hair);flex-wrap:wrap}
+  .row .k{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);width:130px;flex:none;padding-top:2px}
+  .row .v{min-width:0;overflow-wrap:anywhere;flex:1 1 160px}
+  .pill{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--ink);padding:2px 7px;margin:0 6px 4px 0}
+  .pill.org{background:var(--area);color:#FAFAF7;border-color:var(--area)}
+  .divider{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;color:var(--ink-soft);max-width:420px}
+  .divider::before,.divider::after{content:"";flex:1;border-top:1px solid var(--hair)}
+  footer{border-top:4px solid var(--ink);padding:18px 16px;font-family:var(--mono);font-size:12px;color:var(--ink-soft);text-align:center}
+  [hidden]{display:none!important}
+</style>
+<script src="/js/passkey.js"></script>
+</head>
+<body>
+<header><div class="wrap">
+  <a href="/"><div class="kicker">We the People</div><div class="wtp-mark">305</div></a>
+  <span class="wtp-area">Account</span>
+</div></header>
+<main>
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+
+  <section id="off" hidden aria-labelledby="h-off">
+    <h1 id="h-off">Accounts are not switched on yet</h1>
+    <p class="sub">Everything else on the site works without an account. <a href="/your-area">Find who works for you</a>.</p>
+  </section>
+
+  <section id="out" hidden aria-labelledby="h-out">
+    <h1 id="h-out">Sign in or create an account</h1>
+    <p class="sub">You do not need an account to use the site. An account lets organizations apply for organizer tools, and later lets you keep a watchlist.</p>
+    <div class="stack">
+      <label for="dn">Display name (optional)</label>
+      <input id="dn" type="text" maxlength="60" autocomplete="nickname" aria-describedby="dn-help">
+      <p class="fine" id="dn-help">Shown only to you. Leave it blank if you like.</p>
+      <button class="wtp-btn" id="create" type="button">Create account with a passkey</button>
+      <button class="wtp-btn alt" id="signin" type="button">Sign in with a passkey</button>
+      <div id="g-out" hidden>
+        <div class="divider">or</div>
+        <a class="wtp-btn alt" id="g-start" href="/auth/google" style="width:100%;margin-top:10px">Continue with Google</a>
+        <label class="check"><input type="checkbox" id="g-email"> <span>Save my Google email address to my account. Without this, we keep only Google's account number for you, not your email.</span></label>
+      </div>
+    </div>
+    <p class="fine">A passkey is a sign-in key kept by your phone, computer or password manager, unlocked with your face, fingerprint or screen lock. We keep only its public half. No password, no email needed.</p>
+    <p class="fine" id="nopk" hidden>This browser does not support passkeys. Try a current version of Safari, Chrome, Edge or Firefox<span id="nopk-g" hidden>, or continue with Google</span>.</p>
+  </section>
+
+  <section id="in" hidden aria-labelledby="h-in">
+    <h1 id="h-in">Your account</h1>
+    <div id="acct"></div>
+
+    <h2>Profile</h2>
+    <form id="prof">
+      <label for="p-dn">Display name (optional)</label>
+      <input id="p-dn" type="text" maxlength="60" autocomplete="nickname">
+      <label for="p-em">Email (optional)</label>
+      <input id="p-em" type="email" maxlength="254" autocomplete="email" aria-describedby="p-em-help">
+      <p class="fine" id="p-em-help">Only if you want us to be able to write to you about your account or an application. We send no newsletters.</p>
+      <label for="p-pr">Precinct (optional)</label>
+      <input id="p-pr" type="text" maxlength="5" inputmode="decimal" placeholder="033.0" pattern="\d{3}\.\d" aria-describedby="p-pr-help">
+      <p class="fine" id="p-pr-help">Your choice. <a href="/your-area">Look it up</a> if you do not know it. We never ask for your address here.</p>
+      <div class="stack"><button class="wtp-btn" type="submit">Save</button></div>
+    </form>
+
+    <h2>Sign-in methods</h2>
+    <div class="stack">
+      <button class="wtp-btn alt" id="addpk" type="button">Add a passkey on this device</button>
+      <div id="g-in" hidden>
+        <a class="wtp-btn alt" id="g-link" href="/auth/google?link=1" style="width:100%">Link Google</a>
+        <label class="check"><input type="checkbox" id="g-link-email"> <span>Also save my Google email address to my account.</span></label>
+      </div>
+    </div>
+
+    <h2>Organizer</h2>
+    <p id="org-line"></p>
+
+    <h2>Sign out or delete</h2>
+    <div class="stack">
+      <button class="wtp-btn alt" id="logout" type="button">Sign out</button>
+      <button class="wtp-btn alt" id="del" type="button">Delete my account</button>
+    </div>
+    <p class="fine">Deleting removes your account, passkeys, Google link, sessions and organizer applications at once. It cannot be undone. See <a href="/docs/privacy.md">privacy</a>.</p>
+  </section>
+</main>
+<footer>Open source (MIT) · <a href="https://github.com/Brittybrit/wethepeople">github.com/Brittybrit/wethepeople</a> · <a href="/docs/identity.md">How sign-in works</a> · <a href="/docs/privacy.md">privacy</a><br>Nonpartisan. No money from candidates, campaigns, parties or political committees.</footer>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
+  var MSG = {
+    google_cancelled: 'Google sign-in was cancelled.',
+    google_state: 'That Google sign-in expired or was started in another browser. Try again.',
+    google_verify: 'Google sign-in could not be verified. Try again.',
+    google_linked_elsewhere: 'That Google account is already linked to a different account here. Sign in with it to use that account.',
+    account_has_google: 'This account is already linked to a different Google account.',
+    signed_out: 'Sign in first, then link Google.',
+    linked: 'Google is now linked to your account.', already_linked: 'Google was already linked to this account.',
+    signed_in: 'Signed in with Google.', created: 'Account created with Google. You are signed in.'
+  };
+  function say(msg, kind){ $('status').innerHTML = msg ? '<span class="' + (kind || '') + '">' + esc(msg) + '</span>' : ''; }
+  var q = new URLSearchParams(location.search);
+  if (q.get('error')) say(MSG[q.get('error')] || 'Sign-in did not finish. Try again.', 'err');
+  else if (q.get('done')) say(MSG[q.get('done')] || 'Done.', 'ok');
+  if (q.get('error') || q.get('done')) history.replaceState(null, '', '/account');
+
+  function busy(btn, on){ btn.disabled = on; }
+  async function call(method, path, body){
+    var r = await fetch(path, { method: method, credentials: 'same-origin', headers: body ? { 'Content-Type': 'application/json', Accept: 'application/json' } : { Accept: 'application/json' }, body: body ? JSON.stringify(body) : undefined });
+    var j = null; try { j = await r.json(); } catch(e) {}
+    return { status: r.status, body: j };
+  }
+  function show(id){ ['off','out','in'].forEach(function(s){ $(s).hidden = s !== id; }); }
+
+  function renderAccount(me, google){
+    var roles = me.roles.map(function(r){ return '<span class="pill' + (r === 'organizer' ? ' org' : '') + '">' + esc(r) + '</span>'; }).join('');
+    var pk = me.methods.passkeys.length;
+    var methods = (pk ? pk + ' passkey' + (pk > 1 ? 's' : '') : 'no passkey') + (me.methods.google.linked ? ' · Google linked' : '');
+    $('acct').innerHTML =
+      '<div class="row"><div class="k">Roles</div><div class="v">' + roles + '</div></div>' +
+      '<div class="row"><div class="k">Sign-in</div><div class="v">' + esc(methods) + '</div></div>' +
+      '<div class="row"><div class="k">Created</div><div class="v">' + esc(String(me.created).slice(0, 10)) + '</div></div>' +
+      '<div class="row"><div class="k">Account id</div><div class="v fine">' + esc(me.id) + '</div></div>';
+    $('p-dn').value = me.displayName || '';
+    $('p-em').value = me.email || '';
+    $('p-pr').value = me.precinct || '';
+    $('g-in').hidden = !google || me.methods.google.linked;
+    var apps = me.organizerApplications || [];
+    var pending = apps.filter(function(a){ return a.status === 'pending'; })[0];
+    if (me.roles.indexOf('organizer') >= 0) $('org-line').innerHTML = 'You are an organizer.';
+    else if (pending) $('org-line').innerHTML = 'Your application for ' + esc(pending.organization) + ' is waiting for review.';
+    else $('org-line').innerHTML = 'Organizations doing civic work in Miami-Dade can apply for organizer tools. <a href="/organizers">Read the criteria and apply</a>.' + (apps.length ? ' Earlier application: ' + esc(apps[0].status) + '.' : '');
+    show('in');
+  }
+
+  async function load(){
+    var st = await call('GET', '/auth/status');
+    var s = st.body || {};
+    if (!s.accounts) { show('off'); return; }
+    var me = await call('GET', '/api/v1/me');
+    if (me.status === 200) { renderAccount(me.body, s.google); return; }
+    $('g-out').hidden = !s.google;
+    var ok = window.WTPPasskey && WTPPasskey.supported();
+    $('create').hidden = !ok; $('signin').hidden = !ok; $('nopk').hidden = ok; $('nopk-g').hidden = !s.google;
+    show('out');
+  }
+
+  $('g-start').addEventListener('click', function(e){ e.preventDefault(); location.href = '/auth/google' + ($('g-email').checked ? '?email=1' : ''); });
+  $('g-link').addEventListener('click', function(e){ e.preventDefault(); location.href = '/auth/google?link=1' + ($('g-link-email').checked ? '&email=1' : ''); });
+
+  $('create').addEventListener('click', async function(){
+    var b = this; busy(b, true); say('Follow your device\'s prompt to create a passkey.');
+    try { await WTPPasskey.register($('dn').value.trim()); say('Account created. You are signed in.', 'ok'); await load(); }
+    catch(e){ say(WTPPasskey.friendly(e), 'err'); }
+    busy(b, false);
+  });
+  $('signin').addEventListener('click', async function(){
+    var b = this; busy(b, true); say('Choose your passkey for wethepeople305.org.');
+    try { await WTPPasskey.login(); say('Signed in.', 'ok'); await load(); }
+    catch(e){ say(WTPPasskey.friendly(e), 'err'); }
+    busy(b, false);
+  });
+  $('addpk').addEventListener('click', async function(){
+    var b = this; busy(b, true);
+    try { await WTPPasskey.register(); say('Passkey added.', 'ok'); await load(); }
+    catch(e){ say(WTPPasskey.friendly(e), 'err'); }
+    busy(b, false);
+  });
+  $('prof').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var r = await call('PATCH', '/api/v1/me', { displayName: $('p-dn').value.trim() || null, email: $('p-em').value.trim() || null, precinct: $('p-pr').value.trim() || null });
+    if (r.status === 200) { say('Saved.', 'ok'); renderAccount(r.body, !$('g-in').hidden || null); load(); }
+    else say((r.body && r.body.error) || 'Could not save.', 'err');
+  });
+  $('logout').addEventListener('click', async function(){ await call('POST', '/auth/logout', {}); say('Signed out.', 'ok'); load(); });
+  $('del').addEventListener('click', async function(){
+    if (!confirm('Delete your account, passkeys, Google link and applications? This cannot be undone.')) return;
+    var r = await call('DELETE', '/api/v1/me');
+    if (r.status === 200) { say('Your account is deleted. Remove the passkey from your device\'s password manager too if you like.', 'ok'); load(); }
+    else say((r.body && r.body.error) || 'Could not delete.', 'err');
+  });
+  load().catch(function(){ say('Could not reach the server. Try again.', 'err'); });
+})();
+</script>
+</body>
+</html>

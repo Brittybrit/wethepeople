@@ -18,6 +18,7 @@ import { OPERATIONS, checkParams, openApi, API_VERSION, matchOperation } from '.
 import { handleMcp } from '../lib/mcp.mjs';
 import { LEDGER_OPERATIONS, runLedger, ledgerEtag } from '../lib/ledger/ledger.mjs';
 import { createLedgerLoader } from '../lib/ledger/load.mjs';
+import { identityFetch, isIdentityPath } from './identity.js'; // identity: sign-in and accounts
 
 const BASE_HEADERS = { 'Content-Type': 'application/json; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'X-Trace-Id' };
 const json = (body, status, extra = {}) => new Response(JSON.stringify(body), { status, headers: { ...BASE_HEADERS, ...extra } });
@@ -103,6 +104,13 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname.replace(/\/+$/, '') || '/';
     if (path.startsWith('/admin')) return json({ error: 'Not found' }, 404);
+    // --- identity (sign-in, accounts, organizer admission): same-origin only, no open CORS, no MCP tools. See lib/identity/. ---
+    if (isIdentityPath(path)) {
+      const idTrace = tracer({ service: 'wethepeople-identity', sink: sinks.console(), client: 'http' });
+      try { const r = await identityFetch(request, env, ctx, idTrace); r.headers.set('X-Trace-Id', idTrace.trace_id); return r; }
+      finally { if (ctx && ctx.waitUntil) ctx.waitUntil(idTrace.flush()); else await idTrace.flush(); }
+    }
+    // --- end identity ---
     if (!path.startsWith('/api/') && path !== '/api' && path !== '/mcp') return env.ASSETS.fetch(request);
 
     // Events carry a route and at most a precinct; never an address (lib/events.mjs refuses address-like fields).

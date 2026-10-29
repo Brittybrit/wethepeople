@@ -12,7 +12,7 @@ routes = [
 [assets]
 directory = "./public"
 binding = "ASSETS"
-run_worker_first = ["/admin/*", "/api", "/api/*", "/mcp"]
+run_worker_first = ["/admin/*", "/api", "/api/*", "/mcp", "/auth", "/auth/*"]
 
 # Address lookups per client: 20 a minute. Keeps /api/v1/precinct and find_precinct from being used as a free bulk
 # geocoder, which would put our access to Esri and the Census at risk. The key is the client IP, held in memory by
@@ -27,3 +27,19 @@ simple = { limit = 20, period = 60 }
 name = "RATE_LIMIT_ADDRESS_SUGGEST"
 namespace_id = "1002"
 simple = { limit = 120, period = 60 }
+
+# Accounts for the identity service (lib/identity/, migrations/). The founder creates the database once, pastes the id
+# that the first command prints into database_id below, then applies the migrations:
+#   npx wrangler d1 create wethepeople305-accounts
+#   npx wrangler d1 migrations apply wethepeople305-accounts --remote
+# Until then the auth routes answer 503 with a plain message and the rest of the site keeps working.
+# Google sign-in also needs two secrets (see public/docs/identity.md):
+#   npx wrangler secret put GOOGLE_OAUTH_CLIENT_ID_WETHEPEOPLE305
+#   npx wrangler secret put GOOGLE_OAUTH_CLIENT_SECRET_WETHEPEOPLE305
+# Switched off until the database exists: a placeholder id would stop `wrangler deploy`. To turn accounts on, run the
+# create command above, uncomment these five lines, paste the printed id, apply the migrations, then deploy.
+# [[d1_databases]]
+# binding = "DB_WETHEPEOPLE305_ACCOUNTS"
+# database_name = "wethepeople305-accounts"
+# database_id = "PASTE_ID_FROM_wrangler_d1_create"
+# migrations_dir = "migrations"

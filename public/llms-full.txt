@@ -515,6 +515,7 @@ What we protect, where trust changes, and what could go wrong. Status is "built"
 
 ## Assets
 - Residents' addresses during a lookup.
+- Accounts: sessions, passkey public keys, Google links, roles (especially admin and organizer), optional emails.
 - Integrity of what residents see: who serves them, meetings, items, do-now actions.
 - The platform's reputation for being nonpartisan and accurate.
 - Model API keys and future spend (repo secret `ANTHROPIC_API_KEY`; Worker secrets when added).
@@ -558,9 +559,162 @@ No model runs on a public route today, so most of these are design rules for wha
 | Third-party request from pages | Pages load fonts from Google Fonts, which sees the visitor's IP | Accepted for now; self-hosting fonts planned |
 | Malicious or careless pull request | Review by the maintainer; tests and evals in CI; AI-assisted work must be disclosed | Built (one reviewer) |
 | Single maintainer | One person holds deploy and secrets | Accepted risk until there is a board |
+| Session theft: a session cookie is read or replayed | Opaque random 256-bit id in a `__Host-` cookie: HttpOnly (page scripts cannot read it), Secure, SameSite=Lax, Path=/. Only a SHA-256 hash is stored, so a copy of the database cannot be used to sign in. 30 day rolling expiry; sign out and account deletion delete the row. A new session on every sign-in. No JWT in the browser. CSP blocks outside scripts | Built |
+| CSRF: another site makes a signed-in browser change something | SameSite=Lax on the session cookie, and every POST, PATCH and DELETE on identity routes must carry this site's exact `Origin` (403 otherwise, including when Origin is missing). Identity routes send no CORS headers | Built |
+| OAuth code interception or login CSRF on Google sign-in | Authorization code flow with PKCE S256; one-time `state` stored server side for 10 minutes and bound to the browser by a `__Host-` cookie; `nonce` checked in the ID token; code exchanged server side with the client secret; ID token signature checked against Google's JWKS, plus `iss`, `aud`, `azp`, `exp`, `iat`. Fixed redirect URI registered with Google | Built |
+| Account takeover via linking: someone attaches their Google account to another person's account, or signs in as them through Google | Linking needs a signed-in session and the same session when Google returns. A Google subject links to at most one account and an account to one subject (unique keys in D1). Accounts are matched only by Google's subject id, never by email, so a matching email cannot merge or take over an account. Passkey sign-in checks the user handle against the credential's owner | Built |
+| Admin escalation: someone grants themselves admin or organizer | No route can grant admin; only `scripts/grant-admin.mjs` prints a `wrangler d1 execute` command the founder runs. Organizer is granted only when an admin approves an application; an admin cannot decide their own application; each application is decided once. A test fails if the service code grants admin | Built |
 
 ## Report
 See `SECURITY.md` in the repo root.
+
+---
+File: https://wethepeople305.org/docs/identity.md
+
+# Identity: sign-in and accounts
+
+How accounts work on wethepeople305.org, what is stored, and how the founder sets it up. As of 2026-10-29. Ballot305 will later use this same service for sign-in.
+
+## In one paragraph
+You do not need an account to use the site. If you want one, you create it here with a passkey. Google sign-in is offered too, as an option, never as the only way in. A new account is a "citizen". Organizations can apply to be "organizers" against published criteria; an admin approves. We keep the minimum: an id, when it was made, your roles, your passkeys' public keys, your Google account number if you linked Google, and anything optional you chose to add.
+
+## How sign-in works
+- **Passkeys (the native way).** Your phone, computer or password manager makes a key pair for wethepeople305.org. It keeps the private key; we keep only the public key. To sign in, your device signs a one-time challenge and we check it with the public key. No password and no email are needed, so there is nothing to phish or leak. Built on WebAuthn with `@simplewebauthn/server` 14.0.3 on the server and the browser's own WebAuthn API in `public/js/passkey.js` (no outside script).
+- **Google (optional).** OpenID Connect, authorization code flow with PKCE (S256), `state` and `nonce`. The code is exchanged on the server; the ID token's signature is checked against Google's published keys (fetched and cached), and its issuer, audience, expiry and nonce are checked. We ask Google only for `openid`, which gives us Google's account number (the "subject") and nothing else. If you tick "Save my Google email address", we also ask for `email` and store it, only if Google says it is verified.
+- **Linking.** Signed in, you can link Google from your account page. A Google account links to at most one account here, and an account to at most one Google account. Signing in with a Google account we have not seen creates a new citizen account. If you already have a passkey account and sign in with an unlinked Google account while signed out, you get a second, separate account; to avoid that, sign in with your passkey first and use "Link Google".
+- **Sessions.** After sign-in the server sets one cookie, `__Host-wtp305_session`: a random value, HttpOnly, Secure, SameSite=Lax, Path=/. The server stores only a SHA-256 hash of it, with an expiry 30 days out that rolls forward as you use the site. Signing out or deleting the account deletes the session row, so the cookie stops working at once. No token is readable by page scripts.
+- **CSRF.** Every POST, PATCH and DELETE must carry this site's `Origin` header, or it is refused with 403. With SameSite=Lax on the cookie, a page on another site cannot act as you. The Google callback also checks that its `state` matches a short-lived `__Host-wtp305_oauth` cookie set in the same browser.
+
+## What is stored
+In the D1 database `wethepeople305-accounts` (schema: `migrations/0001_accounts.sql`):
+
+| Table | What | Why |
+|---|---|---|
+| users | id (random), created, display name (optional), email (optional), precinct (optional) | the account |
+| roles | citizen, organizer or admin, when and how granted | what the account may do |
+| credentials | passkey id, public key, signature counter, transports, created, last used | to check passkey sign-ins |
+| google_links | Google's subject id, linked at | to recognize your Google sign-in |
+| sessions | SHA-256 hash of the session id, expiry | to keep you signed in |
+| auth_flows | a one-time challenge or Google state, nonce and PKCE verifier; deleted on use or after 10 minutes | to finish a sign-in |
+| organizer_applications | organization, website, criteria ticked, statement, status, reviewer's account id and note | organizer admission |
+
+There is no column for a legal name, a street address, a phone number or an IP address. Events about sign-in say only which route ran and whether it worked; they carry no account id, email, Google subject, passkey id or IP (`lib/events.mjs` refuses name, email and IP fields).
+
+## Roles
+- **citizen**: every account, at once.
+- **organizer**: by application against the published criteria (`organizer-criteria.md`, DRAFT), approved by an admin. A person can be both.
+- **admin**: reviews organizer applications. No route can grant it. Only the founder, by running a command (below).
+
+## Routes
+| Method and path | What | Signed in? |
+|---|---|---|
+| GET `/auth/status` | `{ accounts, google }`: whether accounts and Google sign-in are switched on | no |
+| POST `/auth/passkey/register/options` then `/verify` | create an account (signed out) or add a passkey (signed in) | either |
+| POST `/auth/passkey/login/options` then `/verify` | sign in with a passkey | no |
+| GET `/auth/google` (`?link=1` to link, `&email=1` to save email) | go to Google | either |
+| GET `/auth/google/callback` | back from Google, then to `/account` | |
+| POST `/auth/logout` | sign out | yes |
+| GET `/api/v1/me` | id, created, roles, sign-in methods, display name, email, precinct, applications. 401 if signed out | yes |
+| PATCH `/api/v1/me` | set or clear `displayName`, `email`, `precinct` | yes |
+| DELETE `/api/v1/me` | delete the account and everything tied to it | yes |
+| GET, POST `/api/v1/organizer-applications` | your applications; apply. `GET ?criteria=1` lists the criteria without signing in | yes |
+| GET `/api/v1/review/organizer-applications?status=pending` | list applications | admin |
+| POST `/api/v1/review/organizer-applications/{id}` `{ decision: "approve" or "decline", note }` | decide | admin |
+
+These routes are same-origin only: no open CORS, and they are not MCP tools and not in the OpenAPI document. The architecture's API keys for the organizer tier (key issuance, per-key limits) are not built yet.
+
+If the database is not bound, every route above except `/auth/status` answers 503 with "Accounts are not switched on yet", and the rest of the site works as before. If the Google secrets are not set, the Google button is hidden and `/auth/google` answers 503.
+
+## Setup (founder)
+
+### 1. Create the database
+```
+npx wrangler d1 create wethepeople305-accounts
+```
+Copy the `database_id` it prints into `wrangler.toml`, replacing `REPLACE_WITH_ID_FROM_wrangler_d1_create`. Then:
+```
+npx wrangler d1 migrations apply wethepeople305-accounts --remote
+```
+Commit `wrangler.toml` and push. Passkey sign-in works from the next deploy.
+
+### 2. Google sign-in (optional)
+1. Google Cloud Console, pick or create a project.
+2. **OAuth consent screen** (Google Auth Platform, Branding): app name "We the People 305", support email, app home page `https://wethepeople305.org`, privacy policy `https://wethepeople305.org/docs/privacy.md`, authorized domain `wethepeople305.org`. Audience: External. Scopes (Data Access): `openid` and `.../auth/userinfo.email` only. Publish the app so anyone can sign in (these scopes need no Google verification review).
+3. **Clients, Create client**: type **Web application**, name "wethepeople305.org". Authorized JavaScript origins: `https://wethepeople305.org`. Authorized redirect URI: `https://wethepeople305.org/auth/google/callback`. For local testing you may add `http://localhost:8787/auth/google/callback`.
+4. Copy the client ID and client secret into Worker secrets:
+```
+npx wrangler secret put GOOGLE_OAUTH_CLIENT_ID_WETHEPEOPLE305
+npx wrangler secret put GOOGLE_OAUTH_CLIENT_SECRET_WETHEPEOPLE305
+```
+The button appears as soon as both secrets exist. Remove either secret to switch Google sign-in off.
+
+Sign-ins from `www.wethepeople305.org` work for passkeys. For Google, use the apex domain, or add the `www` redirect URI in the console too.
+
+### 3. Grant admin
+Sign in at `/account` and copy your "Account id". Then:
+```
+node scripts/grant-admin.mjs <account id>
+```
+It prints the exact `npx wrangler d1 execute wethepeople305-accounts --remote --command "..."` to run, and a query to check it. `--revoke` prints the command that removes admin. The script changes nothing by itself.
+
+### Local development
+`npx wrangler dev` uses a local D1 database. Apply the migration to it with `npx wrangler d1 migrations apply wethepeople305-accounts --local`. Passkeys work on `http://localhost:8787` in current browsers. Without a database binding, setting `IDENTITY_STORE = "memory"` in `.dev.vars` uses an in-memory store that is lost on restart.
+
+## Code
+- `lib/identity/service.mjs`: routes and rules (plain JavaScript; the WebAuthn library, store, fetch and clock are injected).
+- `lib/identity/store.mjs`: the Store interface with a D1 adapter and an in-memory adapter.
+- `lib/identity/sessions.mjs`, `google.mjs`, `roles.mjs`: sessions and CSRF, Google OIDC, roles and admission.
+- `src/identity.js`: wires them into the Worker. `src/worker.js` sends identity paths there.
+- Tests: `tests/hand/identity-*.test.mjs` (both store adapters, Google token checks with a local RSA key and fake JWKS, PKCE and state, linking rules, roles, full passkey ceremonies with a software authenticator) and `tests/worker/identity.test.mjs` (the Worker in workerd, with and without D1).
+
+## Related
+- `privacy.md`: what accounts store and how to delete one.
+- `security/threat-model.md`: session theft, CSRF, OAuth code interception, account takeover by linking, admin escalation.
+- `decisions/0009-passkeys-native-google-federated.md`: why passkeys first.
+- `organizer-criteria.md`: the DRAFT admission criteria.
+
+---
+File: https://wethepeople305.org/docs/organizer-criteria.md
+
+# Organizer admission criteria
+
+**DRAFT. Waiting for the founder's approval. Not in force until this line is removed.**
+
+As of 2026-10-29.
+
+## What the organizer role is
+Anyone can have a citizen account. The organizer role is for organizations that do civic work in Miami-Dade. It will unlock organizer tools (watchlists, alerts, bulk access) as they are built. It is granted by these published criteria, checked by a person, not by name or by who someone knows. The same criteria apply to every organization, whatever its views or politics.
+
+A person can hold both roles. An organizer is still a citizen.
+
+## Criteria
+An organization must meet all five. Each has an id, used by the application form and the API.
+
+1. `miami-dade-civic-work`: The organization does civic work in Miami-Dade County: for example attending public meetings, public comment, voter education, or neighborhood service.
+2. `verifiable-public-presence`: The organization can be checked in public: a website, a public social media page, a Florida corporation record, or a listing of its public meetings.
+3. `not-a-campaign`: The organization is not a candidate, a campaign, a political party, or a political committee, and is not run by one.
+4. `named-contact-for-review`: The organization has someone who can answer questions from the reviewer about this application.
+5. `code-of-conduct`: The organization agrees to the project Code of Conduct and to use organizer tools within it.
+
+## How to apply
+1. Create an account at [/account](https://wethepeople305.org/account) (a passkey, or Google).
+2. Fill in the form at [/organizers](https://wethepeople305.org/organizers): organization name, a website or public page, which criteria you meet, and a short statement (20 to 1,000 characters) on what you do in Miami-Dade.
+3. Your account page shows the status: pending, approved or declined.
+
+The API is `POST /api/v1/organizer-applications` with a session cookie. See `identity.md`.
+
+## How review works
+- An admin reviews each application against the five criteria, using public records: the website, the Florida Division of Corporations, the Florida campaign finance database, meeting minutes.
+- The admin approves or declines and may add a short note. Approval grants the organizer role at once.
+- An admin cannot review their own application.
+- Admin is not a role anyone can apply for. It is granted only by the founder running a command (see `identity.md`).
+
+## Open questions for the founder
+- Should individuals (not organizations) be able to qualify, for example a neighborhood leader with a record of public comment?
+- Should all five criteria be required, or some subset?
+- How long should an approval last before it is checked again?
+- Should a declined applicant be able to reapply at once, or after a wait? Today they can reapply at once.
+- Who besides the founder reviews applications, and should the reviewer's name be public?
 
 ---
 File: https://wethepeople305.org/docs/decisions/README.md
@@ -577,6 +731,7 @@ Short records of choices that shape the platform. Each has a status, a date, the
 - 0006-money-figures-stay-on-ballot305.md: money is shown only with full context, on Ballot305
 - 0007-mcp-and-openapi-from-one-schema.md: OpenAPI and MCP tools are generated from one schema
 - 0008-ledger-moves-to-platform.md: the ledger API is served here from a copy of Ballot305's data; after Nov 3 Ballot305 reads it
+- 0009-passkeys-native-google-federated.md: passkeys are the native sign-in; Google is an optional federation
 
 ---
 File: https://wethepeople305.org/docs/decisions/0001-headless-first.md
@@ -749,6 +904,33 @@ Phase 2 (after Nov 3): Ballot305 becomes a client (section 10). It reads the led
 - Data stays CC BY 4.0 with attribution to Ballot305.
 
 ---
+File: https://wethepeople305.org/docs/decisions/0009-passkeys-native-google-federated.md
+
+# 0009. Passkeys are the native sign-in; Google is an optional federation
+
+- Status: Accepted
+- Date: 2026-10-29
+
+## Context
+The platform needs accounts: citizens, organizers admitted by criteria, and later Ballot305 signing in through the same service. The founder's rules: people create an account on wethepeople305.org itself, Google is never the only way in, and we collect the minimum.
+
+The usual native option, an emailed magic link, needs a service that sends email. Cloudflare Email Routing receives mail but cannot send it, so magic links would need a paid sender and would make an email address required. Passwords need storage, reset flows and breach handling, and they get phished.
+
+## Decision
+- Native sign-in is a passkey (WebAuthn). The server stores only the public key. No email, no password, no outside service. Server side uses `@simplewebauthn/server` 14.0.3, which runs on Cloudflare Workers without `nodejs_compat` (Web Crypto only; tested in workerd). The browser side is the browser's own WebAuthn API in a small file we serve, so no CDN and no CSP change.
+- Google OpenID Connect is offered beside it: code flow with PKCE, state and nonce, server-side exchange, ID token verified against Google's keys. We ask for `openid` only, plus `email` when the person ticks a box.
+- Sessions are opaque random ids in a `__Host-` cookie, hashed at rest, 30 days rolling, revocable. No JWTs in the browser.
+- Storage is D1 behind a Store interface with an in-memory adapter (architecture section 3).
+- The admin role is granted only by a command the founder runs, never by a route.
+
+## Consequences
+- Anyone with a current phone or computer can make an account without giving any personal detail.
+- A person who loses every device with their passkey, and has not linked Google, loses the account. Synced passkeys (iCloud Keychain, Google Password Manager, 1Password) make this rare. Account recovery is not built; adding a second passkey or linking Google is the advice today.
+- We cannot email people unless they give an address. That fits the minimum-data rule.
+- The architecture's planned email magic-link adapter is not built. Apple sign-in can be added later as another federation behind the same linking rules.
+- API keys for the organizer tier are a separate, later step; this record covers people signing in.
+
+---
 File: https://wethepeople305.org/docs/privacy.md
 
 # Privacy
@@ -773,10 +955,30 @@ The site runs on Cloudflare. Like any host, Cloudflare receives standard request
 
 Pages load fonts from Google Fonts, which receives the standard request data for those files.
 
+## Accounts (optional)
+You do not need an account to use the site. If you make one (at /account), we keep only:
+- an account id we make up, the date it was created, and your roles (citizen; organizer if an application is approved);
+- for each passkey, its public key, a counter and when it was last used. The private key stays on your device;
+- if you link Google, Google's account number for you (not your name or photo). Your Google email only if you tick the box to save it;
+- anything optional you add: a display name, an email address, a precinct code;
+- if you apply to be an organizer, what you put in the application;
+- a hash of your session id, so you stay signed in for up to 30 days.
+
+We do not store your name, address, phone number or IP address with your account. Sign-in events record only which route ran and whether it worked. Details: `identity.md`.
+
+### Deleting your account
+Sign in at /account and choose "Delete my account", or send `DELETE /api/v1/me` with your session. It removes your account, passkeys, Google link, sessions and organizer applications at once, and cannot be undone. Your device may still keep the passkey; you can remove it in your password manager. To unlink Google on Google's side, use your Google account's "Third-party connections" page.
+
+## Cookies
+The site sets cookies only when you sign in:
+- `__Host-wtp305_session`: keeps you signed in. HttpOnly, Secure, SameSite=Lax. Deleted when you sign out.
+- `__Host-wtp305_oauth`: holds a one-time value for up to 10 minutes while you sign in with Google.
+
+No other cookies. No analytics or advertising cookies.
+
 ## What the site does not do
-- No cookies set by the site.
-- No accounts. Sign-in is planned and this notice will change before it ships.
 - No ads, no tracking pixels, no selling or sharing data.
+- No email from us unless you give an address, and then only about your account or an application.
 - No model sees your address.
 
 ## Officials

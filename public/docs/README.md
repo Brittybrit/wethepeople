@@ -10,6 +10,8 @@ These are the technical documents for We the People, kept in the open. `index.js
 - ai/ai-use-policy.md: rules for AI use binding on contributors and the platform
 - ai/data-card.md: the data served, sources, license, coverage, gaps, freshness, corrections
 - ai/evals.md: what runs in CI, floors and ceilings, how to add a prompt
+- identity.md: sign-in and accounts (passkeys, optional Google), what is stored, setup for Google and D1, granting admin
+- organizer-criteria.md: DRAFT criteria for the organizer role and how applications are reviewed
 - security/threat-model.md: assets, trust boundaries, threats and mitigations with status
 - decisions/: architecture decision records (index in decisions/README.md)
 - privacy.md: what the site does with your address and what it records

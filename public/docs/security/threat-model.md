@@ -4,6 +4,7 @@ What we protect, where trust changes, and what could go wrong. Status is "built"
 
 ## Assets
 - Residents' addresses during a lookup.
+- Accounts: sessions, passkey public keys, Google links, roles (especially admin and organizer), optional emails.
 - Integrity of what residents see: who serves them, meetings, items, do-now actions.
 - The platform's reputation for being nonpartisan and accurate.
 - Model API keys and future spend (repo secret `ANTHROPIC_API_KEY`; Worker secrets when added).
@@ -47,6 +48,11 @@ No model runs on a public route today, so most of these are design rules for wha
 | Third-party request from pages | Pages load fonts from Google Fonts, which sees the visitor's IP | Accepted for now; self-hosting fonts planned |
 | Malicious or careless pull request | Review by the maintainer; tests and evals in CI; AI-assisted work must be disclosed | Built (one reviewer) |
 | Single maintainer | One person holds deploy and secrets | Accepted risk until there is a board |
+| Session theft: a session cookie is read or replayed | Opaque random 256-bit id in a `__Host-` cookie: HttpOnly (page scripts cannot read it), Secure, SameSite=Lax, Path=/. Only a SHA-256 hash is stored, so a copy of the database cannot be used to sign in. 30 day rolling expiry; sign out and account deletion delete the row. A new session on every sign-in. No JWT in the browser. CSP blocks outside scripts | Built |
+| CSRF: another site makes a signed-in browser change something | SameSite=Lax on the session cookie, and every POST, PATCH and DELETE on identity routes must carry this site's exact `Origin` (403 otherwise, including when Origin is missing). Identity routes send no CORS headers | Built |
+| OAuth code interception or login CSRF on Google sign-in | Authorization code flow with PKCE S256; one-time `state` stored server side for 10 minutes and bound to the browser by a `__Host-` cookie; `nonce` checked in the ID token; code exchanged server side with the client secret; ID token signature checked against Google's JWKS, plus `iss`, `aud`, `azp`, `exp`, `iat`. Fixed redirect URI registered with Google | Built |
+| Account takeover via linking: someone attaches their Google account to another person's account, or signs in as them through Google | Linking needs a signed-in session and the same session when Google returns. A Google subject links to at most one account and an account to one subject (unique keys in D1). Accounts are matched only by Google's subject id, never by email, so a matching email cannot merge or take over an account. Passkey sign-in checks the user handle against the credential's owner | Built |
+| Admin escalation: someone grants themselves admin or organizer | No route can grant admin; only `scripts/grant-admin.mjs` prints a `wrangler d1 execute` command the founder runs. Organizer is granted only when an admin approves an application; an admin cannot decide their own application; each application is decided once. A test fails if the service code grants admin | Built |
 
 ## Report
 See `SECURITY.md` in the repo root.

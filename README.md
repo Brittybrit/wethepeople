@@ -2,7 +2,7 @@
 
 Civic intelligence for Miami-Dade: who decides, what is coming up, what it means for you, and what you can do about it. For citizens and for organizers, with a UI and headless (API and MCP). Open source under MIT.
 
-Today: the landing page, **Your area** at wethepeople305.org/your-area (address to precinct, who serves you, what is about to be decided, what to do now), its API at /api/v1 (`public/docs/api.md`), and the docs at /docs. The underlying data still comes from ballot305.org/api/v1 (github.com/Brittybrit/vote-informed) through `lib/sources/ballot305.mjs`, and moves here as the platform is built.
+Today: the landing page, **Your area** at wethepeople305.org/your-area (address to precinct, who serves you, what is about to be decided, what to do now), its API at /api/v1 (`public/docs/api.md`), the docs at /docs, and optional accounts at /account (passkeys, or Google; see `public/docs/identity.md`). The underlying data still comes from ballot305.org/api/v1 (github.com/Brittybrit/vote-informed) through `lib/sources/ballot305.mjs`, and moves here as the platform is built.
 
 ## Working on it
 - `pnpm install`, then `pnpm test` runs both projects: unit (lib/, Node) and worker (the Worker inside the Workers runtime). Jest syntax, Vitest runner.
