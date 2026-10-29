@@ -36,10 +36,9 @@ simple = { limit = 120, period = 60 }
 # Google sign-in also needs two secrets (see public/docs/identity.md):
 #   npx wrangler secret put GOOGLE_OAUTH_CLIENT_ID_WETHEPEOPLE305
 #   npx wrangler secret put GOOGLE_OAUTH_CLIENT_SECRET_WETHEPEOPLE305
-# Switched off until the database exists: a placeholder id would stop `wrangler deploy`. To turn accounts on, run the
-# create command above, uncomment these five lines, paste the printed id, apply the migrations, then deploy.
-# [[d1_databases]]
-# binding = "DB_WETHEPEOPLE305_ACCOUNTS"
-# database_name = "wethepeople305-accounts"
-# database_id = "PASTE_ID_FROM_wrangler_d1_create"
-# migrations_dir = "migrations"
+# Created Oct 29, 2026 (region ENAM). The binding name is ours, not the one wrangler suggests, so the code finds it.
+[[d1_databases]]
+binding = "DB_WETHEPEOPLE305_ACCOUNTS"
+database_name = "wethepeople305-accounts"
+database_id = "094a304c-0f2b-47ca-a58c-7242d97a9458"
+migrations_dir = "migrations"
