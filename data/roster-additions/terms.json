@@ -1,0 +1,3074 @@
+[
+ {
+  "person": "alex-auguste",
+  "office": "childrens-trust-board-at-large",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Member At-Large. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "daniel-armstrong",
+  "office": "childrens-trust-board-at-large",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Member At-Large. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "ilia-molina",
+  "office": "childrens-trust-board-at-large",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Member At-Large. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "julie-lynn-kantor",
+  "office": "childrens-trust-board-at-large",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Member At-Large. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "alex-rizo",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Member of the Florida Legislature appointed by the Miami-Dade Legislative Delegation Chair. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "alfred-sanchez",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Member selected by a coalition of local chambers of commerce. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "cathy-burgos",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Designee appointed by the Mayor of Miami-Dade County. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "daniel-bagner",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Designee of Florida International University, appointed by the President. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "dorothy-bendross-mindingall",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Member appointed by the School Board of Miami-Dade County. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "isaac-salver",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Elected official appointed by the Miami-Dade County League of Cities. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "islamiyat-nancy-adebisi",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Designee of Miami-Dade County Public Health Department. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "jackie-gonzalez-cuba",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Representative of Miami-Dade Council PTA/PTSA. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "kenneth-c-hoffman",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chair",
+  "note": "Seat as listed by the Trust: Member appointed by Mosaic Miami. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "keon-hardemon",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Member appointed by the chair of the Miami-Dade County Board of County Commissioners. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "laura-adams",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Designee from Miami-Dade State Attorney's Office. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "laurie-weiss-nuell",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Mayor of Miami-Dade County or non-voting designee. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "layla-jaime",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Representative of the Miami-Dade Student Government Association. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "lesline-anglade-dorleans",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Designee of the Department of Children and Families District XI Administrator. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "lisette-m-alves",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Designee from the Miami-Dade County Public Schools. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "malou-c-harrison",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Designee from Miami-Dade College, appointed by College President. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "mindy-grimes-festge",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Representative of the United Teachers of Dade. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "norie-del-valle",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Designee of the United Way of Miami-Dade County. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "pamela-hollingsworth",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Vice Chair",
+  "note": "Seat as listed by the Trust: Designee from the Early Learning Coalition of Miami-Dade/Monroe. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "scott-m-bernstein",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Chief Judge of the Unified Children's Court of the Eleventh Judicial Circuit, or designee. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "valrose-graham",
+  "office": "childrens-trust-board-designated-member",
+  "start": null,
+  "end": null,
+  "via": "designated",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Circuit Manager of the Department of Juvenile Justice. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "benjamin-nussbaum",
+  "office": "childrens-trust-board-governor-appointee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Gubernatorial Appointee. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "clara-lora-ospina",
+  "office": "childrens-trust-board-governor-appointee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Gubernatorial Appointee. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "lourdes-p-gimenez",
+  "office": "childrens-trust-board-governor-appointee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Gubernatorial Appointee. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "luis-e-suarez",
+  "office": "childrens-trust-board-governor-appointee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Secretary",
+  "note": "Seat as listed by the Trust: Gubernatorial Appointee. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "miriam-soler-ramos",
+  "office": "childrens-trust-board-governor-appointee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Gubernatorial Appointee. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "norman-gerstein",
+  "office": "childrens-trust-board-governor-appointee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Treasurer",
+  "note": "Seat as listed by the Trust: Gubernatorial Appointee. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "silvia-castellanos",
+  "office": "childrens-trust-board-governor-appointee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.thechildrenstrust.org/board-of-directors",
+   "https://www.thechildrenstrust.org/board-of-directors?page=2"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Seat as listed by the Trust: Gubernatorial Appointee. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "miguel-murphy",
+  "office": "citt-district-1",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/members-miguel-murphy.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "harry-hoffman",
+  "office": "citt-district-11",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/member-harry-hoffman.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "omar-bradford",
+  "office": "citt-district-2",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/member-bradford.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "robert-wolfarth",
+  "office": "citt-district-4",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/members-wolfarth.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Source gives the start as 2019; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "mary-street",
+  "office": "citt-district-5",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/member-mary-street.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chair",
+  "note": "Source gives the start as 2021; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "carolina-vester",
+  "office": "citt-district-6",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/member-carolina-vester.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "meg-daly",
+  "office": "citt-district-7",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/member-meg-daly.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Second Vice Chair",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "peggy-bell",
+  "office": "citt-district-8",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/member-peggy-bell.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "First Vice Chair",
+  "note": "Source gives the start as 2021; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "javier-a-betancourt",
+  "office": "citt-executive-director",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "paul-j-schwiep",
+  "office": "citt-mayor-appointee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/member-schwiep.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "david-marin",
+  "office": "citt-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/member-david-marin.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "kenneth-m-kilpatrick",
+  "office": "citt-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/citt/member-biographies.asp",
+   "https://www.miamidade.gov/citt/member-kenneth-kilpatrick.asp"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "robert-meyers",
+  "office": "city-aventura-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cityofaventura.com/AgendaCenter/ViewFile/Minutes/_10062026-524"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Listed as City Attorney on the October 6, 2026 regular meeting recap. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "ellisa-l-horvath",
+  "office": "city-aventura-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cityofaventura.com/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "bryan-pegues",
+  "office": "city-aventura-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cityofaventura.com/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "susan-l-trevarthen",
+  "office": "city-bal-harbour-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://balharbourfl.gov/government/village-attorney/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "juan-d-garcia",
+  "office": "city-bal-harbour-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://balharbourfl.gov/government/village-clerk/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "jorge-m-gonzalez",
+  "office": "city-bal-harbour-manager",
+  "start": "2013-11-12",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://balharbourfl.gov/government/village-manager/"
+  ],
+  "sourceKind": "official",
+  "note": "Village page: Village Manager since November 12, 2013. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "skip-miller",
+  "office": "city-bay-harbor-islands-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.bayharborislands-fl.gov/DocumentCenter/View/4448/BAYHI-JAN-26"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Named as Town Attorney in the town newsletter for January 2026; a later source was not found. Full legal name not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "evelyn-herbello",
+  "office": "city-bay-harbor-islands-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://bayharborislands-fl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "lindsley-noel",
+  "office": "city-bay-harbor-islands-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://bayharborislands-fl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "The October 2025 League of Cities list showed him as interim; the town directory lists him as Town Manager without that label. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "pamela-latimore",
+  "office": "city-biscayne-park-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://biscayneparkfl.gov/contact"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "albert-p-childress",
+  "office": "city-biscayne-park-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://biscayneparkfl.gov/contact"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "cristina-m-suarez",
+  "office": "city-coral-gables-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://coralgables.com/department/city-attorneys-office"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "billy-y-urquia",
+  "office": "city-coral-gables-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.coralgables.com/staff-listing"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "peter-j-iglesias",
+  "office": "city-coral-gables-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.coralgables.com/department/city-manager"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "mitchell-a-bierman",
+  "office": "city-cutler-bay-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cutlerbay-fl.gov/townattorney"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "mauricio-melinu",
+  "office": "city-cutler-bay-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cutlerbay-fl.gov/townclerk"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rafael-g-casals",
+  "office": "city-cutler-bay-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cutlerbay-fl.gov/townmanager"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "lorenzo-cobiella",
+  "office": "city-doral-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cityofdoral.com/Departments/City-Attorneys-Office"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "The city page lists two City Attorneys from the same outside firm. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "raul-gastesi-jr",
+  "office": "city-doral-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cityofdoral.com/Departments/City-Attorneys-Office"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "The city page lists two City Attorneys from the same outside firm. Doral lists him as Raul Gastesi Jr. and Miami Lakes as Raul Gastesi; both list Lorenzo Cobiella as the other attorney, so they are filed as one person. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "connie-diaz",
+  "office": "city-doral-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cityofdoral.com/Government-Center/Office-of-the-City-Clerk"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "zeida-sardinas",
+  "office": "city-doral-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.cityofdoral.com/Government-Center/Office-of-the-City-Manager"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "joseph-s-geller",
+  "office": "city-el-portal-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://elportalvillage.com/village-attorney/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Interim Village Attorney",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "yenise-jacobi",
+  "office": "city-el-portal-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://elportalvillage.com/village-clerk/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "david-a-rosemond",
+  "office": "city-el-portal-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://elportalvillage.com/village-manager/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "regine-monestime",
+  "office": "city-florida-city-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.floridacityfl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "jennifer-a-evelyn",
+  "office": "city-florida-city-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.floridacityfl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "chad-burkhalter",
+  "office": "city-florida-city-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.floridacityfl.gov/AgendaCenter/ViewFile/Agenda/_10272026-25"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Acting City Manager",
+  "note": "Listed as Acting City Manager on the October 27, 2026 City Commission agenda. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "stephen-j-helfman",
+  "office": "city-golden-beach-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://goldenbeach.us/town-attorney/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "lissette-perez",
+  "office": "city-golden-beach-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://goldenbeach.us/town-clerk/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "alexander-diaz",
+  "office": "city-golden-beach-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://goldenbeach.us/town-manager-biography/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Town page: appointed Town Manager in March 2007 and continues to serve. Exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "barbara-t-govea",
+  "office": "city-hialeah-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.hialeahfl.gov/410/Law"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Source: named City Attorney by Mayor Bryan Calvo and ratified by the City Council; she was Deputy City Attorney from 2023 to early 2026. Exact start date not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "marbelys-fatjo",
+  "office": "city-hialeah-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.hialeahfl.gov/160/City-Clerk"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "elizabeth-sewell",
+  "office": "city-homestead-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.homesteadfl.gov/94/City-Clerk"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "nzeribe-ihekwaba",
+  "office": "city-homestead-manager",
+  "start": "2024-03-25",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.homesteadfl.gov/Directory.aspx?did=12",
+   "https://www.homesteadfl.gov/CivicAlerts.aspx?AID=4057"
+  ],
+  "sourceKind": "official",
+  "note": "City news release (2024-03-25): City Council unanimously appointed him City Manager effective March 25, 2024. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "roseann-prado",
+  "office": "city-indian-creek-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://indiancreekvillagefl.gov/about/contact/phone-directory/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "guillermo-olmedillo",
+  "office": "city-indian-creek-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://indiancreekvillagefl.gov/about/contact/phone-directory/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "chad-friedman",
+  "office": "city-key-biscayne-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://keybiscayne.fl.gov/government/village_attorney.php"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "jocelyn-b-koch",
+  "office": "city-key-biscayne-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://keybiscayne.fl.gov/government/village_clerk/index.php"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "steve-williamson",
+  "office": "city-key-biscayne-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://keybiscayne.fl.gov/government/village_manager.php"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "michael-pizzi",
+  "office": "city-medley-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.townofmedley.com/town-attorney"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "victoria-martinez",
+  "office": "city-medley-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.townofmedley.com/town-clerk"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "george-k-wysong-iii",
+  "office": "city-miami-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miami.gov/My-Government/City-Officials"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Source: appointed in April 2024; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "ricardo-j-dopico",
+  "office": "city-miami-beach-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamibeachfl.gov/city-hall/city-attorney/",
+   "https://miamibeachfl.gov/?p=297479"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "appointedOn": "2024-04-03",
+  "note": "City press release (2024-04-09): City Commission appointed him unanimously on 2024-04-03; acting city attorney until his predecessor left on May 3, 2024. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rafael-e-granado",
+  "office": "city-miami-beach-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamibeachfl.gov/city-hall/city-clerk/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "eric-carpenter",
+  "office": "city-miami-beach-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamibeachfl.gov/city-hall/city-manager/",
+   "https://www.miamibeachfl.gov/es/staff/eric-carpenter/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "City staff page: appointed City Manager in July 2024; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "todd-b-hannon",
+  "office": "city-miami-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miami.gov/My-Government/City-Officials"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "sonja-k-dickens",
+  "office": "city-miami-gardens-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://miamigardens-fl.gov/156/City-Attorneys-Office"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "mario-bataille",
+  "office": "city-miami-gardens-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://miamigardens-fl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "cameron-d-benson",
+  "office": "city-miami-gardens-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://miamigardens-fl.gov/163/City-Managers-Office"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Source: appointed October 2013; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "raul-gastesi-jr",
+  "office": "city-miami-lakes-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamilakes-fl.gov/departments/office-of-the-attorney/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Doral lists him as Raul Gastesi Jr. and Miami Lakes as Raul Gastesi; both list Lorenzo Cobiella as the other attorney, so they are filed as one person. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "gina-m-inguanzo",
+  "office": "city-miami-lakes-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamilakes-fl.gov/departments/office-of-the-clerk/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Town page: Town Clerk since 2015; exact date not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "edward-pidermann",
+  "office": "city-miami-lakes-manager",
+  "start": "2019-02-02",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamilakes-fl.gov/departments/office-of-the-manager/"
+  ],
+  "sourceKind": "official",
+  "note": "Town page: appointed Town Manager on February 2, 2019. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "james-reyes",
+  "office": "city-miami-manager",
+  "start": "2026-01-12",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miami.gov/My-Government/City-Officials"
+  ],
+  "sourceKind": "official",
+  "note": "Source: sworn in January 12, 2026; nominated by Mayor Eileen Higgins on December 29, 2025. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "chanae-wood",
+  "office": "city-miami-shores-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.msvfl.gov/VillageOfficials"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "ysabely-rodriguez",
+  "office": "city-miami-shores-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.msvfl.gov/VillageOfficials"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "esmond-k-scott",
+  "office": "city-miami-shores-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.msvfl.gov/VillageOfficials"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "erika-gonzalez-santamaria",
+  "office": "city-miami-springs-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamisprings-fl.gov/cityclerk"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "j-c-jimenez",
+  "office": "city-miami-springs-manager",
+  "start": "2023-07-20",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamisprings-fl.gov/citymanager/city-manager-jc-jimenez"
+  ],
+  "sourceKind": "official",
+  "note": "City page: first voted in as City Manager on July 20, 2023. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "haydee-sera",
+  "office": "city-north-bay-village-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://northbayvillage-fl.gov/village-attorneys/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Village page: the law firm Weiss Serota Helfman Cole and Bierman provides legal services; Haydee Sera is the lead partner overseeing Village affairs. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "alba-l-chang",
+  "office": "city-north-bay-village-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://northbayvillage-fl.gov/village-clerk/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "frank-rollason",
+  "office": "city-north-bay-village-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://northbayvillage-fl.gov/village-manager/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "jeff-p-h-cazeau",
+  "office": "city-north-miami-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://northmiamifl.gov/Directory.aspx?DID=8"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "andrise-bernard",
+  "office": "city-north-miami-beach-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.citynmb.com/273/City-Clerk"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "darvin-williams",
+  "office": "city-north-miami-beach-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.citynmb.com/413/City-Manager",
+   "https://votersopinion.com/wp-content/uploads/2026/05/City-of-North-Miami-Beach-Appoints-Darvin-Williams-as-City-Manager.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "appointedOn": "2026-01-20",
+  "note": "City page names him City Manager. A city press release (hosted on a third-party site) says the Mayor and Commission voted to appoint him on 2026-01-20; start date not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "vanessa-joseph",
+  "office": "city-north-miami-clerk",
+  "start": null,
+  "end": null,
+  "via": "elected",
+  "sources": [
+   "https://northmiamifl.gov/Directory.aspx?DID=10"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "North Miami's City Clerk is elected; the city directory lists her as Elected City Clerk. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "theresa-therilus",
+  "office": "city-north-miami-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.northmiamifl.gov/160/City-Manager"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "burnadette-norris-weeks",
+  "office": "city-opa-locka-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://opalockafl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "joanna-flores",
+  "office": "city-opa-locka-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://opalockafl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "shamecca-lawson",
+  "office": "city-opa-locka-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://opalockafl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "john-j-quick",
+  "office": "city-palmetto-bay-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.palmettobay-fl.gov/Directory.aspx?did=22"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "missy-arocha",
+  "office": "city-palmetto-bay-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.palmettobay-fl.gov/Directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "nick-marano",
+  "office": "city-palmetto-bay-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.palmettobay-fl.gov/Directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "mitchell-a-bierman",
+  "office": "city-pinecrest-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.pinecrest-fl.gov/Government/Attorney"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "priscilla-torres",
+  "office": "city-pinecrest-clerk",
+  "start": "2022-01-11",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.pinecrest-fl.gov/Government/Clerk"
+  ],
+  "sourceKind": "official",
+  "note": "Village page: appointed by the Village Council on January 11, 2022. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "yocelyn-galiano",
+  "office": "city-pinecrest-manager",
+  "start": "2011-07-18",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.pinecrest-fl.gov/Government/Manager"
+  ],
+  "sourceKind": "official",
+  "note": "Village page: confirmed as Village Manager on July 18, 2011. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "anthony-l-recio",
+  "office": "city-south-miami-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://southmiamifl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "nkenga-a-payne",
+  "office": "city-south-miami-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://southmiamifl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "genaro-iglesias",
+  "office": "city-south-miami-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://southmiamifl.gov/directory.aspx"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "alain-boileau",
+  "office": "city-sunny-isles-beach-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sibfl.gov/City-Hall/City-Leadership/City-Attorney"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "mauricio-betancur",
+  "office": "city-sunny-isles-beach-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sibfl.gov/City-Hall/City-Leadership/City-Clerk"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "City page: City Clerk since 2017; exact date not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "susan-simpson",
+  "office": "city-sunny-isles-beach-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sibfl.gov/City-Hall/City-Leadership/City-Manager"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Interim City Manager",
+  "note": "City page lists her as Interim City Manager; the same page has an older news item naming Stan Morris as City Manager. Start date not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "stephen-j-helfman",
+  "office": "city-surfside-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://townofsurfsidefl.gov/departments-services/town-attorney"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Town page: Steve Helfman, Town Attorney, Weiss Serota Helfman Cole and Bierman, P.L. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "sandra-n-mccready",
+  "office": "city-surfside-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://townofsurfsidefl.gov/departments-services/town-manager"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "sandra-n-mccready",
+  "office": "city-surfside-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://townofsurfsidefl.gov/departments-services/town-manager"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Acting Town Manager",
+  "note": "Town page lists her as Acting Town Manager and Town Clerk. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "carmen-garcia",
+  "office": "city-sweetwater-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://cityofsweetwater.fl.gov/directory"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "maritza-fernandez-guevara",
+  "office": "city-virginia-gardens-clerk",
+  "start": "1994-02-07",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://virginiagardens-fl.gov/mayor-council/"
+  ],
+  "sourceKind": "official",
+  "note": "Village page: appointed by the Village Council with an official start date of February 7, 1994. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "dexter-w-lehtinen",
+  "office": "city-west-miami-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://cityofwestmiami.gov/city-attorney"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "annery-gonzalez",
+  "office": "city-west-miami-clerk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://cityofwestmiami.gov/city-clerk"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "edward-silva",
+  "office": "city-west-miami-manager",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://cityofwestmiami.gov/index.asp?SEC=E38B2EBD-FE38-4C8D-9948-9C9F9E6E3055"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "City page: appointed by the City Commission; commenced in May 2023. Exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "t-spencer-crowley-iii",
+  "office": "find-commissioner-miami-dade",
+  "start": "2007-06-04",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.aicw.org/about_us/board_of_commissioners_and_staff.php",
+   "https://www.flsenate.gov/Session/ExecutiveAppointments/Show/2016/3451"
+  ],
+  "sourceKind": "official",
+  "termExpires": "2027-01-09",
+  "note": "Florida Senate appointment record: first appointed for a term starting 2007-06-04; most recently reappointed for 2024-07-01 to 2027-01-09, confirmed 2025-04-29. The district page lists him as the Miami-Dade commissioner. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rodolfo-pages",
+  "office": "gmx-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://hoodline.com/2026/06/state-toll-board-kills-kendall-parkway-shrinks-836-to-four-mile-flyover/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "The TPO board poster (2026-02-02) lists him as the Greater Miami Expressway Agency's representative; a June 2026 news report calls him a GMX board member. The GMX board page could not be read. How his seat is filled is not confirmed. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "carladenise-edwards",
+  "office": "mdc-chief-administrative-officer",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/mayor/leading-the-way/home.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "The Office of the Mayor page names her as Chief Administrative Officer; it does not give a start date. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "yinka-majekodunmi",
+  "office": "mdc-commission-auditor",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/260657.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Named as Commission Auditor on the 2025 annual report filed as agenda item 1(I)(2), April 21, 2026. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "geri-bonzon-keenan",
+  "office": "mdc-county-attorney",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/attorney/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Source gives the start as March 2021; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "john-goran",
+  "office": "mdc-educational-facilities-authority-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/miami-dade-educational-facilities-authority.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Vice-Chairperson",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "lisa-b-hogan",
+  "office": "mdc-educational-facilities-authority-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/miami-dade-educational-facilities-authority.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chairperson",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "reginald-clyne",
+  "office": "mdc-educational-facilities-authority-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/miami-dade-educational-facilities-authority.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "christina-m-frohock",
+  "office": "mdc-ethics-commission-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://ethics.miamidade.gov/ethics/about-us/commission-members.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "appointedBy": "Dean, University of Miami School of Law",
+  "note": "Source gives the start as June 2026; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "dava-j-tunis",
+  "office": "mdc-ethics-commission-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://ethics.miamidade.gov/ethics/about-us/commission-members.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "appointedBy": "Chief Judge, Eleventh Judicial Circuit",
+  "note": "Source gives the start as 2023; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "judith-bernier",
+  "office": "mdc-ethics-commission-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://ethics.miamidade.gov/ethics/about-us/commission-members.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chair",
+  "note": "Source does not say who appointed her. Source gives the start as May 2014; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "nelson-bellido",
+  "office": "mdc-ethics-commission-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://ethics.miamidade.gov/ethics/about-us/commission-members.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "appointedBy": "Chief Judge, Eleventh Judicial Circuit",
+  "note": "Source gives the start as July 2010; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "wifredo-gort",
+  "office": "mdc-ethics-commission-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://ethics.miamidade.gov/ethics/about-us/commission-members.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Vice Chair",
+  "appointedBy": "Miami-Dade League of Cities",
+  "note": "Source gives the start as December 2020; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "ignacio-j-vazquez-jr",
+  "office": "mdc-ethics-executive-director",
+  "start": "2024-09-03",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://ethics.miamidade.gov/ethics/about-us/staff.page"
+  ],
+  "sourceKind": "official",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "edward-strongin",
+  "office": "mdc-health-facilities-authority-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/miami-dade-health-facilities-authority.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chairman",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "john-calles",
+  "office": "mdc-health-facilities-authority-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/miami-dade-health-facilities-authority.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "steven-george-ullman",
+  "office": "mdc-health-facilities-authority-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/miami-dade-health-facilities-authority.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "felix-jimenez",
+  "office": "mdc-inspector-general",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadeig.org/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Source states the Board of County Commissioners voted to reappoint him; reappointment date not stated on the page. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "anthony-rodriguez",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "danielle-cohen-higgins",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Co-chair",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "juan-carlos-bermudez",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "keon-hardemon",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "kionne-l-mcghee",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Co-chair",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "marleine-bastien",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "micky-steinberg",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "natalie-milian-orbis",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "oliver-g-gilbert-iii",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "raquel-a-regalado",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rene-garcia",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "roberto-j-gonzalez",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "vicki-l-lopez",
+  "office": "mdc-naranja-lakes-cra-member",
+  "start": null,
+  "end": null,
+  "via": "ex-officio",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/naranja-lakes-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "gilbert-st-jean",
+  "office": "mdc-nw-79th-street-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-79th-street-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Vice-Chairman",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "nadege-vilsaint",
+  "office": "mdc-nw-79th-street-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-79th-street-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rhenie-dalger",
+  "office": "mdc-nw-79th-street-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-79th-street-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chairperson",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "sandy-lila",
+  "office": "mdc-nw-79th-street-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-79th-street-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "tanisha-douglas",
+  "office": "mdc-nw-79th-street-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-79th-street-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Secretary",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "angela-reyes",
+  "office": "mdc-nw-7th-avenue-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-7th-avenue-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "daniella-pierre",
+  "office": "mdc-nw-7th-avenue-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-7th-avenue-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "gene-lomando",
+  "office": "mdc-nw-7th-avenue-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-7th-avenue-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "jeffy-mondesir",
+  "office": "mdc-nw-7th-avenue-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-7th-avenue-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Vice Chairman",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "nadeige-theresias-joisil",
+  "office": "mdc-nw-7th-avenue-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-7th-avenue-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Secretary",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rasha-cameau",
+  "office": "mdc-nw-7th-avenue-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/nw-7th-avenue-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chairwoman",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "alix-desulme",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: City of North Miami. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "anthony-rodriguez",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chair",
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "bryan-calvo",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: City of Hialeah. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "christi-fraga",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: City of Doral. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "damian-pardo",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: City of Miami. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "danielle-cohen-higgins",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "david-suarez",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: City of Miami Beach. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "eric-diaz-padron",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Vice Chair",
+  "note": "Poster lists the member as representing: Municipal Representative. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "eudaldo-lopez",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Non-Elected Official. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "juan-carlos-bermudez",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "keon-hardemon",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "kionne-l-mcghee",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "marleine-bastien",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "micky-steinberg",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "natalie-milian-orbis",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "oliver-g-gilbert-iii",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "raquel-a-regalado",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rene-garcia",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "roberto-j-alonso",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade School Board. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "roberto-j-gonzalez",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rodney-harris",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: City of Miami Gardens. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rodolfo-pages",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Greater Miami Expressway Agency. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "steven-d-losner",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: City of Homestead. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "vicki-l-lopez",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: Miami-Dade County. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "vince-c-lago",
+  "office": "mdc-tpo-board-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadetpo.org/library/mdtpo-governing-board-members-poster.pdf",
+   "https://www.miamidadetpo.org/library/bylaws/mdtpo-by-laws-2020.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Poster lists the member as representing: City of Coral Gables. Poster dated 2026-02-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "kevin-richardson",
+  "office": "mdc-west-perrine-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/west-perrine-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "leviticus-l-gilliard",
+  "office": "mdc-west-perrine-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/west-perrine-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chair",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "rhonda-richardson-comer",
+  "office": "mdc-west-perrine-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/west-perrine-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "taj-echoles",
+  "office": "mdc-west-perrine-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/west-perrine-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "tyreke-spann",
+  "office": "mdc-west-perrine-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/west-perrine-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Vice-Chair",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "veronica-thompkins",
+  "office": "mdc-west-perrine-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/west-perrine-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "willie-carpenter",
+  "office": "mdc-west-perrine-cra-member",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidade.gov/global/government/special-districts/west-perrine-cra-special-district.page"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "walter-j-harvey",
+  "office": "mdcps-general-counsel",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://pdfs.dadeschools.net/Bdarch/2026/Bd090926/agenda/g1rev.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Named as General Counsel on School Board agenda items for the 2026-09-09 meeting. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "felix-jimenez",
+  "office": "mdcps-inspector-general",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.miamidadeig.org/inspector-general/public-schools.page",
+   "https://www.miamidadeig.org/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "The Miami-Dade County Office of the Inspector General serves as the school district's inspector general under an interlocal agreement (Amendment 6 runs 2025-12-10 to 2028-12-18). Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "jose-l-dotres",
+  "office": "mdcps-superintendent",
+  "start": null,
+  "end": "2026-09-01",
+  "via": "appointed",
+  "sources": [
+   "https://pdfs.dadeschools.net/Bdarch/2026/Bd081926/agenda/sp2.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Former superintendent. SP-2 states his last day as superintendent is 2026-09-01; start date not stated there."
+ },
+ {
+  "person": "rafael-a-villalobos",
+  "office": "mdcps-superintendent",
+  "start": "2026-09-02",
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://pdfs.dadeschools.net/Bdarch/2026/Bd081926/agenda/sp1.pdf",
+   "https://pdfs.dadeschools.net/Bdarch/2026/Bd081926/agenda/sp2.pdf",
+   "https://news.dadeschools.net/cmnc/new/37836",
+   "https://www.wlrn.org/education/2026-09-08/a-new-dawn-new-miami-dade-school-superintendent-lays-out-priorities-amid-financial-challenges"
+  ],
+  "sourceKind": "official",
+  "appointedOn": "2026-07-29",
+  "startSourceKind": "news",
+  "note": "Selected by the School Board on 2026-07-29; employment agreement on the 2026-08-19 agenda (SP-1). Start date is the day after Dr. Dotres's last day as superintendent (2026-09-01) per SP-2; news reports confirm he began on 2026-09-02. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "abigail-price-williams",
+  "office": "pht-board-trustee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://jacksonhealth.org/administrative/public-health-trust/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Secretary",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "alexis-calatayud",
+  "office": "pht-board-trustee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://jacksonhealth.org/administrative/public-health-trust/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Listed as a member; the page does not say how this seat is filled. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "amadeo-lopez-castro-iii",
+  "office": "pht-board-trustee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://jacksonhealth.org/administrative/public-health-trust/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "antonio-l-argiz",
+  "office": "pht-board-trustee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://jacksonhealth.org/administrative/public-health-trust/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Treasurer",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "carmen-m-sabater",
+  "office": "pht-board-trustee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://jacksonhealth.org/administrative/public-health-trust/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chair",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "mojdeh-khaghan",
+  "office": "pht-board-trustee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://jacksonhealth.org/administrative/public-health-trust/"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Vice Chair",
+  "note": "Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "peter-t-pruitt-jr",
+  "office": "pht-board-trustee",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://jacksonhealth.org/administrative/public-health-trust/",
+   "https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261704.pdf"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "termExpires": "2029-05-31",
+  "note": "Resolution on the 2026-10-06 County Commission agenda (item 11(A)(13)) appoints him as a voting trustee for a term expiring 2029-05-31, replacing Walter T. Richardson, whose tenure limit expired 2026-05-31. The trust page lists him as a member. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "robert-a-spottswood-jr",
+  "office": "sfwmd-board-at-large-east",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sfwmd.gov/board-members"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "termExpires": "March 2030",
+  "note": "District page lists the term as March 2026 to March 2030; confirmed 2026-03-10. Source gives the start as March 2026; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "thomas-hurley",
+  "office": "sfwmd-board-at-large-east",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sfwmd.gov/board-members"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "termExpires": "March 2029",
+  "note": "District page lists the term as April 2025 to March 2029; confirmed 2026-01-14. Source gives the start as April 2025; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "charlette-roman",
+  "office": "sfwmd-board-at-large-west",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sfwmd.gov/board-members"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "termExpires": "March 2029",
+  "note": "District page lists the term as April 2025 to March 2029; confirmed 2026-03-10. Source gives the start as April 2025; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "ron-bergeron-sr",
+  "office": "sfwmd-board-broward",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sfwmd.gov/board-members"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "termExpires": "March 2030",
+  "note": "District page lists the term as August 2026 to March 2030; Senate confirmation pending. Source gives the start as August 2026; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "benjamin-butler",
+  "office": "sfwmd-board-glades-highlands-okeechobee-orange-osceola-polk",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sfwmd.gov/board-members"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Vice Chair",
+  "termExpires": "March 2028",
+  "note": "District page lists the term as August 2024 to March 2028; confirmed 2025-04-29. Source gives the start as August 2024; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "chauncey-goss",
+  "office": "sfwmd-board-lee-collier-hendry-charlotte",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sfwmd.gov/board-members"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "role": "Chair",
+  "termExpires": "March 2027",
+  "note": "District page lists the term as August 2023 to March 2027; confirmed 2024-03-07. Source gives the start as August 2023; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "carlos-martinez",
+  "office": "sfwmd-board-miami-dade",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sfwmd.gov/board-members"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "termExpires": "March 2028",
+  "note": "District page lists the term as August 2024 to March 2028; confirmed 2025-04-29. Source gives the start as August 2024; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "scott-wagner",
+  "office": "sfwmd-board-miami-dade",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sfwmd.gov/board-members"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "termExpires": "March 2027",
+  "note": "District page lists the term as August 2023 to March 2027; confirmed 2024-03-07. Source gives the start as August 2023; exact day not stated. Serving as of 2026-10-29 per the source."
+ },
+ {
+  "person": "jay-steinle",
+  "office": "sfwmd-board-palm-beach",
+  "start": null,
+  "end": null,
+  "via": "appointed",
+  "sources": [
+   "https://www.sfwmd.gov/board-members"
+  ],
+  "sourceKind": "official",
+  "startKnown": false,
+  "termExpires": "March 2027",
+  "note": "District page lists the term as August 2023 to March 2027; confirmed 2024-03-07. Source gives the start as August 2023; exact day not stated. Serving as of 2026-10-29 per the source."
+ }
+]

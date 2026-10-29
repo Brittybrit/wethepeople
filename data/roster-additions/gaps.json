@@ -1,0 +1,253 @@
+{
+ "checked": "2026-10-29",
+ "about": "What this pass could not confirm from an official source, sites that refused automated reads, boards left out on purpose, and items resting on weak or dated sources. Nothing listed here is in offices.json, people.json or terms.json unless the entry says so.",
+ "unconfirmedOffices": [
+  {
+   "office": "city-homestead-attorney",
+   "why": "The city page says the City Attorney is a charter officer but gives no name. Agendas on the city's meeting portal do not name the attorney. An October 2025 League of Cities list names Matthew Pearl, which is too old to file.",
+   "readByHand": [
+    "https://www.homesteadfl.gov/299/City-Attorney",
+    "https://play.champds.com/homesteadfl/"
+   ]
+  },
+  {
+   "office": "city-north-miami-beach-attorney",
+   "why": "The City Attorney page names no person. An October 2025 League of Cities list shows an interim (Joe Geller). Recent agendas are scanned images with no readable text.",
+   "readByHand": [
+    "https://www.citynmb.com/423/City-Attorney",
+    "https://www.citynmb.com/AgendaCenter"
+   ]
+  },
+  {
+   "office": "city-miami-springs-attorney",
+   "why": "The city site refuses automated reads. An October 2025 League of Cities list names Haydee Sera; local reporting from 2026 mentions a no-confidence push against the city attorney.",
+   "readByHand": [
+    "https://www.miamisprings-fl.gov/",
+    "https://www.miamisprings-fl.gov/cityclerk"
+   ]
+  },
+  {
+   "office": "city-biscayne-park-attorney",
+   "why": "The village contact page lists the manager and clerk but not the attorney. October 2025 League of Cities list: Bradley Weissman.",
+   "readByHand": [
+    "https://biscayneparkfl.gov/contact"
+   ]
+  },
+  {
+   "office": "city-indian-creek-attorney",
+   "why": "No attorney page or name on the village site. October 2025 League of Cities list: Stephen Helfman.",
+   "readByHand": [
+    "https://indiancreekvillagefl.gov/"
+   ]
+  },
+  {
+   "office": "city-sweetwater-attorney",
+   "why": "City directory lists the clerk but not the attorney. October 2025 League of Cities list: Ralph Ventura.",
+   "readByHand": [
+    "https://cityofsweetwater.fl.gov/directory"
+   ]
+  },
+  {
+   "office": "city-virginia-gardens-attorney",
+   "why": "Village site names the clerk but not the attorney. October 2025 League of Cities list: Guillermo Cuadra.",
+   "readByHand": [
+    "https://virginiagardens-fl.gov/"
+   ]
+  },
+  {
+   "office": "city-hialeah-gardens-attorney",
+   "why": "The city site refuses automated reads (Access Denied). October 2025 League of Cities list: Aida Martinez-Ruiz.",
+   "readByHand": [
+    "https://www.cityofhialeahgardens.com/"
+   ]
+  },
+  {
+   "office": "city-hialeah-gardens-clerk",
+   "why": "The clerk page loads but names no one; the page says the Mayor appoints the clerk. October 2025 League of Cities list: Mari Joffee.",
+   "readByHand": [
+    "https://www.cityofhialeahgardens.com/city-government/city-clerk-s-office"
+   ]
+  },
+  {
+   "office": "mdc deputy mayors and chief operations officer",
+   "why": "The Office of the Mayor pages name only the Chief Administrative Officer (Carladenise Edwards, filed). No official page lists the current deputy mayors or chief operations officer. News reports say COO Jimmy Morales resigned on 2026-06-03; no successor found in an official source.",
+   "readByHand": [
+    "https://www.miamidade.gov/global/government/mayor/about.page",
+    "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/table-of-organization.pdf"
+   ]
+  },
+  {
+   "office": "gmx-board-member (8 of 9 seats)",
+   "why": "gmxway.com renders its board list with JavaScript and the old mdxway.com host does not answer. Only Rodolfo Pages is filed, through the TPO poster. Section 348.0304(3)(a), Florida Statutes, sets the 9 seats.",
+   "readByHand": [
+    "https://www.gmxway.com/"
+   ]
+  },
+  {
+   "office": "pht-board-trustee seat-by-seat detail",
+   "why": "The Public Health Trust page lists 7 trustees with no seats or term dates. Chapter 25A of the county code sets the seat structure and may include ex officio members not shown. Term end is known only for Peter T. Pruitt, Jr. (2029-05-31).",
+   "readByHand": [
+    "https://jacksonhealth.org/administrative/public-health-trust/"
+   ]
+  },
+  {
+   "office": "childrens-trust-board terms",
+   "why": "The Trust lists 32 of its 33 seats and gives no current term dates. Two listed term notes are stale ('Expires March 17, 2022' for Lourdes P. Gimenez; 'Expires July 1, 2018' for Mindy Grimes-Festge) and were not filed as termExpires.",
+   "readByHand": [
+    "https://www.thechildrenstrust.org/board-of-directors"
+   ]
+  },
+  {
+   "office": "mdc-ethics-commission-member appointing authority per member",
+   "why": "The members page names the appointing body for four of five members. Judith Bernier's appointing authority is not stated.",
+   "readByHand": [
+    "https://ethics.miamidade.gov/ethics/about-us/commission-members.page"
+   ]
+  },
+  {
+   "office": "citt-member seats",
+   "why": "The CITT pages do not say which seat David Marin and Kenneth M. Kilpatrick hold; they are filed under citt-member. The Trust has more seats than the 11 members listed (vacancies or unlisted members).",
+   "readByHand": [
+    "https://www.miamidade.gov/citt/member-biographies.asp"
+   ]
+  },
+  {
+   "office": "sd-south-dade-soil-and-water-conservation-district seat 3",
+   "why": "Already a body in roster.json (seats 1, 2, 4, 5). Seat 3 has no office or holder there and none was found here.",
+   "readByHand": [
+    "https://www.miamidade.gov/elections/library/qualifying-handbook/south-dade-district-supervisors.pdf"
+   ]
+  },
+  {
+   "office": "mdc-tpo seat types",
+   "why": "The TPO poster (2026-02-02) lists members and whom they represent but not how each seat is filled; the bylaws say the Governor appoints the board. Filed as one office with 25 seats.",
+   "readByHand": [
+    "https://www.miamidadetpo.org/tpo/governing-board.page"
+   ]
+  }
+ ],
+ "blockedAutomatedReads": [
+  {
+   "url": "https://floridajobs.org/community-planning-and-development/special-districts/special-district-accountability-program/official-list-of-special-districts",
+   "readThere": "FloridaCommerce Official List of Special Districts. Filter to Miami-Dade, compare with roster.json and this folder, and list any district with taxing or bonding authority that is still missing."
+  },
+  {
+   "url": "https://specialdistrictreports.floridajobs.org/webreports/",
+   "readThere": "Same state list, by county, with each district's registered agent and governing body."
+  },
+  {
+   "url": "https://www.hfamiami.com/boardmembers",
+   "readThere": "Housing Finance Authority of Miami-Dade County board members. The site blocks automated readers (robots rule)."
+  },
+  {
+   "url": "https://www.mdcida.org/",
+   "readThere": "Miami-Dade County Industrial Development Authority board members (dependent special district). Blocks automated readers."
+  },
+  {
+   "url": "https://www.cityofhialeahgardens.com/",
+   "readThere": "City attorney and city clerk (Access Denied to automated reads)."
+  },
+  {
+   "url": "https://www.miamisprings-fl.gov/",
+   "readThere": "City attorney. Automated reads refused (HTTP 403); the manager and clerk were read through a different reader."
+  },
+  {
+   "url": "https://www.coralgables.com/department/city-clerk",
+   "readThere": "Clerk page refused automated reads; the clerk was confirmed on the city's staff listing instead."
+  },
+  {
+   "url": "https://miamidadepa.gov/pa/library/tax_district_listing.pdf",
+   "readThere": "Property Appraiser tax district listing; use it to cross-check special taxing districts and community development districts. Returned an HTML page instead of the PDF."
+  },
+  {
+   "url": "https://www.gmxway.com/",
+   "readThere": "Greater Miami Expressway Agency board and executive director (page content loads with JavaScript)."
+  }
+ ],
+ "notResearchedByDesign": [
+  {
+   "what": "Community development districts not already in roster.json",
+   "why": "Long tail. roster.json already has 57 community development districts. Use the FloridaCommerce list (above) to find the rest and add them as unconfirmed-selection boards, the way roster.json does."
+  },
+  {
+   "what": "Miami-Dade Fire and Rescue Service District, Miami-Dade County Library District",
+   "why": "Dependent special districts whose governing body is the Board of County Commissioners, which roster.json already covers. No separate board to add."
+  },
+  {
+   "what": "Miami-Dade Homeless Trust, Miami-Dade Economic Advocacy Trust, Miami Parking Authority, Downtown Development Authority (City of Miami), Omni and Southeast Overtown/Park West CRAs, Coconut Grove BID, Miami Sports and Exhibition Authority, Bayfront Park Management Trust, Virginia Key Beach Park Trust, Miami-Dade Aviation and Seaport advisory boards",
+   "why": "Public boards that spend or borrow public money but were not on the requested list for this pass. Next candidates to research, starting with the Downtown Development Authority (it levies a property tax) and the Homeless Trust (it spends the food and beverage tax)."
+  },
+  {
+   "what": "Municipal and county department directors (police chiefs, finance directors, procurement)",
+   "why": "Out of scope: the request covered managers, attorneys and clerks."
+  }
+ ],
+ "outOfScopeBoards": [
+  {
+   "what": "Municipal planning and zoning boards, local planning agencies, boards of adjustment",
+   "why": "Appointed boards with final decision power. Out of scope for now per the request; each of the 34 municipalities has at least one."
+  },
+  {
+   "what": "Municipal code enforcement boards and special magistrates",
+   "why": "Out of scope for now."
+  },
+  {
+   "what": "Municipal community redevelopment agency (CRA) boards (for example Miami Beach Redevelopment Agency, North Beach CRA, Homestead CRA, Florida City CRA, North Miami CRA, Opa-locka CRA, Hialeah CRA, Miami Gardens CRA)",
+   "why": "Out of scope for now. Most are made up of the city commission sitting as the CRA board, plus appointed members in some cities. The four county CRAs (NW 7th Avenue, NW 79th Street, Naranja Lakes, West Perrine) were filed because they are on the county's special district page."
+  },
+  {
+   "what": "Miami-Dade County Community Zoning Appeals Boards, Planning Advisory Board, Unsafe Structures Board, Environmental Quality Control Board",
+   "why": "County appointed boards with decision power. Out of scope for now."
+  }
+ ],
+ "weakOrDatedSources": [
+  {
+   "term": "city-bay-harbor-islands-attorney / skip-miller",
+   "why": "Only source is the town's January 2026 newsletter. The town site does not name the Town Attorney. Full legal name not given."
+  },
+  {
+   "term": "city-north-miami-beach-manager / darvin-williams",
+   "why": "Appointment date comes from a city press release hosted on a third-party site (votersopinion.com); the city page confirms he is City Manager."
+  },
+  {
+   "term": "city-surfside-manager / sandra-n-mccready",
+   "why": "Acting Town Manager while also Town Clerk; may change soon."
+  },
+  {
+   "term": "city-sunny-isles-beach-manager / susan-simpson",
+   "why": "Interim City Manager; start date not stated."
+  },
+  {
+   "term": "city-florida-city-manager / chad-burkhalter",
+   "why": "Acting City Manager per the 2026-10-27 agenda."
+  },
+  {
+   "term": "city-el-portal-attorney / joseph-s-geller",
+   "why": "Interim Village Attorney. Not merged with roster.json person joseph-geller (School Board District 3); same name, likely different people, not confirmed."
+  },
+  {
+   "term": "mdcps-superintendent / rafael-a-villalobos",
+   "why": "Start date 2026-09-02 comes from the School Board item that ends his predecessor's service on 2026-09-01, with news reports (WLRN, Local 10) confirming the first day. The district's own July 2026 release said the previous superintendent would serve until February 2027; the later Board item supersedes it."
+  },
+  {
+   "term": "gmx-board-member / rodolfo-pages",
+   "why": "Official source (TPO poster) lists him as the GMX representative to the TPO; GMX board membership itself rests on a June 2026 news report."
+  }
+ ],
+ "newsOnly": [],
+ "possibleDuplicatePeople": [
+  {
+   "ids": [
+    "joseph-s-geller",
+    "joseph-geller"
+   ],
+   "note": "joseph-s-geller (El Portal interim village attorney, this folder) vs joseph-geller (roster.json, School Board District 3). Not merged."
+  },
+  {
+   "ids": [
+    "lisette-m-alves"
+   ],
+   "note": "Children's Trust designee from Miami-Dade County Public Schools; check against MDCPS staff before merging with anyone."
+  }
+ ]
+}
