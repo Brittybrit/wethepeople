@@ -92,6 +92,13 @@
   .sd{margin-left:48px;color:var(--ink-soft);font-size:13px}
   .sd p{margin:3px 0}
   .sd .act{color:var(--ink)}
+  .ins{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+  .in{white-space:normal}
+  .tag{font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;padding:1px 5px;border:1px solid var(--hair);white-space:nowrap}
+  .tag.on-site{background:var(--area);color:#FAFAF7;border-color:var(--area)}
+  .tag.online{border-color:var(--ink-soft);color:var(--ink)}
+  .tag.records-request{border-color:#A3262A;color:#A3262A}
+  .tag.not-used{opacity:.6}
   .seat .h span{font-weight:400;font-size:12px;color:var(--ink-soft)}
   .grp{border-bottom:1px solid var(--hair);padding:10px 0}
   .grp summary{font-family:var(--sans);font-size:15px;font-weight:600;cursor:pointer;list-style:none}
@@ -267,10 +274,20 @@
     var basis = function(s){ return s.dateBasis === 'body-source' ? '' : s.dateBasis === 'statutory-window' ? ' (legal window)' : s.dateBasis === 'pattern' ? ' (estimated from last year)' : s.dateBasis === 'unknown' ? ' (date not known yet)' : ''; };
     var levers = function(r){ return (r || []).map(function(x){ return '<p class="act">' + esc(x.how) + (x.url ? ' ' + link(x.url, 'Go') : '') + '</p>'; }).join(''); };
     var law = function(l){ return (l || []).map(function(x){ return link(x.url, x.cite); }).join(', '); };
+    var INPUT_LABEL = { 'on-site': 'on this site', 'online': 'online', 'records-request': 'records request', 'not-used': 'not collected' };
+    var inputsHtml = function(s){
+      var list = s.inputsDetail || (s.inputs || []).map(function(n){ return { name: n }; });
+      if(!list.length) return '';
+      return '<p class="ins">Inputs: ' + list.map(function(i){
+        var tag = i.status ? '<span class="tag ' + esc(i.status) + '">' + esc(INPUT_LABEL[i.status] || i.status) + '</span>' : '';
+        var nm = i.url ? link(i.url, i.name) : esc(i.name);
+        return '<span class="in">' + nm + ' ' + tag + '</span>';
+      }).join('') + '</p>';
+    };
     var stepItem = function(s, dated){
       return '<li class="' + (dated ? s.status : '') + '"><div class="st"><span class="n">' + s.step + '/' + s.of + '</span><b>' + esc(s.name) + '</b>' + (s.influence ? '<span class="inf ' + esc(s.influence) + '">' + esc(s.influence) + ' leverage</span>' : '') + '</div><div class="sd">' +
         (dated ? '<p>' + esc(span(s.when)) + esc(basis(s)) + (s.status === 'now' ? ' · open now' : s.status === 'done' ? ' · done' : '') + '</p>' : '') +
-        '<p>' + esc(s.actor) + (s.inputs && s.inputs.length ? ' · from ' + esc(s.inputs.join(', ')) : '') + (s.output ? ' → ' + esc(s.output) : '') + '</p>' +
+        '<p>' + esc(s.actor) + (s.output ? ' → ' + esc(s.output) : '') + '</p>' + inputsHtml(s) +
         (s.appliesWhen ? '<p>Only when ' + esc(s.appliesWhen) + '</p>' : '') +
         (s.influenceWhy ? '<p>' + esc(s.influenceWhy) + '</p>' : '') + levers(s.residentCan) +
         (s.legalBasis && s.legalBasis.length ? '<p>Law: ' + law(s.legalBasis) + '</p>' : '') + '</div></li>';
