@@ -5,14 +5,20 @@ workers_dev = false
 
 routes = [
   { pattern = "wethepeople305.org", custom_domain = true },
-  { pattern = "www.wethepeople305.org", custom_domain = true }
+  { pattern = "www.wethepeople305.org", custom_domain = true },
+  { pattern = "meet.wethepeople305.org", custom_domain = true }
 ]
 # admin.wethepeople305.org is a separate private Worker (the founder board), in its own repo.
 
 [assets]
 directory = "./public"
 binding = "ASSETS"
-run_worker_first = ["/admin/*", "/api", "/api/*", "/mcp", "/auth", "/auth/*"]
+run_worker_first = ["/", "/meet", "/admin/*", "/api", "/api/*", "/mcp", "/auth", "/auth/*"]
+
+# The meeting page (lib/meet.mjs) at meet.wethepeople305.org and /meet embeds this booking page. Paste the link from
+# Google Calendar (Appointment schedule > Share > Booking page link) or Cal.com. Empty means the page shows the email.
+[vars]
+BRIT_BOOKING_PAGE_URL = ""
 
 # Address lookups per client: 20 a minute. Keeps /api/v1/precinct and find_precinct from being used as a free bulk
 # geocoder, which would put our access to Esri and the Census at risk. The key is the client IP, held in memory by

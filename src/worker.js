@@ -1,5 +1,6 @@
 // We the People 305 public Worker: wethepeople305.org.
 //   GET  /                          landing page
+//   GET  /meet, meet.wethepeople305.org/  book a meeting with the founder (lib/meet.mjs)
 //   GET  /your-area                 Your area page (public/your-area.html, served by the asset handler)
 //   GET  /api/v1                    index of operations
 //   GET  /api/v1/openapi.json       OpenAPI 3.1, generated from lib/api-schema.mjs
@@ -26,6 +27,7 @@ import { OPERATIONS, checkParams, openApi, API_VERSION, matchOperation } from '.
 import { handleMcp } from '../lib/mcp.mjs';
 import { LEDGER_OPERATIONS, runLedger, ledgerEtag } from '../lib/ledger/ledger.mjs';
 import { createLedgerLoader } from '../lib/ledger/load.mjs';
+import { MEET_HOST, parseBookingPageUrl, meetPage, meetHeaders } from '../lib/meet.mjs';
 import { identityFetch, isIdentityPath } from './identity.js'; // identity: sign-in and accounts
 
 const BASE_HEADERS = { 'Content-Type': 'application/json; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'X-Trace-Id' };
@@ -116,6 +118,11 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname.replace(/\/+$/, '') || '/';
     if (path.startsWith('/admin')) return json({ error: 'Not found' }, 404);
+    // --- meeting page: meet.wethepeople305.org and /meet. See lib/meet.mjs. ---
+    if ((url.hostname === MEET_HOST && path === '/') || path === '/meet') {
+      const booking = parseBookingPageUrl(env.BRIT_BOOKING_PAGE_URL);
+      return new Response(meetPage(booking), { status: 200, headers: meetHeaders(booking) });
+    }
     // --- identity (sign-in, accounts, organizer admission): same-origin only, no open CORS, no MCP tools. See lib/identity/. ---
     if (isIdentityPath(path)) {
       const idTrace = tracer({ service: 'wethepeople-identity', sink: sinks.console(), client: 'http' });
