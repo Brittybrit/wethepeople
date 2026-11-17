@@ -18,6 +18,22 @@ describe('decision chains for a precinct', () => {
       expect(['now', 'ahead']).toContain(ch.next.status);
     }
   });
+  it('lists every chain\'s steps in date order, with undated steps kept after the step they follow', () => {
+    for (const today of ['2026-11-17', '2027-06-15']) {
+      const { decisionChains: c } = decisionChains(Object.keys(data.bodies), today, data);
+      for (const ch of c) {
+        const dated = ch.steps.filter(s => s.when);
+        for (let i = 1; i < dated.length; i++) expect(dated[i - 1].when.from <= dated[i].when.from).toBe(true);
+        expect(ch.steps.map(s => s.step).sort((a, b) => a - b)).toEqual(ch.steps.map((_, i) => i + 1));
+        ch.steps.forEach((s, i) => { if (!s.when && s.step > 1) expect(ch.steps.slice(0, i).some(p => p.step === s.step - 1)).toBe(true); });
+      }
+    }
+  });
+  it('picks the open step that closes soonest as the next step', () => {
+    const { decisionChains: c } = decisionChains(['county'], '2026-11-18', data);
+    const e = c.find(x => x.decision.kind !== 'annual-budget-and-millage');
+    expect(e.next.name).toBe('Election contest window');
+  });
   it('in July the county budget chain is past its first steps and the tax-rate cap is ahead or open', () => {
     const { decisionChains: c } = decisionChains(['county'], '2027-07-10', data);
     const b = c.find(x => x.decision.kind === 'annual-budget-and-millage');

@@ -139,7 +139,7 @@
     <details><summary>How these are picked</summary><div id="rules"></div></details>
 
     <h2>Decisions in motion</h2>
-    <p class="sub">Each decision is a chain of steps. Most of the leverage is early, before the final vote. Open one to see every step, who acts, what feeds it, the law that requires it, and what you can do.</p>
+    <p class="sub">Each decision is a chain of steps, listed by date. Most of the leverage is early, before the final vote. Open one to see every step, who acts, what feeds it, the law that requires it, and what you can do.</p>
     <div id="lev"></div>
     <div id="chains"></div>
 
@@ -285,7 +285,7 @@
       }).join('') + '</p>';
     };
     var stepItem = function(s, dated){
-      return '<li class="' + (dated ? s.status : '') + '"><div class="st"><span class="n">' + s.step + '/' + s.of + '</span><b>' + esc(s.name) + '</b>' + (s.influence ? '<span class="inf ' + esc(s.influence) + '">' + esc(s.influence) + ' leverage</span>' : '') + '</div><div class="sd">' +
+      return '<li class="' + (dated ? s.status : '') + '"><div class="st">' + (dated ? '' : '<span class="n">' + s.step + '/' + s.of + '</span>') + '<b>' + esc(s.name) + '</b>' + (s.influence ? '<span class="inf ' + esc(s.influence) + '">' + esc(s.influence) + ' leverage</span>' : '') + '</div><div class="sd">' +
         (dated ? '<p>' + esc(span(s.when)) + esc(basis(s)) + (s.status === 'now' ? ' · open now' : s.status === 'done' ? ' · done' : '') + '</p>' : '') +
         '<p>' + esc(s.actor) + (s.output ? ' → ' + esc(s.output) : '') + '</p>' + inputsHtml(s) +
         (s.appliesWhen ? '<p>Only when ' + esc(s.appliesWhen) + '</p>' : '') +
@@ -296,7 +296,7 @@
     $('lev').innerHTML = L ? '<div class="lev"><div class="fine">Your next high-leverage moment</div><div class="t">' + esc(L.milestone.name) + ' · ' + esc(L.decision.name) + '</div><div class="w">' + esc(L.body.name) + ' · step ' + esc(L.stepLabel) + ' · ' + esc(span(L.when)) + (L.openNow ? ' · open now' : '') + '</div><div class="w">' + esc(L.influenceWhy || '') + '</div>' + levers(L.residentCan) + '</div>' : '';
     $('chains').innerHTML = (d.decisionChains || []).map(function(c){
       var bar = c.steps.map(function(s){ return '<i class="' + s.status + '"></i>'; }).join('');
-      return '<details class="chain"><summary><div class="nm">' + esc(c.decision.name) + '</div><div class="bd">' + esc(c.body.name) + '</div><div class="bar">' + bar + '</div><div class="nx">Step ' + c.next.step + ' of ' + c.next.of + ': ' + esc(c.next.name) + ' · ' + esc(span(c.next.when)) + (c.next.status === 'now' ? ' · open now' : '') + '</div></summary><ol class="steps">' + c.steps.map(function(s){ return stepItem(s, true); }).join('') + '</ol></details>';
+      return '<details class="chain"><summary><div class="nm">' + esc(c.decision.name) + '</div><div class="bd">' + esc(c.body.name) + '</div><div class="bar">' + bar + '</div><div class="nx">Next: ' + esc(c.next.name) + ' · ' + esc(span(c.next.when)) + (c.next.status === 'now' ? ' · open now' : '') + '</div></summary><ol class="steps">' + c.steps.map(function(s){ return stepItem(s, true); }).join('') + '</ol></details>';
     }).join('') || '<p class="sub">No dated decisions ahead for your bodies yet.</p>';
     $('processes').innerHTML = (d.processes || []).map(function(c){
       return '<details class="chain"><summary><div class="nm">' + esc(c.decision.name) + '</div><div class="bd">' + esc(c.body.name) + ' · ' + c.steps.length + ' steps</div></summary><ol class="steps">' + c.steps.map(function(s){ return stepItem(s, false); }).join('') + '</ol></details>';
