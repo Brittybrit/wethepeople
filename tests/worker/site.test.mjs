@@ -20,7 +20,7 @@ describe('public site', () => {
       const r = await SELF.fetch(u);
       expect(r.status).toBe(200);
       const html = await r.text();
-      expect(html).toContain('Book time with Brit');
+      expect(html).toContain('<title>Book time with Brit');
       expect(html).toContain('<iframe src="https://cal.com/wethepeople305"');
       expect(r.headers.get('Content-Security-Policy')).toContain('frame-src https://cal.com https://app.cal.com;');
     }
