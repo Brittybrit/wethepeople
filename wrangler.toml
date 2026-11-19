@@ -18,7 +18,7 @@ run_worker_first = ["/", "/meet", "/admin/*", "/api", "/api/*", "/mcp", "/auth",
 # The meeting page (lib/meet.mjs) at meet.wethepeople305.org and /meet embeds this booking page. Paste the link from
 # Google Calendar (Appointment schedule > Share > Booking page link) or Cal.com. Empty means the page shows the email.
 [vars]
-BRIT_BOOKING_PAGE_URL = ""
+BRIT_BOOKING_PAGE_URL = "https://cal.com/wethepeople305"
 
 # Address lookups per client: 20 a minute. Keeps /api/v1/precinct and find_precinct from being used as a free bulk
 # geocoder, which would put our access to Esri and the Census at risk. The key is the client IP, held in memory by
