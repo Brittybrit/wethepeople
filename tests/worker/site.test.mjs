@@ -21,7 +21,7 @@ describe('public site', () => {
       expect(r.status).toBe(200);
       const html = await r.text();
       expect(html).toContain('<title>Book time with Brit');
-      expect(html).toContain('<iframe src="https://cal.com/wethepeople305"');
+      expect(html).toContain('<iframe class="booking" src="https://cal.com/wethepeople305"');
       expect(r.headers.get('Content-Security-Policy')).toContain('frame-src https://cal.com https://app.cal.com;');
     }
     expect(await (await SELF.fetch('https://wethepeople305.org/')).text()).not.toContain('Book time with Brit');

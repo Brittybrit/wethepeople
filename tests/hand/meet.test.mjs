@@ -21,7 +21,7 @@ describe('meeting page', () => {
   });
   it('frames only the provider it was given', () => {
     const b = parseBookingPageUrl('https://cal.com/brit/30min');
-    expect(meetPage(b)).toContain('<iframe src="https://cal.com/brit/30min"');
+    expect(meetPage(b)).toContain('<iframe class="booking" src="https://cal.com/brit/30min"');
     const csp = meetHeaders(b)['Content-Security-Policy'];
     expect(csp).toContain('frame-src https://cal.com https://app.cal.com;');
     expect(csp).toContain("frame-ancestors 'none'");
