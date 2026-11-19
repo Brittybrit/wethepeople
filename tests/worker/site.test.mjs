@@ -15,14 +15,14 @@ describe('public site', () => {
     expect(idx.files).not.toContain('founder-board.md');
     for (const f of idx.files) expect((await SELF.fetch('https://wethepeople305.org/docs/' + f)).status).toBe(200);
   });
-  it('serves the meeting page on meet.wethepeople305.org and at /meet, with the email until booking is set', async () => {
+  it('serves the meeting page on meet.wethepeople305.org and at /meet, framing only the configured booking page', async () => {
     for (const u of ['https://meet.wethepeople305.org/', 'https://wethepeople305.org/meet']) {
       const r = await SELF.fetch(u);
       expect(r.status).toBe(200);
       const html = await r.text();
       expect(html).toContain('Book time with Brit');
-      expect(html).toContain('mailto:brit@wethepeople305.org');
-      expect(r.headers.get('Content-Security-Policy')).toContain("frame-src 'none'");
+      expect(html).toContain('<iframe src="https://cal.com/wethepeople305"');
+      expect(r.headers.get('Content-Security-Policy')).toContain('frame-src https://cal.com https://app.cal.com;');
     }
     expect(await (await SELF.fetch('https://wethepeople305.org/')).text()).not.toContain('Book time with Brit');
   });
