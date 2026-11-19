@@ -17615,11 +17615,16 @@
    "person": "wilton-simpson",
    "office": "fl-agriculture-commissioner",
    "start": "2023-01-03",
-   "end": null,
+   "end": "2027-01-04",
    "via": "elected",
    "sources": [
     "https://www.fdacs.gov/"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "ashley-moody",
@@ -17635,11 +17640,16 @@
    "person": "james-uthmeier",
    "office": "fl-attorney-general",
    "start": "2025-02-17",
-   "end": null,
+   "end": "2027-01-04",
    "via": "appointed",
    "sources": [
     "https://www.myfloridalegal.com/"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "jimmy-patronis",
@@ -17655,11 +17665,16 @@
    "person": "blaise-ingoglia",
    "office": "fl-cfo",
    "start": "2025-07-21",
-   "end": null,
+   "end": "2027-01-04",
    "via": "appointed",
    "sources": [
     "https://www.wctv.tv/2025/07/21/ingoglia-sworn-monday-floridas-chief-financial-officer/"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "ivonne-cuesta",
@@ -18878,11 +18893,16 @@
    "person": "ron-desantis",
    "office": "fl-governor",
    "start": "2023-01-03",
-   "end": null,
+   "end": "2027-01-04",
    "via": "elected",
    "sources": [
     "https://www.flgov.com/"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "michelle-salzman",
@@ -19058,11 +19078,16 @@
    "person": "fabian-basabe",
    "office": "fl-house-106",
    "start": "2024-11-06",
-   "end": null,
+   "end": "2026-11-02",
    "via": "elected",
    "sources": [
     "https://www.flhouse.gov/Sections/Representatives/representatives.aspx?legislativetermid=91"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "christopher-benjamin",
@@ -19098,11 +19123,16 @@
    "person": "dotie-joseph",
    "office": "fl-house-108",
    "start": "2024-11-06",
-   "end": null,
+   "end": "2026-11-02",
    "via": "elected",
    "sources": [
     "https://www.flhouse.gov/Sections/Representatives/representatives.aspx?legislativetermid=91"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "ashley-viola-gantt",
@@ -21912,7 +21942,12 @@
     "https://github.com/openstates/people/tree/main/data/fl"
    ],
    "start": "2022-11-08",
-   "end": null
+   "end": "2026-11-02",
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "lauren-book",
@@ -23000,14 +23035,19 @@
    "person": "steve-gallon-iii",
    "office": "mdcps-board-district-1",
    "start": "2016-11-08",
-   "end": null,
+   "end": "2026-11-16",
    "via": "elected",
    "sources": [
     "https://pdfs.dadeschools.net/Bdarch/2025/Bd111925/lastbda-sp.pdf",
     "https://pdfs.dadeschools.net/Bdarch/2026/Bd061726/agenda/b6.pdf"
    ],
    "sourceKind": "news",
-   "electedOn": "2016-11-08"
+   "electedOn": "2016-11-08",
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "dorothy-bendross-mindingall",
@@ -26696,12 +26736,17 @@
    "person": "frederica-s-wilson",
    "office": "us-house-fl-24",
    "start": "2025-01-03",
-   "end": null,
+   "end": "2027-01-02",
    "via": "elected",
    "sources": [
     "https://bioguide.congress.gov/search/bio/W000808",
     "https://github.com/unitedstates/congress-legislators"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "mario-diaz-balart",
@@ -26762,12 +26807,17 @@
    "person": "debbie-wasserman-schultz",
    "office": "us-house-fl-25",
    "start": "2025-01-03",
-   "end": null,
+   "end": "2027-01-02",
    "via": "elected",
    "sources": [
     "https://bioguide.congress.gov/search/bio/W000797",
     "https://github.com/unitedstates/congress-legislators"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "carlos-a-gimenez",
@@ -27909,6 +27959,198 @@
    ],
    "sourceKind": "official",
    "note": "Former member. Dates are the first and last meetings where the official records show them seated, not term dates."
+  },
+  {
+   "person": "oliver-g-gilbert-iii",
+   "office": "us-house-fl-24",
+   "start": "2027-01-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://constitution.congress.gov/constitution/amendment-20/"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "jared-moskowitz",
+   "office": "us-house-fl-25",
+   "start": "2027-01-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://constitution.congress.gov/constitution/amendment-20/"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "david-jolly",
+   "office": "fl-governor",
+   "start": "2027-01-05",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A4S05"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "jose-javier-rodriguez",
+   "office": "fl-attorney-general",
+   "start": "2027-01-05",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A4S05"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "annette-taddeo",
+   "office": "fl-cfo",
+   "start": "2027-01-05",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A4S05"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "joey-mendoza-atkins",
+   "office": "fl-agriculture-commissioner",
+   "start": "2027-01-05",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A4S05"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "ashley-viola-gantt",
+   "office": "fl-senate-34",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "lucia-baez-geller",
+   "office": "fl-house-106",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "daphne-campbell",
+   "office": "fl-house-108",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "gloria-romero-roses",
+   "office": "fl-house-113",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "ashley-perez-biliskov",
+   "office": "fl-house-116",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "linda-cothiere",
+   "office": "mdcps-board-district-1",
+   "start": "2026-11-17",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.miamidade.gov/elections/library/qualifying-handbook/school-board-members.pdf"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
   }
  ],
  "ballot": [
