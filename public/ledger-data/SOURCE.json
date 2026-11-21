@@ -2,8 +2,8 @@
   "note": "Copy of Ballot305 public data (CC BY 4.0, attribution Ballot305, ballot305.org) served by the ledger API. Written by scripts/sync-ballot305-data.mjs; do not edit by hand.",
   "repo": "https://github.com/Brittybrit/vote-informed",
   "path": "public/data",
-  "commit": "4b97a18fe9a821e859f4cd550902322664f1aaf2",
-  "copiedAt": "2026-11-20T11:49:28.187Z",
+  "commit": "5fb66003b18cfadb58f41c56897e22ce829e8660",
+  "copiedAt": "2026-11-21T02:14:42.468Z",
   "license": "CC BY 4.0",
   "files": {
     "decisions/index.json": {
@@ -11,8 +11,8 @@
       "sha256": "c4d8c141539a2e99b964a63a87aeff08b39a736ffaf227ffafee53283dd53a03"
     },
     "roster.json": {
-      "bytes": 764381,
-      "sha256": "b7b4754ae0990ef5a0e13c4ec4b83ca98802cee9b2469531216f2636e791a75b"
+      "bytes": 767437,
+      "sha256": "02f365cd305bdef73753f2c5f6f8056d1f021fec697d3c95b96d4645d9d87cc9"
     },
     "transparency.json": {
       "bytes": 58081,
