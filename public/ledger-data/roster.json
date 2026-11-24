@@ -19078,11 +19078,16 @@
    "person": "fabian-basabe",
    "office": "fl-house-106",
    "start": "2024-11-06",
-   "end": null,
+   "end": "2026-11-02",
    "via": "elected",
    "sources": [
     "https://www.flhouse.gov/Sections/Representatives/representatives.aspx?legislativetermid=91"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "christopher-benjamin",
@@ -19118,11 +19123,16 @@
    "person": "dotie-joseph",
    "office": "fl-house-108",
    "start": "2024-11-06",
-   "end": null,
+   "end": "2026-11-02",
    "via": "elected",
    "sources": [
     "https://www.flhouse.gov/Sections/Representatives/representatives.aspx?legislativetermid=91"
-   ]
+   ],
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "ashley-viola-gantt",
@@ -21932,7 +21942,12 @@
     "https://github.com/openstates/people/tree/main/data/fl"
    ],
    "start": "2022-11-08",
-   "end": null
+   "end": "2026-11-02",
+   "endBeforeResults": {
+    "end": null
+   },
+   "endKnown": true,
+   "endSetByResults": "2026-11-03"
   },
   {
    "person": "lauren-book",
@@ -28035,6 +28050,86 @@
    "sources": [
     "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
     "https://www.flsenate.gov/Laws/Constitution#A4S05"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "ashley-viola-gantt",
+   "office": "fl-senate-34",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "lucia-baez-geller",
+   "office": "fl-house-106",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "daphne-campbell",
+   "office": "fl-house-108",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "gloria-romero-roses",
+   "office": "fl-house-113",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
+   ],
+   "sourceKind": "official",
+   "startSourceKind": "official",
+   "fromResults": "2026-11-03",
+   "resultStatus": "official"
+  },
+  {
+   "person": "ashley-perez-biliskov",
+   "office": "fl-house-116",
+   "start": "2026-11-03",
+   "end": null,
+   "via": "elected",
+   "electedOn": "2026-11-03",
+   "sources": [
+    "https://s3.amazonaws.com/results.voterfocus.com/enr/exports/reports/DAD/4087/CandidateSummaryResultsbyParty_2026-11-13T16:43:59_4033debe-4288-4588-b214-542db2ff6a35.csv",
+    "https://www.flsenate.gov/Laws/Constitution#A3S15"
    ],
    "sourceKind": "official",
    "startSourceKind": "official",
