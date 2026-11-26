@@ -1,0 +1,804 @@
+{
+ "about": "Hand-entered budget figures for the Amendment 3 budget page. Every figure names the public document it was read from. Dollar amounts are in thousands unless a field says otherwise.",
+ "enteredOn": "2026-11-26",
+ "amendment3": {
+  "passedOn": "2026-11-03",
+  "homesteadExemptionNonSchool": [
+   {
+    "taxRollYear": 2027,
+    "dollars": 150000
+   },
+   {
+    "taxRollYear": 2028,
+    "dollars": 250000
+   }
+  ],
+  "rateVoteRules": {
+   "summary": "A simple majority can adopt up to the rolled-back rate. Two thirds can adopt up to 110% of it. Above that takes a unanimous vote (three fourths if the body has nine or more members) or a referendum.",
+   "law": "Chapter 2026-240, Laws of Florida",
+   "source": "https://flsenate.gov/Session/Bill/2026F/3F/Analyses/h0003z1.SAC.PDF",
+   "openQuestion": "Not yet confirmed: whether the rolled-back rate rises to make up for the new exemption."
+  }
+ },
+ "governments": [
+  {
+   "key": "miami-dade-county",
+   "name": "Miami-Dade County",
+   "fiscalYear": "2026-27",
+   "budgetStage": "Mayor's proposed budget, July 2026. The Commission adopted the budget on September 17, 2026; the adopted volumes have not been read into this file.",
+   "sources": {
+    "budgetInBrief": "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/budget-in-brief.pdf",
+    "executiveSummary": "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/executive-summary.pdf",
+    "expendituresByDepartment": "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/appendix-a.pdf",
+    "countywideGeneralFundRevenue": "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/appendix-c.pdf",
+    "unincorporatedAreaGeneralFundRevenue": "https://www.miamidade.gov/resources/budget/fy-26-27/proposed/appendix-d.pdf",
+    "allVolumes": "https://www.miamidade.gov/global/management/budget/2026-27/proposed/volume-1.page"
+   },
+   "operatingBudget": 9021676,
+   "revenueBySource": [
+    {
+     "name": "Fees paid to county services (airport, seaport, water, transit and others)",
+     "amount": 3925180,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Property tax",
+     "amount": 3297900,
+     "isPropertyTax": true
+    },
+    {
+     "name": "Miscellaneous",
+     "amount": 724823,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Sales tax",
+     "amount": 494146,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Federal and state grants",
+     "amount": 358457,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Other state revenue",
+     "amount": 154855,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Gas tax",
+     "amount": 66315,
+     "isPropertyTax": false
+    }
+   ],
+   "propertyTax": {
+    "allFunds": 3297900,
+    "countywideGeneralFund": 2347058,
+    "unincorporatedAreaGeneralFund": 260965
+   },
+   "countywideGeneralFundTotal": 2873605,
+   "projectedPropertyTaxLoss": {
+    "basis": "County estimate at current tax rates. Executive Summary, page 26.",
+    "byFund": [
+     {
+      "fund": "Countywide General Fund",
+      "fiscalYear2027_28": 236000,
+      "fiscalYear2028_29Cumulative": 433400
+     },
+     {
+      "fund": "Fire Rescue District",
+      "fiscalYear2027_28": 83600,
+      "fiscalYear2028_29Cumulative": 146000
+     },
+     {
+      "fund": "Unincorporated area (UMSA) fund",
+      "fiscalYear2027_28": 44800,
+      "fiscalYear2028_29Cumulative": 78500
+     },
+     {
+      "fund": "Library District",
+      "fiscalYear2027_28": 21100,
+      "fiscalYear2028_29Cumulative": 38700
+     }
+    ],
+    "total": {
+     "fiscalYear2027_28": 385500,
+     "fiscalYear2028_29Cumulative": 696700
+    },
+    "jacksonHealthSystemAsListed": {
+     "fiscalYear2027_28": 34700,
+     "fiscalYear2028_29Cumulative": 63900
+    }
+   },
+   "departments": [
+    {
+     "name": "Office of the Mayor",
+     "countywideGeneralFund": 7450,
+     "unincorporatedAreaGeneralFund": 1981,
+     "feesDistrictTaxesAndBondFunds": 0,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 9431,
+     "positions": 44,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Board of County Commissioners",
+     "countywideGeneralFund": 41336,
+     "unincorporatedAreaGeneralFund": 10988,
+     "feesDistrictTaxesAndBondFunds": 192,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 225,
+     "total": 52741,
+     "positions": 294,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "County Attorney's Office",
+     "countywideGeneralFund": 30603,
+     "unincorporatedAreaGeneralFund": 8135,
+     "feesDistrictTaxesAndBondFunds": 9632,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 48370,
+     "positions": 167,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Clerk of the Court and Comptroller",
+     "countywideGeneralFund": 42193,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 19675,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 6265,
+     "total": 68133,
+     "positions": 452,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Property Appraiser",
+     "countywideGeneralFund": 58654,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 6838,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 4814,
+     "total": 70306,
+     "positions": 432,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Sheriff's Office",
+     "countywideGeneralFund": 420385,
+     "unincorporatedAreaGeneralFund": 557771,
+     "feesDistrictTaxesAndBondFunds": 201765,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 1146,
+     "total": 1181067,
+     "positions": 4795,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Supervisor of Elections",
+     "countywideGeneralFund": 48658,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 512,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 49170,
+     "positions": 151,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Aviation",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 820613,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 820613,
+     "positions": 1780,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Housing and Community Development",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 171767,
+     "state": 0,
+     "federal": 116302,
+     "paidByOtherCountyDepartments": 0,
+     "total": 288069,
+     "positions": 432,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Economic Advocacy Trust",
+     "countywideGeneralFund": 1866,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 13492,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 15358,
+     "positions": 29,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Regulatory and Economic Resources",
+     "countywideGeneralFund": 3650,
+     "unincorporatedAreaGeneralFund": 248,
+     "feesDistrictTaxesAndBondFunds": 231352,
+     "state": 0,
+     "federal": 650,
+     "paidByOtherCountyDepartments": 6869,
+     "total": 242769,
+     "positions": 1066,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Seaport",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 182198,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 182198,
+     "positions": 518,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Adrienne Arsht Center",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 14558,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 14558,
+     "positions": 0,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Animal Services",
+     "countywideGeneralFund": 31051,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 13711,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 44762,
+     "positions": 293,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Community Services",
+     "countywideGeneralFund": 66470,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 15831,
+     "state": 5302,
+     "federal": 117188,
+     "paidByOtherCountyDepartments": 7429,
+     "total": 212220,
+     "positions": 698,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Corrections and Rehabilitation",
+     "countywideGeneralFund": 599342,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 3650,
+     "state": 0,
+     "federal": 1000,
+     "paidByOtherCountyDepartments": 0,
+     "total": 603992,
+     "positions": 3054,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Cultural Affairs",
+     "countywideGeneralFund": 13863,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 21489,
+     "state": 85,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 27314,
+     "total": 62751,
+     "positions": 99,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Fire Rescue",
+     "countywideGeneralFund": 65248,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 852405,
+     "state": 0,
+     "federal": 1045,
+     "paidByOtherCountyDepartments": 9216,
+     "total": 927914,
+     "positions": 3244,
+     "hasOwnPropertyTaxDistrict": true
+    },
+    {
+     "name": "Homeless Trust",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 55600,
+     "state": 1592,
+     "federal": 60363,
+     "paidByOtherCountyDepartments": 0,
+     "total": 117555,
+     "positions": 29,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Jackson Health System",
+     "countywideGeneralFund": 349836,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 0,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 349836,
+     "positions": 0,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Judicial Administration",
+     "countywideGeneralFund": 49933,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 7620,
+     "state": 0,
+     "federal": 791,
+     "paidByOtherCountyDepartments": 0,
+     "total": 58344,
+     "positions": 322,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Law Library",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 452,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 452,
+     "positions": 3,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Legal Aid",
+     "countywideGeneralFund": 3836,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 5276,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 9112,
+     "positions": 57,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Library",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 123453,
+     "state": 1000,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 124453,
+     "positions": 537,
+     "hasOwnPropertyTaxDistrict": true
+    },
+    {
+     "name": "Medical Examiner",
+     "countywideGeneralFund": 21802,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 884,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 22686,
+     "positions": 96,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Museum of Miami",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 4000,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 4000,
+     "positions": 0,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Parks, Recreation and Open Spaces",
+     "countywideGeneralFund": 64053,
+     "unincorporatedAreaGeneralFund": 66837,
+     "feesDistrictTaxesAndBondFunds": 105481,
+     "state": 0,
+     "federal": 2000,
+     "paidByOtherCountyDepartments": 49490,
+     "total": 287861,
+     "positions": 1509,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Perez Art Museum Miami",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 4000,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 4000,
+     "positions": 0,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Tourist taxes",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 206161,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 206161,
+     "positions": 0,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Vizcaya Museum and Gardens",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 0,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 4000,
+     "total": 4000,
+     "positions": 0,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Citizens' Independent Transportation Trust",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 4778,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 4778,
+     "positions": 12,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Solid Waste Management",
+     "countywideGeneralFund": 13587,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 449730,
+     "state": 0,
+     "federal": 100,
+     "paidByOtherCountyDepartments": 0,
+     "total": 463417,
+     "positions": 1176,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Transportation and Public Works",
+     "countywideGeneralFund": 378073,
+     "unincorporatedAreaGeneralFund": 16604,
+     "feesDistrictTaxesAndBondFunds": 336014,
+     "state": 16394,
+     "federal": 1000,
+     "paidByOtherCountyDepartments": 193249,
+     "total": 941334,
+     "positions": 3938,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Water and Sewer",
+     "countywideGeneralFund": 0,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 930021,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 930021,
+     "positions": 3086,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Emergency Management",
+     "countywideGeneralFund": 9612,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 628,
+     "state": 106,
+     "federal": 1125,
+     "paidByOtherCountyDepartments": 0,
+     "total": 11471,
+     "positions": 36,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Environmental Resources Management",
+     "countywideGeneralFund": 1524,
+     "unincorporatedAreaGeneralFund": 199,
+     "feesDistrictTaxesAndBondFunds": 55439,
+     "state": 22839,
+     "federal": 662,
+     "paidByOtherCountyDepartments": 2196,
+     "total": 82859,
+     "positions": 313,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Commission on Ethics and Public Trust",
+     "countywideGeneralFund": 3759,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 278,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 4037,
+     "positions": 19,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Communications, Information and Technology",
+     "countywideGeneralFund": 18015,
+     "unincorporatedAreaGeneralFund": 3929,
+     "feesDistrictTaxesAndBondFunds": 14168,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 246809,
+     "total": 282921,
+     "positions": 1080,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Inspector General",
+     "countywideGeneralFund": 967,
+     "unincorporatedAreaGeneralFund": 0,
+     "feesDistrictTaxesAndBondFunds": 8117,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 9084,
+     "positions": 42,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Internal Compliance",
+     "countywideGeneralFund": 3904,
+     "unincorporatedAreaGeneralFund": 1037,
+     "feesDistrictTaxesAndBondFunds": 18060,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 47060,
+     "total": 70061,
+     "positions": 302,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Management and Budget",
+     "countywideGeneralFund": 9930,
+     "unincorporatedAreaGeneralFund": 1261,
+     "feesDistrictTaxesAndBondFunds": 2807,
+     "state": 0,
+     "federal": 30674,
+     "paidByOtherCountyDepartments": 4774,
+     "total": 49446,
+     "positions": 101,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "People and Internal Operations",
+     "countywideGeneralFund": 100379,
+     "unincorporatedAreaGeneralFund": 20301,
+     "feesDistrictTaxesAndBondFunds": 6572,
+     "state": 0,
+     "federal": 78,
+     "paidByOtherCountyDepartments": 245622,
+     "total": 372952,
+     "positions": 826,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Strategic Procurement",
+     "countywideGeneralFund": 4553,
+     "unincorporatedAreaGeneralFund": 1210,
+     "feesDistrictTaxesAndBondFunds": 33277,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 6722,
+     "total": 45762,
+     "positions": 203,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "General Government Improvement Fund (building and equipment projects)",
+     "countywideGeneralFund": 45202,
+     "unincorporatedAreaGeneralFund": 6046,
+     "feesDistrictTaxesAndBondFunds": 66090,
+     "state": 0,
+     "federal": 1000,
+     "paidByOtherCountyDepartments": 12886,
+     "total": 131224,
+     "positions": 0,
+     "hasOwnPropertyTaxDistrict": false
+    },
+    {
+     "name": "Non-departmental (costs not assigned to one department)",
+     "countywideGeneralFund": 363871,
+     "unincorporatedAreaGeneralFund": 51642,
+     "feesDistrictTaxesAndBondFunds": 0,
+     "state": 0,
+     "federal": 0,
+     "paidByOtherCountyDepartments": 0,
+     "total": 415513,
+     "positions": 0,
+     "hasOwnPropertyTaxDistrict": false
+    }
+   ],
+   "governingBody": {
+    "name": "County Commission",
+    "members": 13,
+    "votesForRolledBackRate": 7,
+    "votesForUpTo110Percent": 9,
+    "votesAbove110Percent": 10,
+    "nextBudgetHearingsProposed": [
+     "2027-09-09",
+     "2027-09-23"
+    ],
+    "hearingsSource": "https://www.miamidade.gov/global/management/budget/2026-27/fy-2027-budget-process.page"
+   }
+  },
+  {
+   "key": "miami-beach",
+   "name": "Miami Beach",
+   "fiscalYear": "2027",
+   "budgetStage": "Adopted September 23, 2026.",
+   "sources": {
+    "budgetInBrief": "https://www.miamibeachfl.gov/wp-content/uploads/2026/11/Budget-in-Brief.pdf",
+    "adoptedOperatingBudgetBook": "https://www.miamibeachfl.gov/wp-content/uploads/2026/11/FY-2027-Adopted-Operating-Budget-Book-Electronic-Version-1.pdf",
+    "lossProjection": "https://www.yahoo.com/news/politics/articles/voters-said-yes-amendment-3-234503910.html",
+    "generalFundPropertyTax": "https://miamibeachreview.com/articles/miami-beach-cuts-property-tax-rate-for-second-straight-year-muhg13p3"
+   },
+   "totalOperatingBudget": 961300,
+   "generalFundTotal": 515861,
+   "generalFundRevenueShares": [
+    {
+     "name": "Property tax",
+     "percent": 60,
+     "isPropertyTax": true
+    },
+    {
+     "name": "Resort tax contribution",
+     "percent": 9,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Other taxes",
+     "percent": 6,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Licenses and permits",
+     "percent": 5,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Charges for services, including golf courses",
+     "percent": 4,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Non-operating revenue",
+     "percent": 4,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Other revenues",
+     "percent": 4,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Intergovernmental",
+     "percent": 3,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Miscellaneous",
+     "percent": 3,
+     "isPropertyTax": false
+    },
+    {
+     "name": "Prior-year General Fund surplus",
+     "percent": 2,
+     "isPropertyTax": false
+    }
+   ],
+   "generalFundSpendingShares": [
+    {
+     "name": "Police",
+     "percent": 34
+    },
+    {
+     "name": "Fire",
+     "percent": 28
+    },
+    {
+     "name": "All other departments",
+     "percent": 24
+    },
+    {
+     "name": "Parks and Recreation",
+     "percent": 10
+    },
+    {
+     "name": "Public Works",
+     "percent": 4
+    }
+   ],
+   "generalFundPropertyTaxAsReported": 307900,
+   "projectedPropertyTaxLoss": {
+    "basis": "Commissioner David Suarez, as reported by the Miami Herald, November 2026.",
+    "year2028": 11900,
+    "year2029": 22500
+   },
+   "taxRateMills": {
+    "parts": [
+     {
+      "name": "General operating",
+      "mills": 5.6012
+     },
+     {
+      "name": "Voted debt (bonds)",
+      "mills": 0.2693
+     },
+     {
+      "name": "Capital (pay-as-you-go and renewal)",
+      "mills": 0.2048
+     }
+    ],
+    "total": 6.0753,
+    "lastYearTotal": 6.1339,
+    "operatingAndCapital": 5.806,
+    "rolledBackRate": 5.5762,
+    "percentAboveRolledBack": 4.1
+   },
+   "taxableValueDollars": 62392386520,
+   "netRevenuePerMillDollars": 59272767,
+   "netPropertyTaxFromOperatingAndCapitalRateDollars": 344137686,
+   "positions": {
+    "total": 2318,
+    "generalFund": 1586
+   },
+   "notYetEntered": [
+    "Spending for each department inside the 'All other departments' share",
+    "A breakdown of the funds outside the General Fund",
+    "Why net property tax of $344.1M is larger than 60% of the General Fund"
+   ],
+   "governingBody": {
+    "name": "City Commission",
+    "members": 7,
+    "votesForRolledBackRate": 4,
+    "votesForUpTo110Percent": 5,
+    "votesAbove110Percent": 7
+   }
+  }
+ ]
+}

@@ -34,6 +34,14 @@ describe('public site', () => {
     expect(r.status).toBe(200);
     expect(await r.text()).toContain('Who works for you');
   });
+  it('serves the Amendment 3 budget page and its data file', async () => {
+    const r = await SELF.fetch('https://wethepeople305.org/amendment-3-budget');
+    expect(r.status).toBe(200);
+    expect(await r.text()).toContain('what Amendment 3 takes out');
+    const d = await SELF.fetch('https://wethepeople305.org/budget-data/amendment-3-budgets.json');
+    expect(d.status).toBe(200);
+    expect((await d.json()).governments.map(g => g.key)).toEqual(['miami-dade-county', 'miami-beach']);
+  });
   it('validates API input before calling any source', async () => {
     expect((await SELF.fetch('https://wethepeople305.org/api/v1/your-area?precinct=33')).status).toBe(400);
     expect((await SELF.fetch('https://wethepeople305.org/api/v1/precinct')).status).toBe(400);

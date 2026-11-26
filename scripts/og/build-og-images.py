@@ -11,6 +11,7 @@ PAGES = [
     ('your-area', 'YOUR AREA', 'Who works for you, and what is about to be decided', 'Put in your address. Every seat that represents you, the next decisions, and what you can do now.'),
     ('account', 'ACCOUNT', 'Your We the People account', 'Sign in with a passkey or Google. Save your area, follow decisions, apply as an organizer.'),
     ('organizers', 'ORGANIZERS', 'Civic intelligence for organizers', 'Apply for organizer access: watchlists, alerts and the data behind every decision in Miami-Dade.'),
+    ('amendment-3-budget', 'BUDGETS', 'What Amendment 3 takes out of local budgets', 'Miami-Dade County and Miami Beach: revenue, spending, the property tax each expects to lose, and who decides.'),
 ]
 
 TEMPLATE = """<!doctype html><html><head><meta charset="utf-8"><style>
