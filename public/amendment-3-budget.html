@@ -127,6 +127,9 @@
     <ul id="c-votes"></ul>
     <p class="fine" data-vote-source></p>
 
+    <h2>Can a simple majority close the gap?</h2>
+    <div data-rolled-back></div>
+
     <h2>About these numbers</h2>
     <ul>
       <li id="c-stage"></li>
@@ -165,6 +168,9 @@
     <h2>Who decides, and what each choice takes</h2>
     <ul id="mb-votes"></ul>
     <p class="fine" data-vote-source></p>
+
+    <h2>Can a simple majority close the gap?</h2>
+    <div data-rolled-back></div>
 
     <h2>About these numbers</h2>
     <ul id="mb-about"></ul>
@@ -312,9 +318,18 @@
     Array.prototype.forEach.call(document.querySelectorAll('a[data-src]'), function(a){ var p = a.getAttribute('data-src').split('.'); a.href = src[p[0]][p[1]]; });
     var rules = data.amendment3.rateVoteRules;
     Array.prototype.forEach.call(document.querySelectorAll('[data-vote-source]'), function(p){
-      p.textContent = 'Vote thresholds come from the 2026 companion law (' + rules.law + ') as summarized by the ';
-      var a = el('a', '', 'House staff analysis'); a.href = rules.source; p.appendChild(a);
-      p.appendChild(document.createTextNode('. ' + rules.openQuestion + ' That one answer decides how much of the gap a simple majority can close.'));
+      p.textContent = 'Vote thresholds: ';
+      var a = el('a', '', 'section 200.065(5), Florida Statutes'); a.href = rules.source; p.appendChild(a);
+      p.appendChild(document.createTextNode(', as amended in 2026 by '));
+      var k = el('a', '', 'Chapter 2026-240'); k.href = rules.chapterLawSource; p.appendChild(k);
+      p.appendChild(document.createTextNode('.'));
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-rolled-back]'), function(box){
+      var rb = rules.rolledBackRate;
+      box.appendChild(el('p', '', rb.reading));
+      box.appendChild(el('p', '', rb.whatItMeans));
+      box.appendChild(el('p', '', rb.limit));
+      box.appendChild(el('p', 'note', rb.notConfirmed));
     });
     county(c); beach(b, c);
     $('status').hidden = true;

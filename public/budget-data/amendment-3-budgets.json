@@ -15,9 +15,16 @@
   ],
   "rateVoteRules": {
    "summary": "A simple majority can adopt up to the rolled-back rate. Two thirds can adopt up to 110% of it. Above that takes a unanimous vote (three fourths if the body has nine or more members) or a referendum.",
-   "law": "Chapter 2026-240, Laws of Florida",
-   "source": "https://flsenate.gov/Session/Bill/2026F/3F/Analyses/h0003z1.SAC.PDF",
-   "openQuestion": "Not yet confirmed: whether the rolled-back rate rises to make up for the new exemption."
+   "law": "Section 200.065(5), Florida Statutes, as amended by Chapter 2026-240, Laws of Florida",
+   "source": "https://leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&amp=&Search_String=&amp=&URL=0200-0299%2F0200%2FSections%2F0200.065.html",
+   "chapterLawSource": "https://laws.flrules.org/2026/240",
+   "rolledBackRate": {
+    "reading": "The rolled-back rate is the rate that brings in the same property tax as last year from this year's taxable value. The law lists what is left out of that math: new construction and a few other items. It does not list exemptions. Read that way, the rolled-back rate goes up when the new exemption shrinks the tax base, and a simple majority can adopt it.",
+    "whatItMeans": "Holding property tax revenue flat is a choice a simple majority can make. It means a higher rate on the property that is still taxed: rentals, businesses, second homes and the part of a home's value above the exemption.",
+    "limit": "The rolled-back rate only gets back to last year's dollars. Costs rise each year, and going above it takes two thirds.",
+    "notConfirmed": "This is our reading of section 200.065(1) and (5). No state or county office has confirmed it to us, and the Legislature can change the rule.",
+    "readOn": "2026-11-26"
+   }
   }
  },
  "governments": [

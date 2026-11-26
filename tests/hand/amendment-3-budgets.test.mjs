@@ -44,6 +44,13 @@ describe('amendment 3 budget figures', () => {
       expect(b.votesAbove110Percent, g.key).toBe(b.members >= 9 ? Math.ceil(b.members * 3 / 4) : b.members);
     }
   });
+  it('the rolled-back rate reading says it is not confirmed and links the statute', () => {
+    const rules = data.amendment3.rateVoteRules;
+    expect(rules.source).toMatch(/^https:\/\/leg\.state\.fl\.us\//);
+    expect(rules.chapterLawSource).toMatch(/^https:\/\//);
+    for (const k of ['reading', 'whatItMeans', 'limit', 'notConfirmed']) expect(rules.rolledBackRate[k].length, k).toBeGreaterThan(40);
+    expect(rules.rolledBackRate.notConfirmed).toContain('our reading');
+  });
   it('every source is an https link and the page has no em dashes', () => {
     for (const g of data.governments) for (const u of Object.values(g.sources)) expect(u).toMatch(/^https:\/\//);
     const page = readFileSync(new URL('../../public/amendment-3-budget.html', import.meta.url), 'utf8');
